@@ -39,7 +39,7 @@ export function DuaTextDisplay({ dua, langs }: Props) {
                                         </span>
                                     </div>
                                     <p className="text-muted-foreground mb-2 font-mono text-xs leading-relaxed">
-                                        {dua.transliteration}
+                                        {dua.languages[l.code].transliteration}
                                     </p>
                                     <p
                                         dir={l.dir}
@@ -56,7 +56,7 @@ export function DuaTextDisplay({ dua, langs }: Props) {
                                                 : undefined
                                         }
                                     >
-                                        {dua.translations[l.code]}
+                                        {dua.languages[l.code].translation}
                                     </p>
                                 </li>
                             )

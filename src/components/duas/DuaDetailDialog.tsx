@@ -33,13 +33,13 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
     const activeLangMeta = DUA_LANGS.find((l) => l.code === activeLang)
 
     async function copyToClipboard() {
-        const translation = dua.translations[activeLang] ?? dua.translations['en']
+        const langData = dua.languages[activeLang] ?? dua.languages['en']
         const text = [
             dua.arabic,
             '',
-            dua.transliteration,
+            langData.transliteration,
             '',
-            `[${activeLangMeta?.label ?? activeLang.toUpperCase()}] ${translation}`,
+            `[${activeLangMeta?.label ?? activeLang.toUpperCase()}] ${langData.translation}`,
         ].join('\n')
         try {
             await navigator.clipboard.writeText(text)
@@ -145,7 +145,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                 {activeLangMeta && (
                                     <div className="space-y-2">
                                         <p className="text-muted-foreground font-mono text-xs leading-relaxed">
-                                            {dua.transliteration}
+                                            {dua.languages[activeLang].transliteration}
                                         </p>
                                         <p
                                             dir={activeLangMeta.dir}
@@ -163,7 +163,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                                     : undefined
                                             }
                                         >
-                                            {dua.translations[activeLang]}
+                                            {dua.languages[activeLang].translation}
                                         </p>
                                     </div>
                                 )}
@@ -195,7 +195,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                                 </span>
                                             </div>
                                             <p className="text-muted-foreground mb-1.5 font-mono text-xs leading-relaxed">
-                                                {dua.transliteration}
+                                                {dua.languages[l.code].transliteration}
                                             </p>
                                             <p
                                                 dir={l.dir}
@@ -212,7 +212,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                                         : undefined
                                                 }
                                             >
-                                                {dua.translations[l.code]}
+                                                {dua.languages[l.code].translation}
                                             </p>
                                         </li>
                                     ))}

@@ -8,15 +8,35 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 1,
         label: "Subhana Rabbi al-A'la",
         arabic: 'سُبْحَانَ رَبِّيَ الْأَعْلَى',
-        transliteration: "Subḥāna Rabbiy al-A'lā",
-        translations: {
-            en: 'Glory be to my Lord, the Most High.',
-            ar: 'سبحان ربي الأعلى.',
-            fr: 'Gloire à mon Seigneur, le Très Haut.',
-            ur: 'پاک ہے میرا رب، سب سے اعلیٰ۔',
-            tr: 'En Yüce Rabbimi tesbih ederim.',
-            ms: 'Maha Suci Tuhanku Yang Maha Tinggi.',
-            bn: 'আমার সর্বোচ্চ রবের পবিত্রতা বর্ণনা করি।',
+        languages: {
+            en: {
+                transliteration: "Subḥāna Rabbiy al-A'lā",
+                translation: 'Glory be to my Lord, the Most High.',
+            },
+            ar: {
+                transliteration: 'سُبْحَانَ رَبِّيَ الْأَعْلَى',
+                translation: 'سبحان ربي الأعلى.',
+            },
+            fr: {
+                transliteration: "Subḥāna Rabbiy al-A'lā",
+                translation: 'Gloire à mon Seigneur, le Très Haut.',
+            },
+            ur: {
+                transliteration: 'سُبحَانَ رَبِّیَ الاَعلٰی',
+                translation: 'پاک ہے میرا رب، سب سے اعلیٰ۔',
+            },
+            tr: {
+                transliteration: "Subḥāna Rabbiy al-A'lā",
+                translation: 'En Yüce Rabbimi tesbih ederim.',
+            },
+            ms: {
+                transliteration: "Subḥāna Rabbiy al-A'lā",
+                translation: 'Maha Suci Tuhanku Yang Maha Tinggi.',
+            },
+            bn: {
+                transliteration: 'সুবহানা রাব্বিয়াল আলা',
+                translation: 'আমার সর্বোচ্চ রবের পবিত্রতা বর্ণনা করি।',
+            },
         },
         references: [
             {
@@ -48,15 +68,44 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 2,
         label: 'Allahumma ighfir li ma asrart (Sajdah)',
         arabic: 'اللَّهُمَّ اغْفِرْ لِي مَا أَسْرَرْتُ وَمَا أَعْلَنْتُ',
-        transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
-        translations: {
-            en: 'O Allah, forgive me for what I have done in secret and what I have done openly.',
-            ar: 'اللهم اغفر لي ما أسررت وما أعلنت.',
-            fr: "O Allah, pardonne-moi pour ce que j'ai fait en secret et pour ce que j'ai fait ouvertement.",
-            ur: 'اے اللہ! مجھے معاف فرما جو میں نے چھپ کر کیا اور جو میں نے علانیہ کیا۔',
-            tr: "Allah'ım, gizli yaptıklarımı ve açıkça yaptıklarımı bağışla.",
-            ms: 'Ya Allah, ampunkanlah aku atas apa yang aku lakukan secara tersembunyi dan secara terang-terangan.',
-            bn: 'হে আল্লাহ! আমি গোপনে যা করেছি এবং প্রকাশ্যে যা করেছি তা ক্ষমা করো।',
+        languages: {
+            en: {
+                transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
+                translation:
+                    'O Allah, forgive me for what I have done in secret and what I have done openly.',
+            },
+            ar: {
+                transliteration:
+                    'اللَّهُمَّ اغْفِرْ لِي مَا أَسْرَرْتُ وَمَا أَعْلَنْتُ',
+                translation: 'اللهم اغفر لي ما أسررت وما أعلنت.',
+            },
+            fr: {
+                transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
+                translation:
+                    "O Allah, pardonne-moi pour ce que j'ai fait en secret et pour ce que j'ai fait ouvertement.",
+            },
+            ur: {
+                transliteration:
+                    'اَللّٰہُمَّ اغفِر لِی مَا اَسرَرتُ وَمَا اَعلَنت',
+                translation:
+                    'اے اللہ! مجھے معاف فرما جو میں نے چھپ کر کیا اور جو میں نے علانیہ کیا۔',
+            },
+            tr: {
+                transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
+                translation:
+                    "Allah'ım, gizli yaptıklarımı ve açıkça yaptıklarımı bağışla.",
+            },
+            ms: {
+                transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
+                translation:
+                    'Ya Allah, ampunkanlah aku atas apa yang aku lakukan secara tersembunyi dan secara terang-terangan.',
+            },
+            bn: {
+                transliteration:
+                    'আল্লাহুম্মাগফির লী মা আসরারতু ওয়া মা আলান্ত',
+                translation:
+                    'হে আল্লাহ! আমি গোপনে যা করেছি এবং প্রকাশ্যে যা করেছি তা ক্ষমা করো।',
+            },
         },
         references: [
             {
@@ -80,15 +129,38 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 3,
         label: 'Subbuhun Quddus (Sajdah)',
         arabic: 'سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ',
-        transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-        translations: {
-            en: 'Most Glorified, Most Holy, Lord of the angels and the Spirit (Jibreel).',
-            ar: 'سبوح قدوس رب الملائكة والروح.',
-            fr: "Très Glorifié, Très Saint, Seigneur des anges et de l'Esprit.",
-            ur: 'نہایت پاک، نہایت مقدس، فرشتوں اور روح (جبریل) کا رب۔',
-            tr: "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un Rabbi.",
-            ms: 'Maha Suci, Maha Kudus, Tuhan para malaikat dan Roh.',
-            bn: 'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহের রব।',
+        languages: {
+            en: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation:
+                    'Most Glorified, Most Holy, Lord of the angels and the Spirit (Jibreel).',
+            },
+            ar: {
+                transliteration: 'سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ',
+                translation: 'سبوح قدوس رب الملائكة والروح.',
+            },
+            fr: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation:
+                    "Très Glorifié, Très Saint, Seigneur des anges et de l'Esprit.",
+            },
+            ur: {
+                transliteration: 'سُبُّوحٌ قُدُّوسٌ رَبُّ المَلَائِکَۃِ وَالرُّوح',
+                translation: 'نہایت پاک، نہایت مقدس، فرشتوں اور روح (جبریل) کا رب۔',
+            },
+            tr: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation:
+                    "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un Rabbi.",
+            },
+            ms: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Maha Suci, Maha Kudus, Tuhan para malaikat dan Roh.',
+            },
+            bn: {
+                transliteration: 'সুব্বুহুন কুদ্দুস, রাব্বুল মালাইকাতি ওয়াররূহ',
+                translation: 'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহের রব।',
+            },
         },
         references: [
             {
@@ -112,15 +184,39 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 4,
         label: 'Subhanaka wa bihamdika la ilaha illa anta (Sajdah)',
         arabic: 'سُبْحَانَكَ وَبِحَمْدِكَ لَا إِلَهَ إِلَّا أَنْتَ',
-        transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-        translations: {
-            en: 'Glory be to You, and all praise. There is no god worthy of worship except You.',
-            ar: 'سبحانك وبحمدك لا إله إلا أنت.',
-            fr: "Gloire à Toi et toute louange. Il n'y a pas de dieu digne d'adoration excepté Toi.",
-            ur: 'تو پاک ہے اور تیری حمد ہے، تیرے سوا کوئی معبود نہیں۔',
-            tr: 'Seni tesbih eder ve hamd ederim. Senden başka ilah yoktur.',
-            ms: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
-            bn: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
+        languages: {
+            en: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation:
+                    'Glory be to You, and all praise. There is no god worthy of worship except You.',
+            },
+            ar: {
+                transliteration: 'سُبْحَانَكَ وَبِحَمْدِكَ لَا إِلَهَ إِلَّا أَنْتَ',
+                translation: 'سبحانك وبحمدك لا إله إلا أنت.',
+            },
+            fr: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation:
+                    "Gloire à Toi et toute louange. Il n'y a pas de dieu digne d'adoration excepté Toi.",
+            },
+            ur: {
+                transliteration: 'سُبحَانَکَ وَبِحَمدِکَ لَا اِلٰہَ اِلَّا اَنت',
+                translation: 'تو پاک ہے اور تیری حمد ہے، تیرے سوا کوئی معبود نہیں۔',
+            },
+            tr: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Seni tesbih eder ve hamd ederim. Senden başka ilah yoktur.',
+            },
+            ms: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation:
+                    'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            },
+            bn: {
+                transliteration: 'সুবহানাকা ওয়া বিহামদিকা লা ইলাহা ইল্লা আনত',
+                translation:
+                    'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
+            },
         },
         references: [
             {
@@ -144,15 +240,44 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 5,
         label: 'Subhanaka Allahumma Rabbana wa bihamdika (Sajdah)',
         arabic: 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي',
-        transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
-        translations: {
-            en: 'Glory be to You, O Allah our Lord, and all praise. O Allah, forgive me.',
-            ar: 'سبحانك اللهم ربنا وبحمدك، اللهم اغفر لي.',
-            fr: 'Gloire à Toi, ô Allah notre Seigneur, et toute louange. Ô Allah, pardonne-moi.',
-            ur: 'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے بخش دے۔',
-            tr: "Allah'ım Rabbimiz, Seni tesbih eder ve hamd ederim. Allah'ım, beni bağışla.",
-            ms: 'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunkanlah aku.',
-            bn: 'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
+        languages: {
+            en: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation:
+                    'Glory be to You, O Allah our Lord, and all praise. O Allah, forgive me.',
+            },
+            ar: {
+                transliteration:
+                    'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي',
+                translation: 'سبحانك اللهم ربنا وبحمدك، اللهم اغفر لي.',
+            },
+            fr: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation:
+                    'Gloire à Toi, ô Allah notre Seigneur, et toute louange. Ô Allah, pardonne-moi.',
+            },
+            ur: {
+                transliteration:
+                    'سُبحَانَکَ اللّٰہُمَّ رَبَّنَا وَبِحَمدِک، اَللّٰہُمَّ اغفِر لِی',
+                translation:
+                    'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے بخش دے۔',
+            },
+            tr: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation:
+                    "Allah'ım Rabbimiz, Seni tesbih eder ve hamd ederim. Allah'ım, beni bağışla.",
+            },
+            ms: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation:
+                    'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunkanlah aku.',
+            },
+            bn: {
+                transliteration:
+                    'সুবহানাকাল্লাহুম্মা রাব্বানা ওয়াবিহামদিকা, আল্লাহুম্মাগফির লী',
+                translation:
+                    'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
+            },
         },
         references: [
             {
@@ -176,15 +301,47 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 6,
         label: 'Subhana dhil-Jabarut (Sajdah)',
         arabic: 'سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ',
-        transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
-        translations: {
-            en: 'Glory be to the One Who possesses all power, all sovereignty, all greatness and all magnificence.',
-            ar: 'سبحان ذي الجبروت والملكوت والكبرياء والعظمة.',
-            fr: 'Gloire à Celui qui possède toute puissance, toute souveraineté, toute grandeur et toute magnificence.',
-            ur: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
-            tr: "Tüm güce, egemenliğe, büyüklüğe ve azamete sahip Olan'ı tesbih ederim.",
-            ms: 'Maha Suci Tuhan yang memiliki kekuasaan, pemerintahan, keagungan dan kebesaran.',
-            bn: 'তিনি পবিত্র যিনি সকল শক্তি, সকল কর্তৃত্ব, সকল শ্রেষ্ঠত্ব ও সকল মহিমার অধিকারী।',
+        languages: {
+            en: {
+                transliteration:
+                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation:
+                    'Glory be to the One Who possesses all power, all sovereignty, all greatness and all magnificence.',
+            },
+            ar: {
+                transliteration:
+                    'سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ',
+                translation: 'سبحان ذي الجبروت والملكوت والكبرياء والعظمة.',
+            },
+            fr: {
+                transliteration:
+                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation:
+                    'Gloire à Celui qui possède toute puissance, toute souveraineté, toute grandeur et toute magnificence.',
+            },
+            ur: {
+                transliteration:
+                    'سُبحَانَ ذِی الجَبَرُوتِ وَالمَلَکُوتِ وَالکِبرِیَاءِ وَالعَظَمَہ',
+                translation: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
+            },
+            tr: {
+                transliteration:
+                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation:
+                    "Tüm güce, egemenliğe, büyüklüğe ve azamete sahip Olan'ı tesbih ederim.",
+            },
+            ms: {
+                transliteration:
+                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation:
+                    'Maha Suci Tuhan yang memiliki kekuasaan, pemerintahan, keagungan dan kebesaran.',
+            },
+            bn: {
+                transliteration:
+                    'সুবহানা যিল জাবারূতি ওয়াল মালাকূতি ওয়াল কিবরিয়াই ওয়াল আযামাহ',
+                translation:
+                    'তিনি পবিত্র যিনি সকল শক্তি, সকল কর্তৃত্ব, সকল শ্রেষ্ঠত্ব ও সকল মহিমার অধিকারী।',
+            },
         },
         references: [
             {
@@ -208,16 +365,49 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 7,
         label: 'Allahumma ighfir li dhanbi kullahu',
         arabic: 'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ',
-        transliteration:
-            "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
-        translations: {
-            en: 'O Allah, forgive me all of my sins — the small and the great, the first and the last, the open and the secret.',
-            ar: 'اللهم اغفر لي ذنبي كله، دقه وجله، وأوله وآخره، وعلانيته وسره.',
-            fr: 'O Allah, pardonne-moi tous mes péchés — les petits et les grands, les premiers et les derniers, les publics et les secrets.',
-            ur: 'اے اللہ! میرے سارے گناہ بخش دے — چھوٹے اور بڑے، پہلے اور آخری، علانیہ اور پوشیدہ۔',
-            tr: "Allah'ım, tüm günahlarımı bağışla — küçüğünü ve büyüğünü, ilkini ve sonuncusunu, açığını ve gizlisini.",
-            ms: 'Ya Allah, ampunkanlah semua dosaku — yang kecil dan yang besar, yang pertama dan yang terakhir, yang terang dan yang tersembunyi.',
-            bn: 'হে আল্লাহ! আমার সব পাপ ক্ষমা করো — ছোট ও বড়, প্রথম ও শেষ, প্রকাশ্য ও গোপন।',
+        languages: {
+            en: {
+                transliteration:
+                    "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
+                translation:
+                    'O Allah, forgive me all of my sins — the small and the great, the first and the last, the open and the secret.',
+            },
+            ar: {
+                transliteration:
+                    'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ',
+                translation:
+                    'اللهم اغفر لي ذنبي كله، دقه وجله، وأوله وآخره، وعلانيته وسره.',
+            },
+            fr: {
+                transliteration:
+                    "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
+                translation:
+                    'O Allah, pardonne-moi tous mes péchés — les petits et les grands, les premiers et les derniers, les publics et les secrets.',
+            },
+            ur: {
+                transliteration:
+                    'اَللّٰہُمَّ اغفِر لِی ذَنبِی کُلَّہ، دِقَّہُ وَجِلَّہ، وَاَوَّلَہُ وَاٰخِرَہ، وَعَلَانِیَتَہُ وَسِرَّہ',
+                translation:
+                    'اے اللہ! میرے سارے گناہ بخش دے — چھوٹے اور بڑے، پہلے اور آخری، علانیہ اور پوشیدہ۔',
+            },
+            tr: {
+                transliteration:
+                    "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
+                translation:
+                    "Allah'ım, tüm günahlarımı bağışla — küçüğünü ve büyüğünü, ilkini ve sonuncusunu, açığını ve gizlisini.",
+            },
+            ms: {
+                transliteration:
+                    "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
+                translation:
+                    'Ya Allah, ampunkanlah semua dosaku — yang kecil dan yang besar, yang pertama dan yang terakhir, yang terang dan yang tersembunyi.',
+            },
+            bn: {
+                transliteration:
+                    'আল্লাহুম্মাগফির লী যানবী কুল্লাহু, দিক্কাহু ওয়া জিল্লাহু, ওয়া আওয়্যালাহু ওয়া আখিরাহ, ওয়া আলানিয়াতাহু ওয়া সিররাহ',
+                translation:
+                    'হে আল্লাহ! আমার সব পাপ ক্ষমা করো — ছোট ও বড়, প্রথম ও শেষ, প্রকাশ্য ও গোপন।',
+            },
         },
         references: [
             {
@@ -241,16 +431,49 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 8,
         label: "A'udhu birdaka min sakhatika",
         arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ',
-        transliteration:
-            "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
-        translations: {
-            en: 'O Allah, I seek refuge in Your pleasure from Your wrath, and in Your forgiveness from Your punishment. I seek refuge in You from You. I cannot enumerate Your praise — You are as You have praised Yourself.',
-            ar: 'اللهم إني أعوذ برضاك من سخطك، وبمعافاتك من عقوبتك، وأعوذ بك منك، لا أحصي ثناءً عليك، أنت كما أثنيت على نفسك.',
-            fr: "O Allah, je cherche refuge dans Ta satisfaction contre Ta colère, et dans Ton pardon contre Ton châtiment. Je cherche refuge en Toi contre Toi. Je ne peux dénombrer Tes louanges — Tu es tel que Tu T'es Toi-même loué.",
-            ur: 'اے اللہ! میں تیری رضا کے ذریعے تیرے غضب سے، اور تیری معافی کے ذریعے تیری سزا سے پناہ مانگتا ہوں۔ میں تجھ سے تیری پناہ مانگتا ہوں۔ میں تیری تعریف گن نہیں سکتا — تو ویسا ہی ہے جیسا تو نے خود اپنی تعریف کی۔',
-            tr: "Allah'ım, gazabından rızana, cezandan affına sığınırım. Senden Sana sığınırım. Seni layıkıyla övemem — Sen, Kendini övdüğün gibisin.",
-            ms: 'Ya Allah, aku berlindung dengan keredhaan-Mu daripada kemurkaan-Mu, dan dengan kemaafan-Mu daripada azab-Mu. Aku berlindung kepada-Mu daripada-Mu. Aku tidak dapat menghitung pujian kepada-Mu — Engkau sebagaimana Engkau memuji diri-Mu sendiri.',
-            bn: 'হে আল্লাহ! আমি তোমার সন্তুষ্টির মাধ্যমে তোমার ক্রোধ থেকে, এবং তোমার ক্ষমার মাধ্যমে তোমার শাস্তি থেকে আশ্রয় চাই। আমি তোমার কাছ থেকে তোমার আশ্রয় চাই। আমি তোমার প্রশংসা গণনা করতে পারি না — তুমি সেইরকম যেমন তুমি নিজের প্রশংসা করেছ।',
+        languages: {
+            en: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
+                translation:
+                    "O Allah, I seek refuge in Your pleasure from Your wrath, and in Your forgiveness from Your punishment. I seek refuge in You from You. I cannot enumerate Your praise — You are as You have praised Yourself.",
+            },
+            ar: {
+                transliteration:
+                    'اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ',
+                translation:
+                    'اللهم إني أعوذ برضاك من سخطك، وبمعافاتك من عقوبتك، وأعوذ بك منك، لا أحصي ثناءً عليك، أنت كما أثنيت على نفسك.',
+            },
+            fr: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
+                translation:
+                    "O Allah, je cherche refuge dans Ta satisfaction contre Ta colère, et dans Ton pardon contre Ton châtiment. Je cherche refuge en Toi contre Toi. Je ne peux dénombrer Tes louanges — Tu es tel que Tu T'es Toi-même loué.",
+            },
+            ur: {
+                transliteration:
+                    'اَللّٰہُمَّ اِنِّی اَعُوذُ بِرِضَاکَ مِن سَخَطِک، وَبِمُعَافَاتِکَ مِن عُقُوبَتِک، وَاَعُوذُ بِکَ مِنک، لَا اُحصِی ثَنَاءً عَلَیک، اَنتَ کَمَا اَثنَیتَ عَلٰی نَفسِک',
+                translation:
+                    'اے اللہ! میں تیری رضا کے ذریعے تیرے غضب سے، اور تیری معافی کے ذریعے تیری سزا سے پناہ مانگتا ہوں۔ میں تجھ سے تیری پناہ مانگتا ہوں۔ میں تیری تعریف گن نہیں سکتا — تو ویسا ہی ہے جیسا تو نے خود اپنی تعریف کی۔',
+            },
+            tr: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
+                translation:
+                    "Allah'ım, gazabından rızana, cezandan affına sığınırım. Senden Sana sığınırım. Seni layıkıyla övemem — Sen, Kendini övdüğün gibisin.",
+            },
+            ms: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
+                translation:
+                    'Ya Allah, aku berlindung dengan keredhaan-Mu daripada kemurkaan-Mu, dan dengan kemaafan-Mu daripada azab-Mu. Aku berlindung kepada-Mu daripada-Mu. Aku tidak dapat menghitung pujian kepada-Mu — Engkau sebagaimana Engkau memuji diri-Mu sendiri.',
+            },
+            bn: {
+                transliteration:
+                    'আল্লাহুম্মা ইন্নী আউযু বিরিদাকা মিন সাখাতিক, ওয়া বিমুআফাতিকা মিন উকূবাতিক, ওয়া আউযু বিকা মিনক, লা উহসী সানাআন আলাইক, আনতা কামা আসনাইতা আলা নাফসিক',
+                translation:
+                    'হে আল্লাহ! আমি তোমার সন্তুষ্টির মাধ্যমে তোমার ক্রোধ থেকে, এবং তোমার ক্ষমার মাধ্যমে তোমার শাস্তি থেকে আশ্রয় চাই। আমি তোমার কাছ থেকে তোমার আশ্রয় চাই। আমি তোমার প্রশংসা গণনা করতে পারি না — তুমি সেইরকম যেমন তুমি নিজের প্রশংসা করেছ।',
+            },
         },
         references: [
             {
@@ -274,16 +497,49 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 9,
         label: 'Allahumma laka sajadtu',
         arabic: 'اللَّهُمَّ لَكَ سَجَدْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ',
-        transliteration:
-            "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
-        translations: {
-            en: 'O Allah, to You I prostrate, in You I believe, to You I submit. My face prostrates before the One Who created it and shaped it, and Who opened its hearing and sight. Blessed is Allah, the Best of creators.',
-            ar: 'اللهم لك سجدت، وبك آمنت، ولك أسلمت... تبارك الله أحسن الخالقين.',
-            fr: "O Allah, c'est pour Toi que je me prosterne, en Toi je crois, à Toi je me soumets... Béni soit Allah, le Meilleur des créateurs.",
-            ur: 'اے اللہ! میں نے تیرے لیے سجدہ کیا، تجھ پر ایمان لایا، تیرے آگے سر تسلیم خم کیا... بابرکت ہے اللہ جو سب سے بہتر خالق ہے۔',
-            tr: "Allah'ım, Senin için secdeye vardım, Sana iman ettim, Sana teslim oldum... Yaratıcıların en güzeli olan Allah ne mübarektir.",
-            ms: 'Ya Allah, kerana-Mulah aku sujud, kepada-Mulah aku beriman, kepada-Mu aku berserah... Maha Berkat Allah, sebaik-baik Pencipta.',
-            bn: 'হে আল্লাহ! তোমার জন্যই আমি সেজদা করেছি, তোমার উপর ঈমান এনেছি, তোমার কাছে আত্মসমর্পণ করেছি। আমার মুখ সেজদা করেছে সেই সত্তার সামনে যিনি এটি সৃষ্টি করেছেন ও রূপ দিয়েছেন... বরকতময় আল্লাহ, সর্বোত্তম স্রষ্টা।',
+        languages: {
+            en: {
+                transliteration:
+                    "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
+                translation:
+                    'O Allah, to You I prostrate, in You I believe, to You I submit. My face prostrates before the One Who created it and shaped it, and Who opened its hearing and sight. Blessed is Allah, the Best of creators.',
+            },
+            ar: {
+                transliteration:
+                    'اللَّهُمَّ لَكَ سَجَدْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ',
+                translation:
+                    'اللهم لك سجدت، وبك آمنت، ولك أسلمت... تبارك الله أحسن الخالقين.',
+            },
+            fr: {
+                transliteration:
+                    "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
+                translation:
+                    "O Allah, c'est pour Toi que je me prosterne, en Toi je crois, à Toi je me soumets... Béni soit Allah, le Meilleur des créateurs.",
+            },
+            ur: {
+                transliteration:
+                    'اَللّٰہُمَّ لَکَ سَجَدتُ، وَبِکَ اٰمَنتُ، وَلَکَ اَسلَمتُ، سَجَدَ وَجہِیَ لِلَّذِی خَلَقَہُ وَصَوَّرَہُ وَشَقَّ سَمعَہُ وَبَصَرَہ، تَبَارَکَ اللّٰہُ اَحسَنُ الخَالِقِین',
+                translation:
+                    'اے اللہ! میں نے تیرے لیے سجدہ کیا، تجھ پر ایمان لایا، تیرے آگے سر تسلیم خم کیا... بابرکت ہے اللہ جو سب سے بہتر خالق ہے۔',
+            },
+            tr: {
+                transliteration:
+                    "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
+                translation:
+                    "Allah'ım, Senin için secdeye vardım, Sana iman ettim, Sana teslim oldum... Yaratıcıların en güzeli olan Allah ne mübarektir.",
+            },
+            ms: {
+                transliteration:
+                    "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
+                translation:
+                    'Ya Allah, kerana-Mulah aku sujud, kepada-Mulah aku beriman, kepada-Mu aku berserah... Maha Berkat Allah, sebaik-baik Pencipta.',
+            },
+            bn: {
+                transliteration:
+                    'আল্লাহুম্মা লাকা সাজাদতু, ওয়া বিকা আমানতু, ওয়া লাকা আসলামতু, সাজাদা ওয়াজহিয়া লিল্লাযী খালাকাহু ওয়া সাওয়্যারাহু ওয়া শাক্কা সামআহু ওয়া বাসারাহ, তাবারাকাল্লাহু আহসানুল খালিকীন',
+                translation:
+                    'হে আল্লাহ! তোমার জন্যই আমি সেজদা করেছি, তোমার উপর ঈমান এনেছি, তোমার কাছে আত্মসমর্পণ করেছি। আমার মুখ সেজদা করেছে সেই সত্তার সামনে যিনি এটি সৃষ্টি করেছেন ও রূপ দিয়েছেন... বরকতময় আল্লাহ, সর্বোত্তম স্রষ্টা।',
+            },
         },
         references: [
             {
@@ -315,16 +571,49 @@ export const sajdahDuas: DuaVariation[] = [
         variationIndex: 10,
         label: "Allahumma ij'al fi qalbi nuran",
         arabic: 'اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًا، وَفِي سَمْعِي نُورًا، وَفِي بَصَرِي نُورًا، وَعَنْ يَمِينِي نُورًا، وَعَنْ يَسَارِي نُورًا، وَأَمَامِي نُورًا، وَخَلْفِي نُورًا، وَفَوْقِي نُورًا، وَتَحْتِي نُورًا، وَاجْعَلْ لِي نُورًا',
-        transliteration:
-            "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
-        translations: {
-            en: 'O Allah, place light in my heart, light in my hearing, light in my sight, light on my right, light on my left, light in front of me, light behind me, light above me, light below me, and grant me light.',
-            ar: 'اللهم اجعل في قلبي نوراً، وفي سمعي نوراً، وفي بصري نوراً... واجعل لي نوراً.',
-            fr: 'O Allah, mets de la lumière dans mon cœur, de la lumière dans mon ouïe, de la lumière dans ma vue, de la lumière à ma droite, à ma gauche, devant moi, derrière moi, au-dessus et en dessous de moi — accorde-moi de la lumière.',
-            ur: 'اے اللہ! میرے دل میں نور ڈال، سماعت میں نور، بصارت میں نور، دائیں طرف نور، بائیں طرف نور، آگے نور، پیچھے نور، اوپر نور، نیچے نور — اور مجھے نور عطا فرما۔',
-            tr: "Allah'ım, kalbime nur, kulağıma nur, gözüme nur, sağıma nur, soluma nur, önüme nur, arkama nur, üstüme nur, altıma nur koy — ve bana nur ihsan et.",
-            ms: 'Ya Allah, letakkanlah cahaya di hatiku, cahaya pada pendengaranku, cahaya pada penglihatanku, cahaya di sebelah kananku, kiri, depan, belakang, atas dan bawahku — dan kurniakanlah cahaya kepadaku.',
-            bn: 'হে আল্লাহ! আমার হৃদয়ে নূর রাখো, শ্রবণে নূর, দৃষ্টিতে নূর, আমার ডানে নূর, বামে নূর, সামনে নূর, পেছনে নূর, উপরে নূর, নিচে নূর — এবং আমাকে নূর দান করো।',
+        languages: {
+            en: {
+                transliteration:
+                    "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
+                translation:
+                    'O Allah, place light in my heart, light in my hearing, light in my sight, light on my right, light on my left, light in front of me, light behind me, light above me, light below me, and grant me light.',
+            },
+            ar: {
+                transliteration:
+                    'اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًا، وَفِي سَمْعِي نُورًا، وَفِي بَصَرِي نُورًا، وَعَنْ يَمِينِي نُورًا، وَعَنْ يَسَارِي نُورًا، وَأَمَامِي نُورًا، وَخَلْفِي نُورًا، وَفَوْقِي نُورًا، وَتَحْتِي نُورًا، وَاجْعَلْ لِي نُورًا',
+                translation:
+                    'اللهم اجعل في قلبي نوراً، وفي سمعي نوراً، وفي بصري نوراً... واجعل لي نوراً.',
+            },
+            fr: {
+                transliteration:
+                    "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
+                translation:
+                    'O Allah, mets de la lumière dans mon cœur, de la lumière dans mon ouïe, de la lumière dans ma vue, de la lumière à ma droite, à ma gauche, devant moi, derrière moi, au-dessus et en dessous de moi — accorde-moi de la lumière.',
+            },
+            ur: {
+                transliteration:
+                    'اَللّٰہُمَّ اجعَل فِی قَلبِی نُورًا، وَفِی سَمعِی نُورًا، وَفِی بَصَرِی نُورًا، وَعَن یَمِینِی نُورًا، وَعَن یَسَارِی نُورًا، وَاَمَامِی نُورًا، وَخَلفِی نُورًا، وَفَوقِی نُورًا، وَتَحتِی نُورًا، وَاجعَل لِی نُورًا',
+                translation:
+                    'اے اللہ! میرے دل میں نور ڈال، سماعت میں نور، بصارت میں نور، دائیں طرف نور، بائیں طرف نور، آگے نور، پیچھے نور، اوپر نور، نیچے نور — اور مجھے نور عطا فرما۔',
+            },
+            tr: {
+                transliteration:
+                    "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
+                translation:
+                    "Allah'ım, kalbime nur, kulağıma nur, gözüme nur, sağıma nur, soluma nur, önüme nur, arkama nur, üstüme nur, altıma nur koy — ve bana nur ihsan et.",
+            },
+            ms: {
+                transliteration:
+                    "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
+                translation:
+                    'Ya Allah, letakkanlah cahaya di hatiku, cahaya pada pendengaranku, cahaya pada penglihatanku, cahaya di sebelah kananku, kiri, depan, belakang, atas dan bawahku — dan kurniakanlah cahaya kepadaku.',
+            },
+            bn: {
+                transliteration:
+                    'আল্লাহুম্মাজআল ফী কালবী নূরা, ওয়া ফী সামঈ নূরা, ওয়া ফী বাসারী নূরা, ওয়া আন ইয়ামীনী নূরা, ওয়া আন ইয়াসারী নূরা, ওয়া আমামী নূরা, ওয়া খালফী নূরা, ওয়া ফাওকী নূরা, ওয়া তাহতী নূরা, ওয়াজআল লী নূরা',
+                translation:
+                    'হে আল্লাহ! আমার হৃদয়ে নূর রাখো, শ্রবণে নূর, দৃষ্টিতে নূর, আমার ডানে নূর, বামে নূর, সামনে নূর, পেছনে নূর, উপরে নূর, নিচে নূর — এবং আমাকে নূর দান করো।',
+            },
         },
         references: [
             {

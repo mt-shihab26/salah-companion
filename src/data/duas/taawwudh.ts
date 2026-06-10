@@ -7,16 +7,49 @@ export const taawwudhDuas: DuaVariation[] = [
         variationIndex: 1,
         label: "Seeking Refuge (Ta'awwudh)",
         arabic: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ',
-        transliteration:
-            "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
-        translations: {
-            en: 'I seek refuge in Allah from the accursed devil — from his incitement to madness (hamz), his puffing up with pride (nafkh), and his blowing of evil poetry (nafth).',
-            ar: 'أعوذ بالله من الشيطان الرجيم، من همزه ونفخه ونفثه.',
-            fr: "Je cherche refuge auprès d'Allah contre le diable maudit — contre ses provocations à la folie, son orgueil et sa poésie maléfique.",
-            ur: 'میں شیطان مردود سے اللہ کی پناہ مانگتا ہوں — اس کے وسوسوں، تکبر اور بری شاعری سے۔',
-            tr: "Kovulmuş şeytanın vesvesesinden, kibrinden ve kötü şiirinden Allah'a sığınırım.",
-            ms: 'Aku berlindung dengan Allah daripada syaitan yang direjam — daripada godaannya, kesombongannya dan tiupan jahatnya.',
-            bn: 'আমি বিতাড়িত শয়তান থেকে আল্লাহর আশ্রয় চাই — তার কুমন্ত্রণা, অহংকার এবং মন্দ অনুপ্রেরণা থেকে।',
+        languages: {
+            en: {
+                transliteration:
+                    "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+                translation:
+                    'I seek refuge in Allah from the accursed devil — from his incitement to madness (hamz), his puffing up with pride (nafkh), and his blowing of evil poetry (nafth).',
+            },
+            ar: {
+                transliteration:
+                    'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ',
+                translation:
+                    'أعوذ بالله من الشيطان الرجيم، من همزه ونفخه ونفثه.',
+            },
+            fr: {
+                transliteration:
+                    "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+                translation:
+                    "Je cherche refuge auprès d'Allah contre le diable maudit — contre ses provocations à la folie, son orgueil et sa poésie maléfique.",
+            },
+            ur: {
+                transliteration:
+                    'اَعُوذُ بِاللّٰہِ مِنَ الشَّیطَانِ الرَّجِیم، مِن ہَمزِہِ وَنَفخِہِ وَنَفثِہ',
+                translation:
+                    'میں شیطان مردود سے اللہ کی پناہ مانگتا ہوں — اس کے وسوسوں، تکبر اور بری شاعری سے۔',
+            },
+            tr: {
+                transliteration:
+                    "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+                translation:
+                    "Kovulmuş şeytanın vesvesesinden, kibrinden ve kötü şiirinden Allah'a sığınırım.",
+            },
+            ms: {
+                transliteration:
+                    "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+                translation:
+                    'Aku berlindung dengan Allah daripada syaitan yang direjam — daripada godaannya, kesombongannya dan tiupan jahatnya.',
+            },
+            bn: {
+                transliteration:
+                    'আউযু বিল্লাহি মিনাশ শাইতানির রাজীম, মিন হামযিহি ওয়া নাফখিহি ওয়া নাফসিহ',
+                translation:
+                    'আমি বিতাড়িত শয়তান থেকে আল্লাহর আশ্রয় চাই — তার কুমন্ত্রণা, অহংকার এবং মন্দ অনুপ্রেরণা থেকে।',
+            },
         },
         references: [
             {

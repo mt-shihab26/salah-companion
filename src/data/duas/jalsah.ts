@@ -7,15 +7,35 @@ export const jalsahDuas: DuaVariation[] = [
         variationIndex: 1,
         label: 'Rabbi ighfir li',
         arabic: 'رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي',
-        transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
-        translations: {
-            en: 'My Lord, forgive me. My Lord, forgive me.',
-            ar: 'رب اغفر لي، رب اغفر لي.',
-            fr: 'Mon Seigneur, pardonne-moi. Mon Seigneur, pardonne-moi.',
-            ur: 'اے میرے رب! مجھے بخش دے۔ اے میرے رب! مجھے بخش دے۔',
-            tr: 'Rabbim, beni bağışla. Rabbim, beni bağışla.',
-            ms: 'Tuhanku, ampunkanlah aku. Tuhanku, ampunkanlah aku.',
-            bn: 'হে আমার রব! আমাকে ক্ষমা করো। হে আমার রব! আমাকে ক্ষমা করো।',
+        languages: {
+            en: {
+                transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
+                translation: 'My Lord, forgive me. My Lord, forgive me.',
+            },
+            ar: {
+                transliteration: 'رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي',
+                translation: 'رب اغفر لي، رب اغفر لي.',
+            },
+            fr: {
+                transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
+                translation: 'Mon Seigneur, pardonne-moi. Mon Seigneur, pardonne-moi.',
+            },
+            ur: {
+                transliteration: 'رَبِّ اغفِر لِی، رَبِّ اغفِر لِی',
+                translation: 'اے میرے رب! مجھے بخش دے۔ اے میرے رب! مجھے بخش دے۔',
+            },
+            tr: {
+                transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
+                translation: 'Rabbim, beni bağışla. Rabbim, beni bağışla.',
+            },
+            ms: {
+                transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
+                translation: 'Tuhanku, ampunkanlah aku. Tuhanku, ampunkanlah aku.',
+            },
+            bn: {
+                transliteration: 'রাব্বিগফির লী, রাব্বিগফির লী',
+                translation: 'হে আমার রব! আমাকে ক্ষমা করো। হে আমার রব! আমাকে ক্ষমা করো।',
+            },
         },
         references: [
             {

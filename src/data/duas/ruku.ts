@@ -8,15 +8,35 @@ export const rukuDuas: DuaVariation[] = [
         variationIndex: 1,
         label: 'Subhana Rabbi al-Azim',
         arabic: 'سُبْحَانَ رَبِّيَ الْعَظِيمِ',
-        transliteration: "Subḥāna Rabbiy al-'Aẓīm",
-        translations: {
-            en: 'Glory be to my Lord, the Most Great.',
-            ar: 'سبحان ربي العظيم.',
-            fr: 'Gloire à mon Seigneur, le Plus Grand.',
-            ur: 'پاک ہے میرا رب، سب سے بڑا۔',
-            tr: 'Büyük Rabbimi tesbih ederim.',
-            ms: 'Maha Suci Tuhanku Yang Maha Agung.',
-            bn: 'আমার রব সর্বমহান, তাঁর পবিত্রতা বর্ণনা করি।',
+        languages: {
+            en: {
+                transliteration: "Subḥāna Rabbiy al-'Aẓīm",
+                translation: 'Glory be to my Lord, the Most Great.',
+            },
+            ar: {
+                transliteration: 'سُبْحَانَ رَبِّيَ الْعَظِيمِ',
+                translation: 'سبحان ربي العظيم.',
+            },
+            fr: {
+                transliteration: "Subḥāna Rabbiy al-'Aẓīm",
+                translation: 'Gloire à mon Seigneur, le Plus Grand.',
+            },
+            ur: {
+                transliteration: 'سُبحَانَ رَبِّیَ العَظِیم',
+                translation: 'پاک ہے میرا رب، سب سے بڑا۔',
+            },
+            tr: {
+                transliteration: "Subḥāna Rabbiy al-'Aẓīm",
+                translation: 'Büyük Rabbimi tesbih ederim.',
+            },
+            ms: {
+                transliteration: "Subḥāna Rabbiy al-'Aẓīm",
+                translation: 'Maha Suci Tuhanku Yang Maha Agung.',
+            },
+            bn: {
+                transliteration: 'সুবহানা রাব্বিয়াল আযীম',
+                translation: 'আমার রব সর্বমহান, তাঁর পবিত্রতা বর্ণনা করি।',
+            },
         },
         references: [
             {
@@ -48,15 +68,39 @@ export const rukuDuas: DuaVariation[] = [
         variationIndex: 2,
         label: 'Subbuhun Quddus (Ruku)',
         arabic: 'سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ',
-        transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-        translations: {
-            en: 'Most Glorified, Most Holy, Lord of the angels and the Spirit (Jibreel).',
-            ar: 'سبوح قدوس رب الملائكة والروح.',
-            fr: "Très Glorifié, Très Saint, Seigneur des anges et de l'Esprit (Jibreel).",
-            ur: 'نہایت پاک، نہایت مقدس، فرشتوں اور روح (جبریل) کا رب۔',
-            tr: "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un (Cebrail'in) Rabbi.",
-            ms: 'Maha Suci, Maha Kudus, Tuhan para malaikat dan Roh (Jibril).',
-            bn: 'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহ (জিবরাঈল)-এর রব।',
+        languages: {
+            en: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation:
+                    'Most Glorified, Most Holy, Lord of the angels and the Spirit (Jibreel).',
+            },
+            ar: {
+                transliteration: 'سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ',
+                translation: 'سبوح قدوس رب الملائكة والروح.',
+            },
+            fr: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation:
+                    "Très Glorifié, Très Saint, Seigneur des anges et de l'Esprit (Jibreel).",
+            },
+            ur: {
+                transliteration: 'سُبُّوحٌ قُدُّوسٌ رَبُّ المَلَائِکَۃِ وَالرُّوح',
+                translation: 'نہایت پاک، نہایت مقدس، فرشتوں اور روح (جبریل) کا رب۔',
+            },
+            tr: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation:
+                    "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un (Cebrail'in) Rabbi.",
+            },
+            ms: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Maha Suci, Maha Kudus, Tuhan para malaikat dan Roh (Jibril).',
+            },
+            bn: {
+                transliteration: 'সুব্বুহুন কুদ্দুস, রাব্বুল মালাইকাতি ওয়াররূহ',
+                translation:
+                    'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহ (জিবরাঈল)-এর রব।',
+            },
         },
         references: [
             {
@@ -80,15 +124,39 @@ export const rukuDuas: DuaVariation[] = [
         variationIndex: 3,
         label: 'Subhanaka wa bihamdika (Ruku)',
         arabic: 'سُبْحَانَكَ وَبِحَمْدِكَ لَا إِلَهَ إِلَّا أَنْتَ',
-        transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-        translations: {
-            en: 'Glory be to You and all praise. There is no god worthy of worship except You.',
-            ar: 'سبحانك وبحمدك لا إله إلا أنت.',
-            fr: "Gloire à Toi et toute louange T'appartient. Il n'y a pas de dieu digne d'adoration excepté Toi.",
-            ur: 'تو پاک ہے اور تیری حمد ہے، تیرے سوا کوئی معبود نہیں۔',
-            tr: 'Seni tesbih eder ve hamd ederim. Senden başka ilah yoktur.',
-            ms: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
-            bn: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
+        languages: {
+            en: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation:
+                    'Glory be to You and all praise. There is no god worthy of worship except You.',
+            },
+            ar: {
+                transliteration: 'سُبْحَانَكَ وَبِحَمْدِكَ لَا إِلَهَ إِلَّا أَنْتَ',
+                translation: 'سبحانك وبحمدك لا إله إلا أنت.',
+            },
+            fr: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation:
+                    "Gloire à Toi et toute louange T'appartient. Il n'y a pas de dieu digne d'adoration excepté Toi.",
+            },
+            ur: {
+                transliteration: 'سُبحَانَکَ وَبِحَمدِکَ لَا اِلٰہَ اِلَّا اَنت',
+                translation: 'تو پاک ہے اور تیری حمد ہے، تیرے سوا کوئی معبود نہیں۔',
+            },
+            tr: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Seni tesbih eder ve hamd ederim. Senden başka ilah yoktur.',
+            },
+            ms: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation:
+                    'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            },
+            bn: {
+                transliteration: 'সুবহানাকা ওয়া বিহামদিকা লা ইলাহা ইল্লা আনত',
+                translation:
+                    'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
+            },
         },
         references: [
             {
@@ -112,15 +180,43 @@ export const rukuDuas: DuaVariation[] = [
         variationIndex: 4,
         label: 'Subhanaka Allahumma Rabbana (Ruku)',
         arabic: 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي',
-        transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
-        translations: {
-            en: 'Glory be to You, O Allah our Lord, and all praise. O Allah, forgive me.',
-            ar: 'سبحانك اللهم ربنا وبحمدك، اللهم اغفر لي.',
-            fr: 'Gloire à Toi, ô Allah notre Seigneur, et toute louange. Ô Allah, pardonne-moi.',
-            ur: 'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے معاف فرما۔',
-            tr: "Allah'ım Rabbimiz, Seni tesbih eder ve hamd ederim. Allah'ım, beni bağışla.",
-            ms: 'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunkanlah aku.',
-            bn: 'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
+        languages: {
+            en: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Glory be to You, O Allah our Lord, and all praise. O Allah, forgive me.',
+            },
+            ar: {
+                transliteration:
+                    'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي',
+                translation: 'سبحانك اللهم ربنا وبحمدك، اللهم اغفر لي.',
+            },
+            fr: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation:
+                    'Gloire à Toi, ô Allah notre Seigneur, et toute louange. Ô Allah, pardonne-moi.',
+            },
+            ur: {
+                transliteration:
+                    'سُبحَانَکَ اللّٰہُمَّ رَبَّنَا وَبِحَمدِک، اَللّٰہُمَّ اغفِر لِی',
+                translation:
+                    'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے معاف فرما۔',
+            },
+            tr: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation:
+                    "Allah'ım Rabbimiz, Seni tesbih eder ve hamd ederim. Allah'ım, beni bağışla.",
+            },
+            ms: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation:
+                    'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunkanlah aku.',
+            },
+            bn: {
+                transliteration:
+                    'সুবহানাকাল্লাহুম্মা রাব্বানা ওয়াবিহামদিকা, আল্লাহুম্মাগফির লী',
+                translation:
+                    'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
+            },
         },
         references: [
             {
@@ -152,15 +248,44 @@ export const rukuDuas: DuaVariation[] = [
         variationIndex: 5,
         label: 'Subhanaka wa bihamdika astaghfiruka (Ruku)',
         arabic: 'سُبْحَانَكَ وَبِحَمْدِكَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ',
-        transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
-        translations: {
-            en: 'Glory be to You, and all praise. I seek Your forgiveness and I repent to You.',
-            ar: 'سبحانك وبحمدك، أستغفرك وأتوب إليك.',
-            fr: 'Gloire à Toi et toute louange. Je Te demande pardon et me repens vers Toi.',
-            ur: 'تو پاک ہے اور تیری حمد ہے، میں تجھ سے مغفرت مانگتا ہوں اور تیری طرف توبہ کرتا ہوں۔',
-            tr: 'Seni tesbih eder ve hamd ederim. Senden bağışlanma diler ve Sana tevbe ederim.',
-            ms: 'Maha Suci Engkau dan dengan memuji-Mu. Aku memohon keampunan-Mu dan bertaubat kepada-Mu.',
-            bn: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। আমি তোমার কাছে ক্ষমা চাই এবং তোমার দিকে তাওবা করি।',
+        languages: {
+            en: {
+                transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
+                translation:
+                    'Glory be to You, and all praise. I seek Your forgiveness and I repent to You.',
+            },
+            ar: {
+                transliteration:
+                    'سُبْحَانَكَ وَبِحَمْدِكَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ',
+                translation: 'سبحانك وبحمدك، أستغفرك وأتوب إليك.',
+            },
+            fr: {
+                transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
+                translation:
+                    'Gloire à Toi et toute louange. Je Te demande pardon et me repens vers Toi.',
+            },
+            ur: {
+                transliteration:
+                    'سُبحَانَکَ وَبِحَمدِکَ، اَستَغفِرُکَ وَاَتُوبُ اِلَیک',
+                translation:
+                    'تو پاک ہے اور تیری حمد ہے، میں تجھ سے مغفرت مانگتا ہوں اور تیری طرف توبہ کرتا ہوں۔',
+            },
+            tr: {
+                transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
+                translation:
+                    'Seni tesbih eder ve hamd ederim. Senden bağışlanma diler ve Sana tevbe ederim.',
+            },
+            ms: {
+                transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
+                translation:
+                    'Maha Suci Engkau dan dengan memuji-Mu. Aku memohon keampunan-Mu dan bertaubat kepada-Mu.',
+            },
+            bn: {
+                transliteration:
+                    'সুবহানাকা ওয়া বিহামদিকা, আস্তাগফিরুকা ওয়া আতূবু ইলাইক',
+                translation:
+                    'তুমি পবিত্র এবং তোমার প্রশংসা করি। আমি তোমার কাছে ক্ষমা চাই এবং তোমার দিকে তাওবা করি।',
+            },
         },
         references: [
             {
@@ -184,15 +309,47 @@ export const rukuDuas: DuaVariation[] = [
         variationIndex: 6,
         label: 'Subhana dhil-Jabarut (Ruku)',
         arabic: 'سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ',
-        transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
-        translations: {
-            en: 'Glory be to the One Who possesses all power, all sovereignty, all greatness and all magnificence.',
-            ar: 'سبحان ذي الجبروت والملكوت والكبرياء والعظمة.',
-            fr: 'Gloire à Celui qui possède toute puissance, toute souveraineté, toute grandeur et toute magnificence.',
-            ur: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
-            tr: "Tüm güce, tüm egemenliğe, tüm büyüklüğe ve tüm azamete sahip Olan'ı tesbih ederim.",
-            ms: 'Maha Suci Tuhan yang memiliki segala kekuasaan, pemerintahan, keagungan dan kebesaran.',
-            bn: 'তিনি পবিত্র যিনি সর্বশক্তি, সর্বকর্তৃত্ব, সর্বশ্রেষ্ঠতা ও সর্বমহিমার অধিকারী।',
+        languages: {
+            en: {
+                transliteration:
+                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation:
+                    'Glory be to the One Who possesses all power, all sovereignty, all greatness and all magnificence.',
+            },
+            ar: {
+                transliteration:
+                    'سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ',
+                translation: 'سبحان ذي الجبروت والملكوت والكبرياء والعظمة.',
+            },
+            fr: {
+                transliteration:
+                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation:
+                    'Gloire à Celui qui possède toute puissance, toute souveraineté, toute grandeur et toute magnificence.',
+            },
+            ur: {
+                transliteration:
+                    'سُبحَانَ ذِی الجَبَرُوتِ وَالمَلَکُوتِ وَالکِبرِیَاءِ وَالعَظَمَہ',
+                translation: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
+            },
+            tr: {
+                transliteration:
+                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation:
+                    "Tüm güce, tüm egemenliğe, tüm büyüklüğe ve tüm azamete sahip Olan'ı tesbih ederim.",
+            },
+            ms: {
+                transliteration:
+                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation:
+                    'Maha Suci Tuhan yang memiliki segala kekuasaan, pemerintahan, keagungan dan kebesaran.',
+            },
+            bn: {
+                transliteration:
+                    'সুবহানা যিল জাবারূতি ওয়াল মালাকূতি ওয়াল কিবরিয়াই ওয়াল আযামাহ',
+                translation:
+                    'তিনি পবিত্র যিনি সর্বশক্তি, সর্বকর্তৃত্ব, সর্বশ্রেষ্ঠতা ও সর্বমহিমার অধিকারী।',
+            },
         },
         references: [
             {
@@ -224,16 +381,49 @@ export const rukuDuas: DuaVariation[] = [
         variationIndex: 7,
         label: "Allahumma laka raka'tu",
         arabic: 'اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي',
-        transliteration:
-            "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
-        translations: {
-            en: 'O Allah, for You I have bowed. In You I believe. To You I have submitted. My hearing, my sight, my brain, my bones and my nerves are humbled before You.',
-            ar: 'اللهم لك ركعت، وبك آمنت، ولك أسلمت، خشع لك سمعي وبصري ومخي وعظمي وعصبي.',
-            fr: "O Allah, c'est pour Toi que je me suis incliné. En Toi je crois. À Toi je me suis soumis. Mon ouïe, ma vue, mon cerveau, mes os et mes nerfs sont humiliés devant Toi.",
-            ur: 'اے اللہ! میں نے تیرے لیے رکوع کیا، تجھ پر ایمان لایا، تیرے لیے اسلام لایا، تیرے سامنے میری سماعت، بصارت، دماغ، ہڈیاں اور اعصاب سب جھک گئے۔',
-            tr: "Allah'ım, Senin için rükuya vardım, Sana iman ettim, Sana teslim oldum. Kulağım, gözüm, beynin, kemiklerim ve sinirlerim Sana boyun eğdi.",
-            ms: 'Ya Allah, kerana-Mulah aku ruku. Kepada-Mulah aku beriman. Kepada-Mu aku berserah. Pendengaranku, penglihatanku, otakku, tulangku dan sarafku semuanya khusyuk kepada-Mu.',
-            bn: 'হে আল্লাহ! তোমার জন্যই আমি রুকু করেছি, তোমার উপর ঈমান এনেছি, তোমার কাছে আত্মসমর্পণ করেছি। আমার শ্রবণ, দৃষ্টি, মস্তিষ্ক, হাড় ও স্নায়ু সবকিছু তোমার সামনে বিনম্র।',
+        languages: {
+            en: {
+                transliteration:
+                    "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
+                translation:
+                    'O Allah, for You I have bowed. In You I believe. To You I have submitted. My hearing, my sight, my brain, my bones and my nerves are humbled before You.',
+            },
+            ar: {
+                transliteration:
+                    'اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي',
+                translation:
+                    'اللهم لك ركعت، وبك آمنت، ولك أسلمت، خشع لك سمعي وبصري ومخي وعظمي وعصبي.',
+            },
+            fr: {
+                transliteration:
+                    "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
+                translation:
+                    "O Allah, c'est pour Toi que je me suis incliné. En Toi je crois. À Toi je me suis soumis. Mon ouïe, ma vue, mon cerveau, mes os et mes nerfs sont humiliés devant Toi.",
+            },
+            ur: {
+                transliteration:
+                    'اَللّٰہُمَّ لَکَ رَکَعتُ، وَبِکَ اٰمَنتُ، وَلَکَ اَسلَمتُ، خَشَعَ لَکَ سَمعِی وَبَصَرِی وَمُخِّی وَعَظمِی وَعَصَبِی',
+                translation:
+                    'اے اللہ! میں نے تیرے لیے رکوع کیا، تجھ پر ایمان لایا، تیرے لیے اسلام لایا، تیرے سامنے میری سماعت، بصارت، دماغ، ہڈیاں اور اعصاب سب جھک گئے۔',
+            },
+            tr: {
+                transliteration:
+                    "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
+                translation:
+                    "Allah'ım, Senin için rükuya vardım, Sana iman ettim, Sana teslim oldum. Kulağım, gözüm, beynin, kemiklerim ve sinirlerim Sana boyun eğdi.",
+            },
+            ms: {
+                transliteration:
+                    "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
+                translation:
+                    'Ya Allah, kerana-Mulah aku ruku. Kepada-Mulah aku beriman. Kepada-Mu aku berserah. Pendengaranku, penglihatanku, otakku, tulangku dan sarafku semuanya khusyuk kepada-Mu.',
+            },
+            bn: {
+                transliteration:
+                    'আল্লাহুম্মা লাকা রাকাতু, ওয়া বিকা আমানতু, ওয়া লাকা আসলামতু, খাশাআ লাকা সামঈ ওয়া বাসারী ওয়া মুখখী ওয়া আযমী ওয়া আসাবী',
+                translation:
+                    'হে আল্লাহ! তোমার জন্যই আমি রুকু করেছি, তোমার উপর ঈমান এনেছি, তোমার কাছে আত্মসমর্পণ করেছি। আমার শ্রবণ, দৃষ্টি, মস্তিষ্ক, হাড় ও স্নায়ু সবকিছু তোমার সামনে বিনম্র।',
+            },
         },
         references: [
             {

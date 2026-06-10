@@ -34,7 +34,13 @@ export function DuaCard({ dua, langs, showPosition = false }: Props) {
 
     async function copy() {
         const lang = langs[0] ?? 'en'
-        const text = [dua.arabic, '', dua.transliteration, '', dua.translations[lang]].join('\n')
+        const text = [
+            dua.arabic,
+            '',
+            dua.languages[lang].transliteration,
+            '',
+            dua.languages[lang].translation,
+        ].join('\n')
         try {
             await navigator.clipboard.writeText(text)
             setCopied(true)

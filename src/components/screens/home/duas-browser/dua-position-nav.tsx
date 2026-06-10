@@ -1,21 +1,22 @@
+import type { TSalahPositionId } from '#/data/duas/types'
+
+import { cn } from '#/lib/utils'
+import { useDuasBrowser } from './duas-browser-context'
+
 import { ArabicText } from '#/components/arabic-text'
 import { Button } from '#/components/ui/button'
 import { ScrollArea } from '#/components/ui/scroll-area'
+
 import { SALAH_POSITIONS } from '#/data/duas/positions'
-import type { TSalahPositionId } from '#/data/duas/types'
-import { cn } from '#/lib/utils'
 
-interface Props {
-    activeId: TSalahPositionId | null
-    onSelect: (id: TSalahPositionId) => void
-}
+export const DuaPositionNav = () => {
+    const { activePosition, setActivePosition } = useDuasBrowser()
 
-export function DuaPositionNav({ activeId, onSelect }: Props) {
     return (
         <ScrollArea className="h-full">
             <nav className="flex flex-col gap-1 p-1">
                 {SALAH_POSITIONS.map((pos) => {
-                    const active = pos.id === activeId
+                    const active = pos.id === activePosition
                     return (
                         <Button
                             key={pos.id}
@@ -25,7 +26,7 @@ export function DuaPositionNav({ activeId, onSelect }: Props) {
                                 'h-auto justify-start gap-3 py-2.5 text-left',
                                 active && 'font-semibold',
                             )}
-                            onClick={() => onSelect(pos.id as TSalahPositionId)}
+                            onClick={() => setActivePosition(pos.id as TSalahPositionId)}
                         >
                             <span className="bg-primary text-primary-foreground flex size-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold">
                                 {pos.order}

@@ -2,7 +2,7 @@ import { ArabicText } from '#/components/arabic-text'
 import { Separator } from '#/components/ui/separator'
 import { getPosition } from '#/data/duas/positions'
 import type { TDuaLang, TDuaVariation, TSalahPositionId } from '#/data/duas/types'
-import { DuaCard } from './DuaCard'
+import { DuaCard } from '../../../duas/DuaCard'
 
 interface Props {
     positionId: TSalahPositionId

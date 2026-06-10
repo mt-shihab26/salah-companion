@@ -1,6 +1,6 @@
+import { ArabicText } from '#/components/arabic-text'
 import { Button } from '#/components/ui/button'
 import { ScrollArea } from '#/components/ui/scroll-area'
-import { ArabicText } from '#/components/arabic-text'
 import { SALAH_POSITIONS } from '#/data/duas/positions'
 import type { SalahPositionId } from '#/data/duas/types'
 import { cn } from '#/lib/utils'
@@ -27,7 +27,7 @@ export function DuaPositionNav({ activeId, onSelect }: Props) {
                             )}
                             onClick={() => onSelect(pos.id as SalahPositionId)}
                         >
-                            <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground">
+                            <span className="bg-primary text-primary-foreground flex size-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold">
                                 {pos.order}
                             </span>
                             <span className="flex flex-col items-start">

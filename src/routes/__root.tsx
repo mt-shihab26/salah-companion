@@ -1,10 +1,10 @@
+import { TanStackDevtools } from '@tanstack/react-devtools'
 import { HeadContent, Outlet, Scripts, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanStackDevtools } from '@tanstack/react-devtools'
 
+import { SiteFooter } from '#/components/layout/SiteFooter'
 import { TooltipProvider } from '#/components/ui/tooltip'
 import { AudioProvider } from '#/contexts/AudioContext'
-import { SiteFooter } from '#/components/layout/SiteFooter'
 
 import appCss from '../styles.css?url'
 

@@ -1,12 +1,12 @@
-import { defineConfig } from 'vite'
 import { devtools } from '@tanstack/devtools-vite'
-import { nitro } from 'nitro/vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import { reactCompilerPreset } from '@vitejs/plugin-react'
+import { nitro } from 'nitro/vite'
+import { defineConfig } from 'vite'
 
-import react from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
 import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     resolve: { tsconfigPaths: true },

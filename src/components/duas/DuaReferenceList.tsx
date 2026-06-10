@@ -13,7 +13,7 @@ export function DuaReferenceList({ references }: Props) {
             {references.map((ref, i) => (
                 <li key={i}>
                     {ref.type === 'quran' ? (
-                        <Badge variant="secondary" asChild className="gap-1 cursor-pointer">
+                        <Badge variant="secondary" asChild className="cursor-pointer gap-1">
                             <a href={ref.url} target="_blank" rel="noopener noreferrer">
                                 📖 {ref.surahName} {ref.surah}:{ref.ayah}
                                 {ref.ayahEnd ? `–${ref.ayahEnd}` : ''}
@@ -35,7 +35,7 @@ function HadithBadge({ ref }: { ref: Extract<DuaReference, { type: 'hadith' }> }
         <>
             📜 {label}
             {ref.grade && (
-                <span className="rounded bg-primary/15 px-1 py-px text-[10px] font-semibold text-primary">
+                <span className="bg-primary/15 text-primary rounded px-1 py-px text-[10px] font-semibold">
                     {ref.grade}
                 </span>
             )}
@@ -46,14 +46,14 @@ function HadithBadge({ ref }: { ref: Extract<DuaReference, { type: 'hadith' }> }
         <Badge
             variant="outline"
             asChild
-            className="gap-1.5 cursor-pointer border-primary/20 text-primary"
+            className="border-primary/20 text-primary cursor-pointer gap-1.5"
         >
             <a href={ref.url} target="_blank" rel="noopener noreferrer">
                 {content}
             </a>
         </Badge>
     ) : (
-        <Badge variant="outline" className="gap-1.5 border-primary/20 text-primary">
+        <Badge variant="outline" className="border-primary/20 text-primary gap-1.5">
             {content}
         </Badge>
     )

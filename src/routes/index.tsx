@@ -1,17 +1,9 @@
-import { useState } from 'react'
-import { createFileRoute } from '@tanstack/react-router'
-import {
-    BookOpen,
-    Languages,
-    Volume2,
-    BookMarked,
-    Sparkles,
-    ArrowRight,
-    ChevronDown,
-} from 'lucide-react'
+import { DuaGroupSection } from '#/components/duas/DuaGroupSection'
+import { DuaPositionNav } from '#/components/duas/DuaPositionNav'
+import { DuaTranslationPicker } from '#/components/duas/DuaTranslationPicker'
+import { PageWrap } from '#/components/page-wrap'
 import { Button } from '#/components/ui/button'
 import { Card, CardContent } from '#/components/ui/card'
-import { Separator } from '#/components/ui/separator'
 import {
     Select,
     SelectContent,
@@ -19,14 +11,22 @@ import {
     SelectTrigger,
     SelectValue,
 } from '#/components/ui/select'
-import { PageWrap } from '#/components/page-wrap'
-import { DuaPositionNav } from '#/components/duas/DuaPositionNav'
-import { DuaGroupSection } from '#/components/duas/DuaGroupSection'
-import { DuaTranslationPicker } from '#/components/duas/DuaTranslationPicker'
+import { Separator } from '#/components/ui/separator'
 import { getDuasByPosition } from '#/data/duas/index'
 import { SALAH_POSITIONS } from '#/data/duas/positions'
-import { useDuaLang } from '#/hooks/use-dua-lang'
 import type { SalahPositionId } from '#/data/duas/types'
+import { useDuaLang } from '#/hooks/use-dua-lang'
+import { createFileRoute } from '@tanstack/react-router'
+import {
+    ArrowRight,
+    BookMarked,
+    BookOpen,
+    ChevronDown,
+    Languages,
+    Sparkles,
+    Volume2,
+} from 'lucide-react'
+import { useState } from 'react'
 
 export const Route = createFileRoute('/')({ component: Home })
 
@@ -67,25 +67,25 @@ function Home() {
             <section className="relative overflow-hidden">
                 {/* Gradient orbs */}
                 <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-                    <div className="absolute left-1/2 top-0 size-[480px] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl dark:bg-primary/15" />
-                    <div className="absolute right-[10%] top-32 size-72 rounded-full bg-chart-1/20 blur-3xl dark:bg-chart-1/10" />
-                    <div className="absolute left-[10%] top-40 size-64 rounded-full bg-chart-3/20 blur-3xl dark:bg-chart-3/10" />
+                    <div className="bg-primary/20 dark:bg-primary/15 absolute top-0 left-1/2 size-[480px] -translate-x-1/2 rounded-full blur-3xl" />
+                    <div className="bg-chart-1/20 dark:bg-chart-1/10 absolute top-32 right-[10%] size-72 rounded-full blur-3xl" />
+                    <div className="bg-chart-3/20 dark:bg-chart-3/10 absolute top-40 left-[10%] size-64 rounded-full blur-3xl" />
                 </div>
 
                 <PageWrap className="relative pt-6">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                            <div className="flex size-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/70 shadow-sm">
-                                <BookOpen className="size-4 text-primary-foreground" />
+                            <div className="from-primary to-primary/70 flex size-9 items-center justify-center rounded-xl bg-gradient-to-br shadow-sm">
+                                <BookOpen className="text-primary-foreground size-4" />
                             </div>
-                            <span className="font-serif text-lg font-semibold tracking-tight text-foreground">
+                            <span className="text-foreground font-serif text-lg font-semibold tracking-tight">
                                 Salah Companion
                             </span>
                         </div>
                         <Button
                             size="sm"
                             variant="ghost"
-                            className="hidden gap-1 text-muted-foreground hover:text-foreground sm:inline-flex"
+                            className="text-muted-foreground hover:text-foreground hidden gap-1 sm:inline-flex"
                             onClick={() =>
                                 document
                                     .getElementById('duas-browser')
@@ -98,21 +98,21 @@ function Home() {
                     </div>
                 </PageWrap>
 
-                <PageWrap className="relative mt-12 space-y-8 text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
-                    <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary backdrop-blur">
+                <PageWrap className="animate-in fade-in slide-in-from-bottom-4 relative mt-12 space-y-8 text-center duration-700">
+                    <div className="border-primary/20 bg-primary/5 text-primary inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-medium backdrop-blur">
                         <Sparkles className="size-3.5" />
                         <span>39 duas · 9 positions · 6 languages</span>
                     </div>
 
-                    <h1 className="mx-auto max-w-3xl font-serif text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+                    <h1 className="text-foreground mx-auto max-w-3xl font-serif text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
                         Every dua of the{' '}
-                        <span className="bg-gradient-to-br from-primary via-primary/80 to-chart-4 bg-clip-text text-transparent">
+                        <span className="from-primary via-primary/80 to-chart-4 bg-gradient-to-br bg-clip-text text-transparent">
                             Salah
                         </span>
                         , in one place.
                     </h1>
 
-                    <p className="mx-auto max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+                    <p className="text-muted-foreground mx-auto max-w-xl text-base leading-relaxed sm:text-lg">
                         Arabic text with tashkeel, transliteration, and multiple translations
                         side-by-side — backed by authentic Quranic and hadith references.
                     </p>
@@ -140,20 +140,20 @@ function Home() {
                     {FEATURES.map(({ icon: Icon, title, description }) => (
                         <Card
                             key={title}
-                            className="group relative overflow-hidden border-border/60 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg"
+                            className="group border-border/60 hover:border-primary/30 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                         >
                             <div
                                 aria-hidden
-                                className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/0 transition-colors duration-300 group-hover:from-primary/5 group-hover:to-transparent"
+                                className="from-primary/0 via-primary/0 to-primary/0 group-hover:from-primary/5 absolute inset-0 bg-gradient-to-br transition-colors duration-300 group-hover:to-transparent"
                             />
                             <CardContent className="relative space-y-3 pt-6">
-                                <div className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 ring-1 ring-inset ring-primary/10">
-                                    <Icon className="size-5 text-primary" />
+                                <div className="from-primary/15 to-primary/5 ring-primary/10 flex size-11 items-center justify-center rounded-xl bg-gradient-to-br ring-1 ring-inset">
+                                    <Icon className="text-primary size-5" />
                                 </div>
-                                <h3 className="font-serif text-base font-semibold text-foreground">
+                                <h3 className="text-foreground font-serif text-base font-semibold">
                                     {title}
                                 </h3>
-                                <p className="text-sm leading-relaxed text-muted-foreground">
+                                <p className="text-muted-foreground text-sm leading-relaxed">
                                     {description}
                                 </p>
                             </CardContent>
@@ -163,22 +163,22 @@ function Home() {
             </PageWrap>
 
             {/* ── Duas browser ────────────────────────────── */}
-            <PageWrap id="duas-browser" className="space-y-6 scroll-mt-6">
+            <PageWrap id="duas-browser" className="scroll-mt-6 space-y-6">
                 <div className="space-y-2">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                    <span className="text-primary text-xs font-semibold tracking-wider uppercase">
                         Browse
                     </span>
-                    <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">
+                    <h2 className="text-foreground font-serif text-3xl font-bold sm:text-4xl">
                         Duas in Salah
                     </h2>
-                    <p className="max-w-2xl text-sm text-muted-foreground">
+                    <p className="text-muted-foreground max-w-2xl text-sm">
                         Select a position in the prayer to read its supplications, with translations
                         of your choice rendered alongside the Arabic.
                     </p>
                 </div>
 
                 {/* Sticky toolbar */}
-                <div className="sticky top-0 z-20 -mx-4 border-y border-border/60 bg-background/80 px-4 py-3 backdrop-blur-md">
+                <div className="border-border/60 bg-background/80 sticky top-0 z-20 -mx-4 border-y px-4 py-3 backdrop-blur-md">
                     <div className="flex flex-wrap items-center justify-between gap-3">
                         <div className="flex items-center gap-2 lg:hidden">
                             <Select
@@ -198,13 +198,13 @@ function Home() {
                             </Select>
                         </div>
                         <div className="hidden items-center gap-2 lg:flex">
-                            <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                            <span className="text-muted-foreground text-xs font-semibold tracking-wider uppercase">
                                 Now reading
                             </span>
-                            <span className="font-serif text-sm font-semibold text-foreground">
+                            <span className="text-foreground font-serif text-sm font-semibold">
                                 {activeMeta?.name}
                             </span>
-                            <ChevronDown className="size-3.5 text-muted-foreground" />
+                            <ChevronDown className="text-muted-foreground size-3.5" />
                         </div>
                         <DuaTranslationPicker langs={langs} onToggle={toggleLang} />
                     </div>
@@ -212,7 +212,7 @@ function Home() {
 
                 <div className="flex gap-8">
                     <aside className="hidden w-60 shrink-0 lg:block">
-                        <div className="sticky top-20 h-[calc(100vh-6rem)] rounded-2xl border border-border/60 bg-card/40 p-2">
+                        <div className="border-border/60 bg-card/40 sticky top-20 h-[calc(100vh-6rem)] rounded-2xl border p-2">
                             <DuaPositionNav
                                 activeId={activePosition}
                                 onSelect={setActivePosition}
@@ -233,12 +233,12 @@ function Home() {
                 <div className="mx-auto max-w-xl space-y-3">
                     <p
                         dir="rtl"
-                        className="font-serif text-2xl text-foreground"
+                        className="text-foreground font-serif text-2xl"
                         style={{ fontFamily: "'Amiri', 'Noto Naskh Arabic', Georgia, serif" }}
                     >
                         رَبَّنَا تَقَبَّلْ مِنَّا
                     </p>
-                    <p className="text-sm italic text-muted-foreground">
+                    <p className="text-muted-foreground text-sm italic">
                         “Our Lord, accept it from us.”
                     </p>
                 </div>

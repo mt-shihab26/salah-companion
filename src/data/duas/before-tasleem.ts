@@ -1,0 +1,338 @@
+import type { DuaVariation } from './types'
+
+export const beforeTasleemDuas: DuaVariation[] = [
+    // ─── Dua 31 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-1',
+        positionId: 'before-tasleem',
+        variationIndex: 1,
+        label: 'Allahumma inni zalamtu nafsi (Wrongdoing)',
+        arabic: 'اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ',
+        transliteration:
+            "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā wa lā yaghfiru dh-dhunūba illā Ant, faghfir lī maghfiratan min 'indika warḥamnī, innaka antal-Ghafūr ar-Raḥīm",
+        translations: {
+            en: 'O Allah, I have greatly wronged myself and none forgives sins except You. So grant me forgiveness from You and have mercy on me. Surely, You are the Forgiving, the Merciful.',
+            ar: 'اللهم إني ظلمت نفسي ظلماً كثيراً ولا يغفر الذنوب إلا أنت، فاغفر لي مغفرةً من عندك وارحمني، إنك أنت الغفور الرحيم.',
+            fr: "O Allah, j'ai grandement lésé mon âme et nul ne pardonne les péchés sauf Toi. Accorde-moi Ton pardon et aie pitié de moi. Certes, Tu es le Tout-Pardonnant, le Très-Miséricordieux.",
+            ur: 'اے اللہ! بے شک میں نے اپنے نفس پر بہت ظلم کیا، اور گناہوں کو تیرے سوا کوئی نہیں بخشتا۔ پس تو اپنی طرف سے مجھے بخشش عطا فرما اور مجھ پر رحم فرما، بے شک تو ہی بخشنے والا مہربان ہے۔',
+            tr: "Allah'ım! Ben nefsime pek çok zulüm ettim. Günahları Sen'den başkası bağışlamaz. Beni kendi katından bir bağışlamayla bağışla ve bana merhamet et. Şüphesiz Sen, çok bağışlayan, çok merhamet edensin.",
+            ms: 'Ya Allah, sesungguhnya aku telah banyak menganiaya diriku sendiri dan tidak ada yang mengampuni dosa-dosa melainkan Engkau. Maka ampunilah aku dengan keampunan dari sisi-Mu dan rahmatilah aku. Sesungguhnya Engkaulah Yang Maha Pengampun lagi Maha Penyayang.',
+        },
+        references: [
+            {
+                type: 'hadith',
+                source: 'Sahih al-Bukhari',
+                number: '834',
+                grade: 'Sahih',
+                narrator: 'Abu Bakr al-Siddiq',
+                url: 'https://sunnah.com/bukhari:834',
+            },
+            {
+                type: 'hadith',
+                source: 'Sahih Muslim',
+                number: '2705',
+                grade: 'Sahih',
+                narrator: 'Abu Bakr al-Siddiq',
+                url: 'https://sunnah.com/muslim:2705',
+            },
+        ],
+        notes: "Abu Bakr al-Siddiq (رضي الله عنه) asked the Prophet ﷺ to teach him a supplication to say in his prayer, and the Prophet ﷺ taught him this dua. The phrase 'I have greatly wronged myself' is a deep expression of humility and self-accountability, while 'none forgives sins except You' acknowledges Allah's exclusive authority to pardon.",
+    },
+
+    // ─── Dua 32 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-2',
+        positionId: 'before-tasleem',
+        variationIndex: 2,
+        label: 'Allahumma ighfir li ma qaddamtu (Comprehensive Forgiveness)',
+        arabic: 'اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَهَ إِلَّا أَنْتَ',
+        transliteration:
+            "Allāhummaghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, wa mā asraftu, wa mā anta a'lamu bihi minnī. Antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+        translations: {
+            en: 'O Allah, forgive me for what I have sent ahead and what I have left behind, what I have hidden and what I have made public, what I have exceeded in, and what You know better than I do. You are the One Who brings forward and the One Who puts back. There is no god worthy of worship except You.',
+            ar: 'اللهم اغفر لي ما قدمت وما أخرت، وما أسررت وما أعلنت، وما أسرفت، وما أنت أعلم به مني، أنت المقدم وأنت المؤخر، لا إله إلا أنت.',
+            fr: "O Allah, pardonne-moi ce que j'ai fait d'avance et ce que j'ai laissé derrière, ce que j'ai caché et ce que j'ai rendu public, ce en quoi j'ai exagéré, et ce que Tu sais mieux que moi. Tu es Celui Qui met en avant et Celui Qui remet en arrière. Il n'y a pas de dieu digne d'adoration excepté Toi.",
+            ur: 'اے اللہ! مجھے بخش دے جو میں نے آگے بھیجا اور جو پیچھے چھوڑا، جو میں نے چھپایا اور جو ظاہر کیا، جس میں میں نے زیادتی کی، اور جو تو مجھ سے بہتر جانتا ہے۔ تو ہی آگے کرنے والا اور پیچھے کرنے والا ہے، تیرے سوا کوئی معبود نہیں۔',
+            tr: "Allah'ım, önce yapıp geçtiklerimi ve sonraya bıraktıklarımı, gizlediklerimi ve açığa vurduklarımı, aşırılıklarımı ve Senin benden daha iyi bildiklerimi bağışla. Sen öne geçiren ve geride bırakansın. Senden başka ilah yoktur.",
+            ms: 'Ya Allah, ampunilah apa yang telah aku lakukan terlebih dahulu dan apa yang aku tangguhkan, apa yang aku sembunyikan dan apa yang aku nyatakan, apa yang aku berlebihan padanya, dan apa yang Engkau lebih mengetahuinya daripadaku. Engkaulah Yang Mendahulukan dan Yang Mengakhirkan. Tiada tuhan yang berhak disembah melainkan Engkau.',
+        },
+        references: [
+            {
+                type: 'hadith',
+                source: 'Sahih Muslim',
+                number: '771',
+                grade: 'Sahih',
+                narrator: 'Ali ibn Abi Talib',
+                url: 'https://sunnah.com/muslim:771',
+            },
+        ],
+        notes: 'Ali ibn Abi Talib (رضي الله عنه) reported that the Prophet ﷺ would recite this dua between the tashahhud and tasleem in his night prayer (tahajjud). It is one of the most comprehensive duas for forgiveness, covering six dimensions of sins: past and future, hidden and public, excessive and unknown.',
+    },
+
+    // ─── Dua 33 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-3',
+        positionId: 'before-tasleem',
+        variationIndex: 3,
+        label: 'Four Refuges — Short Form',
+        arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ النَّارِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ',
+        transliteration:
+            "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa min 'adhābin-nār, wa min fitnatil-maḥyā wal-mamāt, wa min sharri fitnatil-masīḥid-dajjāl",
+        translations: {
+            en: 'O Allah, I seek refuge in You from the punishment of the grave, from the punishment of Hellfire, from the trials of life and death, and from the evil trial of the False Messiah (Dajjal).',
+            ar: 'اللهم إني أعوذ بك من عذاب القبر، ومن عذاب النار، ومن فتنة المحيا والممات، ومن شر فتنة المسيح الدجال.',
+            fr: "O Allah, je cherche refuge en Toi contre le châtiment du tombeau, contre le châtiment de l'Enfer, contre les épreuves de la vie et de la mort, et contre le mal de l'épreuve du Faux Messie (Dajjal).",
+            ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں قبر کے عذاب سے، جہنم کے عذاب سے، زندگی اور موت کی آزمائش سے، اور مسیح دجال کے فتنے کی شر سے۔',
+            tr: "Allah'ım! Kabir azabından, cehennem azabından, hayat ve ölüm fitnesinden ve Deccal'in fitnesinin şerrinden Sana sığınırım.",
+            ms: 'Ya Allah, aku berlindung kepada-Mu dari azab kubur, dari azab Neraka, dari fitnah kehidupan dan kematian, dan dari kejahatan fitnah Al-Masih al-Dajjal.',
+        },
+        references: [
+            {
+                type: 'hadith',
+                source: 'Sahih al-Bukhari',
+                number: '789',
+                grade: 'Sahih',
+                narrator: 'Abu Hurayrah',
+                url: 'https://sunnah.com/bukhari:789',
+            },
+            {
+                type: 'hadith',
+                source: 'Sahih Muslim',
+                number: '588',
+                grade: 'Sahih',
+                narrator: 'Abu Hurayrah',
+                url: 'https://sunnah.com/muslim:588',
+            },
+        ],
+        notes: 'The Prophet ﷺ commanded that this refuge be sought in every prayer. Ibn Hajar al-Asqalani notes that seeking refuge from these four things covers the most dangerous threats a believer faces: spiritual torment after death, eternal punishment, deviation during life, and the greatest end-times trial. The Dajjal (False Messiah) is specifically named because his fitnah is the worst trial ever created.',
+    },
+
+    // ─── Dua 34 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-4',
+        positionId: 'before-tasleem',
+        variationIndex: 4,
+        label: 'Four Refuges + Refuge from Debt & Sin',
+        arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ',
+        transliteration:
+            "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa a'ūdhu bika min fitnatil-masīḥid-dajjāl, wa a'ūdhu bika min fitnatil-maḥyā wal-mamāt. Allāhumma innī a'ūdhu bika minal-ma'thami wal-maghram",
+        translations: {
+            en: 'O Allah, I seek refuge in You from the punishment of the grave, and I seek refuge in You from the trial of the False Messiah, and I seek refuge in You from the trials of life and death. O Allah, I seek refuge in You from sin and debt.',
+            ar: 'اللهم إني أعوذ بك من عذاب القبر، وأعوذ بك من فتنة المسيح الدجال، وأعوذ بك من فتنة المحيا والممات. اللهم إني أعوذ بك من المأثم والمغرم.',
+            fr: "O Allah, je cherche refuge en Toi contre le châtiment du tombeau, et je cherche refuge en Toi contre l'épreuve du Faux Messie, et je cherche refuge en Toi contre les épreuves de la vie et de la mort. O Allah, je cherche refuge en Toi contre le péché et la dette.",
+            ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں قبر کے عذاب سے، دجال کے فتنے سے، اور زندگی و موت کی آزمائش سے۔ اے اللہ! میں تیری پناہ مانگتا ہوں گناہ اور قرض سے۔',
+            tr: "Allah'ım! Kabir azabından, Deccal'in fitnesinden, hayat ve ölüm fitnesinden Sana sığınırım. Allah'ım! Günahtan ve borçtan Sana sığınırım.",
+            ms: 'Ya Allah, aku berlindung kepada-Mu dari azab kubur, dan aku berlindung kepada-Mu dari fitnah Al-Masih al-Dajjal, dan aku berlindung kepada-Mu dari fitnah kehidupan dan kematian. Ya Allah, aku berlindung kepada-Mu dari dosa dan hutang.',
+        },
+        references: [
+            {
+                type: 'hadith',
+                source: 'Sahih al-Bukhari',
+                number: '832',
+                grade: 'Sahih',
+                narrator: 'Aishah',
+                url: 'https://sunnah.com/bukhari:832',
+            },
+            {
+                type: 'hadith',
+                source: 'Sahih Muslim',
+                number: '589',
+                grade: 'Sahih',
+                narrator: 'Aishah',
+                url: 'https://sunnah.com/muslim:589',
+            },
+        ],
+        notes: "This version adds refuge from debt (al-maghram) and sin (al-ma'thim) to the standard four refuges. When someone asked why the Prophet ﷺ sought refuge from debt so often, he replied: 'When a man is in debt, he speaks and lies, and he makes a promise and breaks it.' This dua recognises that financial and moral struggles are spiritual threats as much as worldly ones.",
+    },
+
+    // ─── Dua 35 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-5',
+        positionId: 'before-tasleem',
+        variationIndex: 5,
+        label: "A'udhu bika min al-Bukhl (Miserliness & Cowardice)",
+        arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبُخْلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ، وَأَعُوذُ بِكَ أَنْ أُرَدَّ إِلَى أَرْذَلِ الْعُمُرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ',
+        transliteration:
+            "Allāhumma innī a'ūdhu bika minal-bukhl, wa a'ūdhu bika minal-jubn, wa a'ūdhu bika an uradda ilā ardhali-l-'umur, wa a'ūdhu bika min fitnatid-dunyā, wa a'ūdhu bika min 'adhābil-qabr",
+        translations: {
+            en: 'O Allah, I seek refuge in You from miserliness, I seek refuge in You from cowardice, I seek refuge in You from being reduced to the worst of old age (senility), I seek refuge in You from the trial of this world, and I seek refuge in You from the punishment of the grave.',
+            ar: 'اللهم إني أعوذ بك من البخل، وأعوذ بك من الجبن، وأعوذ بك أن أُرد إلى أرذل العمر، وأعوذ بك من فتنة الدنيا، وأعوذ بك من عذاب القبر.',
+            fr: "O Allah, je cherche refuge en Toi contre l'avarice, je cherche refuge en Toi contre la lâcheté, je cherche refuge en Toi contre le fait d'être réduit au pire de la vieillesse, je cherche refuge en Toi contre l'épreuve de ce monde, et je cherche refuge en Toi contre le châtiment du tombeau.",
+            ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں بخل سے، بزدلی سے، بڑھاپے کی بدترین حالت تک پہنچنے سے، دنیا کی آزمائش سے، اور قبر کے عذاب سے۔',
+            tr: "Allah'ım! Cimrilikten, korkaklıktan, ömrün en kötüsüne (bunaklar çağına) döndürülmekten, dünyanın fitnesinden ve kabir azabından Sana sığınırım.",
+            ms: 'Ya Allah, aku berlindung kepada-Mu dari sifat bakhil, aku berlindung kepada-Mu dari pengecut, aku berlindung kepada-Mu dari dikembalikan kepada usia yang paling hina (nyanyuk), aku berlindung kepada-Mu dari fitnah dunia, dan aku berlindung kepada-Mu dari azab kubur.',
+        },
+        references: [
+            {
+                type: 'hadith',
+                source: 'Sahih al-Bukhari',
+                number: '2822',
+                grade: 'Sahih',
+                narrator: "Sa'd ibn Abi Waqqas",
+                url: 'https://sunnah.com/bukhari:2822',
+            },
+        ],
+        notes: "Sa'd ibn Abi Waqqas (رضي الله عنه) reported that the Prophet ﷺ used to seek refuge from these five things in every prayer. Miserliness (bukhl) and cowardice (jubn) are linked because they both stem from excessive attachment to the self. 'The worst of old age' refers to severe cognitive decline (kharaf/senility) that strips a person of their intellectual and spiritual capacity.",
+    },
+
+    // ─── Dua 36 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-6',
+        positionId: 'before-tasleem',
+        variationIndex: 6,
+        label: "As'aluka bi annakal Wahid al-Ahad (Divine Attributes of Al-Ikhlas)",
+        arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّكَ أَنْتَ اللَّهُ لَا إِلَهَ إِلَّا أَنْتَ الْأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ، أَنْ تَغْفِرَ لِي ذُنُوبِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ',
+        transliteration:
+            "Allāhumma innī as'aluka bi-annaka Allāhu lā ilāha illā Antal-Aḥad aṣ-Ṣamad alladhī lam yalid wa lam yūlad wa lam yakun lahu kufuwan aḥad, an taghfira lī dhunūbī innaka antal-Ghafūr ar-Raḥīm",
+        translations: {
+            en: 'O Allah, I ask You, testifying that You are Allah, there is no god worthy of worship except You, the One, the Eternal Refuge, Who neither begets nor was begotten, and there is none equal to Him — that You forgive me my sins. Surely You are the Forgiving, the Merciful.',
+            ar: 'اللهم إني أسألك بأنك أنت الله لا إله إلا أنت الأحد الصمد الذي لم يلد ولم يولد ولم يكن له كفواً أحد، أن تغفر لي ذنوبي إنك أنت الغفور الرحيم.',
+            fr: "O Allah, je Te demande en attestant que Tu es Allah, il n'y a pas de dieu digne d'adoration sauf Toi, l'Unique, le Maître Absolu, Qui n'a pas engendré et n'a pas été engendré, et nul n'est Son égal — de me pardonner mes péchés. Certes, Tu es le Tout-Pardonnant, le Très-Miséricordieux.",
+            ur: 'اے اللہ! میں تجھ سے مانگتا ہوں اس بات کی گواہی دیتے ہوئے کہ تو اللہ ہے، تیرے سوا کوئی معبود نہیں، یکتا، بے نیاز، جس نے نہ جنا اور نہ وہ جنا گیا، اور اس کا کوئی ہمسر نہیں — کہ تو میرے گناہ بخش دے، بے شک تو بخشنے والا مہربان ہے۔',
+            tr: "Allah'ım! Tek ilah olan, hiç doğurmamış ve doğurulmamış, hiç kimse O'na denk olmamış Ahad ve Samed Allah olduğunu tanıklık ederek günahlarımı bağışlamanı istiyorum. Sen Gafûr ve Rahîm'sin.",
+            ms: 'Ya Allah, aku memohon kepada-Mu dengan bersaksi bahawa Engkaulah Allah, tiada tuhan yang berhak disembah melainkan Engkau, Yang Maha Esa, Yang Menjadi Tempat Bergantung, Yang tidak beranak dan tidak diperanakkan, dan tidak ada seorang pun yang setara dengan-Nya — agar Engkau mengampuni dosa-dosaku. Sesungguhnya Engkau Maha Pengampun lagi Maha Penyayang.',
+        },
+        references: [
+            {
+                type: 'quran',
+                surah: 112,
+                ayah: 1,
+                ayahEnd: 4,
+                surahName: 'Al-Ikhlas',
+                surahNameArabic: 'الإخلاص',
+                url: 'https://quran.com/112',
+            },
+            {
+                type: 'hadith',
+                source: 'Sunan Abu Dawud',
+                number: '985',
+                grade: 'Sahih',
+                narrator: 'Buraidah al-Aslami',
+                url: 'https://sunnah.com/abudawud:985',
+            },
+            {
+                type: 'hadith',
+                source: 'Sunan al-Nasai',
+                number: '1300',
+                grade: 'Sahih',
+                narrator: 'Buraidah al-Aslami',
+                url: 'https://sunnah.com/nasai:1300',
+            },
+        ],
+        notes: "The Prophet ﷺ heard a man recite this dua in his prayer and said: 'He has asked Allah by His greatest Name (Ism al-A'zam), the one by which if He is asked He gives, and by which if He is called upon He responds.' The dua uses the attributes from Surah Al-Ikhlas as a means of beseeching Allah, making it one of the most powerful supplications for forgiveness.",
+    },
+
+    // ─── Dua 37 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-7',
+        positionId: 'before-tasleem',
+        variationIndex: 7,
+        label: "As'aluka bil-Mannan Badi' al-Samawat (Creator of the Heavens)",
+        arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لَا إِلَهَ إِلَّا أَنْتَ الْمَنَّانُ، بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ، يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، يَا حَيُّ يَا قَيُّومُ، إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ',
+        transliteration:
+            "Allāhumma innī as'aluka bi-anna lakal-ḥamda lā ilāha illā Antal-Mannān, Badī'as-samāwāti wal-arḍ, yā Dhal-Jalāli wal-Ikrām, yā Ḥayyu yā Qayyūm, innī as'alukal-jannata wa a'ūdhu bika minan-nār",
+        translations: {
+            en: 'O Allah, I ask You, since all praise belongs to You, there is no god worthy of worship except You, the Bestower of Blessings, the Originator of the heavens and the earth, O Possessor of Majesty and Honour, O Ever-Living, O Self-Sustaining — I ask You for Paradise and I seek Your refuge from the Fire.',
+            ar: 'اللهم إني أسألك بأن لك الحمد لا إله إلا أنت المنان، بديع السماوات والأرض، يا ذا الجلال والإكرام، يا حي يا قيوم، إني أسألك الجنة وأعوذ بك من النار.',
+            fr: "O Allah, je Te demande car toute la louange T'appartient, il n'y a pas de dieu digne d'adoration sauf Toi, le Bienfaiteur, l'Initiateur des cieux et de la terre, Ô Possesseur de Majesté et d'Honneur, Ô Vivant, Ô Subsistant par Lui-même — je Te demande le Paradis et je cherche refuge en Toi contre le Feu.",
+            ur: 'اے اللہ! میں تجھ سے مانگتا ہوں کیونکہ تمام تعریف تیری ہے، تیرے سوا کوئی معبود نہیں، احسان کرنے والا، آسمانوں اور زمین کا موجد، اے جلال و اکرام والے، اے ہمیشہ زندہ، اے سب کو قائم رکھنے والے — میں تجھ سے جنت مانگتا ہوں اور جہنم سے پناہ مانگتا ہوں۔',
+            tr: "Allah'ım! Tüm hamd Sana ait olduğu için, Sen'den başka ilah olmayan, Mannân, göklerin ve yerin Bedî'i, ey Celâl ve İkrâm Sahibi, ey Hayy, ey Kayyûm olduğun için Senden cenneti istiyorum ve Senden cehennemden sığınıyorum.",
+            ms: 'Ya Allah, aku memohon kepada-Mu kerana segala pujian adalah milik-Mu, tiada tuhan yang berhak disembah melainkan Engkau, Yang Maha Pemberi, Pencipta langit dan bumi, wahai Yang Memiliki Keagungan dan Kehormatan, wahai Yang Maha Hidup, wahai Yang Maha Berdiri Sendiri — aku memohon kepada-Mu syurga dan aku berlindung kepada-Mu dari Neraka.',
+        },
+        references: [
+            {
+                type: 'hadith',
+                source: 'Sunan Abu Dawud',
+                number: '1495',
+                grade: 'Sahih',
+                narrator: 'Anas ibn Malik',
+                url: 'https://sunnah.com/abudawud:1495',
+            },
+            {
+                type: 'hadith',
+                source: 'Sunan al-Nasai',
+                number: '1301',
+                grade: 'Sahih',
+                narrator: 'Anas ibn Malik',
+                url: 'https://sunnah.com/nasai:1301',
+            },
+        ],
+        notes: "The Prophet ﷺ heard a man asking by these names and attributes and said: 'He has asked Allah by His Greatest Name (Ism al-A'zam).' The two divine names al-Mannan (Bestower of blessings without expectation of return) and al-Hayy al-Qayyum (Ever-Living, Self-Sustaining) are considered among the greatest of Allah's names. Ending with a request for Paradise and refuge from the Fire aligns with the Prophet ﷺ's counsel that these two goals encompass all one needs.",
+    },
+
+    // ─── Dua 38 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-8',
+        positionId: 'before-tasleem',
+        variationIndex: 8,
+        label: 'Refuge from Hell, Grave & Dajjal — Extended Form',
+        arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ',
+        transliteration:
+            "Allāhumma innī a'ūdhu bika min 'adhābi jahannam, wa a'ūdhu bika min 'adhābil-qabr, wa a'ūdhu bika min fitnatil-masīḥid-dajjāl, wa a'ūdhu bika min fitnatil-maḥyā wal-mamāt",
+        translations: {
+            en: 'O Allah, I seek refuge in You from the punishment of Hellfire, I seek refuge in You from the punishment of the grave, I seek refuge in You from the trial of the False Messiah (Dajjal), and I seek refuge in You from the trials of life and death.',
+            ar: 'اللهم إني أعوذ بك من عذاب جهنم، وأعوذ بك من عذاب القبر، وأعوذ بك من فتنة المسيح الدجال، وأعوذ بك من فتنة المحيا والممات.',
+            fr: "O Allah, je cherche refuge en Toi contre le châtiment de l'Enfer, je cherche refuge en Toi contre le châtiment du tombeau, je cherche refuge en Toi contre l'épreuve du Faux Messie, et je cherche refuge en Toi contre les épreuves de la vie et de la mort.",
+            ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں جہنم کے عذاب سے، قبر کے عذاب سے، مسیح دجال کے فتنے سے، اور زندگی اور موت کی آزمائشوں سے۔',
+            tr: "Allah'ım! Cehennem azabından, kabir azabından, Deccal'in fitnesinden ve hayat ile ölümün fitnesinden Sana sığınırım.",
+            ms: 'Ya Allah, aku berlindung kepada-Mu dari azab Neraka Jahannam, aku berlindung kepada-Mu dari azab kubur, aku berlindung kepada-Mu dari fitnah Al-Masih al-Dajjal, dan aku berlindung kepada-Mu dari fitnah kehidupan dan kematian.',
+        },
+        references: [
+            {
+                type: 'hadith',
+                source: 'Sahih al-Bukhari',
+                number: '1377',
+                grade: 'Sahih',
+                narrator: 'Abu Hurayrah',
+                url: 'https://sunnah.com/bukhari:1377',
+            },
+            {
+                type: 'hadith',
+                source: 'Sahih Muslim',
+                number: '590',
+                grade: 'Sahih',
+                narrator: 'Abu Hurayrah',
+                url: 'https://sunnah.com/muslim:590',
+            },
+        ],
+        notes: "This version of the four-refuge dua explicitly names 'Jahannam' (the specific name of Hell in Arabic) rather than the generic 'an-nar' (the Fire), emphasising the severity of the refuge being sought. The order here — Hell, grave, Dajjal, life/death — differs slightly from Dua 33, reflecting different narrations. Both arrangements are authentically reported from the Prophet ﷺ.",
+    },
+
+    // ─── Dua 39 ──────────────────────────────────────────────────────────────
+    {
+        id: 'tasleem-9',
+        positionId: 'before-tasleem',
+        variationIndex: 9,
+        label: 'Refuge from Weakness, Laziness & the Grave',
+        arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَالْجُبْنِ وَالْهَرَمِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ',
+        transliteration:
+            "Allāhumma innī a'ūdhu bika minal-'ajzi wal-kasal, wal-jubn wal-haram wal-bukhl, wa a'ūdhu bika min 'adhābil-qabr, wa a'ūdhu bika min fitnatil-maḥyā wal-mamāt",
+        translations: {
+            en: 'O Allah, I seek refuge in You from incapacity, laziness, cowardice, senile old age (loss of mind), and miserliness. I seek refuge in You from the punishment of the grave and from the trials of life and death.',
+            ar: 'اللهم إني أعوذ بك من العجز والكسل، والجبن والهرم والبخل، وأعوذ بك من عذاب القبر، وأعوذ بك من فتنة المحيا والممات.',
+            fr: "O Allah, je cherche refuge en Toi contre l'incapacité, la paresse, la lâcheté, la sénilité et l'avarice. Je cherche refuge en Toi contre le châtiment du tombeau et contre les épreuves de la vie et de la mort.",
+            ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں عاجزی، سستی، بزدلی، انتہائی بڑھاپے اور بخل سے۔ اور میں تیری پناہ مانگتا ہوں قبر کے عذاب سے، اور زندگی و موت کی آزمائشوں سے۔',
+            tr: "Allah'ım! Acizlikten, tembellikten, korkaklıktan, bunaklıktan ve cimrilikten Sana sığınırım. Kabir azabından ve hayat ile ölüm fitnesinden Sana sığınırım.",
+            ms: 'Ya Allah, aku berlindung kepada-Mu dari kelemahan dan kemalasan, pengecut dan nyanyuk serta kebakhilan. Aku berlindung kepada-Mu dari azab kubur, dan aku berlindung kepada-Mu dari fitnah kehidupan dan kematian.',
+        },
+        references: [
+            {
+                type: 'hadith',
+                source: 'Sahih al-Bukhari',
+                number: '6367',
+                grade: 'Sahih',
+                narrator: 'Anas ibn Malik',
+                url: 'https://sunnah.com/bukhari:6367',
+            },
+            {
+                type: 'hadith',
+                source: 'Sahih Muslim',
+                number: '2706',
+                grade: 'Sahih',
+                narrator: 'Anas ibn Malik',
+                url: 'https://sunnah.com/muslim:2706',
+            },
+        ],
+        notes: "Anas ibn Malik (رضي الله عنه) reported that the Prophet ﷺ frequently sought refuge from these five character flaws. 'Al-ajz' (incapacity) refers to being unable to perform worship and good deeds. 'Al-kasal' (laziness) refers to having the ability but lacking the will. Together they cover two distinct reasons why a person might fail in their duties. 'Al-haram' (extreme old age / senility) is listed alongside spiritual and moral weaknesses, highlighting that the loss of mental faculty is as much a concern as moral failure.",
+    },
+]

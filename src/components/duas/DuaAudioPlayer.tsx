@@ -1,6 +1,6 @@
-import { Play, Pause } from 'lucide-react'
 import { Button } from '#/components/ui/button'
 import { useAudioPlayer } from '#/hooks/use-audio-player'
+import { Pause, Play } from 'lucide-react'
 
 interface Props {
     duaId: string

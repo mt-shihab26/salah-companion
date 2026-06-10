@@ -1,9 +1,9 @@
-import { Link } from '@tanstack/react-router'
-import { Moon, Sun, BookOpen } from 'lucide-react'
+import { PageWrap } from '#/components/page-wrap'
 import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
-import { PageWrap } from '#/components/page-wrap'
 import { useTheme } from '#/hooks/use-theme'
+import { Link } from '@tanstack/react-router'
+import { BookOpen, Moon, Sun } from 'lucide-react'
 
 function scrollTo(id: string) {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -13,14 +13,14 @@ export function SiteHeader() {
     const { theme, toggle } = useTheme()
 
     return (
-        <header className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur-md">
+        <header className="border-border bg-background/80 sticky top-0 z-40 w-full border-b backdrop-blur-md">
             <PageWrap className="flex h-14 items-center gap-4">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2 no-underline">
-                    <div className="flex size-7 items-center justify-center rounded-md bg-primary">
-                        <BookOpen className="size-4 text-primary-foreground" />
+                    <div className="bg-primary flex size-7 items-center justify-center rounded-md">
+                        <BookOpen className="text-primary-foreground size-4" />
                     </div>
-                    <span className="font-semibold text-foreground">Salah Companion</span>
+                    <span className="text-foreground font-semibold">Salah Companion</span>
                 </Link>
 
                 <Separator orientation="vertical" className="h-5" />

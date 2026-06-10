@@ -1,7 +1,7 @@
-import { Separator } from '#/components/ui/separator'
 import { ArabicText } from '#/components/arabic-text'
+import { Separator } from '#/components/ui/separator'
+import type { DuaLang, DuaVariation } from '#/data/duas/types'
 import { DUA_LANGS } from '#/data/duas/types'
-import type { DuaVariation, DuaLang } from '#/data/duas/types'
 import { cn } from '#/lib/utils'
 
 interface Props {
@@ -16,7 +16,7 @@ export function DuaTextDisplay({ dua, langs }: Props) {
         <div className="space-y-5">
             <ArabicText className="text-foreground">{dua.arabic}</ArabicText>
 
-            <p className="font-mono text-sm leading-relaxed text-muted-foreground">
+            <p className="text-muted-foreground font-mono text-sm leading-relaxed">
                 {dua.transliteration}
             </p>
 
@@ -30,22 +30,22 @@ export function DuaTextDisplay({ dua, langs }: Props) {
                                 <li
                                     key={l.code}
                                     className={cn(
-                                        'border-l-2 border-primary/40 pl-4',
-                                        isRtl && 'border-l-0 border-r-2 pl-0 pr-4',
+                                        'border-primary/40 border-l-2 pl-4',
+                                        isRtl && 'border-r-2 border-l-0 pr-4 pl-0',
                                     )}
                                 >
                                     <div className="mb-1 flex items-center gap-2">
-                                        <span className="text-[10px] font-semibold uppercase tracking-wider text-primary">
+                                        <span className="text-primary text-[10px] font-semibold tracking-wider uppercase">
                                             {l.code}
                                         </span>
-                                        <span className="text-[11px] text-muted-foreground">
+                                        <span className="text-muted-foreground text-[11px]">
                                             {l.label}
                                         </span>
                                     </div>
                                     <p
                                         dir={l.dir}
                                         className={cn(
-                                            'text-sm leading-relaxed text-foreground',
+                                            'text-foreground text-sm leading-relaxed',
                                             isRtl && 'text-right',
                                         )}
                                         style={

@@ -15,7 +15,7 @@ export function DuaPositionBadge({ positionId, className }: Props) {
     return (
         <Badge
             variant="outline"
-            className={cn('gap-1.5 border-primary/30 bg-primary/5 text-primary', className)}
+            className={cn('border-primary/30 bg-primary/5 text-primary gap-1.5', className)}
         >
             {position.name}
             <span

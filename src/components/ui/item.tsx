@@ -1,9 +1,9 @@
-import * as React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { Slot } from 'radix-ui'
+import * as React from 'react'
 
-import { cn } from '#/lib/utils.ts'
 import { Separator } from '#/components/ui/separator.tsx'
+import { cn } from '#/lib/utils.ts'
 
 function ItemGroup({ className, ...props }: React.ComponentProps<'div'>) {
     return (
@@ -129,8 +129,8 @@ function ItemDescription({ className, ...props }: React.ComponentProps<'p'>) {
         <p
             data-slot="item-description"
             className={cn(
-                'line-clamp-2 text-sm leading-normal font-normal text-balance text-muted-foreground',
-                '[&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary',
+                'text-muted-foreground line-clamp-2 text-sm leading-normal font-normal text-balance',
+                '[&>a:hover]:text-primary [&>a]:underline [&>a]:underline-offset-4',
                 className,
             )}
             {...props}
@@ -170,13 +170,13 @@ function ItemFooter({ className, ...props }: React.ComponentProps<'div'>) {
 
 export {
     Item,
-    ItemMedia,
-    ItemContent,
     ItemActions,
+    ItemContent,
+    ItemDescription,
+    ItemFooter,
     ItemGroup,
+    ItemHeader,
+    ItemMedia,
     ItemSeparator,
     ItemTitle,
-    ItemDescription,
-    ItemHeader,
-    ItemFooter,
 }

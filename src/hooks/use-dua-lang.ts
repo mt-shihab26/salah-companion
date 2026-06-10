@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import { DUA_LANGS } from '#/data/duas/types'
 import type { DuaLang } from '#/data/duas/types'
+import { DUA_LANGS } from '#/data/duas/types'
+import { useState } from 'react'
 
 const STORAGE_KEY = 'dua-langs'
 const DEFAULT_LANGS: DuaLang[] = ['en']

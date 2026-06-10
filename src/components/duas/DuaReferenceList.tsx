@@ -13,7 +13,7 @@ export function DuaReferenceList({ references }: Props) {
       {references.map((ref, i) => (
         <li key={i}>
           {ref.type === 'quran' ? (
-            <Badge variant="outline" asChild className="border-[var(--palm)] text-[var(--palm)] bg-[color-mix(in_oklab,var(--palm)_8%,transparent)] gap-1">
+            <Badge variant="secondary" asChild className="gap-1 cursor-pointer">
               <a href={ref.url} target="_blank" rel="noopener noreferrer">
                 📖 {ref.surahName} {ref.surah}:{ref.ayah}
                 {ref.ayahEnd ? `–${ref.ayahEnd}` : ''}
@@ -31,27 +31,22 @@ export function DuaReferenceList({ references }: Props) {
 function HadithBadge({ ref }: { ref: Extract<DuaReference, { type: 'hadith' }> }) {
   const label = [ref.source, ref.number].filter(Boolean).join(' ')
 
-  const badge = (
-    <Badge variant="outline" className="border-[var(--lagoon)] text-[var(--lagoon-deep)] bg-[color-mix(in_oklab,var(--lagoon)_8%,transparent)] gap-1.5">
+  const content = (
+    <>
       📜 {label}
       {ref.grade && (
-        <span className="rounded bg-[color-mix(in_oklab,var(--lagoon)_18%,transparent)] px-1 py-px text-[10px] font-semibold">
+        <span className="rounded bg-primary/15 px-1 py-px text-[10px] font-semibold text-primary">
           {ref.grade}
         </span>
       )}
-    </Badge>
+    </>
   )
 
   return ref.url ? (
-    <Badge variant="outline" asChild className="border-[var(--lagoon)] text-[var(--lagoon-deep)] bg-[color-mix(in_oklab,var(--lagoon)_8%,transparent)] gap-1.5">
-      <a href={ref.url} target="_blank" rel="noopener noreferrer">
-        📜 {label}
-        {ref.grade && (
-          <span className="rounded bg-[color-mix(in_oklab,var(--lagoon)_18%,transparent)] px-1 py-px text-[10px] font-semibold">
-            {ref.grade}
-          </span>
-        )}
-      </a>
+    <Badge variant="outline" asChild className="gap-1.5 cursor-pointer border-primary/20 text-primary">
+      <a href={ref.url} target="_blank" rel="noopener noreferrer">{content}</a>
     </Badge>
-  ) : badge
+  ) : (
+    <Badge variant="outline" className="gap-1.5 border-primary/20 text-primary">{content}</Badge>
+  )
 }

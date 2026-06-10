@@ -1,4 +1,5 @@
 import { Separator } from '#/components/ui/separator'
+import { ArabicText } from '#/components/arabic-text'
 import { DuaCard } from './DuaCard'
 import { getPosition } from '#/data/duas/positions'
 import type { DuaVariation, DuaLang, SalahPositionId } from '#/data/duas/types'
@@ -17,12 +18,12 @@ export function DuaGroupSection({ positionId, duas, lang }: Props) {
     <section>
       <div className="mb-6 space-y-1">
         <div className="flex items-baseline gap-3">
-          <h2 className="text-xl font-semibold text-[var(--sea-ink)]">{position.name}</h2>
-          <span className="arabic-text text-lg text-[var(--sea-ink-soft)]" style={{ lineHeight: 1.6 }}>
+          <h2 className="text-xl font-semibold text-foreground">{position.name}</h2>
+          <ArabicText as="span" size="md" className="text-muted-foreground">
             {position.nameArabic}
-          </span>
+          </ArabicText>
         </div>
-        <p className="text-sm text-[var(--sea-ink-soft)]">{position.description}</p>
+        <p className="text-sm text-muted-foreground">{position.description}</p>
       </div>
 
       <div className="space-y-4">

@@ -1,13 +1,13 @@
 import { ArabicText } from '#/components/arabic-text'
 import { Separator } from '#/components/ui/separator'
 import { getPosition } from '#/data/duas/positions'
-import type { DuaLang, DuaVariation, SalahPositionId } from '#/data/duas/types'
+import type { TDuaLang, TDuaVariation, TSalahPositionId } from '#/data/duas/types'
 import { DuaCard } from './DuaCard'
 
 interface Props {
-    positionId: SalahPositionId
-    duas: DuaVariation[]
-    langs: DuaLang[]
+    positionId: TSalahPositionId
+    duas: TDuaVariation[]
+    langs: TDuaLang[]
 }
 
 export function DuaGroupSection({ positionId, duas, langs }: Props) {

@@ -1,4 +1,4 @@
-import type { DuaLang } from '#/data/duas/types'
+import type { TDuaLang } from '#/data/duas/types'
 
 import { cn } from '#/lib/utils'
 
@@ -13,8 +13,8 @@ export const DuaTranslationPicker = ({
     langs,
     onToggle,
 }: {
-    langs: DuaLang[]
-    onToggle: (lang: DuaLang) => void
+    langs: TDuaLang[]
+    onToggle: (lang: TDuaLang) => void
 }) => {
     const PICKABLE = DUA_LANGS.filter((l) => l.code !== 'ar')
 

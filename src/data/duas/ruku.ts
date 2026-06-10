@@ -1,6 +1,6 @@
-import type { DuaVariation } from './types'
+import type { TDuaVariation } from './types'
 
-export const rukuDuas: DuaVariation[] = [
+export const rukuDuas: TDuaVariation[] = [
     // ─── Dua 7 ───────────────────────────────────────────────────────────────
     {
         id: 'ruku-1',

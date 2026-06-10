@@ -1,6 +1,6 @@
-import type { DuaVariation } from './types'
+import type { TDuaVariation } from './types'
 
-export const beforeTasleemDuas: DuaVariation[] = [
+export const beforeTasleemDuas: TDuaVariation[] = [
     // ─── Dua 31 ──────────────────────────────────────────────────────────────
     {
         id: 'tasleem-1',

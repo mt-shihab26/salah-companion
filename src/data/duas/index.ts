@@ -8,9 +8,9 @@ import { sajdahDuas } from './sajdah'
 import { salawatDuas } from './salawat'
 import { taawwudhDuas } from './taawwudh'
 import { tashahhudDuas } from './tashahhud'
-import type { DuaVariation, SalahPositionId } from './types'
+import type { TDuaVariation, TSalahPositionId } from './types'
 
-const rawDuas: DuaVariation[] = [
+const rawDuas: TDuaVariation[] = [
     ...openingDuas,
     ...taawwudhDuas,
     ...rukuDuas,
@@ -22,15 +22,15 @@ const rawDuas: DuaVariation[] = [
     ...beforeTasleemDuas,
 ]
 
-export const allDuas: DuaVariation[] = rawDuas.map((dua) => ({
+export const allDuas: TDuaVariation[] = rawDuas.map((dua) => ({
     ...dua,
     audioUrl: dua.audioUrl ?? placeholderAudio,
 }))
 
-export function getDuaById(id: string): DuaVariation | undefined {
+export function getDuaById(id: string): TDuaVariation | undefined {
     return allDuas.find((d) => d.id === id)
 }
 
-export function getDuasByPosition(positionId: SalahPositionId): DuaVariation[] {
+export function getDuasByPosition(positionId: TSalahPositionId): TDuaVariation[] {
     return allDuas.filter((d) => d.positionId === positionId)
 }

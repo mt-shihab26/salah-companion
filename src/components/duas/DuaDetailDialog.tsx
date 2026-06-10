@@ -10,7 +10,7 @@ import {
 } from '#/components/ui/dialog'
 import { Separator } from '#/components/ui/separator'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/components/ui/tabs'
-import type { DuaLang, DuaVariation } from '#/data/duas/types'
+import type { TDuaLang, TDuaVariation } from '#/data/duas/types'
 import { DUA_LANGS } from '#/data/duas/types'
 import { cn } from '#/lib/utils'
 import { BookOpen, Check, Clock, Copy, Info, ScrollText } from 'lucide-react'
@@ -19,15 +19,15 @@ import { DuaAudioPlayer } from './DuaAudioPlayer'
 import { DuaPositionBadge } from './DuaPositionBadge'
 
 interface Props {
-    dua: DuaVariation
+    dua: TDuaVariation
     open: boolean
     onOpenChange: (open: boolean) => void
-    langs: DuaLang[]
+    langs: TDuaLang[]
 }
 
 export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
     const [copied, setCopied] = useState(false)
-    const [activeLang, setActiveLang] = useState<DuaLang>(langs[0] ?? 'en')
+    const [activeLang, setActiveLang] = useState<TDuaLang>(langs[0] ?? 'en')
 
     const allLangs = DUA_LANGS.filter((l) => l.code !== 'ar')
     const activeLangMeta = DUA_LANGS.find((l) => l.code === activeLang)

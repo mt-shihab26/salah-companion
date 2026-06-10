@@ -1,15 +1,17 @@
+import type { TDuaLang, TDuaVariation, TSalahPositionId } from '#/data/duas/types'
+
 import { getDuasByPosition } from '#/data/duas/index'
-import { SALAH_POSITIONS } from '#/data/duas/positions'
-import type { DuaLang, DuaVariation, SalahPositionId } from '#/data/duas/types'
 import { useDuaLang } from '#/hooks/use-dua-lang'
 import { createContext, useContext, useState } from 'react'
 
+import { SALAH_POSITIONS } from '#/data/duas/positions'
+
 interface DuasBrowserContextValue {
-    langs: DuaLang[]
-    toggleLang: (lang: DuaLang) => void
-    activePosition: SalahPositionId
-    setActivePosition: (id: SalahPositionId) => void
-    duas: DuaVariation[]
+    langs: TDuaLang[]
+    toggleLang: (lang: TDuaLang) => void
+    activePosition: TSalahPositionId
+    setActivePosition: (id: TSalahPositionId) => void
+    duas: TDuaVariation[]
     activeMeta: (typeof SALAH_POSITIONS)[number] | undefined
 }
 
@@ -17,14 +19,16 @@ const DuasBrowserContext = createContext<DuasBrowserContextValue | null>(null)
 
 export function DuasBrowserProvider({ children }: { children: React.ReactNode }) {
     const { langs, toggleLang } = useDuaLang()
-    const [activePosition, setActivePosition] = useState<SalahPositionId>(
-        SALAH_POSITIONS[0].id as SalahPositionId,
+    const [activePosition, setActivePosition] = useState<TSalahPositionId>(
+        SALAH_POSITIONS[0].id as TSalahPositionId,
     )
     const duas = getDuasByPosition(activePosition)
     const activeMeta = SALAH_POSITIONS.find((p) => p.id === activePosition)
 
     return (
-        <DuasBrowserContext value={{ langs, toggleLang, activePosition, setActivePosition, duas, activeMeta }}>
+        <DuasBrowserContext
+            value={{ langs, toggleLang, activePosition, setActivePosition, duas, activeMeta }}
+        >
             {children}
         </DuasBrowserContext>
     )

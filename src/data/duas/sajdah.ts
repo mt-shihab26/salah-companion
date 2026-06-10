@@ -1,6 +1,6 @@
-import type { DuaVariation } from './types'
+import type { TDuaVariation } from './types'
 
-export const sajdahDuas: DuaVariation[] = [
+export const sajdahDuas: TDuaVariation[] = [
     // ─── Dua 18 ──────────────────────────────────────────────────────────────
     {
         id: 'sajdah-1',

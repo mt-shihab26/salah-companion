@@ -1,5 +1,5 @@
 import { PageWrap } from '#/components/page-wrap'
-import { DuasBrowserProvider } from './context'
+import { DuasBrowserProvider } from './duas-browser-context'
 import { Heading } from './heading'
 import { MainSection } from './main-section'
 import { StickyToolbar } from './sticky-toolbar'

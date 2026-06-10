@@ -1,4 +1,4 @@
-export type SalahPositionId =
+export type TSalahPositionId =
     | 'opening'
     | 'taawwudh'
     | 'ruku'
@@ -9,9 +9,9 @@ export type SalahPositionId =
     | 'salawat'
     | 'before-tasleem'
 
-export type DuaLang = 'en' | 'ar' | 'fr' | 'ur' | 'tr' | 'ms' | 'bn'
+export type TDuaLang = 'en' | 'ar' | 'fr' | 'ur' | 'tr' | 'ms' | 'bn'
 
-export const DUA_LANGS: { code: DuaLang; label: string; dir: 'ltr' | 'rtl' }[] = [
+export const DUA_LANGS: { code: TDuaLang; label: string; dir: 'ltr' | 'rtl' }[] = [
     { code: 'en', label: 'English', dir: 'ltr' },
     { code: 'ar', label: 'العربية', dir: 'rtl' },
     { code: 'fr', label: 'Français', dir: 'ltr' },
@@ -21,8 +21,8 @@ export const DUA_LANGS: { code: DuaLang; label: string; dir: 'ltr' | 'rtl' }[] =
     { code: 'bn', label: 'বাংলা', dir: 'ltr' },
 ]
 
-export interface SalahPosition {
-    id: SalahPositionId
+export type TSalahPosition = {
+    id: TSalahPositionId
     order: number
     name: string
     nameArabic: string
@@ -31,7 +31,7 @@ export interface SalahPosition {
     color: string
 }
 
-export interface QuranRef {
+export type TQuranRef = {
     type: 'quran'
     surah: number
     ayah: number
@@ -41,7 +41,7 @@ export interface QuranRef {
     url: string
 }
 
-export interface HadithRef {
+export type THadithRef = {
     type: 'hadith'
     source: string
     number?: string
@@ -50,17 +50,23 @@ export interface HadithRef {
     url?: string
 }
 
-export type DuaReference = QuranRef | HadithRef
+export type TDuaReference = TQuranRef | THadithRef
 
-export interface DuaVariation {
+export type TDuaVariation = {
     id: string
-    positionId: SalahPositionId
+    positionId: TSalahPositionId
     variationIndex: number
-    label?: string
+    label: string
     arabic: string
-    languages: Record<DuaLang, { transliteration: string; translation: string }>
-    references: DuaReference[]
-    audioUrl?: string
-    notes?: string
-    whenToRecite?: string
+    languages: Record<
+        TDuaLang,
+        {
+            transliteration: string
+            translation: string
+        }
+    >
+    references: TDuaReference[]
+    audioUrl: string
+    notes: string
+    whenToRecite: string
 }

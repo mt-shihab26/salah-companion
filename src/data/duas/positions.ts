@@ -1,6 +1,6 @@
-import type { SalahPosition } from './types'
+import type { TSalahPosition } from './types'
 
-export const SALAH_POSITIONS: SalahPosition[] = [
+export const SALAH_POSITIONS: TSalahPosition[] = [
     {
         id: 'opening',
         order: 1,

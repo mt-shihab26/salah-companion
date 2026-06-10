@@ -1,8 +1,8 @@
 import { Badge } from '#/components/ui/badge'
-import type { DuaReference } from '#/data/duas/types'
+import type { TDuaReference } from '#/data/duas/types'
 
 interface Props {
-    references: DuaReference[]
+    references: TDuaReference[]
 }
 
 export function DuaReferenceList({ references }: Props) {
@@ -28,7 +28,7 @@ export function DuaReferenceList({ references }: Props) {
     )
 }
 
-function HadithBadge({ ref }: { ref: Extract<DuaReference, { type: 'hadith' }> }) {
+function HadithBadge({ ref }: { ref: Extract<TDuaReference, { type: 'hadith' }> }) {
     const label = [ref.source, ref.number].filter(Boolean).join(' ')
 
     const content = (

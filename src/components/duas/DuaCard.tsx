@@ -9,7 +9,7 @@ import {
     CardTitle,
 } from '#/components/ui/card'
 import { Separator } from '#/components/ui/separator'
-import type { DuaLang, DuaVariation } from '#/data/duas/types'
+import type { TDuaLang, TDuaVariation } from '#/data/duas/types'
 import { useDuaFavorites } from '#/hooks/use-dua-favorites'
 import { cn } from '#/lib/utils'
 import { Check, Clock, Copy, ExternalLink, Heart } from 'lucide-react'
@@ -21,8 +21,8 @@ import { DuaReferenceList } from './DuaReferenceList'
 import { DuaTextDisplay } from './DuaTextDisplay'
 
 interface Props {
-    dua: DuaVariation
-    langs: DuaLang[]
+    dua: TDuaVariation
+    langs: TDuaLang[]
     showPosition?: boolean
 }
 

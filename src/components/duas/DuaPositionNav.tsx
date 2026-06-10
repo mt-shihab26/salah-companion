@@ -2,12 +2,12 @@ import { ArabicText } from '#/components/arabic-text'
 import { Button } from '#/components/ui/button'
 import { ScrollArea } from '#/components/ui/scroll-area'
 import { SALAH_POSITIONS } from '#/data/duas/positions'
-import type { SalahPositionId } from '#/data/duas/types'
+import type { TSalahPositionId } from '#/data/duas/types'
 import { cn } from '#/lib/utils'
 
 interface Props {
-    activeId: SalahPositionId | null
-    onSelect: (id: SalahPositionId) => void
+    activeId: TSalahPositionId | null
+    onSelect: (id: TSalahPositionId) => void
 }
 
 export function DuaPositionNav({ activeId, onSelect }: Props) {
@@ -25,7 +25,7 @@ export function DuaPositionNav({ activeId, onSelect }: Props) {
                                 'h-auto justify-start gap-3 py-2.5 text-left',
                                 active && 'font-semibold',
                             )}
-                            onClick={() => onSelect(pos.id as SalahPositionId)}
+                            onClick={() => onSelect(pos.id as TSalahPositionId)}
                         >
                             <span className="bg-primary text-primary-foreground flex size-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold">
                                 {pos.order}

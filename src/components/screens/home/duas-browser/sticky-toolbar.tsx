@@ -1,4 +1,3 @@
-import { DuaTranslationPicker } from '#/components/duas/DuaTranslationPicker'
 import {
     Select,
     SelectContent,
@@ -6,9 +5,14 @@ import {
     SelectTrigger,
     SelectValue,
 } from '#/components/ui/select'
+
+import type { TSalahPositionId } from '#/data/duas/types'
+
+import { useDuasBrowser } from './duas-browser-context'
+
+import { DuaTranslationPicker } from './dua-translation-picker'
+
 import { SALAH_POSITIONS } from '#/data/duas/positions'
-import type { SalahPositionId } from '#/data/duas/types'
-import { useDuasBrowser } from './context'
 
 export const StickyToolbar = () => {
     const { langs, toggleLang, activePosition, setActivePosition, activeMeta } = useDuasBrowser()
@@ -19,7 +23,7 @@ export const StickyToolbar = () => {
                 <div className="flex items-center gap-2 lg:hidden">
                     <Select
                         value={activePosition}
-                        onValueChange={(v) => setActivePosition(v as SalahPositionId)}
+                        onValueChange={(v) => setActivePosition(v as TSalahPositionId)}
                     >
                         <SelectTrigger className="h-9 min-w-55 rounded-full">
                             <SelectValue placeholder="Pick a position" />
@@ -34,12 +38,12 @@ export const StickyToolbar = () => {
                     </Select>
                 </div>
                 <div className="hidden items-center gap-2 lg:flex">
-                    <span className="text-muted-foreground text-xs font-semibold tracking-wider uppercase">
+                    <div className="text-muted-foreground text-xs font-semibold tracking-wider uppercase">
                         Now reading
-                    </span>
-                    <span className="text-foreground font-serif text-sm font-semibold">
+                    </div>
+                    <div className="text-foreground font-serif text-sm font-semibold">
                         {activeMeta?.name}
-                    </span>
+                    </div>
                 </div>
                 <DuaTranslationPicker langs={langs} onToggle={toggleLang} />
             </div>

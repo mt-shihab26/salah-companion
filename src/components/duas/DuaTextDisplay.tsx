@@ -1,12 +1,12 @@
 import { ArabicText } from '#/components/arabic-text'
 import { Separator } from '#/components/ui/separator'
-import type { DuaLang, DuaVariation } from '#/data/duas/types'
+import type { TDuaLang, TDuaVariation } from '#/data/duas/types'
 import { DUA_LANGS } from '#/data/duas/types'
 import { cn } from '#/lib/utils'
 
 interface Props {
-    dua: DuaVariation
-    langs: DuaLang[]
+    dua: TDuaVariation
+    langs: TDuaLang[]
 }
 
 export function DuaTextDisplay({ dua, langs }: Props) {

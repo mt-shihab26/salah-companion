@@ -1,10 +1,10 @@
 import { Badge } from '#/components/ui/badge'
 import { getPosition } from '#/data/duas/positions'
-import type { SalahPositionId } from '#/data/duas/types'
+import type { TSalahPositionId } from '#/data/duas/types'
 import { cn } from '#/lib/utils'
 
 interface Props {
-    positionId: SalahPositionId
+    positionId: TSalahPositionId
     className?: string
 }
 

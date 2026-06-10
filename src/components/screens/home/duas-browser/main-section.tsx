@@ -1,6 +1,6 @@
 import { DuaGroupSection } from '#/components/duas/DuaGroupSection'
 import { DuaPositionNav } from '#/components/duas/DuaPositionNav'
-import { useDuasBrowser } from './context'
+import { useDuasBrowser } from './duas-browser-context'
 
 export const MainSection = () => {
     const { langs, activePosition, setActivePosition, duas } = useDuasBrowser()

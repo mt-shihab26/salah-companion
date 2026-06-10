@@ -13,7 +13,6 @@ import { getDuasByPosition } from '#/data/duas/index'
 import { SALAH_POSITIONS } from '#/data/duas/positions'
 import type { SalahPositionId } from '#/data/duas/types'
 import { useDuaLang } from '#/hooks/use-dua-lang'
-import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 
 export const DuasBrowser = () => {
@@ -66,7 +65,6 @@ export const DuasBrowser = () => {
                         <span className="text-foreground font-serif text-sm font-semibold">
                             {activeMeta?.name}
                         </span>
-                        <ChevronDown className="text-muted-foreground size-3.5" />
                     </div>
                     <DuaTranslationPicker langs={langs} onToggle={toggleLang} />
                 </div>

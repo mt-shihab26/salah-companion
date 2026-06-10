@@ -1,6 +1,5 @@
-import type { TDuaLang } from '#/data/duas/types'
-
 import { cn } from '#/lib/utils'
+import { useDuasBrowser } from './duas-browser-context'
 
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
@@ -9,13 +8,9 @@ import { Check, Languages } from 'lucide-react'
 
 import { DUA_LANGS } from '#/data/duas/types'
 
-export const DuaTranslationPicker = ({
-    langs,
-    onToggle,
-}: {
-    langs: TDuaLang[]
-    onToggle: (lang: TDuaLang) => void
-}) => {
+export const DuaTranslationPicker = () => {
+    const { langs, toggleLang } = useDuasBrowser()
+
     const PICKABLE = DUA_LANGS.filter((l) => l.code !== 'ar')
 
     const selectedLabels = PICKABLE.filter((l) => langs.includes(l.code))
@@ -61,7 +56,7 @@ export const DuaTranslationPicker = ({
                             <li key={l.code}>
                                 <button
                                     type="button"
-                                    onClick={() => onToggle(l.code)}
+                                    onClick={() => toggleLang(l.code)}
                                     className={cn(
                                         'flex w-full items-center justify-between gap-3 rounded-md px-2.5 py-2 text-left text-sm transition-colors',
                                         'hover:bg-accent hover:text-accent-foreground',

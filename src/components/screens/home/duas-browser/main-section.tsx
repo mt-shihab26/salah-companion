@@ -1,6 +1,7 @@
+import { useDuasBrowser } from './duas-browser-context'
+
 import { DuaGroupSection } from '#/components/duas/DuaGroupSection'
 import { DuaPositionNav } from '#/components/duas/DuaPositionNav'
-import { useDuasBrowser } from './duas-browser-context'
 
 export const MainSection = () => {
     const { langs, activePosition, setActivePosition, duas } = useDuasBrowser()
@@ -12,7 +13,6 @@ export const MainSection = () => {
                     <DuaPositionNav activeId={activePosition} onSelect={setActivePosition} />
                 </div>
             </aside>
-
             <div className="min-w-0 flex-1">
                 <DuaGroupSection positionId={activePosition} duas={duas} langs={langs} />
             </div>

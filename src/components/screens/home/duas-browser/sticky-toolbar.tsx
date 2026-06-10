@@ -3,7 +3,7 @@ import { useDuasBrowser } from './duas-browser-context'
 import { DuaTranslationPicker } from './dua-translation-picker'
 
 export const StickyToolbar = () => {
-    const { langs, toggleLang, activeMeta } = useDuasBrowser()
+    const { activeMeta } = useDuasBrowser()
 
     return (
         <div className="border-border/60 bg-background/80 sticky top-0 z-20 -mx-4 w-full justify-between border-y px-4 py-3 backdrop-blur-md">
@@ -16,7 +16,7 @@ export const StickyToolbar = () => {
                         {activeMeta?.name}
                     </div>
                 </div>
-                <DuaTranslationPicker langs={langs} onToggle={toggleLang} />
+                <DuaTranslationPicker />
             </div>
         </div>
     )

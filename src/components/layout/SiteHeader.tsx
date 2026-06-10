@@ -1,8 +1,12 @@
 import { Link } from '@tanstack/react-router'
+import { Moon, Sun } from 'lucide-react'
 import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
+import { useTheme } from '#/hooks/use-theme'
 
 export function SiteHeader() {
+  const { theme, toggle } = useTheme()
+
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[var(--line)] bg-[var(--header-bg)] backdrop-blur-md">
       <div className="page-wrap flex h-14 items-center gap-4">
@@ -12,7 +16,7 @@ export function SiteHeader() {
 
         <Separator orientation="vertical" className="h-5" />
 
-        <nav className="flex items-center gap-1">
+        <nav className="flex flex-1 items-center gap-1">
           <Button variant="ghost" size="sm" asChild>
             <Link to="/" activeProps={{ className: 'bg-accent text-accent-foreground' }}>
               Home
@@ -24,6 +28,10 @@ export function SiteHeader() {
             </Link>
           </Button>
         </nav>
+
+        <Button variant="ghost" size="icon" onClick={toggle} aria-label="Toggle theme">
+          {theme === 'dark' ? <Sun className="size-4" /> : <Moon className="size-4" />}
+        </Button>
       </div>
     </header>
   )

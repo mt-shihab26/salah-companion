@@ -1,217 +1,804 @@
 # Duas in Salah — Implementation Progress
 
-## Overview
+**Total:** 39 duas · 9 salah positions · 6 languages
 
-Building a comprehensive Islamic prayer supplications (duas) website with:
+**Features per dua:**
+- Arabic text (RTL) · Transliteration · 6-language translations (EN, AR, FR, UR, TR, MS)
+- Audio playback · Quran reference · Hadith reference · Salah position context · Notes/details
 
-- Arabic text (RTL), transliteration, multi-language translations (EN, AR, FR, UR, TR, MS)
-- Audio playback per dua
-- Quran ayat & Hadith references
-- Salah position context
-- Modern shadcn/ui design (sea/lagoon theme)
-
-**Total duas:** 39 across 9 salah positions
+**Legend:** ⬜ Pending · 🔄 In Progress · ✅ Done
 
 ---
 
-## Phase 1 — Data Layer
-
-### Types & Positions
+## Foundation
 
 - [ ] `src/data/duas/types.ts` — TypeScript interfaces
 - [ ] `src/data/duas/positions.ts` — 9 SalahPosition definitions
-- [ ] `src/data/duas/index.ts` — Exports: allDuas[], getDuaById(), getDuasByPosition()
-
-### Dua Data Files
-
-#### 1. Opening / Istiftah (5 duas)
-
-| #   | ID                  | Arabic Name                                                 | Status     |
-| --- | ------------------- | ----------------------------------------------------------- | ---------- |
-| 1   | `takbeer`           | تكبيرة الإحرام — Takbeeratul Ihram                          | ⬜ Pending |
-| 2   | `istiftah-1`        | دعاء الاستفتاح — Dua Istiftah (Version 1)                   | ⬜ Pending |
-| 3   | `istiftah-2`        | دعاء الاستفتاح — Dua Istiftah (Version 2 – removal of sins) | ⬜ Pending |
-| 4   | `istiftah-3`        | دعاء الاستفتاح — Dua Istiftah (Version 3 – glorification)   | ⬜ Pending |
-| 5   | `istiftah-tahajjud` | دعاء الاستفتاح — Dua Istiftah (Tahajjud)                    | ⬜ Pending |
-
-**File:** `src/data/duas/opening.ts` — ⬜ Pending
-
----
-
-#### 2. Before Recitation / Ta'awwudh (1 dua)
-
-| #   | ID           | Arabic Name                          | Status     |
-| --- | ------------ | ------------------------------------ | ---------- |
-| 6   | `taawwudh-1` | التعوذ — Seeking Refuge from Shaytan | ⬜ Pending |
-
-**File:** `src/data/duas/taawwudh.ts` — ⬜ Pending
+- [ ] `src/data/duas/index.ts` — allDuas[], getDuaById(), getDuasByPosition()
+- [ ] `src/styles.css` — Arabic font + `.arabic-text` class
+- [ ] `src/contexts/AudioContext.tsx` — Global audio state
+- [ ] `src/hooks/use-audio-player.ts` — Per-dua audio hook
+- [ ] `src/hooks/use-dua-lang.ts` — Language preference (localStorage)
+- [ ] `src/components/layout/SiteHeader.tsx`
+- [ ] `src/components/layout/SiteFooter.tsx`
+- [ ] `src/routes/__root.tsx` — Add header/footer
+- [ ] `src/components/duas/DuaPositionBadge.tsx`
+- [ ] `src/components/duas/DuaReferenceList.tsx`
+- [ ] `src/components/duas/DuaTranslationPicker.tsx`
+- [ ] `src/components/duas/DuaAudioPlayer.tsx`
+- [ ] `src/components/duas/DuaTextDisplay.tsx`
+- [ ] `src/components/duas/DuaCard.tsx`
+- [ ] `src/components/duas/DuaGroupSection.tsx`
+- [ ] `src/components/duas/DuaPositionNav.tsx`
+- [ ] `src/routes/index.tsx` — Hero landing page
+- [ ] `src/routes/duas/index.tsx` — Browse page
+- [ ] `src/routes/duas/$duaId.tsx` — Detail page
 
 ---
 
-#### 3. Ruku / Bowing (7 duas)
+## Position 1 — Opening / Istiftah · الاستفتاح
 
-| #   | ID       | Arabic Name                                       | Status     |
-| --- | -------- | ------------------------------------------------- | ---------- |
-| 7   | `ruku-1` | سُبْحَانَ رَبِّيَ الْعَظِيمِ                      | ⬜ Pending |
-| 8   | `ruku-2` | سُبُّوحٌ قُدُّوسٌ                                 | ⬜ Pending |
-| 9   | `ruku-3` | سُبْحَانَكَ وَبِحَمْدِكَ لاَ إِلَهَ إِلاَّ أَنْتَ | ⬜ Pending |
-| 10  | `ruku-4` | سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ      | ⬜ Pending |
-| 11  | `ruku-5` | سُبْحَانَكَ وَبِحَمْدِكَ أَسْتَغْفِرُكَ           | ⬜ Pending |
-| 12  | `ruku-6` | سُبْحَانَ ذِي الْجَبَرُوتِ                        | ⬜ Pending |
-| 13  | `ruku-7` | اللَّهُمَّ لَكَ رَكَعْتُ                          | ⬜ Pending |
+### Dua 1 — Takbeeratul Ihram · تكبيرة الإحرام
+**ID:** `takbeer` · **Status:** ⬜ Pending
 
-**File:** `src/data/duas/ruku.ts` — ⬜ Pending
-
----
-
-#### 4. Qawmah / Standing After Ruku (4 duas)
-
-| #   | ID         | Arabic Name                                         | Status     |
-| --- | ---------- | --------------------------------------------------- | ---------- |
-| 14  | `qawmah-1` | سَمِعَ اللهُ لِمَنْ حَمِدَهُ (short)                | ⬜ Pending |
-| 15  | `qawmah-2` | سَمِعَ اللهُ لِمَنْ حَمِدَهُ (with filling heavens) | ⬜ Pending |
-| 16  | `qawmah-3` | رَبَّنَا لَكَ الْحَمْدُ (extended)                  | ⬜ Pending |
-| 17  | `qawmah-4` | اللَّهُمَّ لَكَ الْحَمْدُ (with purification)       | ⬜ Pending |
-
-**File:** `src/data/duas/qawmah.ts` — ⬜ Pending
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
 
 ---
 
-#### 5. Sajdah / Prostration (10 duas)
+### Dua 2 — Dua Istiftah v1 · دعاء الاستفتاح (رواية ١)
+**ID:** `istiftah-1` · **Status:** ⬜ Pending
 
-| #   | ID          | Arabic Name                                            | Status     |
-| --- | ----------- | ------------------------------------------------------ | ---------- |
-| 18  | `sajdah-1`  | سُبْحَانَ رَبِّيَ الْأَعْلَى                           | ⬜ Pending |
-| 19  | `sajdah-2`  | اللَّهُمَّ اغْفِرْ لِي مَا أَسْرَرْتُ وَمَا أَعْلَنْتُ | ⬜ Pending |
-| 20  | `sajdah-3`  | سُبُّوحٌ قُدُّوسٌ                                      | ⬜ Pending |
-| 21  | `sajdah-4`  | سُبْحَانَكَ وَبِحَمْدِكَ لاَ إِلَهَ إِلاَّ أَنْتَ      | ⬜ Pending |
-| 22  | `sajdah-5`  | سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ           | ⬜ Pending |
-| 23  | `sajdah-6`  | سُبْحَانَ ذِي الْجَبَرُوتِ                             | ⬜ Pending |
-| 24  | `sajdah-7`  | اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ                 | ⬜ Pending |
-| 25  | `sajdah-8`  | اللَّهُمَّ أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ             | ⬜ Pending |
-| 26  | `sajdah-9`  | اللَّهُمَّ لَكَ سَجَدْتُ                               | ⬜ Pending |
-| 27  | `sajdah-10` | اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُوراً                  | ⬜ Pending |
-
-**File:** `src/data/duas/sajdah.ts` — ⬜ Pending
-
----
-
-#### 6. Jalsah / Sitting Between Prostrations (1 dua)
-
-| #   | ID         | Arabic Name       | Status     |
-| --- | ---------- | ----------------- | ---------- |
-| 28  | `jalsah-1` | رَبِّ اغْفِرْ لِي | ⬜ Pending |
-
-**File:** `src/data/duas/jalsah.ts` — ⬜ Pending
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
 
 ---
 
-#### 7. Tashahhud (1 dua)
+### Dua 3 — Dua Istiftah v2 (Removal of sins) · دعاء الاستفتاح (رواية ٢)
+**ID:** `istiftah-2` · **Status:** ⬜ Pending
 
-| #   | ID            | Arabic Name | Status     |
-| --- | ------------- | ----------- | ---------- |
-| 29  | `tashahhud-1` | التحيات     | ⬜ Pending |
-
-**File:** `src/data/duas/tashahhud.ts` — ⬜ Pending
-
----
-
-#### 8. Salawat / Prayers on the Prophet (1 dua)
-
-| #   | ID          | Arabic Name                               | Status     |
-| --- | ----------- | ----------------------------------------- | ---------- |
-| 30  | `salawat-1` | الصلاة الإبراهيمية — Salawat Ibrahimiyyah | ⬜ Pending |
-
-**File:** `src/data/duas/salawat.ts` — ⬜ Pending
-
----
-
-#### 9. Before Tasleem (9 duas)
-
-| #   | ID          | Arabic Name                                                              | Status     |
-| --- | ----------- | ------------------------------------------------------------------------ | ---------- |
-| 31  | `tasleem-1` | اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي (wrongdoing)                          | ⬜ Pending |
-| 32  | `tasleem-2` | اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ (comprehensive forgiveness)         | ⬜ Pending |
-| 33  | `tasleem-3` | اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ (refuge from Hell) | ⬜ Pending |
-| 34  | `tasleem-4` | اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ (grave + Dajjal)   | ⬜ Pending |
-| 35  | `tasleem-5` | اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبُخْلِ (miserliness + cowardice)  | ⬜ Pending |
-| 36  | `tasleem-6` | اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّكَ الْوَاحِدُ (divine attributes)    | ⬜ Pending |
-| 37  | `tasleem-7` | اللَّهُمَّ إِنِّي أَسْأَلُكَ الْمَنَّانُ (creator of heavens)            | ⬜ Pending |
-| 38  | `tasleem-8` | Seeking refuge from Hell & False Messiah                                 | ⬜ Pending |
-| 39  | `tasleem-9` | Grave, Dajjal, life and death                                            | ⬜ Pending |
-
-**File:** `src/data/duas/before-tasleem.ts` — ⬜ Pending
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
 
 ---
 
-## Phase 2 — Global Infrastructure
+### Dua 4 — Dua Istiftah v3 (Glorification) · دعاء الاستفتاح (رواية ٣)
+**ID:** `istiftah-3` · **Status:** ⬜ Pending
 
-- [ ] `src/styles.css` — Arabic font (Noto Naskh Arabic) + `.arabic-text` utility class
-- [ ] `src/contexts/AudioContext.tsx` — Global currently-playing dua tracker
-- [ ] `src/hooks/use-audio-player.ts` — Per-dua audio playback hook
-- [ ] `src/hooks/use-dua-lang.ts` — Translation language preference (localStorage)
-- [ ] `src/components/layout/SiteHeader.tsx` — Sticky nav with dark mode toggle
-- [ ] `src/components/layout/SiteFooter.tsx` — Footer with attribution
-- [ ] `src/routes/__root.tsx` — Wrap children in Header + Footer
-
----
-
-## Phase 3 — Leaf Components
-
-- [ ] `src/components/duas/DuaPositionBadge.tsx` — Colored position badge
-- [ ] `src/components/duas/DuaReferenceList.tsx` — Quran/Hadith citation chips
-- [ ] `src/components/duas/DuaTranslationPicker.tsx` — Language selector dropdown
-- [ ] `src/components/duas/DuaAudioPlayer.tsx` — Play/pause + scrub bar
-- [ ] `src/components/duas/DuaTextDisplay.tsx` — Arabic / Transliteration / Translation tabs
-- [ ] `src/components/duas/DuaCard.tsx` — Full dua card assembly
-- [ ] `src/components/duas/DuaCardSkeleton.tsx` — Loading skeleton
-- [ ] `src/components/duas/DuaGroupSection.tsx` — Position section with card grid
-- [ ] `src/components/duas/DuaPositionNav.tsx` — Horizontal position filter strip
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
 
 ---
 
-## Phase 4 — Routes
+### Dua 5 — Dua Istiftah (Tahajjud) · دعاء الاستفتاح (التهجد)
+**ID:** `istiftah-tahajjud` · **Status:** ⬜ Pending
 
-- [ ] `src/routes/index.tsx` — Hero landing page (replace placeholder)
-- [ ] `src/routes/duas/index.tsx` — Browse page with `?position=` filter
-- [ ] `src/routes/duas/$duaId.tsx` — Single dua detail page
-- [ ] Run `bun run generate-routes` — Regenerate routeTree.gen.ts
-
----
-
-## Phase 5 — Polish & QA
-
-- [ ] Dark mode testing
-- [ ] Mobile responsiveness (RTL Arabic, horizontal position nav scroll)
-- [ ] Audio: add known audio URLs to data files
-- [ ] Add `public/audio/duas/` directory with audio files
-- [ ] Cross-browser Arabic font rendering check
-
----
-
-## Languages Supported
-
-| Code | Language | Script         | Notes                              |
-| ---- | -------- | -------------- | ---------------------------------- |
-| `en` | English  | Latin          | Default                            |
-| `ar` | Arabic   | Arabic (RTL)   | Modern Standard Arabic translation |
-| `fr` | French   | Latin          |                                    |
-| `ur` | Urdu     | Nastaliq (RTL) |                                    |
-| `tr` | Turkish  | Latin          |                                    |
-| `ms` | Malay    | Latin          |                                    |
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference · Sahih Muslim 1848
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
 
 ---
 
-## Salah Positions Order
+## Position 2 — Before Recitation / Ta'awwudh · التعوذ
 
-| #   | ID               | English Name                 | Arabic      | Icon |
-| --- | ---------------- | ---------------------------- | ----------- | ---- |
-| 1   | `opening`        | Opening (Istiftah)           | الاستفتاح   | 🕌   |
-| 2   | `taawwudh`       | Seeking Refuge (Ta'awwudh)   | التعوذ      | 🛡️   |
-| 3   | `ruku`           | Bowing (Ruku)                | الركوع      | 🙇   |
-| 4   | `qawmah`         | Rising (Qawmah)              | القومة      | ⬆️   |
-| 5   | `sajdah`         | Prostration (Sajdah)         | السجدة      | 🤲   |
-| 6   | `jalsah`         | Sitting Between Prostrations | الجلسة      | 🧘   |
-| 7   | `tashahhud`      | Tashahhud                    | التشهد      | 📿   |
-| 8   | `salawat`        | Prayers on the Prophet       | الصلوات     | ☪️   |
-| 9   | `before-tasleem` | Before Final Salutation      | قبل التسليم | 🤍   |
+### Dua 6 — Seeking Refuge from Shaytan · الاستعاذة
+**ID:** `taawwudh-1` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference · An-Nahl 16:98
+- [ ] Hadith reference · Musnad Ahmad 22179
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+## Position 3 — Ruku / Bowing · الركوع
+
+### Dua 7 — Subhana Rabbiy al-'Azim · سبحان ربي العظيم
+**ID:** `ruku-1` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 8 — Subbuhun Quddus · سبوح قدوس
+**ID:** `ruku-2` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 9 — Subhanaka wa bihamdika la ilaha illa anta (Ruku)
+**ID:** `ruku-3` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 10 — Subhanaka Allahumma Rabbana wa bihamdika (Ruku)
+**ID:** `ruku-4` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 11 — Subhanaka wa bihamdika astaghfiruka (Ruku)
+**ID:** `ruku-5` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 12 — Subhana dhil-Jabarut (Ruku)
+**ID:** `ruku-6` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 13 — Allahumma laka raka'tu · اللهم لك ركعت
+**ID:** `ruku-7` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+## Position 4 — Qawmah / Standing After Ruku · القومة
+
+### Dua 14 — Sami'allahu liman hamidah (short)
+**ID:** `qawmah-1` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 15 — Sami'allahu liman hamidah (filling heavens)
+**ID:** `qawmah-2` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 16 — Rabbana lakal hamd (extended)
+**ID:** `qawmah-3` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 17 — Allahumma lakal hamd (with purification)
+**ID:** `qawmah-4` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+## Position 5 — Sajdah / Prostration · السجدة
+
+### Dua 18 — Subhana Rabbiy al-A'la · سبحان ربي الأعلى
+**ID:** `sajdah-1` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference · Al-A'la 87:1
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 19 — Allahumma ighfir li ma asrart (Sajdah)
+**ID:** `sajdah-2` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 20 — Subbuhun Quddus (Sajdah)
+**ID:** `sajdah-3` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 21 — Subhanaka wa bihamdika la ilaha illa anta (Sajdah)
+**ID:** `sajdah-4` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 22 — Subhanaka Allahumma Rabbana wa bihamdika (Sajdah)
+**ID:** `sajdah-5` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 23 — Subhana dhil-Jabarut (Sajdah)
+**ID:** `sajdah-6` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 24 — Allahumma ighfir li dhanbi kullahu · اللهم اغفر لي ذنبي كله
+**ID:** `sajdah-7` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 25 — Allahumma a'udhu birdaka min sakhatika · أعوذ برضاك من سخطك
+**ID:** `sajdah-8` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 26 — Allahumma laka sajadtu · اللهم لك سجدت
+**ID:** `sajdah-9` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 27 — Allahumma ij'al fi qalbi nuran · اجعل في قلبي نوراً
+**ID:** `sajdah-10` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+## Position 6 — Jalsah / Sitting Between Prostrations · الجلسة
+
+### Dua 28 — Rabbi ighfir li · رب اغفر لي
+**ID:** `jalsah-1` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+## Position 7 — Tashahhud · التشهد
+
+### Dua 29 — At-Tahiyyat · التحيات
+**ID:** `tashahhud-1` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+## Position 8 — Salawat · الصلوات
+
+### Dua 30 — Salawat Ibrahimiyyah · الصلاة الإبراهيمية
+**ID:** `salawat-1` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference · Al-Ahzab 33:56
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+## Position 9 — Before Tasleem · قبل التسليم
+
+### Dua 31 — Allahumma inni zalamtu nafsi (wrongdoing)
+**ID:** `tasleem-1` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 32 — Allahumma ighfir li ma qaddamtu (comprehensive)
+**ID:** `tasleem-2` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 33 — A'udhu bika min adhab Jahannam (refuge from Hell)
+**ID:** `tasleem-3` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 34 — A'udhu bika min adhab al-qabr (grave + Dajjal)
+**ID:** `tasleem-4` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 35 — A'udhu bika min al-bukhl (miserliness + cowardice)
+**ID:** `tasleem-5` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 36 — As'aluka bi annakal Wahid al-Ahad (divine attributes)
+**ID:** `tasleem-6` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference · Al-Ikhlas 112:1-4
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 37 — As'aluka bil-Mannan Badi' as-samawat (creator of heavens)
+**ID:** `tasleem-7` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 38 — Refuge from Hell & False Messiah (v2)
+**ID:** `tasleem-8` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+### Dua 39 — Grave, Dajjal, life and death (v2)
+**ID:** `tasleem-9` · **Status:** ⬜ Pending
+
+- [ ] Arabic text
+- [ ] Transliteration
+- [ ] Translation — English
+- [ ] Translation — Arabic (MSA)
+- [ ] Translation — French
+- [ ] Translation — Urdu
+- [ ] Translation — Turkish
+- [ ] Translation — Malay
+- [ ] Quran reference
+- [ ] Hadith reference
+- [ ] Audio URL
+- [ ] Salah position context
+- [ ] Notes / scholarly detail
+
+---
+
+## Overall Progress
+
+| Phase | Status |
+|-------|--------|
+| Foundation (types, positions, infra, components, routes) | ⬜ 0 / 21 |
+| Duas data (all 39) | ⬜ 0 / 39 |
+| **Total features completed** | ⬜ 0 / 507 |

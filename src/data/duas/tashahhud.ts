@@ -1,0 +1,42 @@
+import type { DuaVariation } from './types'
+
+export const tashahhudDuas: DuaVariation[] = [
+  {
+    id: 'tashahhud-1',
+    positionId: 'tashahhud',
+    variationIndex: 1,
+    label: 'At-Tahiyyat (Tashahhud)',
+    arabic:
+      'التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ',
+    transliteration:
+      "At-taḥiyyātu lillāhi waṣ-ṣalawātu waṭ-ṭayyibāt, as-salāmu 'alayka ayyuhan-nabiyyu wa raḥmatullāhi wa barakātuh, as-salāmu 'alaynā wa 'alā 'ibādillāhiṣ-ṣāliḥīn, ashhadu allā ilāha illallāhu wa ashhadu anna Muḥammadan 'abduhu wa rasūluh",
+    translations: {
+      en: "All salutations, prayers and pure words are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon all the righteous servants of Allah. I bear witness that there is no god worthy of worship except Allah, and I bear witness that Muhammad is His servant and His Messenger.",
+      ar: 'التحيات لله والصلوات والطيبات، السلام عليك أيها النبي ورحمة الله وبركاته، السلام علينا وعلى عباد الله الصالحين، أشهد أن لا إله إلا الله وأشهد أن محمداً عبده ورسوله.',
+      fr: "Toutes les salutations, prières et paroles pures sont pour Allah. Que la paix soit sur toi, ô Prophète, et la miséricorde d'Allah et Ses bénédictions. Que la paix soit sur nous et sur tous les serviteurs vertueux d'Allah. J'atteste qu'il n'y a pas de dieu digne d'adoration excepté Allah, et j'atteste que Muhammad est Son serviteur et Son messager.",
+      ur: 'تمام تعظیمیں، نمازیں اور پاک باتیں اللہ کے لیے ہیں۔ اے نبی! آپ پر سلام، اللہ کی رحمت اور اس کی برکتیں ہوں۔ ہم پر اور اللہ کے تمام نیک بندوں پر سلام ہو۔ میں گواہی دیتا ہوں کہ اللہ کے سوا کوئی معبود نہیں اور محمد ﷺ اس کے بندے اور رسول ہیں۔',
+      tr: "Tüm selamlar, dualar ve güzel sözler Allah içindir. Ey Peygamber, sana selam olsun, Allah'ın rahmeti ve bereketi. Bize ve Allah'ın salih kullarına selam olsun. Allah'tan başka ilah olmadığına ve Muhammed'in O'nun kulu ve elçisi olduğuna şehadet ederim.",
+      ms: 'Semua penghormatan, solat dan kata-kata yang baik adalah untuk Allah. Salam sejahtera ke atasmu wahai Nabi, serta rahmat dan keberkatan Allah. Salam sejahtera ke atas kami dan ke atas semua hamba Allah yang soleh. Aku bersaksi bahawa tiada tuhan yang layak disembah kecuali Allah dan aku bersaksi bahawa Muhammad adalah hamba dan pesuruh-Nya.',
+    },
+    references: [
+      {
+        type: 'hadith',
+        source: 'Sahih al-Bukhari',
+        number: '831',
+        grade: 'Sahih',
+        narrator: 'Ibn Masud',
+        url: 'https://sunnah.com/bukhari:831',
+      },
+      {
+        type: 'hadith',
+        source: 'Sahih Muslim',
+        number: '402',
+        grade: 'Sahih',
+        narrator: 'Ibn Masud',
+        url: 'https://sunnah.com/muslim:402',
+      },
+    ],
+    notes:
+      "The Tashahhud was directly taught by the Prophet ﷺ to Ibn Masud (رضي الله عنه), who said: 'The Messenger of Allah ﷺ taught me the Tashahhud just as he taught me a surah from the Quran, and he held it in his hand.' It is obligatory (wajib) in most madhabs. The index finger is raised during the Shahadah. The greeting of peace to the Prophet ﷺ is a direct address, affirming the spiritual presence of the Prophet ﷺ.",
+  },
+]

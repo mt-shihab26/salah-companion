@@ -1,0 +1,50 @@
+import type { DuaVariation } from './types'
+
+export const taawwudhDuas: DuaVariation[] = [
+  {
+    id: 'taawwudh-1',
+    positionId: 'taawwudh',
+    variationIndex: 1,
+    label: "Seeking Refuge (Ta'awwudh)",
+    arabic:
+      'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ',
+    transliteration:
+      "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+    translations: {
+      en: 'I seek refuge in Allah from the accursed devil — from his incitement to madness (hamz), his puffing up with pride (nafkh), and his blowing of evil poetry (nafth).',
+      ar: 'أعوذ بالله من الشيطان الرجيم، من همزه ونفخه ونفثه.',
+      fr: "Je cherche refuge auprès d'Allah contre le diable maudit — contre ses provocations à la folie, son orgueil et sa poésie maléfique.",
+      ur: 'میں شیطان مردود سے اللہ کی پناہ مانگتا ہوں — اس کے وسوسوں، تکبر اور بری شاعری سے۔',
+      tr: "Kovulmuş şeytanın vesvesesinden, kibrinden ve kötü şiirinden Allah'a sığınırım.",
+      ms: 'Aku berlindung dengan Allah daripada syaitan yang direjam — daripada godaannya, kesombongannya dan tiupan jahatnya.',
+    },
+    references: [
+      {
+        type: 'quran',
+        surah: 16,
+        ayah: 98,
+        surahName: 'An-Nahl',
+        surahNameArabic: 'النحل',
+        url: 'https://quran.com/16/98',
+      },
+      {
+        type: 'hadith',
+        source: 'Musnad Ahmad',
+        number: '22179',
+        grade: 'Hasan',
+        narrator: 'Jubayr ibn Mutim',
+        url: 'https://sunnah.com/ahmad:22179',
+      },
+      {
+        type: 'hadith',
+        source: 'Sunan Abu Dawud',
+        number: '764',
+        grade: 'Hasan Sahih',
+        narrator: 'Abu Sa\'id al-Khudri',
+        url: 'https://sunnah.com/abudawud:764',
+      },
+    ],
+    notes:
+      "The Ta'awwudh is recited silently before Al-Fatihah in every rak'ah according to most scholars, or only in the first rak'ah according to others. The Quran commands it: 'When you recite the Quran, seek refuge with Allah from the accursed Shaytan' (An-Nahl 16:98). The three words 'hamz', 'nafkh', and 'nafth' describe Shaytan's three modes of attack: inducing madness, inspiring arrogance, and inspiring evil poetry.",
+  },
+]

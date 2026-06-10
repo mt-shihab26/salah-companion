@@ -8,22 +8,24 @@
 
 **Legend:** ⬜ Pending · 🔄 In Progress · ✅ Done
 
+**UI rule:** All components must use shadcn/ui primitives (`Badge`, `Button`, `Toggle`, `ToggleGroup`, `Card`, `Separator`, etc.) from `src/components/ui/`. No raw inline styles for structure — use Tailwind classes and CSS variables only where shadcn doesn't cover it.
+
 ---
 
 ## Foundation
 
-- [ ] `src/data/duas/types.ts` — TypeScript interfaces
-- [ ] `src/data/duas/positions.ts` — 9 SalahPosition definitions
-- [ ] `src/data/duas/index.ts` — allDuas[], getDuaById(), getDuasByPosition()
-- [ ] `src/styles.css` — Arabic font + `.arabic-text` class
-- [ ] `src/contexts/AudioContext.tsx` — Global audio state
-- [ ] `src/hooks/use-audio-player.ts` — Per-dua audio hook
-- [ ] `src/hooks/use-dua-lang.ts` — Language preference (localStorage)
-- [ ] `src/components/layout/SiteHeader.tsx`
-- [ ] `src/components/layout/SiteFooter.tsx`
-- [ ] `src/routes/__root.tsx` — Add header/footer
-- [ ] `src/components/duas/DuaPositionBadge.tsx`
-- [ ] `src/components/duas/DuaReferenceList.tsx`
+- [x] `src/data/duas/types.ts` — TypeScript interfaces
+- [x] `src/data/duas/positions.ts` — 9 SalahPosition definitions
+- [x] `src/data/duas/index.ts` — allDuas[], getDuaById(), getDuasByPosition()
+- [x] `src/styles.css` — Arabic font + `.arabic-text` class
+- [x] `src/contexts/AudioContext.tsx` — Global audio state
+- [x] `src/hooks/use-audio-player.ts` — Per-dua audio hook
+- [x] `src/hooks/use-dua-lang.ts` — Language preference (localStorage)
+- [x] `src/components/layout/SiteHeader.tsx`
+- [x] `src/components/layout/SiteFooter.tsx`
+- [x] `src/routes/__root.tsx` — Add header/footer
+- [x] `src/components/duas/DuaPositionBadge.tsx`
+- [x] `src/components/duas/DuaReferenceList.tsx`
 - [ ] `src/components/duas/DuaTranslationPicker.tsx`
 - [ ] `src/components/duas/DuaAudioPlayer.tsx`
 - [ ] `src/components/duas/DuaTextDisplay.tsx`
@@ -799,6 +801,6 @@
 
 | Phase | Status |
 |-------|--------|
-| Foundation (types, positions, infra, components, routes) | ⬜ 0 / 21 |
+| Foundation (types, positions, infra, components, routes) | 🔄 3 / 21 |
 | Duas data (all 39) | ⬜ 0 / 39 |
 | **Total features completed** | ⬜ 0 / 507 |

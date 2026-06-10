@@ -35,14 +35,14 @@ function Home() {
   return (
     <div className="space-y-20">
       {/* ── Top bar ──────────────────────────────────── */}
-      <PageWrap className="flex items-center justify-between pt-6">
+      <PageWrap className="relative flex items-center justify-center pt-6">
         <div className="flex items-center gap-2">
           <div className="flex size-8 items-center justify-center rounded-lg bg-primary">
             <BookOpen className="size-4 text-primary-foreground" />
           </div>
           <span className="font-semibold text-foreground">Salah Companion</span>
         </div>
-        <Button variant="outline" size="icon" onClick={toggle} aria-label="Toggle theme">
+        <Button variant="outline" size="icon" onClick={toggle} aria-label="Toggle theme" className="absolute right-4">
           {theme === 'dark' ? <Sun className="size-4" /> : <Moon className="size-4" />}
         </Button>
       </PageWrap>

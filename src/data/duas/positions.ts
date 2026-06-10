@@ -84,4 +84,6 @@ export const SALAH_POSITIONS: TSalahPosition[] = [
     },
 ]
 
-export const getPosition = (id: string) => SALAH_POSITIONS.find((p) => p.id === id)
+export const getPosition = (id: string) => {
+    return SALAH_POSITIONS.find((p) => p.id === id)
+}

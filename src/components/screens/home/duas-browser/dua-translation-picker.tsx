@@ -26,19 +26,25 @@ export const DuaTranslationPicker = ({
 
     return (
         <Popover>
-            <PopoverTrigger asChild>
-                <Button variant="outline" size="sm" className="h-9 gap-2 rounded-full pr-2.5 pl-3">
+            <PopoverTrigger asChild className="w-full max-w-72 justify-end">
+                <Button
+                    variant="outline"
+                    size="sm"
+                    className="h-9 w-full justify-between gap-2 rounded-full pr-2.5 pl-3"
+                >
                     <Languages className="text-primary size-4" />
-                    <span className="hidden max-w-45 truncate sm:inline">
-                        {selectedLabels || 'Translations'}
-                    </span>
-                    <span className="sm:hidden">Translations</span>
-                    <Badge
-                        variant="secondary"
-                        className="ml-1 h-5 rounded-full px-2 text-[10px] font-semibold"
-                    >
-                        {selectedCount}
-                    </Badge>
+                    <div className="flex gap-1">
+                        <span className="hidden max-w-52 truncate sm:inline">
+                            {selectedLabels || 'Translations'}
+                        </span>
+                        <span className="sm:hidden">Translations</span>
+                        <Badge
+                            variant="secondary"
+                            className="ml-1 h-5 rounded-full px-2 text-[10px] font-semibold"
+                        >
+                            {selectedCount}
+                        </Badge>
+                    </div>
                 </Button>
             </PopoverTrigger>
             <PopoverContent align="end" className="w-72 p-0">
@@ -63,9 +69,11 @@ export const DuaTranslationPicker = ({
                                     )}
                                 >
                                     <div className="flex items-center gap-1">
-                                        <div className="leading-tight font-medium">{l.label}</div>
-                                        <div className="text-muted-foreground text-[10px] tracking-wider uppercase">
+                                        <div className="text-primary text-[10px] font-semibold tracking-wider uppercase">
                                             {l.code}
+                                        </div>
+                                        <div className="text-[11px] leading-tight font-medium">
+                                            {l.label}
                                         </div>
                                     </div>
                                     <span

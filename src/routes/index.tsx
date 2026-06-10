@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
-import { BookOpen, Languages, Volume2, BookMarked, Moon, Sun } from 'lucide-react'
+import { BookOpen, Languages, Volume2, BookMarked } from 'lucide-react'
 import { Button } from '#/components/ui/button'
-import { useTheme } from '#/hooks/use-theme'
 import { Card, CardContent } from '#/components/ui/card'
 import { Badge } from '#/components/ui/badge'
 import { Separator } from '#/components/ui/separator'
@@ -25,7 +24,6 @@ const FEATURES = [
 ]
 
 function Home() {
-  const { theme, toggle } = useTheme()
   const { lang, setLang } = useDuaLang()
   const [activePosition, setActivePosition] = useState<SalahPositionId>(
     SALAH_POSITIONS[0].id as SalahPositionId,
@@ -34,17 +32,14 @@ function Home() {
 
   return (
     <div className="space-y-20">
-      {/* ── Top bar ──────────────────────────────────── */}
-      <PageWrap className="relative flex items-center justify-center pt-6">
+      {/* ── Logo ─────────────────────────────────────── */}
+      <PageWrap className="flex justify-center pt-8">
         <div className="flex items-center gap-2">
           <div className="flex size-8 items-center justify-center rounded-lg bg-primary">
             <BookOpen className="size-4 text-primary-foreground" />
           </div>
           <span className="font-semibold text-foreground">Salah Companion</span>
         </div>
-        <Button variant="outline" size="icon" onClick={toggle} aria-label="Toggle theme" className="absolute right-4">
-          {theme === 'dark' ? <Sun className="size-4" /> : <Moon className="size-4" />}
-        </Button>
       </PageWrap>
 
       {/* ── Hero ─────────────────────────────────────── */}

@@ -1,18 +1,9 @@
 import { DuaGroupSection } from '#/components/duas/DuaGroupSection'
 import { DuaPositionNav } from '#/components/duas/DuaPositionNav'
-import { getDuasByPosition } from '#/data/duas/index'
-import { SALAH_POSITIONS } from '#/data/duas/positions'
-import type { SalahPositionId } from '#/data/duas/types'
-import { useDuaLang } from '#/hooks/use-dua-lang'
-import { useState } from 'react'
+import { useDuasBrowser } from './context'
 
 export const MainSection = () => {
-    const { langs, toggleLang } = useDuaLang()
-    const [activePosition, setActivePosition] = useState<SalahPositionId>(
-        SALAH_POSITIONS[0].id as SalahPositionId,
-    )
-    const duas = getDuasByPosition(activePosition)
-    const activeMeta = SALAH_POSITIONS.find((p) => p.id === activePosition)
+    const { langs, activePosition, setActivePosition, duas } = useDuasBrowser()
 
     return (
         <div className="flex gap-8">

@@ -8,15 +8,10 @@ import {
 } from '#/components/ui/select'
 import { SALAH_POSITIONS } from '#/data/duas/positions'
 import type { SalahPositionId } from '#/data/duas/types'
-import { useDuaLang } from '#/hooks/use-dua-lang'
-import { useState } from 'react'
+import { useDuasBrowser } from './context'
 
 export const StickyToolbar = () => {
-    const { langs, toggleLang } = useDuaLang()
-    const [activePosition, setActivePosition] = useState<SalahPositionId>(
-        SALAH_POSITIONS[0].id as SalahPositionId,
-    )
-    const activeMeta = SALAH_POSITIONS.find((p) => p.id === activePosition)
+    const { langs, toggleLang, activePosition, setActivePosition, activeMeta } = useDuasBrowser()
 
     return (
         <div className="border-border/60 bg-background/80 sticky top-0 z-20 -mx-4 border-y px-4 py-3 backdrop-blur-md">

@@ -4,7 +4,6 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import { TooltipProvider } from '#/components/ui/tooltip'
 import { AudioProvider } from '#/contexts/AudioContext'
-import { SiteHeader } from '#/components/layout/SiteHeader'
 import { SiteFooter } from '#/components/layout/SiteFooter'
 
 import appCss from '../styles.css?url'
@@ -64,7 +63,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 function RootLayout() {
     return (
         <div className="flex min-h-screen flex-col">
-            <SiteHeader />
             <main className="flex-1">
                 <Outlet />
             </main>

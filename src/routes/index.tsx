@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
-import { BookOpen, Languages, Volume2, BookMarked } from 'lucide-react'
+import { BookOpen, Languages, Volume2, BookMarked, Moon, Sun } from 'lucide-react'
 import { Button } from '#/components/ui/button'
+import { useTheme } from '#/hooks/use-theme'
 import { Card, CardContent } from '#/components/ui/card'
 import { Badge } from '#/components/ui/badge'
 import { Separator } from '#/components/ui/separator'
@@ -24,6 +25,7 @@ const FEATURES = [
 ]
 
 function Home() {
+  const { theme, toggle } = useTheme()
   const { lang, setLang } = useDuaLang()
   const [activePosition, setActivePosition] = useState<SalahPositionId>(
     SALAH_POSITIONS[0].id as SalahPositionId,
@@ -31,7 +33,20 @@ function Home() {
   const duas = getDuasByPosition(activePosition)
 
   return (
-    <div className="space-y-20 py-16">
+    <div className="space-y-20">
+      {/* ── Top bar ──────────────────────────────────── */}
+      <PageWrap className="flex items-center justify-between pt-6">
+        <div className="flex items-center gap-2">
+          <div className="flex size-8 items-center justify-center rounded-lg bg-primary">
+            <BookOpen className="size-4 text-primary-foreground" />
+          </div>
+          <span className="font-semibold text-foreground">Salah Companion</span>
+        </div>
+        <Button variant="outline" size="icon" onClick={toggle} aria-label="Toggle theme">
+          {theme === 'dark' ? <Sun className="size-4" /> : <Moon className="size-4" />}
+        </Button>
+      </PageWrap>
+
       {/* ── Hero ─────────────────────────────────────── */}
       <PageWrap className="space-y-8 text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
         <Badge variant="outline" className="border-primary/30 bg-primary/5 text-primary">

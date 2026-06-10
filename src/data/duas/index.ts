@@ -10,25 +10,25 @@ import { salawatDuas } from './salawat'
 import placeholderAudio from '../../assets/audio/subhanaka.m4a'
 
 const rawDuas: DuaVariation[] = [
-  ...openingDuas,
-  ...taawwudhDuas,
-  ...rukuDuas,
-  ...qawmahDuas,
-  ...sajdahDuas,
-  ...jalsahDuas,
-  ...tashahhudDuas,
-  ...salawatDuas,
+    ...openingDuas,
+    ...taawwudhDuas,
+    ...rukuDuas,
+    ...qawmahDuas,
+    ...sajdahDuas,
+    ...jalsahDuas,
+    ...tashahhudDuas,
+    ...salawatDuas,
 ]
 
 export const allDuas: DuaVariation[] = rawDuas.map((dua) => ({
-  ...dua,
-  audioUrl: dua.audioUrl ?? placeholderAudio,
+    ...dua,
+    audioUrl: dua.audioUrl ?? placeholderAudio,
 }))
 
 export function getDuaById(id: string): DuaVariation | undefined {
-  return allDuas.find((d) => d.id === id)
+    return allDuas.find((d) => d.id === id)
 }
 
 export function getDuasByPosition(positionId: SalahPositionId): DuaVariation[] {
-  return allDuas.filter((d) => d.positionId === positionId)
+    return allDuas.filter((d) => d.positionId === positionId)
 }

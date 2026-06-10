@@ -3,6 +3,7 @@
 **Total:** 39 duas · 9 salah positions · 6 languages
 
 **Features per dua:**
+
 - Arabic text (RTL) · Transliteration · 6-language translations (EN, AR, FR, UR, TR, MS)
 - Audio playback · Quran reference · Hadith reference · Salah position context · Notes/details
 
@@ -41,6 +42,7 @@
 ## Position 1 — Opening / Istiftah · الاستفتاح
 
 ### Dua 1 — Takbeeratul Ihram · تكبيرة الإحرام
+
 **ID:** `takbeer` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -60,6 +62,7 @@
 ---
 
 ### Dua 2 — Dua Istiftah v1 · دعاء الاستفتاح (رواية ١)
+
 **ID:** `istiftah-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -79,6 +82,7 @@
 ---
 
 ### Dua 3 — Dua Istiftah v2 (Removal of sins) · دعاء الاستفتاح (رواية ٢)
+
 **ID:** `istiftah-2` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -98,6 +102,7 @@
 ---
 
 ### Dua 4 — Dua Istiftah v3 (Glorification) · دعاء الاستفتاح (رواية ٣)
+
 **ID:** `istiftah-3` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -117,6 +122,7 @@
 ---
 
 ### Dua 5 — Dua Istiftah (Tahajjud) · دعاء الاستفتاح (التهجد)
+
 **ID:** `istiftah-tahajjud` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -138,6 +144,7 @@
 ## Position 2 — Before Recitation / Ta'awwudh · التعوذ
 
 ### Dua 6 — Seeking Refuge from Shaytan · الاستعاذة
+
 **ID:** `taawwudh-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -159,6 +166,7 @@
 ## Position 3 — Ruku / Bowing · الركوع
 
 ### Dua 7 — Subhana Rabbiy al-'Azim · سبحان ربي العظيم
+
 **ID:** `ruku-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -178,6 +186,7 @@
 ---
 
 ### Dua 8 — Subbuhun Quddus · سبوح قدوس
+
 **ID:** `ruku-2` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -197,6 +206,7 @@
 ---
 
 ### Dua 9 — Subhanaka wa bihamdika la ilaha illa anta (Ruku)
+
 **ID:** `ruku-3` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -216,6 +226,7 @@
 ---
 
 ### Dua 10 — Subhanaka Allahumma Rabbana wa bihamdika (Ruku)
+
 **ID:** `ruku-4` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -235,6 +246,7 @@
 ---
 
 ### Dua 11 — Subhanaka wa bihamdika astaghfiruka (Ruku)
+
 **ID:** `ruku-5` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -254,6 +266,7 @@
 ---
 
 ### Dua 12 — Subhana dhil-Jabarut (Ruku)
+
 **ID:** `ruku-6` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -273,6 +286,7 @@
 ---
 
 ### Dua 13 — Allahumma laka raka'tu · اللهم لك ركعت
+
 **ID:** `ruku-7` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -294,6 +308,7 @@
 ## Position 4 — Qawmah / Standing After Ruku · القومة
 
 ### Dua 14 — Sami'allahu liman hamidah (short)
+
 **ID:** `qawmah-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -313,6 +328,7 @@
 ---
 
 ### Dua 15 — Sami'allahu liman hamidah (filling heavens)
+
 **ID:** `qawmah-2` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -332,6 +348,7 @@
 ---
 
 ### Dua 16 — Rabbana lakal hamd (extended)
+
 **ID:** `qawmah-3` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -351,6 +368,7 @@
 ---
 
 ### Dua 17 — Allahumma lakal hamd (with purification)
+
 **ID:** `qawmah-4` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -372,6 +390,7 @@
 ## Position 5 — Sajdah / Prostration · السجدة
 
 ### Dua 18 — Subhana Rabbiy al-A'la · سبحان ربي الأعلى
+
 **ID:** `sajdah-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -391,6 +410,7 @@
 ---
 
 ### Dua 19 — Allahumma ighfir li ma asrart (Sajdah)
+
 **ID:** `sajdah-2` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -410,6 +430,7 @@
 ---
 
 ### Dua 20 — Subbuhun Quddus (Sajdah)
+
 **ID:** `sajdah-3` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -429,6 +450,7 @@
 ---
 
 ### Dua 21 — Subhanaka wa bihamdika la ilaha illa anta (Sajdah)
+
 **ID:** `sajdah-4` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -448,6 +470,7 @@
 ---
 
 ### Dua 22 — Subhanaka Allahumma Rabbana wa bihamdika (Sajdah)
+
 **ID:** `sajdah-5` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -467,6 +490,7 @@
 ---
 
 ### Dua 23 — Subhana dhil-Jabarut (Sajdah)
+
 **ID:** `sajdah-6` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -486,6 +510,7 @@
 ---
 
 ### Dua 24 — Allahumma ighfir li dhanbi kullahu · اللهم اغفر لي ذنبي كله
+
 **ID:** `sajdah-7` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -505,6 +530,7 @@
 ---
 
 ### Dua 25 — Allahumma a'udhu birdaka min sakhatika · أعوذ برضاك من سخطك
+
 **ID:** `sajdah-8` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -524,6 +550,7 @@
 ---
 
 ### Dua 26 — Allahumma laka sajadtu · اللهم لك سجدت
+
 **ID:** `sajdah-9` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -543,6 +570,7 @@
 ---
 
 ### Dua 27 — Allahumma ij'al fi qalbi nuran · اجعل في قلبي نوراً
+
 **ID:** `sajdah-10` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -564,6 +592,7 @@
 ## Position 6 — Jalsah / Sitting Between Prostrations · الجلسة
 
 ### Dua 28 — Rabbi ighfir li · رب اغفر لي
+
 **ID:** `jalsah-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -585,6 +614,7 @@
 ## Position 7 — Tashahhud · التشهد
 
 ### Dua 29 — At-Tahiyyat · التحيات
+
 **ID:** `tashahhud-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -606,6 +636,7 @@
 ## Position 8 — Salawat · الصلوات
 
 ### Dua 30 — Salawat Ibrahimiyyah · الصلاة الإبراهيمية
+
 **ID:** `salawat-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -627,6 +658,7 @@
 ## Position 9 — Before Tasleem · قبل التسليم
 
 ### Dua 31 — Allahumma inni zalamtu nafsi (wrongdoing)
+
 **ID:** `tasleem-1` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -646,6 +678,7 @@
 ---
 
 ### Dua 32 — Allahumma ighfir li ma qaddamtu (comprehensive)
+
 **ID:** `tasleem-2` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -665,6 +698,7 @@
 ---
 
 ### Dua 33 — A'udhu bika min adhab Jahannam (refuge from Hell)
+
 **ID:** `tasleem-3` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -684,6 +718,7 @@
 ---
 
 ### Dua 34 — A'udhu bika min adhab al-qabr (grave + Dajjal)
+
 **ID:** `tasleem-4` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -703,6 +738,7 @@
 ---
 
 ### Dua 35 — A'udhu bika min al-bukhl (miserliness + cowardice)
+
 **ID:** `tasleem-5` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -722,6 +758,7 @@
 ---
 
 ### Dua 36 — As'aluka bi annakal Wahid al-Ahad (divine attributes)
+
 **ID:** `tasleem-6` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -741,6 +778,7 @@
 ---
 
 ### Dua 37 — As'aluka bil-Mannan Badi' as-samawat (creator of heavens)
+
 **ID:** `tasleem-7` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -760,6 +798,7 @@
 ---
 
 ### Dua 38 — Refuge from Hell & False Messiah (v2)
+
 **ID:** `tasleem-8` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -779,6 +818,7 @@
 ---
 
 ### Dua 39 — Grave, Dajjal, life and death (v2)
+
 **ID:** `tasleem-9` · **Status:** ⬜ Pending
 
 - [ ] Arabic text
@@ -799,8 +839,8 @@
 
 ## Overall Progress
 
-| Phase | Status |
-|-------|--------|
+| Phase                                                    | Status     |
+| -------------------------------------------------------- | ---------- |
 | Foundation (types, positions, infra, components, routes) | ✅ 21 / 21 |
-| Duas data (all 39) | ⬜ 0 / 39 |
-| **Total features completed** | ⬜ 0 / 507 |
+| Duas data (all 39)                                       | ⬜ 0 / 39  |
+| **Total features completed**                             | ⬜ 0 / 507 |

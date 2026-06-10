@@ -121,18 +121,6 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                 </ArabicText>
                             </div>
 
-                            {/* Transliteration */}
-                            <div>
-                                <p className="text-muted-foreground mb-1 text-[10px] font-semibold tracking-wider uppercase">
-                                    Transliteration
-                                </p>
-                                <p className="text-foreground font-mono text-sm leading-relaxed">
-                                    {dua.transliteration}
-                                </p>
-                            </div>
-
-                            <Separator />
-
                             {/* Language picker + translation */}
                             <div>
                                 <p className="text-muted-foreground mb-3 text-[10px] font-semibold tracking-wider uppercase">
@@ -155,24 +143,29 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                     ))}
                                 </div>
                                 {activeLangMeta && (
-                                    <p
-                                        dir={activeLangMeta.dir}
-                                        className={cn(
-                                            'text-foreground text-sm leading-relaxed',
-                                            activeLangMeta.dir === 'rtl' && 'text-right',
-                                        )}
-                                        style={
-                                            activeLangMeta.dir === 'rtl'
-                                                ? {
-                                                      fontFamily:
-                                                          "'Amiri', 'Noto Naskh Arabic', Georgia, serif",
-                                                      fontSize: '1rem',
-                                                  }
-                                                : undefined
-                                        }
-                                    >
-                                        {dua.translations[activeLang]}
-                                    </p>
+                                    <div className="space-y-2">
+                                        <p className="text-muted-foreground font-mono text-xs leading-relaxed">
+                                            {dua.transliteration}
+                                        </p>
+                                        <p
+                                            dir={activeLangMeta.dir}
+                                            className={cn(
+                                                'text-foreground text-sm leading-relaxed',
+                                                activeLangMeta.dir === 'rtl' && 'text-right',
+                                            )}
+                                            style={
+                                                activeLangMeta.dir === 'rtl'
+                                                    ? {
+                                                          fontFamily:
+                                                              "'Amiri', 'Noto Naskh Arabic', Georgia, serif",
+                                                          fontSize: '1rem',
+                                                      }
+                                                    : undefined
+                                            }
+                                        >
+                                            {dua.translations[activeLang]}
+                                        </p>
+                                    </div>
                                 )}
                             </div>
 
@@ -201,6 +194,9 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                                     {l.label}
                                                 </span>
                                             </div>
+                                            <p className="text-muted-foreground mb-1.5 font-mono text-xs leading-relaxed">
+                                                {dua.transliteration}
+                                            </p>
                                             <p
                                                 dir={l.dir}
                                                 className={cn(

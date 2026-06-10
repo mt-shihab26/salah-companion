@@ -16,10 +16,6 @@ export function DuaTextDisplay({ dua, langs }: Props) {
         <div className="space-y-5">
             <ArabicText className="text-foreground">{dua.arabic}</ArabicText>
 
-            <p className="text-muted-foreground font-mono text-sm leading-relaxed">
-                {dua.transliteration}
-            </p>
-
             {orderedLangs.length > 0 && (
                 <>
                     <Separator />
@@ -42,6 +38,9 @@ export function DuaTextDisplay({ dua, langs }: Props) {
                                             {l.label}
                                         </span>
                                     </div>
+                                    <p className="text-muted-foreground mb-2 font-mono text-xs leading-relaxed">
+                                        {dua.transliteration}
+                                    </p>
                                     <p
                                         dir={l.dir}
                                         className={cn(

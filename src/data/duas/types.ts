@@ -58,8 +58,7 @@ export interface DuaVariation {
     variationIndex: number
     label?: string
     arabic: string
-    transliteration: string
-    translations: Record<DuaLang, string>
+    languages: Record<DuaLang, { transliteration: string; translation: string }>
     references: DuaReference[]
     audioUrl?: string
     notes?: string

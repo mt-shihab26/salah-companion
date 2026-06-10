@@ -1,22 +1,70 @@
 import { Separator } from '#/components/ui/separator'
 import { ArabicText } from '#/components/arabic-text'
+import { DUA_LANGS } from '#/data/duas/types'
 import type { DuaVariation, DuaLang } from '#/data/duas/types'
+import { cn } from '#/lib/utils'
 
 interface Props {
-  dua: DuaVariation
-  lang: DuaLang
+    dua: DuaVariation
+    langs: DuaLang[]
 }
 
-export function DuaTextDisplay({ dua, lang }: Props) {
-  return (
-    <div className="space-y-4">
-      <ArabicText className="text-foreground">{dua.arabic}</ArabicText>
+export function DuaTextDisplay({ dua, langs }: Props) {
+    const orderedLangs = DUA_LANGS.filter((l) => langs.includes(l.code) && l.code !== 'ar')
 
-      <Separator />
+    return (
+        <div className="space-y-5">
+            <ArabicText className="text-foreground">{dua.arabic}</ArabicText>
 
-      <p className="text-sm italic text-muted-foreground">{dua.transliteration}</p>
+            <p className="font-mono text-sm leading-relaxed text-muted-foreground">
+                {dua.transliteration}
+            </p>
 
-      <p className="text-sm leading-relaxed text-foreground">{dua.translations[lang]}</p>
-    </div>
-  )
+            {orderedLangs.length > 0 && (
+                <>
+                    <Separator />
+                    <ul className="space-y-4">
+                        {orderedLangs.map((l) => {
+                            const isRtl = l.dir === 'rtl'
+                            return (
+                                <li
+                                    key={l.code}
+                                    className={cn(
+                                        'border-l-2 border-primary/40 pl-4',
+                                        isRtl && 'border-l-0 border-r-2 pl-0 pr-4',
+                                    )}
+                                >
+                                    <div className="mb-1 flex items-center gap-2">
+                                        <span className="text-[10px] font-semibold uppercase tracking-wider text-primary">
+                                            {l.code}
+                                        </span>
+                                        <span className="text-[11px] text-muted-foreground">
+                                            {l.label}
+                                        </span>
+                                    </div>
+                                    <p
+                                        dir={l.dir}
+                                        className={cn(
+                                            'text-sm leading-relaxed text-foreground',
+                                            isRtl && 'text-right',
+                                        )}
+                                        style={
+                                            isRtl
+                                                ? {
+                                                      fontFamily:
+                                                          "'Amiri', 'Noto Naskh Arabic', Georgia, serif",
+                                                  }
+                                                : undefined
+                                        }
+                                    >
+                                        {dua.translations[l.code]}
+                                    </p>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </>
+            )}
+        </div>
+    )
 }

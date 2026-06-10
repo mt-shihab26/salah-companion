@@ -62,7 +62,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 
 function RootLayout() {
     return (
-        <div className="flex min-h-screen flex-col">
+        <div className="relative flex min-h-screen flex-col">
             <main className="flex-1">
                 <Outlet />
             </main>

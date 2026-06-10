@@ -17,6 +17,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! بے شک میں نے اپنے نفس پر بہت ظلم کیا، اور گناہوں کو تیرے سوا کوئی نہیں بخشتا۔ پس تو اپنی طرف سے مجھے بخشش عطا فرما اور مجھ پر رحم فرما، بے شک تو ہی بخشنے والا مہربان ہے۔',
             tr: "Allah'ım! Ben nefsime pek çok zulüm ettim. Günahları Sen'den başkası bağışlamaz. Beni kendi katından bir bağışlamayla bağışla ve bana merhamet et. Şüphesiz Sen, çok bağışlayan, çok merhamet edensin.",
             ms: 'Ya Allah, sesungguhnya aku telah banyak menganiaya diriku sendiri dan tidak ada yang mengampuni dosa-dosa melainkan Engkau. Maka ampunilah aku dengan keampunan dari sisi-Mu dan rahmatilah aku. Sesungguhnya Engkaulah Yang Maha Pengampun lagi Maha Penyayang.',
+            bn: 'হে আল্লাহ! আমি নিজের উপর অনেক জুলুম করেছি এবং তুমি ছাড়া গুনাহ মাফ করার কেউ নেই। তুমি তোমার পক্ষ থেকে আমাকে ক্ষমা করো এবং আমার উপর রহম করো। নিশ্চয় তুমি ক্ষমাশীল ও দয়ালু।',
         },
         references: [
             {
@@ -37,6 +38,8 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: "Abu Bakr al-Siddiq (رضي الله عنه) asked the Prophet ﷺ to teach him a supplication to say in his prayer, and the Prophet ﷺ taught him this dua. The phrase 'I have greatly wronged myself' is a deep expression of humility and self-accountability, while 'none forgives sins except You' acknowledges Allah's exclusive authority to pardon.",
+        whenToRecite:
+            "Recited silently while seated in the final Qa'dah, after the Salawat Ibrahimiyyah and before the Tasleem. This was specifically taught by the Prophet ﷺ as a prayer-dua. It is particularly recommended as a du'a to choose between the four classical refuge duas.",
     },
 
     // ─── Dua 32 ──────────────────────────────────────────────────────────────
@@ -55,6 +58,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! مجھے بخش دے جو میں نے آگے بھیجا اور جو پیچھے چھوڑا، جو میں نے چھپایا اور جو ظاہر کیا، جس میں میں نے زیادتی کی، اور جو تو مجھ سے بہتر جانتا ہے۔ تو ہی آگے کرنے والا اور پیچھے کرنے والا ہے، تیرے سوا کوئی معبود نہیں۔',
             tr: "Allah'ım, önce yapıp geçtiklerimi ve sonraya bıraktıklarımı, gizlediklerimi ve açığa vurduklarımı, aşırılıklarımı ve Senin benden daha iyi bildiklerimi bağışla. Sen öne geçiren ve geride bırakansın. Senden başka ilah yoktur.",
             ms: 'Ya Allah, ampunilah apa yang telah aku lakukan terlebih dahulu dan apa yang aku tangguhkan, apa yang aku sembunyikan dan apa yang aku nyatakan, apa yang aku berlebihan padanya, dan apa yang Engkau lebih mengetahuinya daripadaku. Engkaulah Yang Mendahulukan dan Yang Mengakhirkan. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            bn: 'হে আল্লাহ! আমি যা আগে করেছি ও যা পরে করেছি, যা গোপনে করেছি ও যা প্রকাশ্যে করেছি, যেখানে বাড়াবাড়ি করেছি এবং যা তুমি আমার চেয়ে বেশি জানো — সবকিছু ক্ষমা করো। তুমিই অগ্রগামীকারী ও পশ্চাদ্গামীকারী। তুমি ছাড়া কোনো ইলাহ নেই।',
         },
         references: [
             {
@@ -67,6 +71,8 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: 'Ali ibn Abi Talib (رضي الله عنه) reported that the Prophet ﷺ would recite this dua between the tashahhud and tasleem in his night prayer (tahajjud). It is one of the most comprehensive duas for forgiveness, covering six dimensions of sins: past and future, hidden and public, excessive and unknown.',
+        whenToRecite:
+            "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah and before Tasleem. Originally narrated from the Prophet ﷺ's night prayer (tahajjud), it is practised in all prayers. Its six-dimensional scope of forgiveness makes it especially fitting as a closing supplication before ending the prayer.",
     },
 
     // ─── Dua 33 ──────────────────────────────────────────────────────────────
@@ -85,6 +91,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں قبر کے عذاب سے، جہنم کے عذاب سے، زندگی اور موت کی آزمائش سے، اور مسیح دجال کے فتنے کی شر سے۔',
             tr: "Allah'ım! Kabir azabından, cehennem azabından, hayat ve ölüm fitnesinden ve Deccal'in fitnesinin şerrinden Sana sığınırım.",
             ms: 'Ya Allah, aku berlindung kepada-Mu dari azab kubur, dari azab Neraka, dari fitnah kehidupan dan kematian, dan dari kejahatan fitnah Al-Masih al-Dajjal.',
+            bn: 'হে আল্লাহ! আমি তোমার কাছে কবরের আযাব থেকে, জাহান্নামের আযাব থেকে, জীবন ও মৃত্যুর ফিতনা থেকে এবং মিথ্যা মসীহ দাজ্জালের ফিতনার অনিষ্ট থেকে আশ্রয় চাই।',
         },
         references: [
             {
@@ -105,6 +112,8 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: 'The Prophet ﷺ commanded that this refuge be sought in every prayer. Ibn Hajar al-Asqalani notes that seeking refuge from these four things covers the most dangerous threats a believer faces: spiritual torment after death, eternal punishment, deviation during life, and the greatest end-times trial. The Dajjal (False Messiah) is specifically named because his fitnah is the worst trial ever created.',
+        whenToRecite:
+            "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. The Prophet ﷺ commanded it be said in every prayer (Abu Hurayrah in Bukhari). Some scholars hold it obligatory (wajib) due to the explicit command. It is one of the most universally practised duas before-tasleem across all madhabs.",
     },
 
     // ─── Dua 34 ──────────────────────────────────────────────────────────────
@@ -123,6 +132,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں قبر کے عذاب سے، دجال کے فتنے سے، اور زندگی و موت کی آزمائش سے۔ اے اللہ! میں تیری پناہ مانگتا ہوں گناہ اور قرض سے۔',
             tr: "Allah'ım! Kabir azabından, Deccal'in fitnesinden, hayat ve ölüm fitnesinden Sana sığınırım. Allah'ım! Günahtan ve borçtan Sana sığınırım.",
             ms: 'Ya Allah, aku berlindung kepada-Mu dari azab kubur, dan aku berlindung kepada-Mu dari fitnah Al-Masih al-Dajjal, dan aku berlindung kepada-Mu dari fitnah kehidupan dan kematian. Ya Allah, aku berlindung kepada-Mu dari dosa dan hutang.',
+            bn: 'হে আল্লাহ! আমি তোমার কাছে কবরের আযাব থেকে, মিথ্যা মসীহ দাজ্জালের ফিতনা থেকে এবং জীবন ও মৃত্যুর ফিতনা থেকে আশ্রয় চাই। হে আল্লাহ! আমি তোমার কাছে পাপ ও ঋণ থেকে আশ্রয় চাই।',
         },
         references: [
             {
@@ -143,6 +153,8 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: "This version adds refuge from debt (al-maghram) and sin (al-ma'thim) to the standard four refuges. When someone asked why the Prophet ﷺ sought refuge from debt so often, he replied: 'When a man is in debt, he speaks and lies, and he makes a promise and breaks it.' This dua recognises that financial and moral struggles are spiritual threats as much as worldly ones.",
+        whenToRecite:
+            "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. Narrated from Aishah (رضي الله عنها) who reported the Prophet ﷺ reciting it in prayer. The addition of refuge from debt and sin makes it a broader companion to Dua 33 (the shorter four-refuge form).",
     },
 
     // ─── Dua 35 ──────────────────────────────────────────────────────────────
@@ -161,6 +173,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں بخل سے، بزدلی سے، بڑھاپے کی بدترین حالت تک پہنچنے سے، دنیا کی آزمائش سے، اور قبر کے عذاب سے۔',
             tr: "Allah'ım! Cimrilikten, korkaklıktan, ömrün en kötüsüne (bunaklar çağına) döndürülmekten, dünyanın fitnesinden ve kabir azabından Sana sığınırım.",
             ms: 'Ya Allah, aku berlindung kepada-Mu dari sifat bakhil, aku berlindung kepada-Mu dari pengecut, aku berlindung kepada-Mu dari dikembalikan kepada usia yang paling hina (nyanyuk), aku berlindung kepada-Mu dari fitnah dunia, dan aku berlindung kepada-Mu dari azab kubur.',
+            bn: 'হে আল্লাহ! আমি তোমার কাছে কৃপণতা থেকে, কাপুরুষতা থেকে, অতি বৃদ্ধ বয়সের অপমানজনক অবস্থায় ফিরে যাওয়া থেকে, দুনিয়ার ফিতনা থেকে এবং কবরের আযাব থেকে আশ্রয় চাই।',
         },
         references: [
             {
@@ -173,6 +186,8 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: "Sa'd ibn Abi Waqqas (رضي الله عنه) reported that the Prophet ﷺ used to seek refuge from these five things in every prayer. Miserliness (bukhl) and cowardice (jubn) are linked because they both stem from excessive attachment to the self. 'The worst of old age' refers to severe cognitive decline (kharaf/senility) that strips a person of their intellectual and spiritual capacity.",
+        whenToRecite:
+            "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. Sa'd ibn Abi Waqqas reported the Prophet ﷺ recited these five refuges in every prayer (Bukhari 2822). It addresses character weaknesses that undermine worship and service to Allah — making it a spiritually self-corrective prayer.",
     },
 
     // ─── Dua 36 ──────────────────────────────────────────────────────────────
@@ -191,6 +206,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں تجھ سے مانگتا ہوں اس بات کی گواہی دیتے ہوئے کہ تو اللہ ہے، تیرے سوا کوئی معبود نہیں، یکتا، بے نیاز، جس نے نہ جنا اور نہ وہ جنا گیا، اور اس کا کوئی ہمسر نہیں — کہ تو میرے گناہ بخش دے، بے شک تو بخشنے والا مہربان ہے۔',
             tr: "Allah'ım! Tek ilah olan, hiç doğurmamış ve doğurulmamış, hiç kimse O'na denk olmamış Ahad ve Samed Allah olduğunu tanıklık ederek günahlarımı bağışlamanı istiyorum. Sen Gafûr ve Rahîm'sin.",
             ms: 'Ya Allah, aku memohon kepada-Mu dengan bersaksi bahawa Engkaulah Allah, tiada tuhan yang berhak disembah melainkan Engkau, Yang Maha Esa, Yang Menjadi Tempat Bergantung, Yang tidak beranak dan tidak diperanakkan, dan tidak ada seorang pun yang setara dengan-Nya — agar Engkau mengampuni dosa-dosaku. Sesungguhnya Engkau Maha Pengampun lagi Maha Penyayang.',
+            bn: 'হে আল্লাহ! আমি তোমার কাছে প্রার্থনা করি এই সাক্ষ্য দিয়ে যে, তুমিই আল্লাহ, তুমি ছাড়া কোনো ইলাহ নেই, তুমি একক, অমুখাপেক্ষী, যিনি জন্ম দেননি এবং জন্মগ্রহণও করেননি, এবং তাঁর কোনো সমকক্ষ নেই — যে তুমি আমার গুনাহ ক্ষমা করো। নিশ্চয় তুমি ক্ষমাশীল ও দয়ালু।',
         },
         references: [
             {
@@ -220,6 +236,8 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: "The Prophet ﷺ heard a man recite this dua in his prayer and said: 'He has asked Allah by His greatest Name (Ism al-A'zam), the one by which if He is asked He gives, and by which if He is called upon He responds.' The dua uses the attributes from Surah Al-Ikhlas as a means of beseeching Allah, making it one of the most powerful supplications for forgiveness.",
+        whenToRecite:
+            "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. The Prophet ﷺ confirmed it invokes Allah's Greatest Name (Ism al-A'zam), making it among the most potent closing supplications. Particularly recommended when seeking forgiveness for major sins or asking for a significant need.",
     },
 
     // ─── Dua 37 ──────────────────────────────────────────────────────────────
@@ -238,6 +256,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں تجھ سے مانگتا ہوں کیونکہ تمام تعریف تیری ہے، تیرے سوا کوئی معبود نہیں، احسان کرنے والا، آسمانوں اور زمین کا موجد، اے جلال و اکرام والے، اے ہمیشہ زندہ، اے سب کو قائم رکھنے والے — میں تجھ سے جنت مانگتا ہوں اور جہنم سے پناہ مانگتا ہوں۔',
             tr: "Allah'ım! Tüm hamd Sana ait olduğu için, Sen'den başka ilah olmayan, Mannân, göklerin ve yerin Bedî'i, ey Celâl ve İkrâm Sahibi, ey Hayy, ey Kayyûm olduğun için Senden cenneti istiyorum ve Senden cehennemden sığınıyorum.",
             ms: 'Ya Allah, aku memohon kepada-Mu kerana segala pujian adalah milik-Mu, tiada tuhan yang berhak disembah melainkan Engkau, Yang Maha Pemberi, Pencipta langit dan bumi, wahai Yang Memiliki Keagungan dan Kehormatan, wahai Yang Maha Hidup, wahai Yang Maha Berdiri Sendiri — aku memohon kepada-Mu syurga dan aku berlindung kepada-Mu dari Neraka.',
+            bn: 'হে আল্লাহ! আমি তোমার কাছে প্রার্থনা করি কারণ সকল প্রশংসা তোমার — তুমি ছাড়া কোনো ইলাহ নেই, তুমি মান্নান (মহা অনুগ্রহশীল), আসমান ও জমিনের সৃষ্টিকর্তা, হে মহিমা ও সম্মানের অধিকারী, হে চিরঞ্জীব, হে চিরস্থায়ী — আমি তোমার কাছে জান্নাত চাই এবং জাহান্নাম থেকে আশ্রয় চাই।',
         },
         references: [
             {
@@ -258,6 +277,8 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: "The Prophet ﷺ heard a man asking by these names and attributes and said: 'He has asked Allah by His Greatest Name (Ism al-A'zam).' The two divine names al-Mannan (Bestower of blessings without expectation of return) and al-Hayy al-Qayyum (Ever-Living, Self-Sustaining) are considered among the greatest of Allah's names. Ending with a request for Paradise and refuge from the Fire aligns with the Prophet ﷺ's counsel that these two goals encompass all one needs.",
+        whenToRecite:
+            "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. The Prophet ﷺ confirmed it invokes Allah's Greatest Name. This dua culminates in requesting the two ultimate goals — Paradise and protection from the Fire — making it an ideal closing prayer summarising all human need.",
     },
 
     // ─── Dua 38 ──────────────────────────────────────────────────────────────
@@ -276,6 +297,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں جہنم کے عذاب سے، قبر کے عذاب سے، مسیح دجال کے فتنے سے، اور زندگی اور موت کی آزمائشوں سے۔',
             tr: "Allah'ım! Cehennem azabından, kabir azabından, Deccal'in fitnesinden ve hayat ile ölümün fitnesinden Sana sığınırım.",
             ms: 'Ya Allah, aku berlindung kepada-Mu dari azab Neraka Jahannam, aku berlindung kepada-Mu dari azab kubur, aku berlindung kepada-Mu dari fitnah Al-Masih al-Dajjal, dan aku berlindung kepada-Mu dari fitnah kehidupan dan kematian.',
+            bn: 'হে আল্লাহ! আমি তোমার কাছে জাহান্নামের আযাব থেকে, কবরের আযাব থেকে, মিথ্যা মসীহ দাজ্জালের ফিতনা থেকে এবং জীবন ও মৃত্যুর ফিতনা থেকে আশ্রয় চাই।',
         },
         references: [
             {
@@ -296,6 +318,8 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: "This version of the four-refuge dua explicitly names 'Jahannam' (the specific name of Hell in Arabic) rather than the generic 'an-nar' (the Fire), emphasising the severity of the refuge being sought. The order here — Hell, grave, Dajjal, life/death — differs slightly from Dua 33, reflecting different narrations. Both arrangements are authentically reported from the Prophet ﷺ.",
+        whenToRecite:
+            "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. This extended form (using 'Jahannam' explicitly) was taught in the context of instructing the deceased's family on du'a, and is also used in prayer. It is interchangeable with Dua 33 depending on which narration one follows.",
     },
 
     // ─── Dua 39 ──────────────────────────────────────────────────────────────
@@ -314,6 +338,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں تیری پناہ مانگتا ہوں عاجزی، سستی، بزدلی، انتہائی بڑھاپے اور بخل سے۔ اور میں تیری پناہ مانگتا ہوں قبر کے عذاب سے، اور زندگی و موت کی آزمائشوں سے۔',
             tr: "Allah'ım! Acizlikten, tembellikten, korkaklıktan, bunaklıktan ve cimrilikten Sana sığınırım. Kabir azabından ve hayat ile ölüm fitnesinden Sana sığınırım.",
             ms: 'Ya Allah, aku berlindung kepada-Mu dari kelemahan dan kemalasan, pengecut dan nyanyuk serta kebakhilan. Aku berlindung kepada-Mu dari azab kubur, dan aku berlindung kepada-Mu dari fitnah kehidupan dan kematian.',
+            bn: 'হে আল্লাহ! আমি তোমার কাছে অক্ষমতা, অলসতা, কাপুরুষতা, অতি বার্ধক্য এবং কৃপণতা থেকে আশ্রয় চাই। আমি তোমার কাছে কবরের আযাব থেকে এবং জীবন ও মৃত্যুর ফিতনা থেকে আশ্রয় চাই।',
         },
         references: [
             {
@@ -334,5 +359,7 @@ export const beforeTasleemDuas: DuaVariation[] = [
             },
         ],
         notes: "Anas ibn Malik (رضي الله عنه) reported that the Prophet ﷺ frequently sought refuge from these five character flaws. 'Al-ajz' (incapacity) refers to being unable to perform worship and good deeds. 'Al-kasal' (laziness) refers to having the ability but lacking the will. Together they cover two distinct reasons why a person might fail in their duties. 'Al-haram' (extreme old age / senility) is listed alongside spiritual and moral weaknesses, highlighting that the loss of mental faculty is as much a concern as moral failure.",
+        whenToRecite:
+            "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. Anas ibn Malik narrated the Prophet ﷺ frequently used this dua (Bukhari 6367, Muslim 2706). The combination of character flaws (laziness, cowardice, miserliness) with afterlife threats (grave punishment) reflects the Islamic view that worldly character and eternal fate are intertwined.",
     },
 ]

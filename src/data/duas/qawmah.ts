@@ -16,6 +16,7 @@ export const qawmahDuas: DuaVariation[] = [
             ur: 'اللہ نے اس کی بات سنی جس نے اس کی تعریف کی۔ اے ہمارے رب! اور تیرے لیے ہی تعریف ہے۔',
             tr: "Allah, O'nu öveni duyar. Rabbimiz, hamd Sanadır.",
             ms: 'Allah mendengar orang yang memuji-Nya. Tuhan kami, bagi-Mu lah segala puji.',
+            bn: 'আল্লাহ তাঁর প্রশংসাকারীর কথা শোনেন। হে আমাদের রব! সকল প্রশংসা তোমার।',
         },
         references: [
             {
@@ -36,6 +37,8 @@ export const qawmahDuas: DuaVariation[] = [
             },
         ],
         notes: "The phrase 'Sami'allahu liman hamidah' is said by the imam and the one praying alone while rising from ruku. 'Rabbana wa lakal-hamd' is said by both the imam and the congregation upon completing the rise.",
+        whenToRecite:
+            "The first part ('Sami'allahu liman hamidah') is said while rising from Ruku in every rak'ah — by the imam and the one praying alone. The second part ('Rabbana wa lakal-hamd') is said upon standing fully upright. A follower (ma'moom) says only the second part.",
     },
 
     // ─── Dua 15 ──────────────────────────────────────────────────────────────
@@ -54,6 +57,7 @@ export const qawmahDuas: DuaVariation[] = [
             ur: 'اللہ نے اس کی سنی جس نے اس کی تعریف کی۔ اے اللہ! اے ہمارے رب! تیرے لیے تعریف ہے جو آسمانوں کو بھر دے، زمین کو بھر دے اور اس کے بعد جو تو چاہے اسے بھی بھر دے۔',
             tr: "Allah, O'nu öveni duyar. Allah'ım Rabbimiz, hamd Senindir — gökleri, yeri ve dilediğin her şeyi dolduracak kadar.",
             ms: 'Allah mendengar orang yang memuji-Nya. Ya Allah Tuhan kami, bagi-Mu segala puji, yang memenuhi langit, memenuhi bumi dan memenuhi apa sahaja yang Engkau kehendaki.',
+            bn: 'আল্লাহ তাঁর প্রশংসাকারীর কথা শোনেন। হে আল্লাহ, হে আমাদের রব! তোমার জন্য সকল প্রশংসা যা আকাশ পূর্ণ করে, পৃথিবী পূর্ণ করে এবং তুমি যা চাও তা পূর্ণ করে।',
         },
         references: [
             {
@@ -66,6 +70,8 @@ export const qawmahDuas: DuaVariation[] = [
             },
         ],
         notes: 'This extended version uses the metaphor of praise so vast it could fill the heavens and earth. It is recommended to add it after the basic response, especially in voluntary prayers.',
+        whenToRecite:
+            "Recited while standing upright after fully rising from Ruku in every rak'ah. This extended version is recommended in voluntary prayers (Tahajjud, Witr, Sunnah prayers) where more time is available. In congregational prayers, follow the imam's pace.",
     },
 
     // ─── Dua 16 ──────────────────────────────────────────────────────────────
@@ -84,6 +90,7 @@ export const qawmahDuas: DuaVariation[] = [
             ur: 'اے ہمارے رب! تیرے لیے ہر قسم کی تعریف ہے جو آسمانوں اور زمین کو بھر دے... اے اللہ! جو تو دے اسے کوئی روکنے والا نہیں اور جو تو روک لے اسے کوئی دینے والا نہیں۔',
             tr: "Rabbimiz, hamd Senindir — gökleri, yeri ve dilediğin şeyleri dolduracak kadar... Allah'ım, verdiğini hiç kimse engelleyemez, engellediğini de hiç kimse veremez.",
             ms: 'Tuhan kami, bagi-Mu segala puji yang memenuhi langit dan bumi... Ya Allah, tiada yang dapat menahan apa yang Engkau berikan, dan tiada yang dapat memberi apa yang Engkau tahan.',
+            bn: 'হে আমাদের রব! তোমার জন্য সকল প্রশংসা যা আকাশ ও পৃথিবী পূর্ণ করে... হে আল্লাহ! তুমি যা দাও তা কেউ আটকাতে পারে না, আর তুমি যা আটকে রাখো তা কেউ দিতে পারে না।',
         },
         references: [
             {
@@ -96,6 +103,8 @@ export const qawmahDuas: DuaVariation[] = [
             },
         ],
         notes: 'One of the longest and most comprehensive qawmah duas. It is particularly recommended in voluntary night prayers. The closing phrases affirm complete dependence on Allah — no wealth, status or power can substitute for His favour.',
+        whenToRecite:
+            'Recited while standing fully upright in the Qawmah position, especially in Tahajjud and other voluntary night prayers. Because of its length, it is not typically used in obligatory prayers behind an imam. The worshipper should remain still until it is complete.',
     },
 
     // ─── Dua 17 ──────────────────────────────────────────────────────────────
@@ -114,6 +123,7 @@ export const qawmahDuas: DuaVariation[] = [
             ur: 'اے اللہ! تیرے لیے تعریف ہے... اے اللہ! مجھے برف، اولے اور ٹھنڈے پانی سے پاک فرما... اے اللہ! مجھے گناہوں سے ایسے صاف فرما جیسے سفید کپڑا میل سے صاف ہوتا ہے۔',
             tr: "Allah'ım, hamd Senindir... Allah'ım, beni kar, dolu ve soğuk suyla temizle... Allah'ım, beni günahlardan, beyaz elbise kirden temizlendiği gibi temizle.",
             ms: 'Ya Allah, bagi-Mu segala puji... Ya Allah, sucikanlah aku dengan salji, embun beku dan air sejuk... Ya Allah, bersihkanlah aku daripada dosa sebagaimana kain putih dibersihkan daripada kotoran.',
+            bn: 'হে আল্লাহ! তোমার জন্য সকল প্রশংসা... হে আল্লাহ! আমাকে তুষার, শিলা ও শীতল পানি দিয়ে পবিত্র করো... হে আল্লাহ! আমাকে পাপ থেকে এমনভাবে পরিষ্কার করো যেমন সাদা কাপড় ময়লা থেকে পরিষ্কার হয়।',
         },
         references: [
             {
@@ -126,5 +136,7 @@ export const qawmahDuas: DuaVariation[] = [
             },
         ],
         notes: 'This combines praise with a beautiful supplication for purification from sins. The imagery of snow, hail and cold water cleaning a white garment vividly conveys the complete removal of spiritual impurity.',
+        whenToRecite:
+            'Recited while standing upright after rising from Ruku, particularly in voluntary prayers where lingering is appropriate. Follows the opening tahmid and adds a request for purification. Best used in solitary voluntary prayers.',
     },
 ]

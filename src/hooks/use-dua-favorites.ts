@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react'
 
 const STORAGE_KEY = 'salah-companion:favorites'
 
-function load(): Set<string> {
+const load = (): Set<string> => {
     try {
         const raw = localStorage.getItem(STORAGE_KEY)
         if (raw) return new Set(JSON.parse(raw))
@@ -12,7 +12,7 @@ function load(): Set<string> {
     return new Set()
 }
 
-function save(ids: Set<string>) {
+const save = (ids: Set<string>) => {
     try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify([...ids]))
     } catch {
@@ -20,7 +20,7 @@ function save(ids: Set<string>) {
     }
 }
 
-export function useDuaFavorites() {
+export const useDuaFavorites = () => {
     const [favorites, setFavorites] = useState<Set<string>>(load)
 
     const toggle = useCallback((id: string) => {

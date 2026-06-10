@@ -13,7 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/components/ui/tabs'
 import type { DuaLang, DuaVariation } from '#/data/duas/types'
 import { DUA_LANGS } from '#/data/duas/types'
 import { cn } from '#/lib/utils'
-import { BookOpen, Check, Copy, Info, ScrollText } from 'lucide-react'
+import { BookOpen, Check, Clock, Copy, Info, ScrollText } from 'lucide-react'
 import { useState } from 'react'
 import { DuaAudioPlayer } from './DuaAudioPlayer'
 import { DuaPositionBadge } from './DuaPositionBadge'
@@ -104,6 +104,16 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
 
                         {/* ── Text tab ─────────────────────────────────── */}
                         <TabsContent value="text" className="m-0 space-y-6 px-6 py-5">
+                            {/* When to recite */}
+                            {dua.whenToRecite && (
+                                <div className="border-primary/20 bg-primary/5 flex gap-3 rounded-lg border p-3">
+                                    <Clock className="text-primary mt-0.5 size-4 shrink-0" />
+                                    <p className="text-muted-foreground text-xs leading-relaxed">
+                                        {dua.whenToRecite}
+                                    </p>
+                                </div>
+                            )}
+
                             {/* Arabic */}
                             <div className="bg-muted/40 rounded-lg p-5 text-center">
                                 <ArabicText size="lg" className="text-foreground leading-loose">
@@ -170,7 +180,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                             <Separator />
                             <details className="group">
                                 <summary className="text-muted-foreground hover:text-foreground cursor-pointer list-none text-xs font-semibold tracking-wider uppercase">
-                                    All 5 translations ▸
+                                    All {allLangs.length} translations ▸
                                     <span className="group-open:hidden" />
                                 </summary>
                                 <ul className="mt-4 space-y-4">

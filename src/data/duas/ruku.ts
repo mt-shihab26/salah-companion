@@ -16,6 +16,7 @@ export const rukuDuas: DuaVariation[] = [
             ur: 'پاک ہے میرا رب، سب سے بڑا۔',
             tr: 'Büyük Rabbimi tesbih ederim.',
             ms: 'Maha Suci Tuhanku Yang Maha Agung.',
+            bn: 'আমার রব সর্বমহান, তাঁর পবিত্রতা বর্ণনা করি।',
         },
         references: [
             {
@@ -36,6 +37,8 @@ export const rukuDuas: DuaVariation[] = [
             },
         ],
         notes: "The most widely agreed-upon dhikr for ruku. The minimum is three repetitions, and more is recommended. It corresponds to the verse 'So glorify the name of your Lord, the Most Great' (Al-Waqi'ah 56:96 / Al-Haqqah 69:52).",
+        whenToRecite:
+            "Recited quietly in every rak'ah during Ruku (bowing), with hands gripping the knees and back flat. Minimum three repetitions; seven or more are recommended in voluntary prayers. Said while completely still — movement before finishing is discouraged.",
     },
 
     // ─── Dua 8 ───────────────────────────────────────────────────────────────
@@ -53,6 +56,7 @@ export const rukuDuas: DuaVariation[] = [
             ur: 'نہایت پاک، نہایت مقدس، فرشتوں اور روح (جبریل) کا رب۔',
             tr: "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un (Cebrail'in) Rabbi.",
             ms: 'Maha Suci, Maha Kudus, Tuhan para malaikat dan Roh (Jibril).',
+            bn: 'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহ (জিবরাঈল)-এর রব।',
         },
         references: [
             {
@@ -65,6 +69,8 @@ export const rukuDuas: DuaVariation[] = [
             },
         ],
         notes: "A'ishah (رضي الله عنها) reported that the Prophet ﷺ frequently said this in his ruku and sujood. The word 'Subbuh' is an intensive form meaning one who is glorified to the utmost degree. 'Quddus' means utterly pure and free from all defects.",
+        whenToRecite:
+            "Recited quietly during Ruku in every rak'ah, as an alternative to or alongside ruku-1. Can be combined with the primary tasbih. Particularly used in the night prayer (Tahajjud) where more duas are recited.",
     },
 
     // ─── Dua 9 ───────────────────────────────────────────────────────────────
@@ -82,6 +88,7 @@ export const rukuDuas: DuaVariation[] = [
             ur: 'تو پاک ہے اور تیری حمد ہے، تیرے سوا کوئی معبود نہیں۔',
             tr: 'Seni tesbih eder ve hamd ederim. Senden başka ilah yoktur.',
             ms: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            bn: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
         },
         references: [
             {
@@ -94,6 +101,8 @@ export const rukuDuas: DuaVariation[] = [
             },
         ],
         notes: "A'ishah (رضي الله عنها) reported that the Prophet ﷺ recited this frequently in his ruku and sujood, implementing the Quranic command to glorify (Al-Nasr 110:3).",
+        whenToRecite:
+            "Recited quietly during Ruku in every rak'ah. Can be used as the sole tasbih or added after ruku-1. Also recited during Sujood (sajdah-4 uses identical wording).",
     },
 
     // ─── Dua 10 ──────────────────────────────────────────────────────────────
@@ -111,6 +120,7 @@ export const rukuDuas: DuaVariation[] = [
             ur: 'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے معاف فرما۔',
             tr: "Allah'ım Rabbimiz, Seni tesbih eder ve hamd ederim. Allah'ım, beni bağışla.",
             ms: 'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunkanlah aku.',
+            bn: 'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
         },
         references: [
             {
@@ -131,6 +141,8 @@ export const rukuDuas: DuaVariation[] = [
             },
         ],
         notes: "A'ishah (رضي الله عنها) reported the Prophet ﷺ frequently recited this, implementing the Quranic command 'then glorify the praises of your Lord and ask His forgiveness' (An-Nasr 110:3).",
+        whenToRecite:
+            "Recited quietly during Ruku in every rak'ah, particularly in the final period of the Prophet's ﷺ life when Surah An-Nasr was revealed. Combines glorification with a request for forgiveness in one supplication.",
     },
 
     // ─── Dua 11 ──────────────────────────────────────────────────────────────
@@ -148,6 +160,7 @@ export const rukuDuas: DuaVariation[] = [
             ur: 'تو پاک ہے اور تیری حمد ہے، میں تجھ سے مغفرت مانگتا ہوں اور تیری طرف توبہ کرتا ہوں۔',
             tr: 'Seni tesbih eder ve hamd ederim. Senden bağışlanma diler ve Sana tevbe ederim.',
             ms: 'Maha Suci Engkau dan dengan memuji-Mu. Aku memohon keampunan-Mu dan bertaubat kepada-Mu.',
+            bn: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। আমি তোমার কাছে ক্ষমা চাই এবং তোমার দিকে তাওবা করি।',
         },
         references: [
             {
@@ -160,6 +173,8 @@ export const rukuDuas: DuaVariation[] = [
             },
         ],
         notes: "A'ishah (رضي الله عنها) said the Prophet ﷺ recited this abundantly in his ruku and sujood as implementation of Surah An-Nasr.",
+        whenToRecite:
+            "Recited quietly during Ruku in every rak'ah, following the revelation of Surah An-Nasr. Also said during Sujood. Particularly recommended in the last phase of a believer's life as a preparation for meeting Allah.",
     },
 
     // ─── Dua 12 ──────────────────────────────────────────────────────────────
@@ -177,6 +192,7 @@ export const rukuDuas: DuaVariation[] = [
             ur: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
             tr: "Tüm güce, tüm egemenliğe, tüm büyüklüğe ve tüm azamete sahip Olan'ı tesbih ederim.",
             ms: 'Maha Suci Tuhan yang memiliki segala kekuasaan, pemerintahan, keagungan dan kebesaran.',
+            bn: 'তিনি পবিত্র যিনি সর্বশক্তি, সর্বকর্তৃত্ব, সর্বশ্রেষ্ঠতা ও সর্বমহিমার অধিকারী।',
         },
         references: [
             {
@@ -197,6 +213,8 @@ export const rukuDuas: DuaVariation[] = [
             },
         ],
         notes: "This dhikr is reported to have been recited during the night prayer (Tahajjud) ruku. The four divine attributes mentioned — jabarut (absolute power), malakut (sovereignty), kibriya' (magnificence), and azamah (greatness) — together emphasise the complete supremacy of Allah.",
+        whenToRecite:
+            'Recited quietly during Ruku in night prayers (Tahajjud, Witr, Tarawih). Not typically used in short obligatory prayers. The worshipper should be in the correct bowing position — back flat, hands on knees — for the full duration.',
     },
 
     // ─── Dua 13 ──────────────────────────────────────────────────────────────
@@ -215,6 +233,7 @@ export const rukuDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں نے تیرے لیے رکوع کیا، تجھ پر ایمان لایا، تیرے لیے اسلام لایا، تیرے سامنے میری سماعت، بصارت، دماغ، ہڈیاں اور اعصاب سب جھک گئے۔',
             tr: "Allah'ım, Senin için rükuya vardım, Sana iman ettim, Sana teslim oldum. Kulağım, gözüm, beynin, kemiklerim ve sinirlerim Sana boyun eğdi.",
             ms: 'Ya Allah, kerana-Mulah aku ruku. Kepada-Mulah aku beriman. Kepada-Mu aku berserah. Pendengaranku, penglihatanku, otakku, tulangku dan sarafku semuanya khusyuk kepada-Mu.',
+            bn: 'হে আল্লাহ! তোমার জন্যই আমি রুকু করেছি, তোমার উপর ঈমান এনেছি, তোমার কাছে আত্মসমর্পণ করেছি। আমার শ্রবণ, দৃষ্টি, মস্তিষ্ক, হাড় ও স্নায়ু সবকিছু তোমার সামনে বিনম্র।',
         },
         references: [
             {
@@ -227,5 +246,7 @@ export const rukuDuas: DuaVariation[] = [
             },
         ],
         notes: 'Ali ibn Abi Talib (رضي الله عنه) reported this as the supplication the Prophet ﷺ used in ruku during Tahajjud. It expresses total submission — every faculty of the worshipper is dedicated and humbled before Allah.',
+        whenToRecite:
+            'Recited quietly during the Ruku of Tahajjud (night prayer). It opens the Ruku supplication and can be followed by the standard tasbih (ruku-1). Expresses comprehensive submission at the moment of bowing.',
     },
 ]

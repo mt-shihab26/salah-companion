@@ -9,7 +9,7 @@ export type SalahPositionId =
     | 'salawat'
     | 'before-tasleem'
 
-export type DuaLang = 'en' | 'ar' | 'fr' | 'ur' | 'tr' | 'ms'
+export type DuaLang = 'en' | 'ar' | 'fr' | 'ur' | 'tr' | 'ms' | 'bn'
 
 export const DUA_LANGS: { code: DuaLang; label: string; dir: 'ltr' | 'rtl' }[] = [
     { code: 'en', label: 'English', dir: 'ltr' },
@@ -18,6 +18,7 @@ export const DUA_LANGS: { code: DuaLang; label: string; dir: 'ltr' | 'rtl' }[] =
     { code: 'ur', label: 'اردو', dir: 'rtl' },
     { code: 'tr', label: 'Türkçe', dir: 'ltr' },
     { code: 'ms', label: 'Melayu', dir: 'ltr' },
+    { code: 'bn', label: 'বাংলা', dir: 'ltr' },
 ]
 
 export interface SalahPosition {
@@ -62,4 +63,5 @@ export interface DuaVariation {
     references: DuaReference[]
     audioUrl?: string
     notes?: string
+    whenToRecite?: string
 }

@@ -16,6 +16,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'پاک ہے میرا رب، سب سے اعلیٰ۔',
             tr: 'En Yüce Rabbimi tesbih ederim.',
             ms: 'Maha Suci Tuhanku Yang Maha Tinggi.',
+            bn: 'আমার সর্বোচ্চ রবের পবিত্রতা বর্ণনা করি।',
         },
         references: [
             {
@@ -36,6 +37,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: "The most obligatory dhikr in sujood. Corresponds to the Quranic command: 'Glorify the name of your Lord, the Most High' (Al-A'la 87:1). Minimum three repetitions; seven or more in voluntary prayers.",
+        whenToRecite:
+            "Recited quietly in every Sujood (prostration) of every rak'ah — both the first and second prostrations. Forehead, nose, both palms, both knees and both feet must be on the ground. Minimum three repetitions. The worshipper must be completely still while reciting.",
     },
 
     // ─── Dua 19 ──────────────────────────────────────────────────────────────
@@ -53,6 +56,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'اے اللہ! مجھے معاف فرما جو میں نے چھپ کر کیا اور جو میں نے علانیہ کیا۔',
             tr: "Allah'ım, gizli yaptıklarımı ve açıkça yaptıklarımı bağışla.",
             ms: 'Ya Allah, ampunkanlah aku atas apa yang aku lakukan secara tersembunyi dan secara terang-terangan.',
+            bn: 'হে আল্লাহ! আমি গোপনে যা করেছি এবং প্রকাশ্যে যা করেছি তা ক্ষমা করো।',
         },
         references: [
             {
@@ -65,6 +69,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: 'Sujood is the closest position to Allah. The Prophet ﷺ said: "The closest a servant is to his Lord is when he is in sujood, so make many duas." This dua seeks forgiveness for all hidden and open sins.',
+        whenToRecite:
+            "Recited during Sujood in every rak'ah, particularly in voluntary prayers. The sujood is the optimal moment for personal supplications — the Prophet ﷺ encouraged making many duas in this position.",
     },
 
     // ─── Dua 20 ──────────────────────────────────────────────────────────────
@@ -82,6 +88,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'نہایت پاک، نہایت مقدس، فرشتوں اور روح (جبریل) کا رب۔',
             tr: "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un Rabbi.",
             ms: 'Maha Suci, Maha Kudus, Tuhan para malaikat dan Roh.',
+            bn: 'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহের রব।',
         },
         references: [
             {
@@ -94,6 +101,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: "Same as ruku-2. A'ishah (رضي الله عنها) reported the Prophet ﷺ said this in both ruku and sujood.",
+        whenToRecite:
+            "Recited during Sujood in every rak'ah. Used interchangeably with or alongside the primary tasbih (sajdah-1). A'ishah (رضي الله عنها) reported the Prophet ﷺ said this frequently in both bowing and prostration.",
     },
 
     // ─── Dua 21 ──────────────────────────────────────────────────────────────
@@ -111,6 +120,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'تو پاک ہے اور تیری حمد ہے، تیرے سوا کوئی معبود نہیں۔',
             tr: 'Seni tesbih eder ve hamd ederim. Senden başka ilah yoktur.',
             ms: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            bn: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
         },
         references: [
             {
@@ -123,6 +133,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: "Reported by A'ishah (رضي الله عنها) — the Prophet ﷺ said this in both ruku and sujood.",
+        whenToRecite:
+            "Recited during Sujood in every rak'ah. Combines glorification (tasbih), praise (tahmid) and testimony (Tawhid) in a single phrase. Identical wording to ruku-3 — the Prophet ﷺ used it in both positions.",
     },
 
     // ─── Dua 22 ──────────────────────────────────────────────────────────────
@@ -140,6 +152,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے بخش دے۔',
             tr: "Allah'ım Rabbimiz, Seni tesbih eder ve hamd ederim. Allah'ım, beni bağışla.",
             ms: 'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunkanlah aku.',
+            bn: 'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
         },
         references: [
             {
@@ -152,6 +165,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: "Reported in both Bukhari and Muslim from A'ishah (رضي الله عنها), said in both ruku and sujood.",
+        whenToRecite:
+            "Recited during Sujood in every rak'ah. This supplication implements the command of Surah An-Nasr, combining glorification of Allah with a request for forgiveness. It is especially recommended in the later part of one's life.",
     },
 
     // ─── Dua 23 ──────────────────────────────────────────────────────────────
@@ -169,6 +184,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
             tr: "Tüm güce, egemenliğe, büyüklüğe ve azamete sahip Olan'ı tesbih ederim.",
             ms: 'Maha Suci Tuhan yang memiliki kekuasaan, pemerintahan, keagungan dan kebesaran.',
+            bn: 'তিনি পবিত্র যিনি সকল শক্তি, সকল কর্তৃত্ব, সকল শ্রেষ্ঠত্ব ও সকল মহিমার অধিকারী।',
         },
         references: [
             {
@@ -181,6 +197,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: "Reported by A'ishah (رضي الله عنها) as a night prayer dhikr in both ruku and sujood.",
+        whenToRecite:
+            'Recited during Sujood in night prayers (Tahajjud, Witr, Tarawih). Particularly suited for voluntary prayers where the worshipper lingers in prostration. Can be said after the primary tasbih (sajdah-1).',
     },
 
     // ─── Dua 24 ──────────────────────────────────────────────────────────────
@@ -199,6 +217,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'اے اللہ! میرے سارے گناہ بخش دے — چھوٹے اور بڑے، پہلے اور آخری، علانیہ اور پوشیدہ۔',
             tr: "Allah'ım, tüm günahlarımı bağışla — küçüğünü ve büyüğünü, ilkini ve sonuncusunu, açığını ve gizlisini.",
             ms: 'Ya Allah, ampunkanlah semua dosaku — yang kecil dan yang besar, yang pertama dan yang terakhir, yang terang dan yang tersembunyi.',
+            bn: 'হে আল্লাহ! আমার সব পাপ ক্ষমা করো — ছোট ও বড়, প্রথম ও শেষ, প্রকাশ্য ও গোপন।',
         },
         references: [
             {
@@ -211,6 +230,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: 'A comprehensive forgiveness supplication covering every category of sin through elegant pairs of opposites. The sujood — the most humble position — is the ideal moment to seek total forgiveness.',
+        whenToRecite:
+            "Recited during Sujood in every rak'ah, particularly after the primary tasbih. Using pairs of opposites (small/great, first/last, public/secret), it ensures no sin is left unaddressed in the supplication.",
     },
 
     // ─── Dua 25 ──────────────────────────────────────────────────────────────
@@ -229,6 +250,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں تیری رضا کے ذریعے تیرے غضب سے، اور تیری معافی کے ذریعے تیری سزا سے پناہ مانگتا ہوں۔ میں تجھ سے تیری پناہ مانگتا ہوں۔ میں تیری تعریف گن نہیں سکتا — تو ویسا ہی ہے جیسا تو نے خود اپنی تعریف کی۔',
             tr: "Allah'ım, gazabından rızana, cezandan affına sığınırım. Senden Sana sığınırım. Seni layıkıyla övemem — Sen, Kendini övdüğün gibisin.",
             ms: 'Ya Allah, aku berlindung dengan keredhaan-Mu daripada kemurkaan-Mu, dan dengan kemaafan-Mu daripada azab-Mu. Aku berlindung kepada-Mu daripada-Mu. Aku tidak dapat menghitung pujian kepada-Mu — Engkau sebagaimana Engkau memuji diri-Mu sendiri.',
+            bn: 'হে আল্লাহ! আমি তোমার সন্তুষ্টির মাধ্যমে তোমার ক্রোধ থেকে, এবং তোমার ক্ষমার মাধ্যমে তোমার শাস্তি থেকে আশ্রয় চাই। আমি তোমার কাছ থেকে তোমার আশ্রয় চাই। আমি তোমার প্রশংসা গণনা করতে পারি না — তুমি সেইরকম যেমন তুমি নিজের প্রশংসা করেছ।',
         },
         references: [
             {
@@ -241,6 +263,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: "One of the most profound duas in the entire prayer. The phrase 'I seek refuge in You from You' (a'udhu bika minka) is unique — it means seeking refuge in Allah's attributes of mercy from His attributes of wrath. The admission 'I cannot enumerate Your praise' is the peak of humility.",
+        whenToRecite:
+            "Recited during Sujood in voluntary prayers, particularly Tahajjud. This deep supplication, reported by A'ishah (رضي الله عنها), is best suited for solitary night prayers where the worshipper can linger in prostration in full humility.",
     },
 
     // ─── Dua 26 ──────────────────────────────────────────────────────────────
@@ -259,6 +283,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'اے اللہ! میں نے تیرے لیے سجدہ کیا، تجھ پر ایمان لایا، تیرے آگے سر تسلیم خم کیا... بابرکت ہے اللہ جو سب سے بہتر خالق ہے۔',
             tr: "Allah'ım, Senin için secdeye vardım, Sana iman ettim, Sana teslim oldum... Yaratıcıların en güzeli olan Allah ne mübarektir.",
             ms: 'Ya Allah, kerana-Mulah aku sujud, kepada-Mulah aku beriman, kepada-Mu aku berserah... Maha Berkat Allah, sebaik-baik Pencipta.',
+            bn: 'হে আল্লাহ! তোমার জন্যই আমি সেজদা করেছি, তোমার উপর ঈমান এনেছি, তোমার কাছে আত্মসমর্পণ করেছি। আমার মুখ সেজদা করেছে সেই সত্তার সামনে যিনি এটি সৃষ্টি করেছেন ও রূপ দিয়েছেন... বরকতময় আল্লাহ, সর্বোত্তম স্রষ্টা।',
         },
         references: [
             {
@@ -279,6 +304,8 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: "The ending 'Tabaraka Allahu ahsanul-khaliqin' is a direct quote from Al-Mu'minun 23:14. It acknowledges that the face prostrating was created by Allah Himself — making the sujood a return of the creation to its Creator.",
+        whenToRecite:
+            "Recited during the Sujood of Tahajjud (night prayer). It opens the prostration supplication and beautifully acknowledges that the worshipper's own face — which now presses against the ground — was formed by the same Creator being worshipped.",
     },
 
     // ─── Dua 27 ──────────────────────────────────────────────────────────────
@@ -297,6 +324,7 @@ export const sajdahDuas: DuaVariation[] = [
             ur: 'اے اللہ! میرے دل میں نور ڈال، سماعت میں نور، بصارت میں نور، دائیں طرف نور، بائیں طرف نور، آگے نور، پیچھے نور، اوپر نور، نیچے نور — اور مجھے نور عطا فرما۔',
             tr: "Allah'ım, kalbime nur, kulağıma nur, gözüme nur, sağıma nur, soluma nur, önüme nur, arkama nur, üstüme nur, altıma nur koy — ve bana nur ihsan et.",
             ms: 'Ya Allah, letakkanlah cahaya di hatiku, cahaya pada pendengaranku, cahaya pada penglihatanku, cahaya di sebelah kananku, kiri, depan, belakang, atas dan bawahku — dan kurniakanlah cahaya kepadaku.',
+            bn: 'হে আল্লাহ! আমার হৃদয়ে নূর রাখো, শ্রবণে নূর, দৃষ্টিতে নূর, আমার ডানে নূর, বামে নূর, সামনে নূর, পেছনে নূর, উপরে নূর, নিচে নূর — এবং আমাকে নূর দান করো।',
         },
         references: [
             {
@@ -317,5 +345,7 @@ export const sajdahDuas: DuaVariation[] = [
             },
         ],
         notes: "Ibn Abbas narrated that he heard the Prophet ﷺ say this supplication during his night prayer sujood. The word 'nur' (light) appears ten times, requesting divine illumination in every direction and dimension — a profound prayer for guidance and clarity.",
+        whenToRecite:
+            'Recited during Sujood in Tahajjud (night prayer). Ibn Abbas (رضي الله عنه) narrated hearing the Prophet ﷺ recite this in his night-prayer prostration. Asking for divine light in ten different aspects, it covers every dimension of spiritual and physical guidance.',
     },
 ]

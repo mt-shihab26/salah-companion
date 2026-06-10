@@ -9,13 +9,17 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-    resolve: { tsconfigPaths: true },
+    resolve: {
+        tsconfigPaths: true,
+    },
     plugins: [
         devtools(),
         nitro(),
         tailwindcss(),
         tanstackStart(),
         react(),
-        babel({ presets: [reactCompilerPreset()] }),
+        babel({
+            presets: [reactCompilerPreset()],
+        }),
     ],
 })

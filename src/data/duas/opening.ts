@@ -16,6 +16,7 @@ export const openingDuas: DuaVariation[] = [
             ur: 'اللہ سب سے بڑا ہے۔',
             tr: 'Allah en büyüktür.',
             ms: 'Allah Maha Besar.',
+            bn: 'আল্লাহ সর্বমহান।',
         },
         references: [
             {
@@ -36,6 +37,8 @@ export const openingDuas: DuaVariation[] = [
             },
         ],
         notes: 'The opening Takbeer (Takbeeratul Ihram) marks the formal entry into the state of prayer. Once uttered, the worshipper is in a sacred state (haram) and worldly speech is forbidden. It is obligatory (fard) according to the majority of scholars. The hands are raised to the level of the shoulders or earlobes while saying it.',
+        whenToRecite:
+            'Recited aloud (by the imam) or silently (by the follower) at the very beginning of every prayer. Both hands are raised to shoulder or earlobe level simultaneously. Once said, the worshipper enters the sacred prayer state (ihraam) and all worldly speech is forbidden until the Tasleem.',
     },
 
     // ─── Dua 2 ───────────────────────────────────────────────────────────────
@@ -54,6 +57,7 @@ export const openingDuas: DuaVariation[] = [
             ur: 'اللہ بے حد بڑا ہے، اللہ کے لیے بہت زیادہ تعریف ہے، اور اللہ کی صبح و شام پاکیزگی بیان ہو۔',
             tr: "Allah gerçekten en büyüktür; Allah'a bol hamd olsun; sabah akşam Allah'ı tesbih ederim.",
             ms: 'Allah Maha Besar dengan sebesar-besarnya; segala puji bagi Allah dengan sebanyak-banyaknya; dan Maha Suci Allah pada waktu pagi dan petang.',
+            bn: 'আল্লাহ সত্যিই সর্বমহান; আল্লাহর জন্য প্রচুর প্রশংসা; এবং সকাল ও সন্ধ্যায় আল্লাহর পবিত্রতা বর্ণনা করি।',
         },
         references: [
             {
@@ -66,6 +70,8 @@ export const openingDuas: DuaVariation[] = [
             },
         ],
         notes: "This istiftah was praised by the Prophet ﷺ when he heard a companion recite it before prayer. Ibn Umar (رضي الله عنه) narrated that the Prophet ﷺ said: 'I saw twelve angels competing to be the first to carry it up.'",
+        whenToRecite:
+            "Recited silently in the first rak'ah only, immediately after the opening Takbeer and before seeking refuge (Ta'awwudh). Choose one istiftah per prayer session. Omitted when joining a prayer already in progress (masbooq).",
     },
 
     // ─── Dua 3 ───────────────────────────────────────────────────────────────
@@ -84,6 +90,7 @@ export const openingDuas: DuaVariation[] = [
             ur: 'اے اللہ! میرے اور میرے گناہوں کے درمیان اتنا فاصلہ کر دے جتنا تو نے مشرق اور مغرب کے درمیان فاصلہ کیا ہے۔ اے اللہ! مجھے گناہوں سے اس طرح پاک فرما جیسے سفید کپڑا میل سے صاف ہوتا ہے۔ اے اللہ! میرے گناہوں کو پانی، برف اور اولے سے دھو دے۔',
             tr: "Allah'ım! Benimle günahlarım arasına, Doğu ile Batı'yı birbirinden ayırdığın gibi mesafe koy. Allah'ım! Beni günahlardan, beyaz elbise kirden temizlendiği gibi temizle. Allah'ım! Günahlarımı su, kar ve doluyla yıka.",
             ms: 'Ya Allah, jauhkanlah antara aku dan kesalahanku seperti Engkau menjauhkan antara Timur dan Barat. Ya Allah, sucikanlah aku dari kesalahan seperti kain putih disucikan dari kotoran. Ya Allah, basuhkan kesalahanku dengan air, salji dan embun beku.',
+            bn: 'হে আল্লাহ! আমার এবং আমার পাপের মধ্যে এতটা দূরত্ব রাখো যতটা দূরত্ব তুমি পূর্ব ও পশ্চিমের মধ্যে রেখেছ। হে আল্লাহ! আমাকে পাপ থেকে এমনভাবে পরিষ্কার করো যেমন সাদা কাপড় ময়লা থেকে পরিষ্কার হয়। হে আল্লাহ! আমার পাপগুলো পানি, তুষার ও শিলা দিয়ে ধুয়ে দাও।',
         },
         references: [
             {
@@ -104,6 +111,8 @@ export const openingDuas: DuaVariation[] = [
             },
         ],
         notes: 'This supplication uses vivid imagery of distance and cleansing to describe the removal of sins. The mention of water, snow and hail emphasises thorough purification. Most commonly used in obligatory prayers.',
+        whenToRecite:
+            "Recited silently in the first rak'ah only, after the opening Takbeer and before Ta'awwudh. This is the most common istiftah in obligatory (fard) prayers. Do not combine multiple istiftah versions in a single prayer.",
     },
 
     // ─── Dua 4 ───────────────────────────────────────────────────────────────
@@ -122,6 +131,7 @@ export const openingDuas: DuaVariation[] = [
             ur: 'اے اللہ! تو پاک ہے اور ساتھ ہی تیری حمد ہے، تیرا نام بابرکت ہے، تیری شان بلند ہے اور تیرے سوا کوئی معبود نہیں۔',
             tr: 'Sübhansın ya Allah, hamd Senindir; mübarek Senin adın, yücedir Senin şanın; Senden başka ilah yoktur.',
             ms: 'Maha Suci Engkau ya Allah, dengan segala puji-pujian-Mu. Maha Berkat nama-Mu, Maha Tinggi kebesaran-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            bn: 'হে আল্লাহ! তুমি পবিত্র এবং তোমার প্রশংসা। তোমার নাম বরকতময়, তোমার মহিমা সুউচ্চ। তুমি ছাড়া কোনো ইলাহ নেই।',
         },
         references: [
             {
@@ -142,6 +152,8 @@ export const openingDuas: DuaVariation[] = [
             },
         ],
         notes: "This is the most widely used istiftah among the Hanafi, Shafi'i and Hanbali schools. It opens with glorification (tasbih), praise (tahmid), blessings on Allah's name (tabarruk), and the declaration of His Majesty and Oneness.",
+        whenToRecite:
+            "Recited silently in the first rak'ah only, after the opening Takbeer and before Ta'awwudh. This is the preferred istiftah of the Hanafi, Shafi'i and Hanbali madhabs and is the most widely practised globally.",
     },
 
     // ─── Dua 5 ───────────────────────────────────────────────────────────────
@@ -160,6 +172,7 @@ export const openingDuas: DuaVariation[] = [
             ur: 'اے اللہ! تمام تعریف تیرے لیے ہے، تو آسمانوں اور زمین اور ان میں موجود تمام مخلوق کا نور ہے... تیرے سوا کوئی معبود نہیں۔',
             tr: "Allah'ım! Hamd Senindir. Sen göklerin, yerin ve onlarda bulunanların nurusun... Senden başka ilah yoktur.",
             ms: 'Ya Allah, segala puji bagi-Mu. Engkaulah cahaya langit dan bumi dan sesiapa yang ada padanya... Tiada tuhan yang berhak disembah melainkan Engkau.',
+            bn: 'হে আল্লাহ! সকল প্রশংসা তোমার। তুমি আকাশমণ্ডলী, পৃথিবী এবং তাদের মধ্যে যা কিছু আছে সবকিছুর আলো... তুমি ছাড়া কোনো ইলাহ নেই।',
         },
         references: [
             {
@@ -180,5 +193,7 @@ export const openingDuas: DuaVariation[] = [
             },
         ],
         notes: "This is the dua the Prophet ﷺ used to begin Tahajjud (night prayer) with. Ibn Abbas narrated that he heard it when he stayed the night at his aunt Maymunah's house and observed the Prophet ﷺ pray. It is longer and more comprehensive than the regular istiftah duas, befitting the special nature of the night prayer.",
+        whenToRecite:
+            "Recited silently at the very start of Tahajjud (night voluntary prayer), after the opening Takbeer of the first rak'ah. Because of its length, it is ideal for unhurried night prayers. It may also be used in Witr and other optional night prayers.",
     },
 ]

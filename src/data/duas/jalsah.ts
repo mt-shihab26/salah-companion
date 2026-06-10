@@ -15,6 +15,7 @@ export const jalsahDuas: DuaVariation[] = [
             ur: 'اے میرے رب! مجھے بخش دے۔ اے میرے رب! مجھے بخش دے۔',
             tr: 'Rabbim, beni bağışla. Rabbim, beni bağışla.',
             ms: 'Tuhanku, ampunkanlah aku. Tuhanku, ampunkanlah aku.',
+            bn: 'হে আমার রব! আমাকে ক্ষমা করো। হে আমার রব! আমাকে ক্ষমা করো।',
         },
         references: [
             {
@@ -34,6 +35,8 @@ export const jalsahDuas: DuaVariation[] = [
                 url: 'https://sunnah.com/abudawud:874',
             },
         ],
-        notes: "Recited in the brief sitting position between the two prostrations. The repetition of 'My Lord, forgive me' twice emphasises urgency and sincerity. The Prophet ﷺ would linger in this position long enough to recite it, and the sitting should not be hurried.",
+        notes: "Recited in the brief sitting position between the two prostrations (Jalsah). The repetition of 'My Lord, forgive me' twice emphasises urgency and sincerity. The Prophet ﷺ would linger in this position long enough to recite it, and the sitting should not be hurried.",
+        whenToRecite:
+            "Recited while sitting briefly between the first and second Sajdah (prostration) in every rak'ah. The Jalsah (sitting) is short but should not be rushed — the Prophet ﷺ would sit upright and recite this at least once before going into the second Sujood.",
     },
 ]

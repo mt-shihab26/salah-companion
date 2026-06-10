@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 type Theme = 'light' | 'dark'
 
-function getInitialTheme(): Theme {
+const getInitialTheme = (): Theme => {
     try {
         const stored = localStorage.getItem('theme')
         if (stored === 'light' || stored === 'dark') return stored
@@ -12,7 +12,7 @@ function getInitialTheme(): Theme {
     }
 }
 
-export function useTheme() {
+export const useTheme = () => {
     const [theme, setThemeState] = useState<Theme>(getInitialTheme)
 
     useEffect(() => {

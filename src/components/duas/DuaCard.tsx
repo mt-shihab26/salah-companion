@@ -12,7 +12,7 @@ import { Separator } from '#/components/ui/separator'
 import type { DuaLang, DuaVariation } from '#/data/duas/types'
 import { useDuaFavorites } from '#/hooks/use-dua-favorites'
 import { cn } from '#/lib/utils'
-import { Check, Copy, ExternalLink, Heart } from 'lucide-react'
+import { Check, Clock, Copy, ExternalLink, Heart } from 'lucide-react'
 import { useState } from 'react'
 import { DuaAudioPlayer } from './DuaAudioPlayer'
 import { DuaDetailDialog } from './DuaDetailDialog'
@@ -89,8 +89,16 @@ export function DuaCard({ dua, langs, showPosition = false }: Props) {
                     </CardAction>
                 </CardHeader>
 
-                <CardContent>
+                <CardContent className="space-y-4">
                     <DuaTextDisplay dua={dua} langs={langs} />
+                    {dua.whenToRecite && (
+                        <div className="border-primary/20 bg-primary/5 flex gap-2 rounded-md border p-2.5">
+                            <Clock className="text-primary mt-0.5 size-3.5 shrink-0" />
+                            <p className="text-muted-foreground text-xs leading-relaxed">
+                                {dua.whenToRecite}
+                            </p>
+                        </div>
+                    )}
                 </CardContent>
 
                 {dua.references.length > 0 && (

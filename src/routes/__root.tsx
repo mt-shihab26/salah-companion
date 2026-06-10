@@ -1,12 +1,13 @@
-import { TanStackDevtools } from '@tanstack/react-devtools'
-import { HeadContent, Outlet, Scripts, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
+import { createRootRoute } from '@tanstack/react-router'
 
 import { SiteFooter } from '#/components/layout/SiteFooter'
 import { TooltipProvider } from '#/components/ui/tooltip'
 import { AudioProvider } from '#/contexts/AudioContext'
+import { TanStackDevtools } from '@tanstack/react-devtools'
+import { HeadContent, Outlet, Scripts } from '@tanstack/react-router'
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 
-import appCss from '../styles.css?url'
+import styles from '#/styles.css?url'
 
 export const Route = createRootRoute({
     head: () => ({
@@ -25,16 +26,11 @@ export const Route = createRootRoute({
         links: [
             {
                 rel: 'stylesheet',
-                href: appCss,
+                href: styles,
             },
         ],
     }),
-    shellComponent: RootDocument,
-    component: RootLayout,
-})
-
-function RootDocument({ children }: { children: React.ReactNode }) {
-    return (
+    shellComponent: ({ children }) => (
         <html lang="en">
             <head>
                 <HeadContent />
@@ -57,16 +53,13 @@ function RootDocument({ children }: { children: React.ReactNode }) {
                 <Scripts />
             </body>
         </html>
-    )
-}
-
-function RootLayout() {
-    return (
+    ),
+    component: () => (
         <div className="relative flex min-h-screen flex-col">
             <main className="flex-1">
                 <Outlet />
             </main>
             <SiteFooter />
         </div>
-    )
-}
+    ),
+})

@@ -1,16 +1,18 @@
 import type { DuaLang } from '#/data/duas/types'
-import { DUA_LANGS } from '#/data/duas/types'
+
 import { useState } from 'react'
+
+import { DUA_LANGS } from '#/data/duas/types'
 
 const STORAGE_KEY = 'dua-langs'
 const DEFAULT_LANGS: DuaLang[] = ['en']
 const VALID_LANGS = new Set<DuaLang>(DUA_LANGS.map((l) => l.code))
 
-function isDuaLang(value: string): value is DuaLang {
+const isDuaLang = (value: string): value is DuaLang => {
     return VALID_LANGS.has(value as DuaLang)
 }
 
-function readStoredLangs(): DuaLang[] {
+const readStoredLangs = (): DuaLang[] => {
     try {
         const stored = localStorage.getItem(STORAGE_KEY)
         if (!stored) return DEFAULT_LANGS
@@ -23,10 +25,10 @@ function readStoredLangs(): DuaLang[] {
     }
 }
 
-export function useDuaLang() {
+export const useDuaLang = () => {
     const [langs, setLangsState] = useState<DuaLang[]>(readStoredLangs)
 
-    function persist(next: DuaLang[]) {
+    const persist = (next: DuaLang[]) => {
         try {
             localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
         } catch {
@@ -35,12 +37,12 @@ export function useDuaLang() {
         setLangsState(next)
     }
 
-    function setLangs(next: DuaLang[]) {
+    const setLangs = (next: DuaLang[]) => {
         const cleaned = next.length > 0 ? next : DEFAULT_LANGS
         persist(cleaned)
     }
 
-    function toggleLang(lang: DuaLang) {
+    const toggleLang = (lang: DuaLang) => {
         const next = langs.includes(lang) ? langs.filter((l) => l !== lang) : [...langs, lang]
         setLangs(next)
     }

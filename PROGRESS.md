@@ -840,12 +840,12 @@
 
 ## Overall Progress
 
-| Phase                                                    | Status        |
-| -------------------------------------------------------- | ------------- |
-| Foundation (types, positions, infra, components, routes) | ✅ 22 / 22    |
-| Duas data (all 39)                                       | ✅ 39 / 39    |
+| Phase                                                                            | Status       |
+| -------------------------------------------------------------------------------- | ------------ |
+| Foundation (types, positions, infra, components, routes)                         | ✅ 22 / 22   |
+| Duas data (all 39)                                                               | ✅ 39 / 39   |
 | Per-dua features (Arabic · translit · 6 langs · refs · notes · audio · position) | ✅ 507 / 507 |
-| **Total features completed**                             | ✅ 529 / 529  |
+| **Total features completed**                                                     | ✅ 529 / 529 |
 
 ### Extra features shipped
 

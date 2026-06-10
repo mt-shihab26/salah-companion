@@ -16,6 +16,7 @@ export const taawwudhDuas: DuaVariation[] = [
             ur: 'میں شیطان مردود سے اللہ کی پناہ مانگتا ہوں — اس کے وسوسوں، تکبر اور بری شاعری سے۔',
             tr: "Kovulmuş şeytanın vesvesesinden, kibrinden ve kötü şiirinden Allah'a sığınırım.",
             ms: 'Aku berlindung dengan Allah daripada syaitan yang direjam — daripada godaannya, kesombongannya dan tiupan jahatnya.',
+            bn: 'আমি বিতাড়িত শয়তান থেকে আল্লাহর আশ্রয় চাই — তার কুমন্ত্রণা, অহংকার এবং মন্দ অনুপ্রেরণা থেকে।',
         },
         references: [
             {
@@ -44,5 +45,7 @@ export const taawwudhDuas: DuaVariation[] = [
             },
         ],
         notes: "The Ta'awwudh is recited silently before Al-Fatihah in every rak'ah according to most scholars, or only in the first rak'ah according to others. The Quran commands it: 'When you recite the Quran, seek refuge with Allah from the accursed Shaytan' (An-Nahl 16:98). The three words 'hamz', 'nafkh', and 'nafth' describe Shaytan's three modes of attack: inducing madness, inspiring arrogance, and inspiring evil poetry.",
+        whenToRecite:
+            "Recited silently immediately after the Istiftah dua and before Al-Fatihah. Most scholars say it is recited in the first rak'ah only; others say every rak'ah. It is always said silently, even when Fatihah is recited aloud by the imam.",
     },
 ]

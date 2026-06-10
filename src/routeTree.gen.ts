@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as DuasIndexRouteImport } from './routes/duas/index'
+import { Route as DuasDuaIdRouteImport } from './routes/duas/$duaId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DuasIndexRoute = DuasIndexRouteImport.update({
+  id: '/duas/',
+  path: '/duas/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DuasDuaIdRoute = DuasDuaIdRouteImport.update({
+  id: '/duas/$duaId',
+  path: '/duas/$duaId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/duas/$duaId': typeof DuasDuaIdRoute
+  '/duas/': typeof DuasIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/duas/$duaId': typeof DuasDuaIdRoute
+  '/duas': typeof DuasIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/duas/$duaId': typeof DuasDuaIdRoute
+  '/duas/': typeof DuasIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/duas/$duaId' | '/duas/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/duas/$duaId' | '/duas'
+  id: '__root__' | '/' | '/duas/$duaId' | '/duas/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DuasDuaIdRoute: typeof DuasDuaIdRoute
+  DuasIndexRoute: typeof DuasIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/duas/': {
+      id: '/duas/'
+      path: '/duas'
+      fullPath: '/duas/'
+      preLoaderRoute: typeof DuasIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/duas/$duaId': {
+      id: '/duas/$duaId'
+      path: '/duas/$duaId'
+      fullPath: '/duas/$duaId'
+      preLoaderRoute: typeof DuasDuaIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DuasDuaIdRoute: DuasDuaIdRoute,
+  DuasIndexRoute: DuasIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

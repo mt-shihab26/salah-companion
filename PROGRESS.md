@@ -8,7 +8,7 @@
 
 **Legend:** ⬜ Pending · 🔄 In Progress · ✅ Done
 
-**UI rule:** All components must use shadcn/ui primitives (`Badge`, `Button`, `Toggle`, `ToggleGroup`, `Card`, `Separator`, etc.) from `src/components/ui/`. No raw inline styles for structure — use Tailwind classes and CSS variables only where shadcn doesn't cover it.
+**UI rule:** All components must use shadcn/ui primitives (`Badge`, `Button`, `Toggle`, `ToggleGroup`, `Card`, `Separator`, etc.) from `src/components/ui/`. No raw inline styles for structure — use Tailwind classes and CSS variables only where shadcn doesn't cover it. Use `lucide-react` for all icons — no hand-rolled SVGs.
 
 ---
 
@@ -26,15 +26,15 @@
 - [x] `src/routes/__root.tsx` — Add header/footer
 - [x] `src/components/duas/DuaPositionBadge.tsx`
 - [x] `src/components/duas/DuaReferenceList.tsx`
-- [ ] `src/components/duas/DuaTranslationPicker.tsx`
-- [ ] `src/components/duas/DuaAudioPlayer.tsx`
-- [ ] `src/components/duas/DuaTextDisplay.tsx`
-- [ ] `src/components/duas/DuaCard.tsx`
-- [ ] `src/components/duas/DuaGroupSection.tsx`
-- [ ] `src/components/duas/DuaPositionNav.tsx`
-- [ ] `src/routes/index.tsx` — Hero landing page
-- [ ] `src/routes/duas/index.tsx` — Browse page
-- [ ] `src/routes/duas/$duaId.tsx` — Detail page
+- [x] `src/components/duas/DuaTranslationPicker.tsx`
+- [x] `src/components/duas/DuaAudioPlayer.tsx`
+- [x] `src/components/duas/DuaTextDisplay.tsx`
+- [x] `src/components/duas/DuaCard.tsx`
+- [x] `src/components/duas/DuaGroupSection.tsx`
+- [x] `src/components/duas/DuaPositionNav.tsx`
+- [x] `src/routes/index.tsx` — Hero landing page
+- [x] `src/routes/duas/index.tsx` — Browse page
+- [x] `src/routes/duas/$duaId.tsx` — Detail page
 
 ---
 
@@ -801,6 +801,6 @@
 
 | Phase | Status |
 |-------|--------|
-| Foundation (types, positions, infra, components, routes) | 🔄 3 / 21 |
+| Foundation (types, positions, infra, components, routes) | ✅ 21 / 21 |
 | Duas data (all 39) | ⬜ 0 / 39 |
 | **Total features completed** | ⬜ 0 / 507 |

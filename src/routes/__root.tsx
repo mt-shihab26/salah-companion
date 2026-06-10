@@ -1,5 +1,6 @@
 import { createRootRoute } from '@tanstack/react-router'
 
+import { GlobalAudioPlayer } from '#/components/layout/GlobalAudioPlayer'
 import { SiteFooter } from '#/components/layout/SiteFooter'
 import { TooltipProvider } from '#/components/ui/tooltip'
 import { AudioProvider } from '#/contexts/AudioContext'
@@ -60,6 +61,7 @@ export const Route = createRootRoute({
                 <Outlet />
             </main>
             <SiteFooter />
+            <GlobalAudioPlayer />
         </div>
     ),
 })

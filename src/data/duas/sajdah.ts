@@ -75,8 +75,7 @@ export const sajdahDuas: DuaVariation[] = [
                     'O Allah, forgive me for what I have done in secret and what I have done openly.',
             },
             ar: {
-                transliteration:
-                    'اللَّهُمَّ اغْفِرْ لِي مَا أَسْرَرْتُ وَمَا أَعْلَنْتُ',
+                transliteration: 'اللَّهُمَّ اغْفِرْ لِي مَا أَسْرَرْتُ وَمَا أَعْلَنْتُ',
                 translation: 'اللهم اغفر لي ما أسررت وما أعلنت.',
             },
             fr: {
@@ -85,15 +84,13 @@ export const sajdahDuas: DuaVariation[] = [
                     "O Allah, pardonne-moi pour ce que j'ai fait en secret et pour ce que j'ai fait ouvertement.",
             },
             ur: {
-                transliteration:
-                    'اَللّٰہُمَّ اغفِر لِی مَا اَسرَرتُ وَمَا اَعلَنت',
+                transliteration: 'اَللّٰہُمَّ اغفِر لِی مَا اَسرَرتُ وَمَا اَعلَنت',
                 translation:
                     'اے اللہ! مجھے معاف فرما جو میں نے چھپ کر کیا اور جو میں نے علانیہ کیا۔',
             },
             tr: {
                 transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
-                translation:
-                    "Allah'ım, gizli yaptıklarımı ve açıkça yaptıklarımı bağışla.",
+                translation: "Allah'ım, gizli yaptıklarımı ve açıkça yaptıklarımı bağışla.",
             },
             ms: {
                 transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
@@ -101,10 +98,8 @@ export const sajdahDuas: DuaVariation[] = [
                     'Ya Allah, ampunkanlah aku atas apa yang aku lakukan secara tersembunyi dan secara terang-terangan.',
             },
             bn: {
-                transliteration:
-                    'আল্লাহুম্মাগফির লী মা আসরারতু ওয়া মা আলান্ত',
-                translation:
-                    'হে আল্লাহ! আমি গোপনে যা করেছি এবং প্রকাশ্যে যা করেছি তা ক্ষমা করো।',
+                transliteration: 'আল্লাহুম্মাগফির লী মা আসরারতু ওয়া মা আলান্ত',
+                translation: 'হে আল্লাহ! আমি গোপনে যা করেছি এবং প্রকাশ্যে যা করেছি তা ক্ষমা করো।',
             },
         },
         references: [
@@ -141,8 +136,7 @@ export const sajdahDuas: DuaVariation[] = [
             },
             fr: {
                 transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-                translation:
-                    "Très Glorifié, Très Saint, Seigneur des anges et de l'Esprit.",
+                translation: "Très Glorifié, Très Saint, Seigneur des anges et de l'Esprit.",
             },
             ur: {
                 transliteration: 'سُبُّوحٌ قُدُّوسٌ رَبُّ المَلَائِکَۃِ وَالرُّوح',
@@ -150,8 +144,7 @@ export const sajdahDuas: DuaVariation[] = [
             },
             tr: {
                 transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-                translation:
-                    "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un Rabbi.",
+                translation: "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un Rabbi.",
             },
             ms: {
                 transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
@@ -214,8 +207,7 @@ export const sajdahDuas: DuaVariation[] = [
             },
             bn: {
                 transliteration: 'সুবহানাকা ওয়া বিহামদিকা লা ইলাহা ইল্লা আনত',
-                translation:
-                    'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
+                translation: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
             },
         },
         references: [
@@ -257,8 +249,7 @@ export const sajdahDuas: DuaVariation[] = [
                     'Gloire à Toi, ô Allah notre Seigneur, et toute louange. Ô Allah, pardonne-moi.',
             },
             ur: {
-                transliteration:
-                    'سُبحَانَکَ اللّٰہُمَّ رَبَّنَا وَبِحَمدِک، اَللّٰہُمَّ اغفِر لِی',
+                transliteration: 'سُبحَانَکَ اللّٰہُمَّ رَبَّنَا وَبِحَمدِک، اَللّٰہُمَّ اغفِر لِی',
                 translation:
                     'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے بخش دے۔',
             },
@@ -273,8 +264,7 @@ export const sajdahDuas: DuaVariation[] = [
                     'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunkanlah aku.',
             },
             bn: {
-                transliteration:
-                    'সুবহানাকাল্লাহুম্মা রাব্বানা ওয়াবিহামদিকা, আল্লাহুম্মাগফির লী',
+                transliteration: 'সুবহানাকাল্লাহুম্মা রাব্বানা ওয়াবিহামদিকা, আল্লাহুম্মাগফির লী',
                 translation:
                     'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
             },
@@ -303,8 +293,7 @@ export const sajdahDuas: DuaVariation[] = [
         arabic: 'سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ',
         languages: {
             en: {
-                transliteration:
-                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
                 translation:
                     'Glory be to the One Who possesses all power, all sovereignty, all greatness and all magnificence.',
             },
@@ -314,8 +303,7 @@ export const sajdahDuas: DuaVariation[] = [
                 translation: 'سبحان ذي الجبروت والملكوت والكبرياء والعظمة.',
             },
             fr: {
-                transliteration:
-                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
                 translation:
                     'Gloire à Celui qui possède toute puissance, toute souveraineté, toute grandeur et toute magnificence.',
             },
@@ -325,20 +313,17 @@ export const sajdahDuas: DuaVariation[] = [
                 translation: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
             },
             tr: {
-                transliteration:
-                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
                 translation:
                     "Tüm güce, egemenliğe, büyüklüğe ve azamete sahip Olan'ı tesbih ederim.",
             },
             ms: {
-                transliteration:
-                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
                 translation:
                     'Maha Suci Tuhan yang memiliki kekuasaan, pemerintahan, keagungan dan kebesaran.',
             },
             bn: {
-                transliteration:
-                    'সুবহানা যিল জাবারূতি ওয়াল মালাকূতি ওয়াল কিবরিয়াই ওয়াল আযামাহ',
+                transliteration: 'সুবহানা যিল জাবারূতি ওয়াল মালাকূতি ওয়াল কিবরিয়াই ওয়াল আযামাহ',
                 translation:
                     'তিনি পবিত্র যিনি সকল শক্তি, সকল কর্তৃত্ব, সকল শ্রেষ্ঠত্ব ও সকল মহিমার অধিকারী।',
             },
@@ -375,8 +360,7 @@ export const sajdahDuas: DuaVariation[] = [
             ar: {
                 transliteration:
                     'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ',
-                translation:
-                    'اللهم اغفر لي ذنبي كله، دقه وجله، وأوله وآخره، وعلانيته وسره.',
+                translation: 'اللهم اغفر لي ذنبي كله، دقه وجله، وأوله وآخره، وعلانيته وسره.',
             },
             fr: {
                 transliteration:
@@ -436,7 +420,7 @@ export const sajdahDuas: DuaVariation[] = [
                 transliteration:
                     "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
                 translation:
-                    "O Allah, I seek refuge in Your pleasure from Your wrath, and in Your forgiveness from Your punishment. I seek refuge in You from You. I cannot enumerate Your praise — You are as You have praised Yourself.",
+                    'O Allah, I seek refuge in Your pleasure from Your wrath, and in Your forgiveness from Your punishment. I seek refuge in You from You. I cannot enumerate Your praise — You are as You have praised Yourself.',
             },
             ar: {
                 transliteration:
@@ -507,8 +491,7 @@ export const sajdahDuas: DuaVariation[] = [
             ar: {
                 transliteration:
                     'اللَّهُمَّ لَكَ سَجَدْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ',
-                translation:
-                    'اللهم لك سجدت، وبك آمنت، ولك أسلمت... تبارك الله أحسن الخالقين.',
+                translation: 'اللهم لك سجدت، وبك آمنت، ولك أسلمت... تبارك الله أحسن الخالقين.',
             },
             fr: {
                 transliteration:

@@ -3,9 +3,12 @@ import { createContext, useContext, useRef, useState } from 'react'
 interface AudioContextValue {
     currentDuaId: string | null
     isPlaying: boolean
+    currentTime: number
+    duration: number
     play: (duaId: string, url: string) => void
     pause: () => void
     stop: () => void
+    seek: (time: number) => void
 }
 
 const AudioContext = createContext<AudioContextValue | null>(null)
@@ -14,26 +17,38 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
     const audioRef = useRef<HTMLAudioElement | null>(null)
     const [currentDuaId, setCurrentDuaId] = useState<string | null>(null)
     const [isPlaying, setIsPlaying] = useState(false)
+    const [currentTime, setCurrentTime] = useState(0)
+    const [duration, setDuration] = useState(0)
+
+    function initAudio() {
+        if (audioRef.current) return
+        const audio = new Audio()
+        audio.onended = () => {
+            setIsPlaying(false)
+            setCurrentDuaId(null)
+            setCurrentTime(0)
+        }
+        audio.ontimeupdate = () => setCurrentTime(audio.currentTime)
+        audio.onloadedmetadata = () => setDuration(audio.duration)
+        audioRef.current = audio
+    }
 
     function play(duaId: string, url: string) {
-        if (!audioRef.current) {
-            audioRef.current = new Audio()
-            audioRef.current.onended = () => {
-                setIsPlaying(false)
-                setCurrentDuaId(null)
-            }
-        }
+        initAudio()
+        const audio = audioRef.current!
 
         if (currentDuaId === duaId && isPlaying) {
-            audioRef.current.pause()
+            audio.pause()
             setIsPlaying(false)
             return
         }
 
-        audioRef.current.pause()
-        audioRef.current.src = url
-        audioRef.current.currentTime = 0
-        audioRef.current
+        audio.pause()
+        audio.src = url
+        audio.currentTime = 0
+        setCurrentTime(0)
+        setDuration(0)
+        audio
             .play()
             .then(() => {
                 setCurrentDuaId(duaId)
@@ -57,10 +72,17 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
         }
         setIsPlaying(false)
         setCurrentDuaId(null)
+        setCurrentTime(0)
+    }
+
+    function seek(time: number) {
+        if (audioRef.current) audioRef.current.currentTime = time
     }
 
     return (
-        <AudioContext value={{ currentDuaId, isPlaying, play, pause, stop }}>
+        <AudioContext
+            value={{ currentDuaId, isPlaying, currentTime, duration, play, pause, stop, seek }}
+        >
             {children}
         </AudioContext>
     )

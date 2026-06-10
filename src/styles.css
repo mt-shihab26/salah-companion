@@ -196,3 +196,18 @@
         background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><g fill='none' stroke='%23a78bfa' stroke-width='1' opacity='0.035'><polygon points='56,36 44,39 50,50 39,44 36,56 33,44 22,50 28,39 16,36 28,33 22,22 33,28 36,16 39,28 50,22 44,33'/><circle cx='36' cy='36' r='3'/></g></svg>");
     }
 }
+
+@keyframes eq-bounce {
+    0%,
+    100% {
+        height: 3px;
+    }
+    50% {
+        height: 14px;
+    }
+}
+
+.audio-eq-bar {
+    animation: eq-bounce 0.7s ease-in-out infinite;
+    animation-delay: var(--delay, 0s);
+}

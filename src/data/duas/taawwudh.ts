@@ -17,8 +17,7 @@ export const taawwudhDuas: DuaVariation[] = [
             ar: {
                 transliteration:
                     'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ',
-                translation:
-                    'أعوذ بالله من الشيطان الرجيم، من همزه ونفخه ونفثه.',
+                translation: 'أعوذ بالله من الشيطان الرجيم، من همزه ونفخه ونفثه.',
             },
             fr: {
                 transliteration:

@@ -1,25 +1,46 @@
-import { Button } from '#/components/ui/button'
 import { useAudioPlayer } from '#/hooks/use-audio-player'
-import { Pause, Play } from 'lucide-react'
+import { cn } from '#/lib/utils'
+import { Play } from 'lucide-react'
 
 interface Props {
     duaId: string
     audioUrl: string
 }
 
+const BAR_DELAYS = ['0s', '0.2s', '0.1s', '0.3s']
+
 export function DuaAudioPlayer({ duaId, audioUrl }: Props) {
-    const { isPlaying, toggle } = useAudioPlayer(duaId, audioUrl)
+    const { isPlaying, isActive, toggle } = useAudioPlayer(duaId, audioUrl)
 
     return (
-        <Button
-            variant="outline"
-            size="sm"
+        <button
             onClick={toggle}
             aria-label={isPlaying ? 'Pause audio' : 'Play audio'}
-            className="gap-2"
+            className={cn(
+                'flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-full border transition-all hover:scale-105',
+                isActive
+                    ? 'border-primary bg-primary text-primary-foreground hover:bg-primary/90'
+                    : 'border-primary/40 bg-primary/10 text-primary hover:bg-primary/20',
+            )}
         >
-            {isPlaying ? <Pause className="size-3.5" /> : <Play className="size-3.5" />}
-            {isPlaying ? 'Pause' : 'Listen'}
-        </Button>
+            {isPlaying ? (
+                /* Animated EQ bars when playing */
+                <span className="flex items-end gap-px" aria-hidden>
+                    {BAR_DELAYS.map((delay, i) => (
+                        <span
+                            key={i}
+                            className="audio-eq-bar bg-primary-foreground w-[2.5px] rounded-sm"
+                            style={{ '--delay': delay } as React.CSSProperties}
+                        />
+                    ))}
+                </span>
+            ) : isActive ? (
+                /* Paused — show resume icon in active style */
+                <Play className="size-3.5 translate-x-px" />
+            ) : (
+                /* Idle */
+                <Play className="size-3.5 translate-x-px" />
+            )}
+        </button>
     )
 }

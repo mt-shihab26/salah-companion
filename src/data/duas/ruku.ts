@@ -89,8 +89,7 @@ export const rukuDuas: DuaVariation[] = [
             },
             tr: {
                 transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-                translation:
-                    "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un (Cebrail'in) Rabbi.",
+                translation: "Çok Yüce, Çok Kutsal, meleklerin ve Ruh'un (Cebrail'in) Rabbi.",
             },
             ms: {
                 transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
@@ -98,8 +97,7 @@ export const rukuDuas: DuaVariation[] = [
             },
             bn: {
                 transliteration: 'সুব্বুহুন কুদ্দুস, রাব্বুল মালাইকাতি ওয়াররূহ',
-                translation:
-                    'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহ (জিবরাঈল)-এর রব।',
+                translation: 'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহ (জিবরাঈল)-এর রব।',
             },
         },
         references: [
@@ -154,8 +152,7 @@ export const rukuDuas: DuaVariation[] = [
             },
             bn: {
                 transliteration: 'সুবহানাকা ওয়া বিহামদিকা লা ইলাহা ইল্লা আনত',
-                translation:
-                    'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
+                translation: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
             },
         },
         references: [
@@ -183,7 +180,8 @@ export const rukuDuas: DuaVariation[] = [
         languages: {
             en: {
                 transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
-                translation: 'Glory be to You, O Allah our Lord, and all praise. O Allah, forgive me.',
+                translation:
+                    'Glory be to You, O Allah our Lord, and all praise. O Allah, forgive me.',
             },
             ar: {
                 transliteration:
@@ -196,8 +194,7 @@ export const rukuDuas: DuaVariation[] = [
                     'Gloire à Toi, ô Allah notre Seigneur, et toute louange. Ô Allah, pardonne-moi.',
             },
             ur: {
-                transliteration:
-                    'سُبحَانَکَ اللّٰہُمَّ رَبَّنَا وَبِحَمدِک، اَللّٰہُمَّ اغفِر لِی',
+                transliteration: 'سُبحَانَکَ اللّٰہُمَّ رَبَّنَا وَبِحَمدِک، اَللّٰہُمَّ اغفِر لِی',
                 translation:
                     'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے معاف فرما۔',
             },
@@ -212,8 +209,7 @@ export const rukuDuas: DuaVariation[] = [
                     'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunkanlah aku.',
             },
             bn: {
-                transliteration:
-                    'সুবহানাকাল্লাহুম্মা রাব্বানা ওয়াবিহামদিকা, আল্লাহুম্মাগফির লী',
+                transliteration: 'সুবহানাকাল্লাহুম্মা রাব্বানা ওয়াবিহামদিকা, আল্লাহুম্মাগফির লী',
                 translation:
                     'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
             },
@@ -255,8 +251,7 @@ export const rukuDuas: DuaVariation[] = [
                     'Glory be to You, and all praise. I seek Your forgiveness and I repent to You.',
             },
             ar: {
-                transliteration:
-                    'سُبْحَانَكَ وَبِحَمْدِكَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ',
+                transliteration: 'سُبْحَانَكَ وَبِحَمْدِكَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ',
                 translation: 'سبحانك وبحمدك، أستغفرك وأتوب إليك.',
             },
             fr: {
@@ -265,8 +260,7 @@ export const rukuDuas: DuaVariation[] = [
                     'Gloire à Toi et toute louange. Je Te demande pardon et me repens vers Toi.',
             },
             ur: {
-                transliteration:
-                    'سُبحَانَکَ وَبِحَمدِکَ، اَستَغفِرُکَ وَاَتُوبُ اِلَیک',
+                transliteration: 'سُبحَانَکَ وَبِحَمدِکَ، اَستَغفِرُکَ وَاَتُوبُ اِلَیک',
                 translation:
                     'تو پاک ہے اور تیری حمد ہے، میں تجھ سے مغفرت مانگتا ہوں اور تیری طرف توبہ کرتا ہوں۔',
             },
@@ -281,8 +275,7 @@ export const rukuDuas: DuaVariation[] = [
                     'Maha Suci Engkau dan dengan memuji-Mu. Aku memohon keampunan-Mu dan bertaubat kepada-Mu.',
             },
             bn: {
-                transliteration:
-                    'সুবহানাকা ওয়া বিহামদিকা, আস্তাগফিরুকা ওয়া আতূবু ইলাইক',
+                transliteration: 'সুবহানাকা ওয়া বিহামদিকা, আস্তাগফিরুকা ওয়া আতূবু ইলাইক',
                 translation:
                     'তুমি পবিত্র এবং তোমার প্রশংসা করি। আমি তোমার কাছে ক্ষমা চাই এবং তোমার দিকে তাওবা করি।',
             },
@@ -311,8 +304,7 @@ export const rukuDuas: DuaVariation[] = [
         arabic: 'سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ',
         languages: {
             en: {
-                transliteration:
-                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
                 translation:
                     'Glory be to the One Who possesses all power, all sovereignty, all greatness and all magnificence.',
             },
@@ -322,8 +314,7 @@ export const rukuDuas: DuaVariation[] = [
                 translation: 'سبحان ذي الجبروت والملكوت والكبرياء والعظمة.',
             },
             fr: {
-                transliteration:
-                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
                 translation:
                     'Gloire à Celui qui possède toute puissance, toute souveraineté, toute grandeur et toute magnificence.',
             },
@@ -333,20 +324,17 @@ export const rukuDuas: DuaVariation[] = [
                 translation: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
             },
             tr: {
-                transliteration:
-                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
                 translation:
                     "Tüm güce, tüm egemenliğe, tüm büyüklüğe ve tüm azamete sahip Olan'ı tesbih ederim.",
             },
             ms: {
-                transliteration:
-                    "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
                 translation:
                     'Maha Suci Tuhan yang memiliki segala kekuasaan, pemerintahan, keagungan dan kebesaran.',
             },
             bn: {
-                transliteration:
-                    'সুবহানা যিল জাবারূতি ওয়াল মালাকূতি ওয়াল কিবরিয়াই ওয়াল আযামাহ',
+                transliteration: 'সুবহানা যিল জাবারূতি ওয়াল মালাকূতি ওয়াল কিবরিয়াই ওয়াল আযামাহ',
                 translation:
                     'তিনি পবিত্র যিনি সর্বশক্তি, সর্বকর্তৃত্ব, সর্বশ্রেষ্ঠতা ও সর্বমহিমার অধিকারী।',
             },

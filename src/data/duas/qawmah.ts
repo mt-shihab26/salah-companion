@@ -15,8 +15,7 @@ export const qawmahDuas: DuaVariation[] = [
                     'Allah hears the one who praises Him. Our Lord, and to You is all praise.',
             },
             ar: {
-                transliteration:
-                    'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا وَلَكَ الْحَمْدُ',
+                transliteration: 'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا وَلَكَ الْحَمْدُ',
                 translation: 'سمع الله لمن حمده، ربنا ولك الحمد.',
             },
             fr: {
@@ -40,8 +39,7 @@ export const qawmahDuas: DuaVariation[] = [
             },
             bn: {
                 transliteration: 'সামিআল্লাহু লিমান হামিদাহ, রাব্বানা ওয়া লাকাল হামদ',
-                translation:
-                    'আল্লাহ তাঁর প্রশংসাকারীর কথা শোনেন। হে আমাদের রব! সকল প্রশংসা তোমার।',
+                translation: 'আল্লাহ তাঁর প্রশংসাকারীর কথা শোনেন। হে আমাদের রব! সকল প্রশংসা তোমার।',
             },
         },
         references: [

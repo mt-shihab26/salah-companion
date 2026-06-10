@@ -1,5 +1,7 @@
 import type { TDuaVariation } from './types'
 
+import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+
 export const salawatDuas: TDuaVariation[] = [
     {
         id: 'salawat-1',
@@ -80,5 +82,6 @@ export const salawatDuas: TDuaVariation[] = [
         notes: "The Salawat Ibrahimiyyah is commanded by the Quran (Al-Ahzab 33:56). The Companions asked the Prophet ﷺ how to send blessings on him, and he taught them this formula. It is obligatory (fard) in the final tashahhud according to the Shafi'i and Hanbali madhabs, and sunnah mu'akkadah in others. The comparison to Ibrahim (عليه السلام) is the highest benchmark since Ibrahim is the most praised prophet in the Quran after Muhammad ﷺ.",
         whenToRecite:
             "Recited silently after the Tashahhud in the final Qa'dah (sitting) of every prayer. In prayers with two sittings (3 and 4 rak'ah prayers), it is said only in the final sitting, not the middle one. It is obligatory in the final sitting according to the Shafi'i and Hanbali schools.",
+        audioUrl: placeholderAudio,
     },
 ]

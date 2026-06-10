@@ -1,5 +1,7 @@
 import type { TDuaVariation } from './types'
 
+import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+
 export const openingDuas: TDuaVariation[] = [
     // ─── Dua 1 ───────────────────────────────────────────────────────────────
     {
@@ -59,6 +61,7 @@ export const openingDuas: TDuaVariation[] = [
         notes: 'The opening Takbeer (Takbeeratul Ihram) marks the formal entry into the state of prayer. Once uttered, the worshipper is in a sacred state (haram) and worldly speech is forbidden. It is obligatory (fard) according to the majority of scholars. The hands are raised to the level of the shoulders or earlobes while saying it.',
         whenToRecite:
             'Recited aloud (by the imam) or silently (by the follower) at the very beginning of every prayer. Both hands are raised to shoulder or earlobe level simultaneously. Once said, the worshipper enters the sacred prayer state (ihraam) and all worldly speech is forbidden until the Tasleem.',
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 2 ───────────────────────────────────────────────────────────────
@@ -124,6 +127,7 @@ export const openingDuas: TDuaVariation[] = [
         notes: "This istiftah was praised by the Prophet ﷺ when he heard a companion recite it before prayer. Ibn Umar (رضي الله عنه) narrated that the Prophet ﷺ said: 'I saw twelve angels competing to be the first to carry it up.'",
         whenToRecite:
             "Recited silently in the first rak'ah only, immediately after the opening Takbeer and before seeking refuge (Ta'awwudh). Choose one istiftah per prayer session. Omitted when joining a prayer already in progress (masbooq).",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 3 ───────────────────────────────────────────────────────────────
@@ -198,6 +202,7 @@ export const openingDuas: TDuaVariation[] = [
         notes: 'This supplication uses vivid imagery of distance and cleansing to describe the removal of sins. The mention of water, snow and hail emphasises thorough purification. Most commonly used in obligatory prayers.',
         whenToRecite:
             "Recited silently in the first rak'ah only, after the opening Takbeer and before Ta'awwudh. This is the most common istiftah in obligatory (fard) prayers. Do not combine multiple istiftah versions in a single prayer.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 4 ───────────────────────────────────────────────────────────────
@@ -271,6 +276,7 @@ export const openingDuas: TDuaVariation[] = [
         notes: "This is the most widely used istiftah among the Hanafi, Shafi'i and Hanbali schools. It opens with glorification (tasbih), praise (tahmid), blessings on Allah's name (tabarruk), and the declaration of His Majesty and Oneness.",
         whenToRecite:
             "Recited silently in the first rak'ah only, after the opening Takbeer and before Ta'awwudh. This is the preferred istiftah of the Hanafi, Shafi'i and Hanbali madhabs and is the most widely practised globally.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 5 ───────────────────────────────────────────────────────────────
@@ -344,5 +350,6 @@ export const openingDuas: TDuaVariation[] = [
         notes: "This is the dua the Prophet ﷺ used to begin Tahajjud (night prayer) with. Ibn Abbas narrated that he heard it when he stayed the night at his aunt Maymunah's house and observed the Prophet ﷺ pray. It is longer and more comprehensive than the regular istiftah duas, befitting the special nature of the night prayer.",
         whenToRecite:
             "Recited silently at the very start of Tahajjud (night voluntary prayer), after the opening Takbeer of the first rak'ah. Because of its length, it is ideal for unhurried night prayers. It may also be used in Witr and other optional night prayers.",
+        audioUrl: placeholderAudio,
     },
 ]

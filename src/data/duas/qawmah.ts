@@ -1,5 +1,7 @@
 import type { TDuaVariation } from './types'
 
+import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+
 export const qawmahDuas: TDuaVariation[] = [
     // ─── Dua 14 ──────────────────────────────────────────────────────────────
     {
@@ -63,6 +65,7 @@ export const qawmahDuas: TDuaVariation[] = [
         notes: "The phrase 'Sami'allahu liman hamidah' is said by the imam and the one praying alone while rising from ruku. 'Rabbana wa lakal-hamd' is said by both the imam and the congregation upon completing the rise.",
         whenToRecite:
             "The first part ('Sami'allahu liman hamidah') is said while rising from Ruku in every rak'ah — by the imam and the one praying alone. The second part ('Rabbana wa lakal-hamd') is said upon standing fully upright. A follower (ma'moom) says only the second part.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 15 ──────────────────────────────────────────────────────────────
@@ -129,6 +132,7 @@ export const qawmahDuas: TDuaVariation[] = [
         notes: 'This extended version uses the metaphor of praise so vast it could fill the heavens and earth. It is recommended to add it after the basic response, especially in voluntary prayers.',
         whenToRecite:
             "Recited while standing upright after fully rising from Ruku in every rak'ah. This extended version is recommended in voluntary prayers (Tahajjud, Witr, Sunnah prayers) where more time is available. In congregational prayers, follow the imam's pace.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 16 ──────────────────────────────────────────────────────────────
@@ -195,6 +199,7 @@ export const qawmahDuas: TDuaVariation[] = [
         notes: 'One of the longest and most comprehensive qawmah duas. It is particularly recommended in voluntary night prayers. The closing phrases affirm complete dependence on Allah — no wealth, status or power can substitute for His favour.',
         whenToRecite:
             'Recited while standing fully upright in the Qawmah position, especially in Tahajjud and other voluntary night prayers. Because of its length, it is not typically used in obligatory prayers behind an imam. The worshipper should remain still until it is complete.',
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 17 ──────────────────────────────────────────────────────────────
@@ -261,5 +266,6 @@ export const qawmahDuas: TDuaVariation[] = [
         notes: 'This combines praise with a beautiful supplication for purification from sins. The imagery of snow, hail and cold water cleaning a white garment vividly conveys the complete removal of spiritual impurity.',
         whenToRecite:
             'Recited while standing upright after rising from Ruku, particularly in voluntary prayers where lingering is appropriate. Follows the opening tahmid and adds a request for purification. Best used in solitary voluntary prayers.',
+        audioUrl: placeholderAudio,
     },
 ]

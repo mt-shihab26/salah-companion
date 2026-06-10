@@ -1,5 +1,7 @@
 import type { TDuaVariation } from './types'
 
+import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+
 export const sajdahDuas: TDuaVariation[] = [
     // ─── Dua 18 ──────────────────────────────────────────────────────────────
     {
@@ -59,6 +61,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: "The most obligatory dhikr in sujood. Corresponds to the Quranic command: 'Glorify the name of your Lord, the Most High' (Al-A'la 87:1). Minimum three repetitions; seven or more in voluntary prayers.",
         whenToRecite:
             "Recited quietly in every Sujood (prostration) of every rak'ah — both the first and second prostrations. Forehead, nose, both palms, both knees and both feet must be on the ground. Minimum three repetitions. The worshipper must be completely still while reciting.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 19 ──────────────────────────────────────────────────────────────
@@ -115,6 +118,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: 'Sujood is the closest position to Allah. The Prophet ﷺ said: "The closest a servant is to his Lord is when he is in sujood, so make many duas." This dua seeks forgiveness for all hidden and open sins.',
         whenToRecite:
             "Recited during Sujood in every rak'ah, particularly in voluntary prayers. The sujood is the optimal moment for personal supplications — the Prophet ﷺ encouraged making many duas in this position.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 20 ──────────────────────────────────────────────────────────────
@@ -168,6 +172,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: "Same as ruku-2. A'ishah (رضي الله عنها) reported the Prophet ﷺ said this in both ruku and sujood.",
         whenToRecite:
             "Recited during Sujood in every rak'ah. Used interchangeably with or alongside the primary tasbih (sajdah-1). A'ishah (رضي الله عنها) reported the Prophet ﷺ said this frequently in both bowing and prostration.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 21 ──────────────────────────────────────────────────────────────
@@ -223,6 +228,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: "Reported by A'ishah (رضي الله عنها) — the Prophet ﷺ said this in both ruku and sujood.",
         whenToRecite:
             "Recited during Sujood in every rak'ah. Combines glorification (tasbih), praise (tahmid) and testimony (Tawhid) in a single phrase. Identical wording to ruku-3 — the Prophet ﷺ used it in both positions.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 22 ──────────────────────────────────────────────────────────────
@@ -282,6 +288,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: "Reported in both Bukhari and Muslim from A'ishah (رضي الله عنها), said in both ruku and sujood.",
         whenToRecite:
             "Recited during Sujood in every rak'ah. This supplication implements the command of Surah An-Nasr, combining glorification of Allah with a request for forgiveness. It is especially recommended in the later part of one's life.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 23 ──────────────────────────────────────────────────────────────
@@ -341,6 +348,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: "Reported by A'ishah (رضي الله عنها) as a night prayer dhikr in both ruku and sujood.",
         whenToRecite:
             'Recited during Sujood in night prayers (Tahajjud, Witr, Tarawih). Particularly suited for voluntary prayers where the worshipper lingers in prostration. Can be said after the primary tasbih (sajdah-1).',
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 24 ──────────────────────────────────────────────────────────────
@@ -406,6 +414,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: 'A comprehensive forgiveness supplication covering every category of sin through elegant pairs of opposites. The sujood — the most humble position — is the ideal moment to seek total forgiveness.',
         whenToRecite:
             "Recited during Sujood in every rak'ah, particularly after the primary tasbih. Using pairs of opposites (small/great, first/last, public/secret), it ensures no sin is left unaddressed in the supplication.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 25 ──────────────────────────────────────────────────────────────
@@ -472,6 +481,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: "One of the most profound duas in the entire prayer. The phrase 'I seek refuge in You from You' (a'udhu bika minka) is unique — it means seeking refuge in Allah's attributes of mercy from His attributes of wrath. The admission 'I cannot enumerate Your praise' is the peak of humility.",
         whenToRecite:
             "Recited during Sujood in voluntary prayers, particularly Tahajjud. This deep supplication, reported by A'ishah (رضي الله عنها), is best suited for solitary night prayers where the worshipper can linger in prostration in full humility.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 26 ──────────────────────────────────────────────────────────────
@@ -545,6 +555,7 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: "The ending 'Tabaraka Allahu ahsanul-khaliqin' is a direct quote from Al-Mu'minun 23:14. It acknowledges that the face prostrating was created by Allah Himself — making the sujood a return of the creation to its Creator.",
         whenToRecite:
             "Recited during the Sujood of Tahajjud (night prayer). It opens the prostration supplication and beautifully acknowledges that the worshipper's own face — which now presses against the ground — was formed by the same Creator being worshipped.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 27 ──────────────────────────────────────────────────────────────
@@ -619,5 +630,6 @@ export const sajdahDuas: TDuaVariation[] = [
         notes: "Ibn Abbas narrated that he heard the Prophet ﷺ say this supplication during his night prayer sujood. The word 'nur' (light) appears ten times, requesting divine illumination in every direction and dimension — a profound prayer for guidance and clarity.",
         whenToRecite:
             'Recited during Sujood in Tahajjud (night prayer). Ibn Abbas (رضي الله عنه) narrated hearing the Prophet ﷺ recite this in his night-prayer prostration. Asking for divine light in ten different aspects, it covers every dimension of spiritual and physical guidance.',
+        audioUrl: placeholderAudio,
     },
 ]

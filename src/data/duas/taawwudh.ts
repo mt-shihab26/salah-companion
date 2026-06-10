@@ -1,5 +1,7 @@
 import type { TDuaVariation } from './types'
 
+import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+
 export const taawwudhDuas: TDuaVariation[] = [
     {
         id: 'taawwudh-1',
@@ -79,5 +81,6 @@ export const taawwudhDuas: TDuaVariation[] = [
         notes: "The Ta'awwudh is recited silently before Al-Fatihah in every rak'ah according to most scholars, or only in the first rak'ah according to others. The Quran commands it: 'When you recite the Quran, seek refuge with Allah from the accursed Shaytan' (An-Nahl 16:98). The three words 'hamz', 'nafkh', and 'nafth' describe Shaytan's three modes of attack: inducing madness, inspiring arrogance, and inspiring evil poetry.",
         whenToRecite:
             "Recited silently immediately after the Istiftah dua and before Al-Fatihah. Most scholars say it is recited in the first rak'ah only; others say every rak'ah. It is always said silently, even when Fatihah is recited aloud by the imam.",
+        audioUrl: placeholderAudio,
     },
 ]

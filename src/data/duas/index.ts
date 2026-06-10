@@ -1,4 +1,5 @@
-import placeholderAudio from '../../assets/audio/subhanaka.m4a'
+import type { TDuaVariation, TSalahPositionId } from './types'
+
 import { beforeTasleemDuas } from './before-tasleem'
 import { jalsahDuas } from './jalsah'
 import { openingDuas } from './opening'
@@ -8,9 +9,8 @@ import { sajdahDuas } from './sajdah'
 import { salawatDuas } from './salawat'
 import { taawwudhDuas } from './taawwudh'
 import { tashahhudDuas } from './tashahhud'
-import type { TDuaVariation, TSalahPositionId } from './types'
 
-const rawDuas: TDuaVariation[] = [
+export const allDuas: TDuaVariation[] = [
     ...openingDuas,
     ...taawwudhDuas,
     ...rukuDuas,
@@ -22,15 +22,10 @@ const rawDuas: TDuaVariation[] = [
     ...beforeTasleemDuas,
 ]
 
-export const allDuas: TDuaVariation[] = rawDuas.map((dua) => ({
-    ...dua,
-    audioUrl: dua.audioUrl ?? placeholderAudio,
-}))
-
-export function getDuaById(id: string): TDuaVariation | undefined {
+export const getDuaById = (id: string): TDuaVariation | undefined => {
     return allDuas.find((d) => d.id === id)
 }
 
-export function getDuasByPosition(positionId: TSalahPositionId): TDuaVariation[] {
+export const getDuasByPosition = (positionId: TSalahPositionId): TDuaVariation[] => {
     return allDuas.filter((d) => d.positionId === positionId)
 }

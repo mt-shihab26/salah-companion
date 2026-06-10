@@ -1,5 +1,7 @@
 import type { TDuaVariation } from './types'
 
+import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+
 export const beforeTasleemDuas: TDuaVariation[] = [
     // ─── Dua 31 ──────────────────────────────────────────────────────────────
     {
@@ -73,6 +75,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: "Abu Bakr al-Siddiq (رضي الله عنه) asked the Prophet ﷺ to teach him a supplication to say in his prayer, and the Prophet ﷺ taught him this dua. The phrase 'I have greatly wronged myself' is a deep expression of humility and self-accountability, while 'none forgives sins except You' acknowledges Allah's exclusive authority to pardon.",
         whenToRecite:
             "Recited silently while seated in the final Qa'dah, after the Salawat Ibrahimiyyah and before the Tasleem. This was specifically taught by the Prophet ﷺ as a prayer-dua. It is particularly recommended as a du'a to choose between the four classical refuge duas.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 32 ──────────────────────────────────────────────────────────────
@@ -139,6 +142,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: 'Ali ibn Abi Talib (رضي الله عنه) reported that the Prophet ﷺ would recite this dua between the tashahhud and tasleem in his night prayer (tahajjud). It is one of the most comprehensive duas for forgiveness, covering six dimensions of sins: past and future, hidden and public, excessive and unknown.',
         whenToRecite:
             "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah and before Tasleem. Originally narrated from the Prophet ﷺ's night prayer (tahajjud), it is practised in all prayers. Its six-dimensional scope of forgiveness makes it especially fitting as a closing supplication before ending the prayer.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 33 ──────────────────────────────────────────────────────────────
@@ -213,6 +217,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: 'The Prophet ﷺ commanded that this refuge be sought in every prayer. Ibn Hajar al-Asqalani notes that seeking refuge from these four things covers the most dangerous threats a believer faces: spiritual torment after death, eternal punishment, deviation during life, and the greatest end-times trial. The Dajjal (False Messiah) is specifically named because his fitnah is the worst trial ever created.',
         whenToRecite:
             "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. The Prophet ﷺ commanded it be said in every prayer (Abu Hurayrah in Bukhari). Some scholars hold it obligatory (wajib) due to the explicit command. It is one of the most universally practised duas before-tasleem across all madhabs.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 34 ──────────────────────────────────────────────────────────────
@@ -287,6 +292,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: "This version adds refuge from debt (al-maghram) and sin (al-ma'thim) to the standard four refuges. When someone asked why the Prophet ﷺ sought refuge from debt so often, he replied: 'When a man is in debt, he speaks and lies, and he makes a promise and breaks it.' This dua recognises that financial and moral struggles are spiritual threats as much as worldly ones.",
         whenToRecite:
             "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. Narrated from Aishah (رضي الله عنها) who reported the Prophet ﷺ reciting it in prayer. The addition of refuge from debt and sin makes it a broader companion to Dua 33 (the shorter four-refuge form).",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 35 ──────────────────────────────────────────────────────────────
@@ -353,6 +359,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: "Sa'd ibn Abi Waqqas (رضي الله عنه) reported that the Prophet ﷺ used to seek refuge from these five things in every prayer. Miserliness (bukhl) and cowardice (jubn) are linked because they both stem from excessive attachment to the self. 'The worst of old age' refers to severe cognitive decline (kharaf/senility) that strips a person of their intellectual and spiritual capacity.",
         whenToRecite:
             "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. Sa'd ibn Abi Waqqas reported the Prophet ﷺ recited these five refuges in every prayer (Bukhari 2822). It addresses character weaknesses that undermine worship and service to Allah — making it a spiritually self-corrective prayer.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 36 ──────────────────────────────────────────────────────────────
@@ -436,6 +443,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: "The Prophet ﷺ heard a man recite this dua in his prayer and said: 'He has asked Allah by His greatest Name (Ism al-A'zam), the one by which if He is asked He gives, and by which if He is called upon He responds.' The dua uses the attributes from Surah Al-Ikhlas as a means of beseeching Allah, making it one of the most powerful supplications for forgiveness.",
         whenToRecite:
             "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. The Prophet ﷺ confirmed it invokes Allah's Greatest Name (Ism al-A'zam), making it among the most potent closing supplications. Particularly recommended when seeking forgiveness for major sins or asking for a significant need.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 37 ──────────────────────────────────────────────────────────────
@@ -510,6 +518,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: "The Prophet ﷺ heard a man asking by these names and attributes and said: 'He has asked Allah by His Greatest Name (Ism al-A'zam).' The two divine names al-Mannan (Bestower of blessings without expectation of return) and al-Hayy al-Qayyum (Ever-Living, Self-Sustaining) are considered among the greatest of Allah's names. Ending with a request for Paradise and refuge from the Fire aligns with the Prophet ﷺ's counsel that these two goals encompass all one needs.",
         whenToRecite:
             "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. The Prophet ﷺ confirmed it invokes Allah's Greatest Name. This dua culminates in requesting the two ultimate goals — Paradise and protection from the Fire — making it an ideal closing prayer summarising all human need.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 38 ──────────────────────────────────────────────────────────────
@@ -584,6 +593,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: "This version of the four-refuge dua explicitly names 'Jahannam' (the specific name of Hell in Arabic) rather than the generic 'an-nar' (the Fire), emphasising the severity of the refuge being sought. The order here — Hell, grave, Dajjal, life/death — differs slightly from Dua 33, reflecting different narrations. Both arrangements are authentically reported from the Prophet ﷺ.",
         whenToRecite:
             "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. This extended form (using 'Jahannam' explicitly) was taught in the context of instructing the deceased's family on du'a, and is also used in prayer. It is interchangeable with Dua 33 depending on which narration one follows.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 39 ──────────────────────────────────────────────────────────────
@@ -658,5 +668,6 @@ export const beforeTasleemDuas: TDuaVariation[] = [
         notes: "Anas ibn Malik (رضي الله عنه) reported that the Prophet ﷺ frequently sought refuge from these five character flaws. 'Al-ajz' (incapacity) refers to being unable to perform worship and good deeds. 'Al-kasal' (laziness) refers to having the ability but lacking the will. Together they cover two distinct reasons why a person might fail in their duties. 'Al-haram' (extreme old age / senility) is listed alongside spiritual and moral weaknesses, highlighting that the loss of mental faculty is as much a concern as moral failure.",
         whenToRecite:
             "Recited silently in the final Qa'dah after Salawat Ibrahimiyyah, before Tasleem. Anas ibn Malik narrated the Prophet ﷺ frequently used this dua (Bukhari 6367, Muslim 2706). The combination of character flaws (laziness, cowardice, miserliness) with afterlife threats (grave punishment) reflects the Islamic view that worldly character and eternal fate are intertwined.",
+        audioUrl: placeholderAudio,
     },
 ]

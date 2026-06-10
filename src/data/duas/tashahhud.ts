@@ -1,5 +1,7 @@
 import type { TDuaVariation } from './types'
 
+import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+
 export const tashahhudDuas: TDuaVariation[] = [
     {
         id: 'tashahhud-1',
@@ -72,5 +74,6 @@ export const tashahhudDuas: TDuaVariation[] = [
         notes: "The Tashahhud was directly taught by the Prophet ﷺ to Ibn Masud (رضي الله عنه), who said: 'The Messenger of Allah ﷺ taught me the Tashahhud just as he taught me a surah from the Quran, and he held it in his hand.' It is obligatory (wajib) in most madhabs. The index finger is raised during the Shahadah. The greeting of peace to the Prophet ﷺ is a direct address, affirming the spiritual presence of the Prophet ﷺ.",
         whenToRecite:
             "Recited while sitting in the Tashahhud position (Qa'dah) in every prayer: in the middle sitting (after the 2nd rak'ah of Dhuhr, Asr, Maghrib, and Isha) and in the final sitting of every prayer. The right index finger is raised and pointed forward during the Shahadah (testimony). Recited silently.",
+        audioUrl: placeholderAudio,
     },
 ]

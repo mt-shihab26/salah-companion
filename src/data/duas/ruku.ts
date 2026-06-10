@@ -1,5 +1,7 @@
 import type { TDuaVariation } from './types'
 
+import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+
 export const rukuDuas: TDuaVariation[] = [
     // ─── Dua 7 ───────────────────────────────────────────────────────────────
     {
@@ -59,6 +61,7 @@ export const rukuDuas: TDuaVariation[] = [
         notes: "The most widely agreed-upon dhikr for ruku. The minimum is three repetitions, and more is recommended. It corresponds to the verse 'So glorify the name of your Lord, the Most Great' (Al-Waqi'ah 56:96 / Al-Haqqah 69:52).",
         whenToRecite:
             "Recited quietly in every rak'ah during Ruku (bowing), with hands gripping the knees and back flat. Minimum three repetitions; seven or more are recommended in voluntary prayers. Said while completely still — movement before finishing is discouraged.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 8 ───────────────────────────────────────────────────────────────
@@ -113,6 +116,7 @@ export const rukuDuas: TDuaVariation[] = [
         notes: "A'ishah (رضي الله عنها) reported that the Prophet ﷺ frequently said this in his ruku and sujood. The word 'Subbuh' is an intensive form meaning one who is glorified to the utmost degree. 'Quddus' means utterly pure and free from all defects.",
         whenToRecite:
             "Recited quietly during Ruku in every rak'ah, as an alternative to or alongside ruku-1. Can be combined with the primary tasbih. Particularly used in the night prayer (Tahajjud) where more duas are recited.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 9 ───────────────────────────────────────────────────────────────
@@ -168,6 +172,7 @@ export const rukuDuas: TDuaVariation[] = [
         notes: "A'ishah (رضي الله عنها) reported that the Prophet ﷺ recited this frequently in his ruku and sujood, implementing the Quranic command to glorify (Al-Nasr 110:3).",
         whenToRecite:
             "Recited quietly during Ruku in every rak'ah. Can be used as the sole tasbih or added after ruku-1. Also recited during Sujood (sajdah-4 uses identical wording).",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 10 ──────────────────────────────────────────────────────────────
@@ -235,6 +240,7 @@ export const rukuDuas: TDuaVariation[] = [
         notes: "A'ishah (رضي الله عنها) reported the Prophet ﷺ frequently recited this, implementing the Quranic command 'then glorify the praises of your Lord and ask His forgiveness' (An-Nasr 110:3).",
         whenToRecite:
             "Recited quietly during Ruku in every rak'ah, particularly in the final period of the Prophet's ﷺ life when Surah An-Nasr was revealed. Combines glorification with a request for forgiveness in one supplication.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 11 ──────────────────────────────────────────────────────────────
@@ -293,6 +299,7 @@ export const rukuDuas: TDuaVariation[] = [
         notes: "A'ishah (رضي الله عنها) said the Prophet ﷺ recited this abundantly in his ruku and sujood as implementation of Surah An-Nasr.",
         whenToRecite:
             "Recited quietly during Ruku in every rak'ah, following the revelation of Surah An-Nasr. Also said during Sujood. Particularly recommended in the last phase of a believer's life as a preparation for meeting Allah.",
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 12 ──────────────────────────────────────────────────────────────
@@ -360,6 +367,7 @@ export const rukuDuas: TDuaVariation[] = [
         notes: "This dhikr is reported to have been recited during the night prayer (Tahajjud) ruku. The four divine attributes mentioned — jabarut (absolute power), malakut (sovereignty), kibriya' (magnificence), and azamah (greatness) — together emphasise the complete supremacy of Allah.",
         whenToRecite:
             'Recited quietly during Ruku in night prayers (Tahajjud, Witr, Tarawih). Not typically used in short obligatory prayers. The worshipper should be in the correct bowing position — back flat, hands on knees — for the full duration.',
+        audioUrl: placeholderAudio,
     },
 
     // ─── Dua 13 ──────────────────────────────────────────────────────────────
@@ -426,5 +434,6 @@ export const rukuDuas: TDuaVariation[] = [
         notes: 'Ali ibn Abi Talib (رضي الله عنه) reported this as the supplication the Prophet ﷺ used in ruku during Tahajjud. It expresses total submission — every faculty of the worshipper is dedicated and humbled before Allah.',
         whenToRecite:
             'Recited quietly during the Ruku of Tahajjud (night prayer). It opens the Ruku supplication and can be followed by the standard tasbih (ruku-1). Expresses comprehensive submission at the moment of bowing.',
+        audioUrl: placeholderAudio,
     },
 ]

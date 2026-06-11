@@ -63,7 +63,7 @@ export const DuaTranslationPicker = () => {
                                         active && 'bg-primary/5 text-foreground',
                                     )}
                                 >
-                                    <div className="flex items-center gap-1">
+                                    <div className="flex items-center gap-2">
                                         <div className="text-primary text-[10px] font-semibold tracking-wider uppercase">
                                             {l.code}
                                         </div>

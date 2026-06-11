@@ -2,18 +2,19 @@ import { cn } from '#/lib/utils'
 import { useDuaFavoritesStore } from '#/stores/dua-favorites-store'
 
 import { Button } from '#/components/ui/button'
+import type { TSalahDua } from '#/types/salah-duas'
 import { Heart } from 'lucide-react'
 
-export const DuaFavoriteButton = ({ duaId }: { duaId: string }) => {
+export const DuaFavoriteButton = ({ salahDua }: { salahDua: TSalahDua }) => {
     const { isFavorite, toggle } = useDuaFavoritesStore()
 
-    const fav = isFavorite(duaId)
+    const fav = isFavorite(salahDua.id)
 
     return (
         <Button
             variant="ghost"
             size="icon"
-            onClick={() => toggle(duaId)}
+            onClick={() => toggle(salahDua.id)}
             aria-label={fav ? 'Remove from favourites' : 'Add to favourites'}
             className={cn(
                 'size-8 transition-colors',

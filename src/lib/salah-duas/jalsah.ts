@@ -1,8 +1,8 @@
-import type { TDuaVariation } from './types'
+import type { TSalahDua } from '../../types/salah-duas'
 
 import placeholderAudio from '#/assets/audio/subhanaka.m4a'
 
-export const jalsahDuas: TDuaVariation[] = [
+export const jalsahDuas: TSalahDua[] = [
     {
         id: 'jalsah-1',
         positionId: 'jalsah',

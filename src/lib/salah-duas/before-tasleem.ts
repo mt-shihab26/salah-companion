@@ -1,8 +1,8 @@
-import type { TDuaVariation } from './types'
+import type { TSalahDua } from '../../types/salah-duas'
 
 import placeholderAudio from '#/assets/audio/subhanaka.m4a'
 
-export const beforeTasleemDuas: TDuaVariation[] = [
+export const beforeTasleemDuas: TSalahDua[] = [
     // ─── Dua 31 ──────────────────────────────────────────────────────────────
     {
         id: 'tasleem-1',
@@ -491,7 +491,7 @@ export const beforeTasleemDuas: TDuaVariation[] = [
             },
             hi: {
                 transliteration:
-                    "अल्लाहुम्म इन्नी आउज़ु बिक मिनल बुख्ल, व आउज़ु बिक मिनल जुबन, व आउज़ु बिक अन उरद्दा इला अर्ज़लिल उमुर, व आउज़ु बिक मिन फित्नातिद्दुन्या, व आउज़ु बिक मिन अज़ाबिल कब्र",
+                    'अल्लाहुम्म इन्नी आउज़ु बिक मिनल बुख्ल, व आउज़ु बिक मिनल जुबन, व आउज़ु बिक अन उरद्दा इला अर्ज़लिल उमुर, व आउज़ु बिक मिन फित्नातिद्दुन्या, व आउज़ु बिक मिन अज़ाबिल कब्र',
                 translation:
                     'ऐ अल्लाह! मैं तेरी पनाह मांगता हूं बुख्ल से, बुज़दिली से, बदतरीन बुढ़ापे तक पहुंचने से, दुनिया के फितने से और कबर के अज़ाब से।',
             },

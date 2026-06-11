@@ -1,8 +1,8 @@
-import type { TDuaVariation } from '../types'
+import type { TSalahDua } from '#/types/salah-duas'
 
 import placeholderAudio from '#/assets/audio/subhanaka.m4a'
 
-export const openingDuas: TDuaVariation[] = [
+export const openingDuas: TSalahDua[] = [
     // ─── Dua 1 ───────────────────────────────────────────────────────────────
     {
         id: 'takbeer',

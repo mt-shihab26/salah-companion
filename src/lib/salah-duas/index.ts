@@ -1,5 +1,5 @@
 import type { TSalahPositionId } from '#/types/salah-positions'
-import type { TDuaVariation } from './types'
+import type { TSalahDua } from '../../types/salah-duas'
 
 import { beforeTasleemDuas } from './before-tasleem'
 import { jalsahDuas } from './jalsah'
@@ -11,7 +11,7 @@ import { salawatDuas } from './salawat'
 import { taawwudhDuas } from './taawwudh'
 import { tashahhudDuas } from './tashahhud'
 
-export const allDuas: TDuaVariation[] = [
+export const allDuas: TSalahDua[] = [
     ...openingDuas,
     ...taawwudhDuas,
     ...rukuDuas,
@@ -23,10 +23,10 @@ export const allDuas: TDuaVariation[] = [
     ...beforeTasleemDuas,
 ]
 
-export const getDuaById = (id: string): TDuaVariation | undefined => {
+export const getDuaById = (id: string): TSalahDua | undefined => {
     return allDuas.find((d) => d.id === id)
 }
 
-export const getDuasByPosition = (positionId: TSalahPositionId): TDuaVariation[] => {
+export const getDuasByPosition = (positionId: TSalahPositionId): TSalahDua[] => {
     return allDuas.filter((d) => d.positionId === positionId)
 }

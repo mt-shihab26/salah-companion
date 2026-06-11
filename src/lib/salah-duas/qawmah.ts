@@ -1,8 +1,8 @@
-import type { TDuaVariation } from './types'
+import type { TSalahDua } from '../../types/salah-duas'
 
 import placeholderAudio from '#/assets/audio/subhanaka.m4a'
 
-export const qawmahDuas: TDuaVariation[] = [
+export const qawmahDuas: TSalahDua[] = [
     // ─── Dua 14 ──────────────────────────────────────────────────────────────
     {
         id: 'qawmah-1',
@@ -45,7 +45,8 @@ export const qawmahDuas: TDuaVariation[] = [
             },
             id: {
                 transliteration: "Sami'allāhu liman ḥamidah, Rabbanā wa lakal-ḥamd",
-                translation: 'Allah mendengar orang yang memuji-Nya. Tuhan kami, bagi-Mu lah segala puji.',
+                translation:
+                    'Allah mendengar orang yang memuji-Nya. Tuhan kami, bagi-Mu lah segala puji.',
             },
             sw: {
                 transliteration: "Sami'allāhu liman ḥamidah, Rabbanā wa lakal-ḥamd",
@@ -61,7 +62,8 @@ export const qawmahDuas: TDuaVariation[] = [
             },
             hi: {
                 transliteration: 'समिअल्लाहु लिमन हमिदह, रब्बना व लकल हम्द',
-                translation: 'अल्लाह उसे सुनता है जो उसकी तारीफ़ करे। ऐ हमारे रब! सारी तारीफ़ तेरे लिए है।',
+                translation:
+                    'अल्लाह उसे सुनता है जो उसकी तारीफ़ करे। ऐ हमारे रब! सारी तारीफ़ तेरे लिए है।',
             },
         },
         references: [

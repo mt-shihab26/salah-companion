@@ -1,8 +1,8 @@
-import type { TDuaVariation } from './types'
+import type { TSalahDua } from '../../types/salah-duas'
 
 import placeholderAudio from '#/assets/audio/subhanaka.m4a'
 
-export const sajdahDuas: TDuaVariation[] = [
+export const sajdahDuas: TSalahDua[] = [
     // ─── Dua 18 ──────────────────────────────────────────────────────────────
     {
         id: 'sajdah-1',
@@ -126,23 +126,28 @@ export const sajdahDuas: TDuaVariation[] = [
             },
             id: {
                 transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
-                translation: 'Ya Allah, ampunilah aku atas apa yang aku lakukan secara tersembunyi dan secara terang-terangan.',
+                translation:
+                    'Ya Allah, ampunilah aku atas apa yang aku lakukan secara tersembunyi dan secara terang-terangan.',
             },
             sw: {
                 transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
-                translation: 'Ee Mwenyezi Mungu, nisamehe niliyofanya kwa siri na niliyofanya hadharani.',
+                translation:
+                    'Ee Mwenyezi Mungu, nisamehe niliyofanya kwa siri na niliyofanya hadharani.',
             },
             ha: {
                 transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
-                translation: 'Ya Allah, Ka gafarta mini abin da na yi a asirce da abin da na yi a fili.',
+                translation:
+                    'Ya Allah, Ka gafarta mini abin da na yi a asirce da abin da na yi a fili.',
             },
             de: {
                 transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
-                translation: 'O Allah, vergib mir, was ich im Verborgenen und was ich offen getan habe.',
+                translation:
+                    'O Allah, vergib mir, was ich im Verborgenen und was ich offen getan habe.',
             },
             hi: {
                 transliteration: 'अल्लाहुम्मग्फ़िर ली मा असरर्तु व मा अलन्त',
-                translation: 'ऐ अल्लाह! मुझे उन सब बातों के लिए माफ़ कर जो मैंने छुपकर और खुलकर किया।',
+                translation:
+                    'ऐ अल्लाह! मुझे उन सब बातों के लिए माफ़ कर जो मैंने छुपकर और खुलकर किया।',
             },
         },
         references: [
@@ -208,7 +213,7 @@ export const sajdahDuas: TDuaVariation[] = [
             },
             ha: {
                 transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-                translation: 'Tsarkakakke sosai, Mai tsarki sosai, Ubangijin mala\'iku da Ruhu.',
+                translation: "Tsarkakakke sosai, Mai tsarki sosai, Ubangijin mala'iku da Ruhu.",
             },
             de: {
                 transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
@@ -276,19 +281,23 @@ export const sajdahDuas: TDuaVariation[] = [
             },
             id: {
                 transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-                translation: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+                translation:
+                    'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
             },
             sw: {
                 transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-                translation: 'Utukufu ni Wako na sifa ni Zako. Hapana mungu anayestahili kuabudiwa isipokuwa Wewe.',
+                translation:
+                    'Utukufu ni Wako na sifa ni Zako. Hapana mungu anayestahili kuabudiwa isipokuwa Wewe.',
             },
             ha: {
                 transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-                translation: 'Tsarki ta tabbata a gare Ka da yabonka. Babu abin bautawa da ya dace sai Kai.',
+                translation:
+                    'Tsarki ta tabbata a gare Ka da yabonka. Babu abin bautawa da ya dace sai Kai.',
             },
             de: {
                 transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-                translation: 'Gepriesen seist Du und aller Lobpreis gehört Dir. Es gibt keinen Gott außer Dir.',
+                translation:
+                    'Gepriesen seist Du und aller Lobpreis gehört Dir. Es gibt keinen Gott außer Dir.',
             },
             hi: {
                 transliteration: 'सुब्हानक व बिहम्दिक ला इलाह इल्ला अन्त',
@@ -356,23 +365,28 @@ export const sajdahDuas: TDuaVariation[] = [
             },
             id: {
                 transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
-                translation: 'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunilah aku.',
+                translation:
+                    'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunilah aku.',
             },
             sw: {
                 transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
-                translation: 'Utukufu ni Wako Ee Mwenyezi Mungu Mola wetu, na sifa Zako. Ee Mwenyezi Mungu, nisamehe.',
+                translation:
+                    'Utukufu ni Wako Ee Mwenyezi Mungu Mola wetu, na sifa Zako. Ee Mwenyezi Mungu, nisamehe.',
             },
             ha: {
                 transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
-                translation: 'Tsarki ta tabbata a gare Ka ya Allah Ubangijinmu, tare da yabonka. Ya Allah, Ka gafarta mini.',
+                translation:
+                    'Tsarki ta tabbata a gare Ka ya Allah Ubangijinmu, tare da yabonka. Ya Allah, Ka gafarta mini.',
             },
             de: {
                 transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
-                translation: 'Gepriesen seist Du, o Allah unser Herr, und aller Lobpreis gehört Dir. O Allah, vergib mir.',
+                translation:
+                    'Gepriesen seist Du, o Allah unser Herr, und aller Lobpreis gehört Dir. O Allah, vergib mir.',
             },
             hi: {
                 transliteration: 'सुब्हानकल्लाहुम्म रब्बना व बिहम्दिक, अल्लाहुम्मग्फ़िर ली',
-                translation: 'ऐ अल्लाह! हमारे रब, तू पवित्र है और तेरी प्रशंसा हो। ऐ अल्लाह! मुझे माफ़ कर।',
+                translation:
+                    'ऐ अल्लाह! हमारे रब, तू पवित्र है और तेरी प्रशंसा हो। ऐ अल्लाह! मुझे माफ़ कर।',
             },
         },
         references: [
@@ -436,11 +450,13 @@ export const sajdahDuas: TDuaVariation[] = [
             },
             id: {
                 transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
-                translation: 'Maha Suci Tuhan yang memiliki kekuasaan, pemerintahan, keagungan dan kebesaran.',
+                translation:
+                    'Maha Suci Tuhan yang memiliki kekuasaan, pemerintahan, keagungan dan kebesaran.',
             },
             sw: {
                 transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
-                translation: 'Utukufu wa Mwenye nguvu zote, ufalme wote, ukuu wote na utukufu wote.',
+                translation:
+                    'Utukufu wa Mwenye nguvu zote, ufalme wote, ukuu wote na utukufu wote.',
             },
             ha: {
                 transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
@@ -448,11 +464,13 @@ export const sajdahDuas: TDuaVariation[] = [
             },
             de: {
                 transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
-                translation: 'Gepriesen sei Der, dem alle Macht, alle Herrschaft, alle Erhabenheit und alle Größe gehört.',
+                translation:
+                    'Gepriesen sei Der, dem alle Macht, alle Herrschaft, alle Erhabenheit und alle Größe gehört.',
             },
             hi: {
                 transliteration: 'सुब्हान ज़िल जबरूति वलमलकूति वलकिब्रियाइ वलअज़मह',
-                translation: 'उसकी पाकी बयान करता हूं जो सर्वशक्तिमान, सर्वसत्ताधारी, सर्वमहान और सर्वमहिमावान है।',
+                translation:
+                    'उसकी पाकी बयान करता हूं जो सर्वशक्तिमान, सर्वसत्ताधारी, सर्वमहान और सर्वमहिमावान है।',
             },
         },
         references: [

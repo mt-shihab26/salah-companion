@@ -3,7 +3,6 @@ import type { TSalahDua } from '../../types/salah-duas'
 
 import { beforeTasleemDuas } from './before-tasleem'
 import { jalsahDuas } from './jalsah'
-import { openingDuas } from './opening-duas/opening'
 import { qawmahDuas } from './qawmah'
 import { rukuDuas } from './ruku'
 import { sajdahDuas } from './sajdah'
@@ -12,7 +11,6 @@ import { taawwudhDuas } from './taawwudh'
 import { tashahhudDuas } from './tashahhud'
 
 export const allDuas: TSalahDua[] = [
-    ...openingDuas,
     ...taawwudhDuas,
     ...rukuDuas,
     ...qawmahDuas,

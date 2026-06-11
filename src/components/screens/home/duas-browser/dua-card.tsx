@@ -53,6 +53,7 @@ export const DuaCard = ({
                 </CardHeader>
                 <CardContent className="space-y-4">
                     <TextDisplay salahDua={salahDua} anguages={languages} />
+                    <Separator />
                     {salahDua.notes && <Notes text={salahDua.notes} />}
                     {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
                 </CardContent>

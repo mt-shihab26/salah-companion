@@ -22,7 +22,7 @@ export const DuasBrowser = () => {
                     your choice rendered alongside the Arabic.
                 </p>
             </div>
-            <div className="border-border/60 bg-background/80 sticky top-0 z-20 -mx-4 w-full justify-between border-y px-4 py-3 backdrop-blur-md">
+            <div className="border-border/60 bg-background/80 sticky top-0 z-20 w-full justify-between border-y py-3 backdrop-blur-md">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                     <div className="hidden items-center gap-2 lg:flex">
                         <div className="text-muted-foreground text-xs font-semibold tracking-wider uppercase">
@@ -36,8 +36,8 @@ export const DuasBrowser = () => {
                 </div>
             </div>
             <div className="flex gap-8">
-                <aside className="hidden w-60 shrink-0 lg:block">
-                    <div className="border-border/60 bg-card/40 sticky top-20 h-[calc(100vh-6rem)] rounded-2xl border p-2">
+                <aside className="hidden w-66 shrink-0 lg:block">
+                    <div className="border-border/60 bg-card/40 sticky top-20 h-[calc(100vh-6rem)] overflow-hidden rounded-2xl border p-2">
                         <DuaPositionNav />
                     </div>
                 </aside>

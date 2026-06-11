@@ -41,7 +41,7 @@ export const useDuasBrowserStore = create<TDuasBrowserStore>()(
         {
             name: 'duas-browser',
             partialize: (state) => ({
-                langs: state.languages,
+                languages: state.languages,
                 salahPositionId: state.salahPositionId,
             }),
         },

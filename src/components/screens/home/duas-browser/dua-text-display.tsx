@@ -1,21 +1,25 @@
-import { ArabicText } from '#/components/elements/arabic-text'
-import { Separator } from '#/components/ui/separator'
-import { LANGUAGES } from '#/lib/languages'
-import { cn } from '#/lib/utils'
 import type { TLanguage } from '#/types/languages'
 import type { TSalahDua } from '#/types/salah-duas'
 
-interface Props {
-    dua: TSalahDua
-    langs: TLanguage[]
-}
+import { cn } from '#/lib/utils'
 
-export function DuaTextDisplay({ dua, langs }: Props) {
-    const orderedLangs = LANGUAGES.filter((l) => langs.includes(l.code))
+import { ArabicText } from '#/components/elements/arabic-text'
+import { Separator } from '#/components/ui/separator'
+
+import { LANGUAGES } from '#/lib/languages'
+
+export const DuaTextDisplay = ({
+    salahDua,
+    anguages,
+}: {
+    salahDua: TSalahDua
+    anguages: TLanguage[]
+}) => {
+    const orderedLangs = LANGUAGES.filter((l) => anguages.includes(l.code))
 
     return (
         <div className="space-y-5">
-            <ArabicText className="text-foreground">{dua.arabic}</ArabicText>
+            <ArabicText className="text-foreground">{salahDua.arabic}</ArabicText>
 
             {orderedLangs.length > 0 && (
                 <>
@@ -31,7 +35,7 @@ export function DuaTextDisplay({ dua, langs }: Props) {
                                         isRtl && 'border-r-2 border-l-0 pr-4 pl-0',
                                     )}
                                 >
-                                    <div className="mb-1 flex items-center gap-2">
+                                    <div className={cn("mb-1 flex items-center gap-2", isRtl && 'flex-row-reverse')}>
                                         <span className="text-primary text-[10px] font-semibold tracking-wider uppercase">
                                             {l.code}
                                         </span>
@@ -39,8 +43,8 @@ export function DuaTextDisplay({ dua, langs }: Props) {
                                             {l.label}
                                         </span>
                                     </div>
-                                    <p className="text-muted-foreground mb-2 font-mono text-xs leading-relaxed">
-                                        {dua.languages[l.code].transliteration}
+                                    <p className={cn("text-muted-foreground mb-2 font-mono text-xs leading-relaxed", isRtl && 'text-right')}>
+                                        {salahDua.languages[l.code].transliteration}
                                     </p>
                                     <p
                                         dir={l.dir}
@@ -57,7 +61,7 @@ export function DuaTextDisplay({ dua, langs }: Props) {
                                                 : undefined
                                         }
                                     >
-                                        {dua.languages[l.code].translation}
+                                        {salahDua.languages[l.code].translation}
                                     </p>
                                 </li>
                             )

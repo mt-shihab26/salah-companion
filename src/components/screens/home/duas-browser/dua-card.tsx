@@ -18,12 +18,12 @@ import { Separator } from '#/components/ui/separator'
 import { Clock, ExternalLink } from 'lucide-react'
 import { DuaDetailDialog } from '../../../duas/DuaDetailDialog'
 import { DuaReferenceList } from '../../../duas/DuaReferenceList'
-import { DuaTextDisplay } from '../../../duas/DuaTextDisplay'
 import { AudioPlayer } from './audio-player'
 import { DuaAudioPlayer } from './dua-audio-player'
 import { DuaCopyButton } from './dua-copy-button'
 import { DuaFavoriteButton } from './dua-favorite-button'
 import { DuaPositionBadge } from './dua-position-badge'
+import { DuaTextDisplay } from './dua-text-display'
 
 export const DuaCard = ({
     salahDua,
@@ -43,10 +43,14 @@ export const DuaCard = ({
                     <div className="space-y-1.5">
                         {showPosition && <DuaPositionBadge positionId={salahDua.positionId} />}
                         <CardTitle className="font-serif text-lg">{salahDua.label}</CardTitle>
-                        {salahDua.notes && (
-                            <CardDescription className="line-clamp-2">
-                                {salahDua.notes}
-                            </CardDescription>
+                        {salahDua.notes && <CardDescription>{salahDua.notes}</CardDescription>}
+                        {salahDua.whenToRecite && (
+                            <div className="border-primary/20 bg-primary/5 flex gap-2 rounded-md border p-2.5">
+                                <Clock className="text-primary mt-0.5 size-3.5 shrink-0" />
+                                <p className="text-muted-foreground text-xs leading-relaxed">
+                                    {salahDua.whenToRecite}
+                                </p>
+                            </div>
                         )}
                     </div>
                     <CardAction className="flex items-center gap-1.5">
@@ -57,15 +61,7 @@ export const DuaCard = ({
                 </CardHeader>
 
                 <CardContent className="space-y-4">
-                    <DuaTextDisplay dua={salahDua} langs={languages} />
-                    {salahDua.whenToRecite && (
-                        <div className="border-primary/20 bg-primary/5 flex gap-2 rounded-md border p-2.5">
-                            <Clock className="text-primary mt-0.5 size-3.5 shrink-0" />
-                            <p className="text-muted-foreground text-xs leading-relaxed">
-                                {salahDua.whenToRecite}
-                            </p>
-                        </div>
-                    )}
+                    <DuaTextDisplay salahDua={salahDua} anguages={languages} />
                 </CardContent>
 
                 {salahDua.references.length > 0 && (

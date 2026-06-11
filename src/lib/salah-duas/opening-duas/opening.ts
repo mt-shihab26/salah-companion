@@ -1,4 +1,4 @@
-import type { TDuaVariation } from './types'
+import type { TDuaVariation } from '../types'
 
 import placeholderAudio from '#/assets/audio/subhanaka.m4a'
 

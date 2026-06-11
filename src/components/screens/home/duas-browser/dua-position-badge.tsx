@@ -5,13 +5,15 @@ import { cn } from '#/lib/utils'
 
 import { Badge } from '#/components/ui/badge'
 
-interface Props {
+export const DuaPositionBadge = ({
+    positionId,
+    className,
+}: {
     positionId: TSalahPositionId
     className?: string
-}
-
-export function DuaPositionBadge({ positionId, className }: Props) {
+}) => {
     const position = getSalahPosition(positionId)
+
     if (!position) return null
 
     return (

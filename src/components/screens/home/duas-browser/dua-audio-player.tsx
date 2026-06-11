@@ -1,16 +1,14 @@
+import type { TSalahDua } from '#/types/salah-duas'
+
 import { useAudioPlayer } from '#/hooks/use-audio-player'
 import { cn } from '#/lib/utils'
-import { Play } from 'lucide-react'
 
-interface Props {
-    duaId: string
-    audioUrl: string
-}
+import { Play } from 'lucide-react'
 
 const BAR_DELAYS = ['0s', '0.2s', '0.1s', '0.3s']
 
-export function DuaAudioPlayer({ duaId, audioUrl }: Props) {
-    const { isPlaying, isActive, toggle } = useAudioPlayer(duaId, audioUrl)
+export const DuaAudioPlayer = ({ salahDua }: { salahDua: TSalahDua }) => {
+    const { isPlaying, isActive, toggle } = useAudioPlayer(salahDua.id, salahDua.audioUrl)
 
     return (
         <button

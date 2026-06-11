@@ -16,8 +16,8 @@ import type { TLanguage } from '#/types/languages'
 import type { TSalahDua } from '#/types/salah-duas'
 import { BookOpen, Check, Clock, Copy, Info, ScrollText } from 'lucide-react'
 import { useState } from 'react'
-import { DuaAudioPlayer } from './DuaAudioPlayer'
-import { DuaPositionBadge } from './DuaPositionBadge'
+import { DuaAudioPlayer } from '../screens/home/duas-browser/dua-audio-player'
+import { DuaPositionBadge } from '../screens/home/duas-browser/dua-position-badge'
 
 interface Props {
     dua: TSalahDua
@@ -69,7 +69,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                 </DialogDescription>
                             )}
                         </div>
-                        {dua.audioUrl && <DuaAudioPlayer duaId={dua.id} audioUrl={dua.audioUrl} />}
+                        {dua.audioUrl && <DuaAudioPlayer salahDua={dua} />}
                     </div>
                 </DialogHeader>
 

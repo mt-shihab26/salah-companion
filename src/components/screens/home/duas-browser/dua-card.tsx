@@ -16,13 +16,13 @@ import { useState } from 'react'
 import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
 import { Clock, ExternalLink } from 'lucide-react'
-import { DuaAudioPlayer } from '../../../duas/DuaAudioPlayer'
 import { DuaDetailDialog } from '../../../duas/DuaDetailDialog'
-import { DuaPositionBadge } from '../../../duas/DuaPositionBadge'
 import { DuaReferenceList } from '../../../duas/DuaReferenceList'
 import { DuaTextDisplay } from '../../../duas/DuaTextDisplay'
+import { DuaAudioPlayer } from './dua-audio-player'
 import { DuaCopyButton } from './dua-copy-button'
 import { DuaFavoriteButton } from './dua-favorite-button'
+import { DuaPositionBadge } from './dua-position-badge'
 
 export const DuaCard = ({
     salahDua,
@@ -41,9 +41,7 @@ export const DuaCard = ({
                 <CardHeader>
                     <div className="space-y-1.5">
                         {showPosition && <DuaPositionBadge positionId={salahDua.positionId} />}
-                        <CardTitle className="font-serif text-lg">
-                            {salahDua.label ?? `Dua ${salahDua.variationIndex}`}
-                        </CardTitle>
+                        <CardTitle className="font-serif text-lg">{salahDua.label}</CardTitle>
                         {salahDua.notes && (
                             <CardDescription className="line-clamp-2">
                                 {salahDua.notes}
@@ -53,9 +51,7 @@ export const DuaCard = ({
                     <CardAction className="flex items-center gap-1.5">
                         <DuaFavoriteButton salahDua={salahDua} />
                         <DuaCopyButton salahDua={salahDua} languages={languages} />
-                        {salahDua.audioUrl && (
-                            <DuaAudioPlayer duaId={salahDua.id} audioUrl={salahDua.audioUrl} />
-                        )}
+                        <DuaAudioPlayer salahDua={salahDua} />
                     </CardAction>
                 </CardHeader>
 

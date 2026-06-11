@@ -56,47 +56,28 @@ export const DuaCard = ({
                     {salahDua.notes && <Notes text={salahDua.notes} />}
                     {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
                 </CardContent>
-
-                {salahDua.references.length > 0 ? (
-                    <>
-                        <Separator />
-                        <CardFooter className="flex items-center justify-between pt-4">
-                            {salahDua.references.length > 0 && (
-                                <DuaReferenceList references={salahDua.references} />
-                            )}
-                            <Button
-                                variant="ghost"
-                                size="sm"
-                                onClick={() => setDialogOpen(true)}
-                                className="text-muted-foreground hover:text-foreground ml-3 shrink-0 gap-1.5 text-xs"
-                            >
-                                <ExternalLink className="size-3.5" />
-                                Details
-                            </Button>
-                        </CardFooter>
-                    </>
-                ) : (
-                    <CardFooter className="justify-end pt-0">
-                        <Button
-                            variant="ghost"
-                            size="sm"
-                            onClick={() => setDialogOpen(true)}
-                            className="text-muted-foreground hover:text-foreground gap-1.5 text-xs"
-                        >
-                            <ExternalLink className="size-3.5" />
-                            Details
-                        </Button>
-                    </CardFooter>
-                )}
+                {salahDua.references.length > 0 && <Separator />}
+                <CardFooter className="flex items-center justify-between pt-4">
+                    {salahDua.references.length > 0 && (
+                        <DuaReferenceList references={salahDua.references} />
+                    )}
+                    <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => setDialogOpen(true)}
+                        className="text-muted-foreground hover:text-foreground ml-auto shrink-0 gap-1.5 text-xs"
+                    >
+                        <ExternalLink className="size-3.5" />
+                        Details
+                    </Button>
+                </CardFooter>
             </Card>
-
             <DuaDetailDialog
                 dua={salahDua}
                 open={dialogOpen}
                 onOpenChange={setDialogOpen}
                 langs={languages}
             />
-
             <AudioPlayer />
         </>
     )

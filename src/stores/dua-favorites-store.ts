@@ -27,7 +27,7 @@ export const useDuaFavoritesStore = create<TDuaFavoritesStore>()(
             },
         })),
         {
-            name: 'salah-companion:favorites',
+            name: 'dua-favorites',
             partialize: (state) => ({
                 favorites: state.favorites,
             }),

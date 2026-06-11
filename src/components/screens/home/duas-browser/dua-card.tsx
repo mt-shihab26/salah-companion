@@ -11,18 +11,17 @@ import {
 import type { TLanguage } from '#/types/languages'
 import type { TSalahDua } from '#/types/salah-duas'
 
-import { useDuaFavoritesStore } from '#/stores/dua-favorites-store'
-import { cn } from '#/lib/utils'
 import { useState } from 'react'
 
 import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
-import { Check, Clock, Copy, ExternalLink, Heart } from 'lucide-react'
+import { Check, Clock, Copy, ExternalLink } from 'lucide-react'
 import { DuaAudioPlayer } from '../../../duas/DuaAudioPlayer'
 import { DuaDetailDialog } from '../../../duas/DuaDetailDialog'
 import { DuaPositionBadge } from '../../../duas/DuaPositionBadge'
 import { DuaReferenceList } from '../../../duas/DuaReferenceList'
 import { DuaTextDisplay } from '../../../duas/DuaTextDisplay'
+import { DuaFavoriteButton } from './dua-favorite-button'
 
 export const DuaCard = ({
     salahDua,
@@ -35,8 +34,6 @@ export const DuaCard = ({
 }) => {
     const [dialogOpen, setDialogOpen] = useState(false)
     const [copied, setCopied] = useState(false)
-    const { isFavorite, toggle } = useDuaFavoritesStore()
-    const fav = isFavorite(salahDua.id)
 
     async function copy() {
         const lang = languages[0] ?? 'en'
@@ -72,20 +69,7 @@ export const DuaCard = ({
                         )}
                     </div>
                     <CardAction className="flex items-center gap-1.5">
-                        <Button
-                            variant="ghost"
-                            size="icon"
-                            onClick={() => toggle(salahDua.id)}
-                            aria-label={fav ? 'Remove from favourites' : 'Add to favourites'}
-                            className={cn(
-                                'size-8 transition-colors',
-                                fav
-                                    ? 'text-rose-500 hover:text-rose-600'
-                                    : 'text-muted-foreground hover:text-rose-500',
-                            )}
-                        >
-                            <Heart className={cn('size-4', fav && 'fill-current')} />
-                        </Button>
+                        <DuaFavoriteButton duaId={salahDua.id} />
                         <Button
                             variant="ghost"
                             size="icon"

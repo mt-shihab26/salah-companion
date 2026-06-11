@@ -1,4 +1,5 @@
-import type { TDuaVariation, TSalahPositionId } from './types'
+import type { TSalahPositionId } from '#/types/salah-positions'
+import type { TDuaVariation } from './types'
 
 import { beforeTasleemDuas } from './before-tasleem'
 import { jalsahDuas } from './jalsah'

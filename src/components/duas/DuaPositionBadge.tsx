@@ -1,7 +1,9 @@
-import { Badge } from '#/components/ui/badge'
-import { getPosition } from '#/data/duas/positions'
-import type { TSalahPositionId } from '#/data/duas/types'
+import type { TSalahPositionId } from '#/types/salah-positions'
+
+import { getSalahPosition } from '#/lib/salah-positions'
 import { cn } from '#/lib/utils'
+
+import { Badge } from '#/components/ui/badge'
 
 interface Props {
     positionId: TSalahPositionId
@@ -9,7 +11,7 @@ interface Props {
 }
 
 export function DuaPositionBadge({ positionId, className }: Props) {
-    const position = getPosition(positionId)
+    const position = getSalahPosition(positionId)
     if (!position) return null
 
     return (

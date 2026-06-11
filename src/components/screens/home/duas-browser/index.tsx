@@ -1,4 +1,5 @@
-import { useDuasBrowser } from './duas-browser-context'
+import { getSalahPosition } from '#/lib/salah-positions'
+import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 
 import { PageWrap } from '#/components/page-wrap'
 import { DuaPositionNav } from './dua-position-nav'
@@ -6,7 +7,8 @@ import { DuaTranslationPicker } from './dua-translation-picker'
 import { DuaGroupSection } from './DuaGroupSection'
 
 export const DuasBrowser = () => {
-    const { activeMeta } = useDuasBrowser()
+    const activePosition = useDuasBrowserStore((s) => s.activePosition)
+    const salahPosition = getSalahPosition(activePosition)
 
     return (
         <PageWrap id="duas-browser" className="scroll-mt-6 space-y-6">
@@ -29,7 +31,7 @@ export const DuasBrowser = () => {
                             Now reading
                         </div>
                         <div className="text-foreground font-serif text-sm font-semibold">
-                            {activeMeta?.name}
+                            {salahPosition?.name}
                         </div>
                     </div>
                     <DuaTranslationPicker />

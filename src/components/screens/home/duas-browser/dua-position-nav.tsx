@@ -1,15 +1,16 @@
-import type { TSalahPositionId } from '#/data/duas/types'
+import type { TSalahPositionId } from '#/types/salah-positions'
 
 import { cn } from '#/lib/utils'
-import { useDuasBrowser } from './duas-browser-context'
+import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 
 import { ArabicText } from '#/components/arabic-text'
 import { Button } from '#/components/ui/button'
 
-import { SALAH_POSITIONS } from '#/data/duas/positions'
+import { SALAH_POSITIONS } from '#/lib/salah-positions'
 
 export const DuaPositionNav = () => {
-    const { activePosition, setActivePosition } = useDuasBrowser()
+    const activePosition = useDuasBrowserStore((s) => s.activePosition)
+    const setActivePosition = useDuasBrowserStore((s) => s.setActivePosition)
 
     return (
         <nav className="flex h-full flex-col gap-1 overflow-x-hidden overflow-y-auto p-1">

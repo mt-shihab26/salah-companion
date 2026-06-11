@@ -1,5 +1,5 @@
 import { cn } from '#/lib/utils'
-import { useDuasBrowser } from './duas-browser-context'
+import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
@@ -9,7 +9,8 @@ import { Check, Languages } from 'lucide-react'
 import { DUA_LANGS } from '#/data/duas/types'
 
 export const DuaTranslationPicker = () => {
-    const { langs, toggleLang } = useDuasBrowser()
+    const langs = useDuasBrowserStore((s) => s.langs)
+    const toggleLang = useDuasBrowserStore((s) => s.toggleLang)
 
     const PICKABLE = DUA_LANGS.filter((l) => l.code !== 'ar')
 

@@ -1,13 +1,16 @@
 import { ArabicText } from '#/components/arabic-text'
 import { Separator } from '#/components/ui/separator'
-import { getPosition } from '#/data/duas/positions'
+import { getDuasByPosition } from '#/data/duas'
+import { getSalahPosition } from '#/lib/salah-positions'
+import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 import { DuaCard } from '../../../duas/DuaCard'
-import { useDuasBrowser } from './duas-browser-context'
 
 export function DuaGroupSection() {
-    const { langs, activePosition, duas } = useDuasBrowser()
+    const langs = useDuasBrowserStore((s) => s.langs)
+    const activePosition = useDuasBrowserStore((s) => s.activePosition)
+    const duas = getDuasByPosition(activePosition)
 
-    const position = getPosition(activePosition)
+    const position = getSalahPosition(activePosition)
     if (!position || duas.length === 0) return null
 
     return (

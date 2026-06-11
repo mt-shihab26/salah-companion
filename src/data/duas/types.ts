@@ -1,15 +1,18 @@
-export type TSalahPositionId =
-    | 'opening'
-    | 'taawwudh'
-    | 'ruku'
-    | 'qawmah'
-    | 'sajdah'
-    | 'jalsah'
-    | 'tashahhud'
-    | 'salawat'
-    | 'before-tasleem'
+import type { TSalahPositionId } from '#/types/salah-positions'
 
-export type TDuaLang = 'en' | 'ar' | 'fr' | 'ur' | 'tr' | 'ms' | 'bn' | 'id' | 'sw' | 'ha' | 'de' | 'hi'
+export type TDuaLang =
+    | 'en'
+    | 'ar'
+    | 'fr'
+    | 'ur'
+    | 'tr'
+    | 'ms'
+    | 'bn'
+    | 'id'
+    | 'sw'
+    | 'ha'
+    | 'de'
+    | 'hi'
 
 export const DUA_LANGS: { code: TDuaLang; label: string; dir: 'ltr' | 'rtl' }[] = [
     { code: 'en', label: 'English', dir: 'ltr' },
@@ -25,16 +28,6 @@ export const DUA_LANGS: { code: TDuaLang; label: string; dir: 'ltr' | 'rtl' }[] 
     { code: 'de', label: 'Deutsch', dir: 'ltr' },
     { code: 'hi', label: 'हिन्दी', dir: 'ltr' },
 ]
-
-export type TSalahPosition = {
-    id: TSalahPositionId
-    order: number
-    name: string
-    nameArabic: string
-    description: string
-    icon: string
-    color: string
-}
 
 export type TQuranRef = {
     type: 'quran'

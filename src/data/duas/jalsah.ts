@@ -38,6 +38,26 @@ export const jalsahDuas: TDuaVariation[] = [
                 transliteration: 'রাব্বিগফির লী, রাব্বিগফির লী',
                 translation: 'হে আমার রব! আমাকে ক্ষমা করো। হে আমার রব! আমাকে ক্ষমা করো।',
             },
+            id: {
+                transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
+                translation: 'Tuhanku, ampunilah aku. Tuhanku, ampunilah aku.',
+            },
+            sw: {
+                transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
+                translation: 'Mola wangu, nisamehe. Mola wangu, nisamehe.',
+            },
+            ha: {
+                transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
+                translation: 'Ya Ubangijina, Ka gafarta mini. Ya Ubangijina, Ka gafarta mini.',
+            },
+            de: {
+                transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
+                translation: 'Mein Herr, vergib mir. Mein Herr, vergib mir.',
+            },
+            hi: {
+                transliteration: 'रब्बिग्फ़िर ली, रब्बिग्फ़िर ली',
+                translation: 'मेरे रब! मुझे माफ़ कर। मेरे रब! मुझे माफ़ कर।',
+            },
         },
         references: [
             {

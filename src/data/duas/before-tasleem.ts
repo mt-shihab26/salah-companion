@@ -53,6 +53,36 @@ export const beforeTasleemDuas: TDuaVariation[] = [
                 translation:
                     'হে আল্লাহ! আমি নিজের উপর অনেক জুলুম করেছি এবং তুমি ছাড়া গুনাহ মাফ করার কেউ নেই। তুমি তোমার পক্ষ থেকে আমাকে ক্ষমা করো এবং আমার উপর রহম করো। নিশ্চয় তুমি ক্ষমাশীল ও দয়ালু।',
             },
+            id: {
+                transliteration:
+                    "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā wa lā yaghfiru dh-dhunūba illā Ant, faghfir lī maghfiratan min 'indika warḥamnī, innaka antal-Ghafūr ar-Raḥīm",
+                translation:
+                    'Ya Allah, sesungguhnya aku telah banyak menganiaya diriku sendiri dan tidak ada yang mengampuni dosa melainkan Engkau. Maka ampunilah aku dengan keampunan dari sisi-Mu dan rahmatilah aku. Sesungguhnya Engkaulah Yang Maha Pengampun lagi Maha Penyayang.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā wa lā yaghfiru dh-dhunūba illā Ant, faghfir lī maghfiratan min 'indika warḥamnī, innaka antal-Ghafūr ar-Raḥīm",
+                translation:
+                    'Ee Mwenyezi Mungu, hakika nimejidhulumu dhuluma nyingi na hakuna anayesamehe dhambi isipokuwa Wewe. Basi nisamehe msamaha kutoka kwako na nirehebu. Hakika Wewe ni Msamehevu Mwenye Rehma.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā wa lā yaghfiru dh-dhunūba illā Ant, faghfir lī maghfiratan min 'indika warḥamnī, innaka antal-Ghafūr ar-Raḥīm",
+                translation:
+                    'Ya Allah, lalle na zalunci nafsina zalunci mai yawa kuma babu wanda zai gafarta zunubai sai Kai. Don haka Ka gafarta mini gafara daga gare Ka kuma Ka ji tausayina. Lalle Kai ne Mai gafara Mai jinkai.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā wa lā yaghfiru dh-dhunūba illā Ant, faghfir lī maghfiratan min 'indika warḥamnī, innaka antal-Ghafūr ar-Raḥīm",
+                translation:
+                    'O Allah, ich habe mir selbst großes Unrecht zugefügt, und niemand vergibt Sünden außer Dir. So vergib mir eine Vergebung von Dir und erbarme Dich meiner. Wahrlich, Du bist der Vergebende, der Barmherzige.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्म इन्नी ज़लम्तु नफ़्सी ज़ुल्मन कसीरा वला यग़्फ़िरुज़्ज़ुनूब इल्ला अन्त, फ़ग़्फ़िर ली मग़्फ़िरतम मिन इन्दिक वर्हम्नी, इन्नक अन्तल ग़फ़ूरुर्रहीम',
+                translation:
+                    'ऐ अल्लाह! बेशक मैंने अपने नफ़्स पर बहुत ज़ुल्म किया और गुनाह माफ़ करने वाला तेरे सिवा कोई नहीं। पस अपनी तरफ़ से मुझे माफ़ी अता फ़रमा और मुझ पर रहम फ़रमा। बेशक तू माफ़ करने वाला और रहम करने वाला है।',
+            },
         },
         references: [
             {
@@ -128,6 +158,36 @@ export const beforeTasleemDuas: TDuaVariation[] = [
                 translation:
                     'হে আল্লাহ! আমি যা আগে করেছি ও যা পরে করেছি, যা গোপনে করেছি ও যা প্রকাশ্যে করেছি, যেখানে বাড়াবাড়ি করেছি এবং যা তুমি আমার চেয়ে বেশি জানো — সবকিছু ক্ষমা করো। তুমিই অগ্রগামীকারী ও পশ্চাদ্গামীকারী। তুমি ছাড়া কোনো ইলাহ নেই।',
             },
+            id: {
+                transliteration:
+                    "Allāhummaghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, wa mā asraftu, wa mā anta a'lamu bihi minnī. Antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+                translation:
+                    'Ya Allah, ampunilah aku atas apa yang telah aku lakukan terlebih dahulu dan apa yang aku tangguhkan, apa yang aku sembunyikan dan apa yang aku nyatakan, apa yang aku berlebihan, dan apa yang Engkau lebih mengetahuinya dariku. Engkaulah Yang Mendahulukan dan Yang Mengakhirkan. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhummaghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, wa mā asraftu, wa mā anta a'lamu bihi minnī. Antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+                translation:
+                    'Ee Mwenyezi Mungu, nisamehe kwa yale niliyoyatanguliza na yale niliyoyakhirisha, yale niliyoyaficha na yale niliyoyafichua, yale niliyoyazidisha, na yale Unayoyajua vizuri kuliko mimi. Wewe ndiye Mtanguliaji na Mwakhirishaji. Hakuna mungu anayestahili kuabudiwa isipokuwa Wewe.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhummaghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, wa mā asraftu, wa mā anta a'lamu bihi minnī. Antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+                translation:
+                    'Ya Allah, Ka gafarta mini abin da na gabatar da abin da na jinkirta, abin da na ɓoye da abin da na bayyana, abin da na wuce gona da iri, da abin da Kai ne fi ni sani. Kai ne Mai gabatarwa kuma Mai jinkirta. Babu abin bautawa da ya dace sai Kai.',
+            },
+            de: {
+                transliteration:
+                    "Allāhummaghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, wa mā asraftu, wa mā anta a'lamu bihi minnī. Antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+                translation:
+                    'O Allah, vergib mir, was ich vorangestellt und was ich aufgeschoben habe, was ich verborgen und was ich öffentlich gemacht habe, worin ich übertrieben habe, und was Du besser weißt als ich. Du bist der Voranstellende und der Zurückstellende. Es gibt keinen Gott außer Dir.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्मग़फिर ली मा कद्दमतु वमा अख्ख़रतु, वमा असरर्तु वमा अलन्तु, वमा असरफतु, वमा अन्त आलमु बिही मिन्नी। अन्तल मुकद्दिमु वअन्तल मुआख़्ख़िर, ला इलाहा इल्ला अन्त',
+                translation:
+                    'ऐ अल्लाह! जो मैंने पहले किया और जो बाद के लिए छोड़ा, जो मैंने छुपाया और जो ज़ाहिर किया, जिसमें बढ़-चढ़ कर किया, और जो तू मुझसे बेहतर जानता है — सब कुछ माफ़ कर। तू ही आगे करने वाला और पीछे करने वाला है। तेरे सिवा कोई माबूद नहीं।',
+            },
         },
         references: [
             {
@@ -194,6 +254,36 @@ export const beforeTasleemDuas: TDuaVariation[] = [
                     'আল্লাহুম্মা ইন্নী আউযু বিকা মিন আযাবিল কাব্র, ওয়া মিন আযাবিন্নার, ওয়া মিন ফিতনাতিল মাহইয়া ওয়াল মামাত, ওয়া মিন শাররি ফিতনাতিল মাসীহিদ দাজ্জাল',
                 translation:
                     'হে আল্লাহ! আমি তোমার কাছে কবরের আযাব থেকে, জাহান্নামের আযাব থেকে, জীবন ও মৃত্যুর ফিতনা থেকে এবং মিথ্যা মসীহ দাজ্জালের ফিতনার অনিষ্ট থেকে আশ্রয় চাই।',
+            },
+            id: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa min 'adhābin-nār, wa min fitnatil-maḥyā wal-mamāt, wa min sharri fitnatil-masīḥid-dajjāl",
+                translation:
+                    'Ya Allah, aku berlindung kepada-Mu dari azab kubur, dari azab Neraka, dari fitnah kehidupan dan kematian, dan dari kejahatan fitnah Al-Masih al-Dajjal.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa min 'adhābin-nār, wa min fitnatil-maḥyā wal-mamāt, wa min sharri fitnatil-masīḥid-dajjāl",
+                translation:
+                    'Ee Mwenyezi Mungu, ninalinda kwako dhidi ya adhabu ya kaburi, na adhabu ya Moto, na fitna za maisha na kifo, na shari ya fitna ya Al-Masih al-Dajjal.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa min 'adhābin-nār, wa min fitnatil-maḥyā wal-mamāt, wa min sharri fitnatil-masīḥid-dajjāl",
+                translation:
+                    'Ya Allah, ina neman tsari a wurinka daga azabar kabari, da azabar wuta, da fitinar rayuwa da mutuwa, da sharrin fitinar Masihud-Dajjal.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa min 'adhābin-nār, wa min fitnatil-maḥyā wal-mamāt, wa min sharri fitnatil-masīḥid-dajjāl",
+                translation:
+                    'O Allah, ich suche Zuflucht bei Dir vor der Strafe des Grabes, vor der Strafe der Hölle, vor den Prüfungen des Lebens und des Todes und vor dem Übel der Prüfung des Falschen Messias (Dajjal).',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्म इन्नी आउज़ु बिक मिन अज़ाबिल कब्र, वमिन अज़ाबिन्नार, वमिन फित्नातिल महया वल ममात, वमिन शर्रि फित्नातिल मसीहिद दज्जाल',
+                translation:
+                    'ऐ अल्लाह! मैं तेरी पनाह मांगता हूं कबर के अज़ाब से, जहन्नम के अज़ाब से, ज़िंदगी और मौत के फितने से और झूठे मसीह दज्जाल के फितने की शर से।',
             },
         },
         references: [
@@ -269,6 +359,36 @@ export const beforeTasleemDuas: TDuaVariation[] = [
                     'আল্লাহুম্মা ইন্নী আউযু বিকা মিন আযাবিল কাব্র, ওয়া আউযু বিকা মিন ফিতনাতিল মাসীহিদ দাজ্জাল, ওয়া আউযু বিকা মিন ফিতনাতিল মাহইয়া ওয়াল মামাত। আল্লাহুম্মা ইন্নী আউযু বিকা মিনাল মাসামি ওয়াল মাগরাম',
                 translation:
                     'হে আল্লাহ! আমি তোমার কাছে কবরের আযাব থেকে, মিথ্যা মসীহ দাজ্জালের ফিতনা থেকে এবং জীবন ও মৃত্যুর ফিতনা থেকে আশ্রয় চাই। হে আল্লাহ! আমি তোমার কাছে পাপ ও ঋণ থেকে আশ্রয় চাই।',
+            },
+            id: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa a'ūdhu bika min fitnatil-masīḥid-dajjāl, wa a'ūdhu bika min fitnatil-maḥyā wal-mamāt. Allāhumma innī a'ūdhu bika minal-ma'thami wal-maghram",
+                translation:
+                    'Ya Allah, aku berlindung kepada-Mu dari azab kubur, dan aku berlindung kepada-Mu dari fitnah Al-Masih al-Dajjal, dan aku berlindung kepada-Mu dari fitnah kehidupan dan kematian. Ya Allah, aku berlindung kepada-Mu dari dosa dan hutang.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa a'ūdhu bika min fitnatil-masīḥid-dajjāl, wa a'ūdhu bika min fitnatil-maḥyā wal-mamāt. Allāhumma innī a'ūdhu bika minal-ma'thami wal-maghram",
+                translation:
+                    'Ee Mwenyezi Mungu, ninalinda kwako dhidi ya adhabu ya kaburi, na ninalinda kwako dhidi ya fitna ya Al-Masih al-Dajjal, na ninalinda kwako dhidi ya fitna za maisha na kifo. Ee Mwenyezi Mungu, ninalinda kwako dhidi ya dhambi na madeni.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa a'ūdhu bika min fitnatil-masīḥid-dajjāl, wa a'ūdhu bika min fitnatil-maḥyā wal-mamāt. Allāhumma innī a'ūdhu bika minal-ma'thami wal-maghram",
+                translation:
+                    'Ya Allah, ina neman tsari a wurinka daga azabar kabari, kuma ina neman tsari a wurinka daga fitinar Masihud-Dajjal, kuma ina neman tsari a wurinka daga fitinar rayuwa da mutuwa. Ya Allah, ina neman tsari a wurinka daga zunubi da bashi.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu bika min 'adhābil-qabr, wa a'ūdhu bika min fitnatil-masīḥid-dajjāl, wa a'ūdhu bika min fitnatil-maḥyā wal-mamāt. Allāhumma innī a'ūdhu bika minal-ma'thami wal-maghram",
+                translation:
+                    'O Allah, ich suche Zuflucht bei Dir vor der Strafe des Grabes, und ich suche Zuflucht bei Dir vor der Prüfung des Falschen Messias, und ich suche Zuflucht bei Dir vor den Prüfungen des Lebens und des Todes. O Allah, ich suche Zuflucht bei Dir vor Sünde und Schulden.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्म इन्नी आउज़ु बिक मिन अज़ाबिल कब्र, व आउज़ु बिक मिन फित्नातिल मसीहिद दज्जाल, व आउज़ु बिक मिन फित्नातिल महया वल ममात। अल्लाहुम्म इन्नी आउज़ु बिक मिनल मासमि वल मग़रम',
+                translation:
+                    'ऐ अल्लाह! मैं तेरी पनाह मांगता हूं कबर के अज़ाब से, दज्जाल के फितने से, और ज़िंदगी व मौत के फितने से। ऐ अल्लाह! मैं तेरी पनाह मांगता हूं गुनाह और क़र्ज़ से।',
             },
         },
         references: [

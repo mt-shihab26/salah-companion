@@ -51,6 +51,36 @@ export const taawwudhDuas: TDuaVariation[] = [
                 translation:
                     'আমি বিতাড়িত শয়তান থেকে আল্লাহর আশ্রয় চাই — তার কুমন্ত্রণা, অহংকার এবং মন্দ অনুপ্রেরণা থেকে।',
             },
+            id: {
+                transliteration:
+                    "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+                translation:
+                    'Aku berlindung kepada Allah dari syaitan yang terkutuk — dari godaannya yang menyebabkan kegilaan, kesombongannya, dan tiupan syair jahatnya.',
+            },
+            sw: {
+                transliteration:
+                    "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+                translation:
+                    'Ninajikinga kwa Mwenyezi Mungu na shetani aliyelaaniwa — na uchochezi wake wa wazimu, kiburi chake, na msukumo wake wa ushairi mbaya.',
+            },
+            ha: {
+                transliteration:
+                    "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+                translation:
+                    'Ina neman tsari a wurin Allah daga shaidan wanda aka kore shi — daga fitinunsa da girmankaisa da waƙoƙin sharrinsa.',
+            },
+            de: {
+                transliteration:
+                    "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
+                translation:
+                    'Ich suche Zuflucht bei Allah vor dem verfluchten Teufel — vor seiner Einflüsterung zum Wahnsinn, seiner Aufgeblasenheit mit Stolz und seinem Einblasen böser Verse.',
+            },
+            hi: {
+                transliteration:
+                    'अऊज़ु बिल्लाहि मिनश्शैतानिर्रजीम, मिन हम्ज़िही व नफ़्खिही व नफ़्सिह',
+                translation:
+                    'मैं मरदूद शैतान से अल्लाह की पनाह मांगता हूं — उसके वसवसों, उसके घमंड और उसकी बुरी शायरी से।',
+            },
         },
         references: [
             {

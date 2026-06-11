@@ -39,6 +39,26 @@ export const sajdahDuas: TDuaVariation[] = [
                 transliteration: 'সুবহানা রাব্বিয়াল আলা',
                 translation: 'আমার সর্বোচ্চ রবের পবিত্রতা বর্ণনা করি।',
             },
+            id: {
+                transliteration: "Subḥāna Rabbiy al-A'lā",
+                translation: 'Maha Suci Tuhanku Yang Maha Tinggi.',
+            },
+            sw: {
+                transliteration: "Subḥāna Rabbiy al-A'lā",
+                translation: 'Utukufu wa Mola wangu aliye Juu Zaidi.',
+            },
+            ha: {
+                transliteration: "Subḥāna Rabbiy al-A'lā",
+                translation: 'Tsarki ta tabbata ga Ubangijina Mafi daukaka.',
+            },
+            de: {
+                transliteration: "Subḥāna Rabbiy al-A'lā",
+                translation: 'Gepriesen sei mein Herr, der Höchste.',
+            },
+            hi: {
+                transliteration: 'सुब्हान रब्बियल अला',
+                translation: 'मेरे रब की पाकी बयान करता हूं, जो सबसे बुलंद हैं।',
+            },
         },
         references: [
             {
@@ -104,6 +124,26 @@ export const sajdahDuas: TDuaVariation[] = [
                 transliteration: 'আল্লাহুম্মাগফির লী মা আসরারতু ওয়া মা আলান্ত',
                 translation: 'হে আল্লাহ! আমি গোপনে যা করেছি এবং প্রকাশ্যে যা করেছি তা ক্ষমা করো।',
             },
+            id: {
+                transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
+                translation: 'Ya Allah, ampunilah aku atas apa yang aku lakukan secara tersembunyi dan secara terang-terangan.',
+            },
+            sw: {
+                transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
+                translation: 'Ee Mwenyezi Mungu, nisamehe niliyofanya kwa siri na niliyofanya hadharani.',
+            },
+            ha: {
+                transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
+                translation: 'Ya Allah, Ka gafarta mini abin da na yi a asirce da abin da na yi a fili.',
+            },
+            de: {
+                transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
+                translation: 'O Allah, vergib mir, was ich im Verborgenen und was ich offen getan habe.',
+            },
+            hi: {
+                transliteration: 'अल्लाहुम्मग्फ़िर ली मा असरर्तु व मा अलन्त',
+                translation: 'ऐ अल्लाह! मुझे उन सब बातों के लिए माफ़ कर जो मैंने छुपकर और खुलकर किया।',
+            },
         },
         references: [
             {
@@ -157,6 +197,26 @@ export const sajdahDuas: TDuaVariation[] = [
             bn: {
                 transliteration: 'সুব্বুহুন কুদ্দুস, রাব্বুল মালাইকাতি ওয়াররূহ',
                 translation: 'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহের রব।',
+            },
+            id: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Maha Suci, Maha Kudus, Tuhan para malaikat dan Roh.',
+            },
+            sw: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Mwenye Utukufu, Mwenye Utakatifu, Mola wa malaika na Roho.',
+            },
+            ha: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Tsarkakakke sosai, Mai tsarki sosai, Ubangijin mala\'iku da Ruhu.',
+            },
+            de: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Höchst Glorreich, Höchst Heilig, Herr der Engel und des Geistes.',
+            },
+            hi: {
+                transliteration: 'सुब्बूहुन क़ुद्दूस, रब्बुल मलाइकति वर्रूह',
+                translation: 'सर्वमहिमावान, सर्वपवित्र, फ़रिश्तों और रूह के रब।',
             },
         },
         references: [
@@ -213,6 +273,26 @@ export const sajdahDuas: TDuaVariation[] = [
             bn: {
                 transliteration: 'সুবহানাকা ওয়া বিহামদিকা লা ইলাহা ইল্লা আনত',
                 translation: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
+            },
+            id: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            },
+            sw: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Utukufu ni Wako na sifa ni Zako. Hapana mungu anayestahili kuabudiwa isipokuwa Wewe.',
+            },
+            ha: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Tsarki ta tabbata a gare Ka da yabonka. Babu abin bautawa da ya dace sai Kai.',
+            },
+            de: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Gepriesen seist Du und aller Lobpreis gehört Dir. Es gibt keinen Gott außer Dir.',
+            },
+            hi: {
+                transliteration: 'सुब्हानक व बिहम्दिक ला इलाह इल्ला अन्त',
+                translation: 'तू पवित्र है और तेरी प्रशंसा हो। तेरे सिवा कोई इबादत के लायक नहीं।',
             },
         },
         references: [
@@ -274,6 +354,26 @@ export const sajdahDuas: TDuaVariation[] = [
                 translation:
                     'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
             },
+            id: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunilah aku.',
+            },
+            sw: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Utukufu ni Wako Ee Mwenyezi Mungu Mola wetu, na sifa Zako. Ee Mwenyezi Mungu, nisamehe.',
+            },
+            ha: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Tsarki ta tabbata a gare Ka ya Allah Ubangijinmu, tare da yabonka. Ya Allah, Ka gafarta mini.',
+            },
+            de: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Gepriesen seist Du, o Allah unser Herr, und aller Lobpreis gehört Dir. O Allah, vergib mir.',
+            },
+            hi: {
+                transliteration: 'सुब्हानकल्लाहुम्म रब्बना व बिहम्दिक, अल्लाहुम्मग्फ़िर ली',
+                translation: 'ऐ अल्लाह! हमारे रब, तू पवित्र है और तेरी प्रशंसा हो। ऐ अल्लाह! मुझे माफ़ कर।',
+            },
         },
         references: [
             {
@@ -333,6 +433,26 @@ export const sajdahDuas: TDuaVariation[] = [
                 transliteration: 'সুবহানা যিল জাবারূতি ওয়াল মালাকূতি ওয়াল কিবরিয়াই ওয়াল আযামাহ',
                 translation:
                     'তিনি পবিত্র যিনি সকল শক্তি, সকল কর্তৃত্ব, সকল শ্রেষ্ঠত্ব ও সকল মহিমার অধিকারী।',
+            },
+            id: {
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation: 'Maha Suci Tuhan yang memiliki kekuasaan, pemerintahan, keagungan dan kebesaran.',
+            },
+            sw: {
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation: 'Utukufu wa Mwenye nguvu zote, ufalme wote, ukuu wote na utukufu wote.',
+            },
+            ha: {
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation: 'Tsarki ta tabbata ga Mai ikon gaske da mulki da girma da azama.',
+            },
+            de: {
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation: 'Gepriesen sei Der, dem alle Macht, alle Herrschaft, alle Erhabenheit und alle Größe gehört.',
+            },
+            hi: {
+                transliteration: 'सुब्हान ज़िल जबरूति वलमलकूति वलकिब्रियाइ वलअज़मह',
+                translation: 'उसकी पाकी बयान करता हूं जो सर्वशक्तिमान, सर्वसत्ताधारी, सर्वमहान और सर्वमहिमावान है।',
             },
         },
         references: [
@@ -399,6 +519,36 @@ export const sajdahDuas: TDuaVariation[] = [
                     'আল্লাহুম্মাগফির লী যানবী কুল্লাহু, দিক্কাহু ওয়া জিল্লাহু, ওয়া আওয়্যালাহু ওয়া আখিরাহ, ওয়া আলানিয়াতাহু ওয়া সিররাহ',
                 translation:
                     'হে আল্লাহ! আমার সব পাপ ক্ষমা করো — ছোট ও বড়, প্রথম ও শেষ, প্রকাশ্য ও গোপন।',
+            },
+            id: {
+                transliteration:
+                    "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
+                translation:
+                    'Ya Allah, ampunilah semua dosaku — yang kecil dan yang besar, yang pertama dan yang terakhir, yang terang dan yang tersembunyi.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
+                translation:
+                    'Ee Mwenyezi Mungu, nisamehe dhambi zangu zote — ndogo na kubwa, ya kwanza na ya mwisho, ya wazi na ya siri.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
+                translation:
+                    'Ya Allah, Ka gafarta mini duk zunubaina — ƙananan da manya, na farko da na ƙarshe, da fili da asirce.',
+            },
+            de: {
+                transliteration:
+                    "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",
+                translation:
+                    'O Allah, vergib mir all meine Sünden — die kleinen und die großen, die ersten und die letzten, die offenen und die verborgenen.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्मग्फ़िर ली ज़न्बी कुल्लह, दिक़्क़हु व जिल्लह, व अव्वलहु व आख़िरह, व अलानियतहु व सिर्रह',
+                translation:
+                    'ऐ अल्लाह! मेरे सारे गुनाह माफ़ कर दे — छोटे और बड़े, पहले और आखिरी, जाहिर और छुपे।',
             },
         },
         references: [
@@ -467,6 +617,36 @@ export const sajdahDuas: TDuaVariation[] = [
                 translation:
                     'হে আল্লাহ! আমি তোমার সন্তুষ্টির মাধ্যমে তোমার ক্রোধ থেকে, এবং তোমার ক্ষমার মাধ্যমে তোমার শাস্তি থেকে আশ্রয় চাই। আমি তোমার কাছ থেকে তোমার আশ্রয় চাই। আমি তোমার প্রশংসা গণনা করতে পারি না — তুমি সেইরকম যেমন তুমি নিজের প্রশংসা করেছ।',
             },
+            id: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
+                translation:
+                    'Ya Allah, aku berlindung dengan keridhaan-Mu dari kemurkaan-Mu, dan dengan kemaafan-Mu dari azab-Mu. Aku berlindung kepada-Mu dari-Mu. Aku tidak dapat menghitung pujian kepada-Mu — Engkau sebagaimana Engkau memuji diri-Mu sendiri.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
+                translation:
+                    'Ee Mwenyezi Mungu, ninajikinga kwa radhi Yako na hasira Yako, na kwa msamaha Wako na adhabu Yako. Ninajikinga Kwako na Wewe. Siwezi kuhesabu sifa Zako — Wewe ni kama Unavyojisifu.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
+                translation:
+                    'Ya Allah, ina neman tsari ta wurin yardarKa daga fushinka, da ta wurin gafaranka daga hukuncinka. Ina neman tsarinKa a gare Ka. Ba zan iya ƙididdiga yabonka ba — Kai ne kamar yadda Ka yabi kanKa.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",
+                translation:
+                    'O Allah, ich suche Zuflucht in Deiner Zufriedenheit vor Deinem Zorn, und in Deiner Vergebung vor Deiner Strafe. Ich suche Zuflucht bei Dir vor Dir. Ich kann Deinen Lobpreis nicht vollständig erfassen — Du bist so, wie Du Dich Selbst gelobt hast.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्म इन्नी अऊज़ु बिरिदाक मिन सख़तिक, व बिमुआफातिक मिन उक़ूबतिक, व अऊज़ु बिक मिनक, ला उह्सी सनाअन अलैक, अन्त कमा असनैत अला नफ़्सिक',
+                translation:
+                    'ऐ अल्लाह! मैं तेरी ख़ुशनूदी की पनाह में तेरे ग़ज़ब से, और तेरी माफ़ी की पनाह में तेरी सज़ा से पनाह मांगता हूं। मैं तुझसे तेरी पनाह मांगता हूं। मैं तेरी तारीफ़ गिन नहीं सकता — तू वैसा ही है जैसा तूने खुद अपनी तारीफ़ की।',
+            },
         },
         references: [
             {
@@ -532,6 +712,36 @@ export const sajdahDuas: TDuaVariation[] = [
                     'আল্লাহুম্মা লাকা সাজাদতু, ওয়া বিকা আমানতু, ওয়া লাকা আসলামতু, সাজাদা ওয়াজহিয়া লিল্লাযী খালাকাহু ওয়া সাওয়্যারাহু ওয়া শাক্কা সামআহু ওয়া বাসারাহ, তাবারাকাল্লাহু আহসানুল খালিকীন',
                 translation:
                     'হে আল্লাহ! তোমার জন্যই আমি সেজদা করেছি, তোমার উপর ঈমান এনেছি, তোমার কাছে আত্মসমর্পণ করেছি। আমার মুখ সেজদা করেছে সেই সত্তার সামনে যিনি এটি সৃষ্টি করেছেন ও রূপ দিয়েছেন... বরকতময় আল্লাহ, সর্বোত্তম স্রষ্টা।',
+            },
+            id: {
+                transliteration:
+                    "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
+                translation:
+                    'Ya Allah, kepada-Mu aku bersujud, kepada-Mu aku beriman, kepada-Mu aku berserah. Wajahku bersujud kepada Yang menciptakannya dan membentuknya, serta membuka pendengaran dan penglihatannya. Maha Berkat Allah, sebaik-baik Pencipta.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
+                translation:
+                    'Ee Mwenyezi Mungu, kwako nimesujudu, kwako nimeamini, kwako nimesalimu. Uso wangu umesujudu kwa Aliyeuumba na kuupamba, na kufungua kusikia kwake na kuona kwake. Amebarikiwa Mwenyezi Mungu, Mbora wa waumbaji.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
+                translation:
+                    'Ya Allah, maKa na yi sujada, a cikinKa na yi imani, maKa na mika wuya. Fuskata ta yi sujada a gaban Wanda ya halicce ta kuma ya tsara ta, da ya buɗe ji da gani. Albarka ta tabbata ga Allah, Mafi kyau daga cikin masu halitta.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",
+                translation:
+                    'O Allah, Dir habe ich mich niedergeworfen, an Dich glaube ich, Dir habe ich mich ergeben. Mein Antlitz wirft sich nieder vor Dem, der es erschaffen und geformt hat, und der sein Hören und Sehen erschlossen hat. Gesegnet ist Allah, der Beste der Schöpfer.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्म लक सजद्तु, व बिक आमन्तु, व लक अस्लम्तु, सजद वज्हिय लिल्लज़ी ख़लक़हु व सव्वरहु व शक़्क़ समअहु व बसरह, तबारकल्लाहु अह्सनुल ख़ालिक़ीन',
+                translation:
+                    'ऐ अल्लाह! तेरे लिए सेजदा किया, तुझ पर ईमान लाया, तेरे लिए इस्लाम क़बूल किया। मेरा चेहरा उसके लिए सेजदा कर रहा है जिसने इसे बनाया और शक्ल दी, और इसकी सुनने और देखने की शक्ति खोली। बरकतवाला है अल्लाह, सबसे अच्छा बनाने वाला।',
             },
         },
         references: [
@@ -607,6 +817,36 @@ export const sajdahDuas: TDuaVariation[] = [
                     'আল্লাহুম্মাজআল ফী কালবী নূরা, ওয়া ফী সামঈ নূরা, ওয়া ফী বাসারী নূরা, ওয়া আন ইয়ামীনী নূরা, ওয়া আন ইয়াসারী নূরা, ওয়া আমামী নূরা, ওয়া খালফী নূরা, ওয়া ফাওকী নূরা, ওয়া তাহতী নূরা, ওয়াজআল লী নূরা',
                 translation:
                     'হে আল্লাহ! আমার হৃদয়ে নূর রাখো, শ্রবণে নূর, দৃষ্টিতে নূর, আমার ডানে নূর, বামে নূর, সামনে নূর, পেছনে নূর, উপরে নূর, নিচে নূর — এবং আমাকে নূর দান করো।',
+            },
+            id: {
+                transliteration:
+                    "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
+                translation:
+                    'Ya Allah, letakkanlah cahaya di hatiku, cahaya pada pendengaranku, cahaya pada penglihatanku, cahaya di sebelah kananku, cahaya di sebelah kiriku, cahaya di depanku, cahaya di belakangku, cahaya di atasku, cahaya di bawahku — dan kurniakanlah cahaya kepadaku.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
+                translation:
+                    'Ee Mwenyezi Mungu, weka nuru moyoni mwangu, nuru masikioni mwangu, nuru machoni mwangu, nuru upande wangu wa kulia, nuru upande wangu wa kushoto, nuru mbele yangu, nuru nyuma yangu, nuru juu yangu, nuru chini yangu — na unipe nuru.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
+                translation:
+                    'Ya Allah, Ka sanya haske a zuciyata, haske a kunnuwana, haske a idona, haske a hannuna na dama, haske a hannuna na hagu, haske a gabana, haske a bayyana, haske a samanta, haske a ƙasana — kuma Ka ba ni haske.',
+            },
+            de: {
+                transliteration:
+                    "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",
+                translation:
+                    'O Allah, lege Licht in mein Herz, Licht in mein Gehör, Licht in mein Sehen, Licht zu meiner Rechten, Licht zu meiner Linken, Licht vor mir, Licht hinter mir, Licht über mir, Licht unter mir — und schenke mir Licht.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्मज्अल फी क़ल्बी नूरा, व फी समई नूरा, व फी बसरी नूरा, व अन यमीनी नूरा, व अन यसारी नूरा, व अमामी नूरा, व ख़ल्फ़ी नूरा, व फ़ौक़ी नूरा, व तह्ती नूरा, वज्अल ली नूरा',
+                translation:
+                    'ऐ अल्लाह! मेरे दिल में नूर डाल, कानों में नूर, आँखों में नूर, दाईं तरफ़ नूर, बाईं तरफ़ नूर, आगे नूर, पीछे नूर, ऊपर नूर, नीचे नूर — और मुझे नूर अता कर।',
             },
         },
         references: [

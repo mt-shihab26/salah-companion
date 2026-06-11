@@ -52,6 +52,36 @@ export const tashahhudDuas: TDuaVariation[] = [
                 translation:
                     'সকল সম্মান, নামাজ ও পবিত্র বাক্য আল্লাহর জন্য। হে নবী! আপনার উপর শান্তি, আল্লাহর রহমত ও বরকত বর্ষিত হোক। আমাদের উপর এবং আল্লাহর সকল নেক বান্দাদের উপর শান্তি বর্ষিত হোক। আমি সাক্ষ্য দিচ্ছি যে আল্লাহ ছাড়া কোনো ইলাহ নেই এবং মুহাম্মদ তাঁর বান্দা ও রাসূল।',
             },
+            id: {
+                transliteration:
+                    "At-taḥiyyātu lillāhi waṣ-ṣalawātu waṭ-ṭayyibāt, as-salāmu 'alayka ayyuhan-nabiyyu wa raḥmatullāhi wa barakātuh, as-salāmu 'alaynā wa 'alā 'ibādillāhiṣ-ṣāliḥīn, ashhadu allā ilāha illallāhu wa ashhadu anna Muḥammadan 'abduhu wa rasūluh",
+                translation:
+                    'Semua penghormatan, salat dan kata-kata yang baik adalah untuk Allah. Semoga keselamatan terlimpah atasmu wahai Nabi, beserta rahmat Allah dan keberkahan-Nya. Semoga keselamatan terlimpah atas kami dan atas seluruh hamba Allah yang saleh. Aku bersaksi bahwa tiada tuhan yang berhak disembah kecuali Allah, dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya.',
+            },
+            sw: {
+                transliteration:
+                    "At-taḥiyyātu lillāhi waṣ-ṣalawātu waṭ-ṭayyibāt, as-salāmu 'alayka ayyuhan-nabiyyu wa raḥmatullāhi wa barakātuh, as-salāmu 'alaynā wa 'alā 'ibādillāhiṣ-ṣāliḥīn, ashhadu allā ilāha illallāhu wa ashhadu anna Muḥammadan 'abduhu wa rasūluh",
+                translation:
+                    'Salamu zote, sala na maneno mazuri ni ya Mwenyezi Mungu. Amani iwe juu yako Ee Nabii, na rehma za Mwenyezi Mungu na baraka Zake. Amani iwe juu yetu na juu ya watumishi wote wema wa Mwenyezi Mungu. Nashuhudia kwamba hakuna mungu anayestahili kuabudiwa isipokuwa Mwenyezi Mungu, na nashuhudia kwamba Muhammad ni mtumishi Wake na Mtume Wake.',
+            },
+            ha: {
+                transliteration:
+                    "At-taḥiyyātu lillāhi waṣ-ṣalawātu waṭ-ṭayyibāt, as-salāmu 'alayka ayyuhan-nabiyyu wa raḥmatullāhi wa barakātuh, as-salāmu 'alaynā wa 'alā 'ibādillāhiṣ-ṣāliḥīn, ashhadu allā ilāha illallāhu wa ashhadu anna Muḥammadan 'abduhu wa rasūluh",
+                translation:
+                    'Dukkan gaisuwa, salloli da kyawawan kalmomi na Allah ne. Aminci ya tabbata a gare ka ya Annabi, da rahamar Allah da albarkarsa. Aminci ya tabbata a gare mu da ga dukkan bayiyan Allah na ƙwarai. Ina shaidawa cewa babu abin bautawa da ya dace sai Allah, kuma ina shaidawa cewa Muhammad bawansa ne kuma manzonsa ne.',
+            },
+            de: {
+                transliteration:
+                    "At-taḥiyyātu lillāhi waṣ-ṣalawātu waṭ-ṭayyibāt, as-salāmu 'alayka ayyuhan-nabiyyu wa raḥmatullāhi wa barakātuh, as-salāmu 'alaynā wa 'alā 'ibādillāhiṣ-ṣāliḥīn, ashhadu allā ilāha illallāhu wa ashhadu anna Muḥammadan 'abduhu wa rasūluh",
+                translation:
+                    'Alle Ehrerbietungen, Gebete und reinen Worte gehören Allah. Friede sei auf dir, o Prophet, und die Barmherzigkeit Allahs und Seine Segnungen. Friede sei auf uns und auf allen rechtschaffenen Dienern Allahs. Ich bezeuge, dass es keinen Gott gibt außer Allah, und ich bezeuge, dass Muhammad Sein Diener und Sein Gesandter ist.',
+            },
+            hi: {
+                transliteration:
+                    'अत्तहिय्यातु लिल्लाहि वस्सलवातु वत्तय्यिबात, अस्सलामु अलैक अय्युहन्नबिय्यु व रहमतुल्लाहि व बरकातुह, अस्सलामु अलैना व अला इबादिल्लाहिस्सालिहीन, अशहदु अल्ला इलाह इल्लल्लाहु व अशहदु अन्न मुहम्मदन अब्दुहु व रसूलुह',
+                translation:
+                    'सारी तअज़ीमें, नमाज़ें और पाक बातें अल्लाह के लिए हैं। ऐ नबी! आप पर सलाम हो, अल्लाह की रहमत और उसकी बरकतें हों। हम पर और अल्लाह के सभी नेक बंदों पर सलाम हो। मैं गवाही देता हूं कि अल्लाह के सिवा कोई माबूद नहीं और मुहम्मद ﷺ उसके बंदे और रसूल हैं।',
+            },
         },
         references: [
             {

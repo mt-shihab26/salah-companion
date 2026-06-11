@@ -52,6 +52,36 @@ export const salawatDuas: TDuaVariation[] = [
                 translation:
                     'হে আল্লাহ! মুহাম্মদ ও তাঁর পরিবারের উপর রহমত বর্ষণ করো যেভাবে তুমি ইব্রাহীম ও তাঁর পরিবারের উপর রহমত বর্ষণ করেছিলে। নিশ্চয় তুমি প্রশংসিত ও মহিমান্বিত। হে আল্লাহ! মুহাম্মদ ও তাঁর পরিবারের উপর বরকত বর্ষণ করো যেভাবে তুমি ইব্রাহীম ও তাঁর পরিবারের উপর বরকত বর্ষণ করেছিলে। নিশ্চয় তুমি প্রশংসিত ও মহিমান্বিত।',
             },
+            id: {
+                transliteration:
+                    "Allāhumma ṣalli 'alā Muḥammadin wa 'alā āli Muḥammad, kamā ṣallayta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd. Allāhumma bārik 'alā Muḥammadin wa 'alā āli Muḥammad, kamā bārakta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd",
+                translation:
+                    'Ya Allah, curahkanlah rahmat kepada Muhammad dan kepada keluarga Muhammad, sebagaimana Engkau mencurahkan rahmat kepada Ibrahim dan kepada keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, berkatilah Muhammad dan keluarga Muhammad, sebagaimana Engkau memberkati Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma ṣalli 'alā Muḥammadin wa 'alā āli Muḥammad, kamā ṣallayta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd. Allāhumma bārik 'alā Muḥammadin wa 'alā āli Muḥammad, kamā bārakta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd",
+                translation:
+                    'Ee Mwenyezi Mungu, mrehemu Muhammad na familia ya Muhammad, kama vile Ulivyomrehemu Ibrahim na familia ya Ibrahim. Hakika Wewe ni Msifiwa Mtukufu. Ee Mwenyezi Mungu, mbariki Muhammad na familia ya Muhammad, kama vile Ulivyombariki Ibrahim na familia ya Ibrahim. Hakika Wewe ni Msifiwa Mtukufu.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma ṣalli 'alā Muḥammadin wa 'alā āli Muḥammad, kamā ṣallayta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd. Allāhumma bārik 'alā Muḥammadin wa 'alā āli Muḥammad, kamā bārakta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd",
+                translation:
+                    'Ya Allah, Ka yi salati a kan Muhammadu da iyalan Muhammadu, kamar yadda Ka yi salati a kan Ibrahima da iyalan Ibrahima. Lalle Kai ne Mai yabo Mai girma. Ya Allah, Ka yi albarka a kan Muhammadu da iyalan Muhammadu, kamar yadda Ka yi albarka a kan Ibrahima da iyalan Ibrahima. Lalle Kai ne Mai yabo Mai girma.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma ṣalli 'alā Muḥammadin wa 'alā āli Muḥammad, kamā ṣallayta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd. Allāhumma bārik 'alā Muḥammadin wa 'alā āli Muḥammad, kamā bārakta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd",
+                translation:
+                    'O Allah, sende Deine Gnade auf Muhammad und auf die Familie Muhammads, so wie Du Deine Gnade auf Ibrahim und auf die Familie Ibrahims gesandt hast. Wahrlich, Du bist lobenswert und glorreich. O Allah, segne Muhammad und die Familie Muhammads, so wie Du Ibrahim und die Familie Ibrahims gesegnet hast. Wahrlich, Du bist lobenswert und glorreich.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्म सल्लि अला मुहम्मदिन व अला आलि मुहम्मद, कमा सल्लैत अला इब्राहीम व अला आलि इब्राहीम, इन्नक हमीदुम मजीद। अल्लाहुम्म बारिक अला मुहम्मदिन व अला आलि मुहम्मद, कमा बारकत अला इब्राहीम व अला आलि इब्राहीम, इन्नक हमीदुम मजीद',
+                translation:
+                    'ऐ अल्लाह! मुहम्मद ﷺ और आले मुहम्मद पर रहमत नाज़िल फ़रमा, जैसे तूने इब्राहीम और आले इब्राहीम पर रहमत नाज़िल फ़रमाई। बेशक तू तारीफ़ के लायक और बुज़ुर्गी वाला है। ऐ अल्लाह! मुहम्मद ﷺ और आले मुहम्मद पर बरकत नाज़िल फ़रमा, जैसे तूने इब्राहीम और आले इब्राहीम पर बरकत नाज़िल फ़रमाई। बेशक तू तारीफ़ के लायक और बुज़ुर्गी वाला है।',
+            },
         },
         references: [
             {

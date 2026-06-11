@@ -9,7 +9,7 @@ export type TSalahPositionId =
     | 'salawat'
     | 'before-tasleem'
 
-export type TDuaLang = 'en' | 'ar' | 'fr' | 'ur' | 'tr' | 'ms' | 'bn'
+export type TDuaLang = 'en' | 'ar' | 'fr' | 'ur' | 'tr' | 'ms' | 'bn' | 'id' | 'sw' | 'ha' | 'de' | 'hi'
 
 export const DUA_LANGS: { code: TDuaLang; label: string; dir: 'ltr' | 'rtl' }[] = [
     { code: 'en', label: 'English', dir: 'ltr' },
@@ -19,6 +19,11 @@ export const DUA_LANGS: { code: TDuaLang; label: string; dir: 'ltr' | 'rtl' }[] 
     { code: 'tr', label: 'Türkçe', dir: 'ltr' },
     { code: 'ms', label: 'Melayu', dir: 'ltr' },
     { code: 'bn', label: 'বাংলা', dir: 'ltr' },
+    { code: 'id', label: 'Indonesia', dir: 'ltr' },
+    { code: 'sw', label: 'Kiswahili', dir: 'ltr' },
+    { code: 'ha', label: 'Hausa', dir: 'ltr' },
+    { code: 'de', label: 'Deutsch', dir: 'ltr' },
+    { code: 'hi', label: 'हिन्दी', dir: 'ltr' },
 ]
 
 export type TSalahPosition = {

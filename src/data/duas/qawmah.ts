@@ -43,6 +43,26 @@ export const qawmahDuas: TDuaVariation[] = [
                 transliteration: 'সামিআল্লাহু লিমান হামিদাহ, রাব্বানা ওয়া লাকাল হামদ',
                 translation: 'আল্লাহ তাঁর প্রশংসাকারীর কথা শোনেন। হে আমাদের রব! সকল প্রশংসা তোমার।',
             },
+            id: {
+                transliteration: "Sami'allāhu liman ḥamidah, Rabbanā wa lakal-ḥamd",
+                translation: 'Allah mendengar orang yang memuji-Nya. Tuhan kami, bagi-Mu lah segala puji.',
+            },
+            sw: {
+                transliteration: "Sami'allāhu liman ḥamidah, Rabbanā wa lakal-ḥamd",
+                translation: 'Mwenyezi Mungu husikia anayemsifu. Mola wetu, kwako ni sifa zote.',
+            },
+            ha: {
+                transliteration: "Sami'allāhu liman ḥamidah, Rabbanā wa lakal-ḥamd",
+                translation: 'Allah ya ji wanda ya yabe Shi. Ubangijinmu, gare Ka yabo ya tabbata.',
+            },
+            de: {
+                transliteration: "Sami'allāhu liman ḥamidah, Rabbanā wa lakal-ḥamd",
+                translation: 'Allah hört den, der Ihn lobt. Unser Herr, Dir gehört aller Lobpreis.',
+            },
+            hi: {
+                transliteration: 'समिअल्लाहु लिमन हमिदह, रब्बना व लकल हम्द',
+                translation: 'अल्लाह उसे सुनता है जो उसकी तारीफ़ करे। ऐ हमारे रब! सारी तारीफ़ तेरे लिए है।',
+            },
         },
         references: [
             {
@@ -118,6 +138,36 @@ export const qawmahDuas: TDuaVariation[] = [
                 translation:
                     'আল্লাহ তাঁর প্রশংসাকারীর কথা শোনেন। হে আল্লাহ, হে আমাদের রব! তোমার জন্য সকল প্রশংসা যা আকাশ পূর্ণ করে, পৃথিবী পূর্ণ করে এবং তুমি যা চাও তা পূর্ণ করে।',
             },
+            id: {
+                transliteration:
+                    "Sami'allāhu liman ḥamidah, Allāhumma Rabbanā lakal-ḥamdu mil'as-samāwāti wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd",
+                translation:
+                    'Allah mendengar orang yang memuji-Nya. Ya Allah Tuhan kami, bagi-Mu segala puji yang memenuhi langit, memenuhi bumi dan memenuhi apa yang Engkau kehendaki setelahnya.',
+            },
+            sw: {
+                transliteration:
+                    "Sami'allāhu liman ḥamidah, Allāhumma Rabbanā lakal-ḥamdu mil'as-samāwāti wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd",
+                translation:
+                    'Mwenyezi Mungu husikia anayemsifu. Ee Mwenyezi Mungu Mola wetu, kwako ni sifa zote zinazojaza mbingu, zinazojaza ardhi na kujaza chochote utakacho zaidi ya hilo.',
+            },
+            ha: {
+                transliteration:
+                    "Sami'allāhu liman ḥamidah, Allāhumma Rabbanā lakal-ḥamdu mil'as-samāwāti wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd",
+                translation:
+                    'Allah ya ji wanda ya yabe Shi. Ya Allah Ubangijinmu, gare Ka yabo ya tabbata wanda ya cika sammai da ƙasa da kuma duk abin da Ka so bayan haka.',
+            },
+            de: {
+                transliteration:
+                    "Sami'allāhu liman ḥamidah, Allāhumma Rabbanā lakal-ḥamdu mil'as-samāwāti wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd",
+                translation:
+                    'Allah hört den, der Ihn lobt. O Allah unser Herr, Dir gehört aller Lobpreis, der die Himmel füllt, die Erde füllt und alles füllt, was Du darüber hinaus willst.',
+            },
+            hi: {
+                transliteration:
+                    'समिअल्लाहु लिमन हमिदह, अल्लाहुम्म रब्बना लकल हम्दु मिलअस्समावाति व मिलअल अर्दि व मिलअ मा शिइत मिन शयइन बाद',
+                translation:
+                    'अल्लाह उसे सुनता है जो उसकी तारीफ़ करे। ऐ अल्लाह, हमारे रब! तेरे लिए सारी तारीफ़ है जो आसमानों को भर दे, ज़मीन को भर दे और उसके बाद जो तू चाहे उसे भी भर दे।',
+            },
         },
         references: [
             {
@@ -185,6 +235,36 @@ export const qawmahDuas: TDuaVariation[] = [
                 translation:
                     'হে আমাদের রব! তোমার জন্য সকল প্রশংসা যা আকাশ ও পৃথিবী পূর্ণ করে... হে আল্লাহ! তুমি যা দাও তা কেউ আটকাতে পারে না, আর তুমি যা আটকে রাখো তা কেউ দিতে পারে না।',
             },
+            id: {
+                transliteration:
+                    "Rabbanā lakal-ḥamdu mil'as-samāwāti wal-arḍi wa mil'a mā shi'ta min shay'in ba'd, ahlath-thanā'i wal-majd, aḥaqqu mā qālal-'abd, wa kullunā laka 'abd. Allāhumma lā māni'a limā a'ṭayt, wa lā mu'ṭiya limā mana't, wa lā yanfa'u dhal-jaddi minkal-jadd",
+                translation:
+                    'Tuhan kami, bagi-Mu segala puji yang memenuhi langit dan bumi dan apa yang Engkau kehendaki setelahnya. Engkaulah yang paling layak mendapat pujian dan kemuliaan. Kami semua adalah hamba-Mu. Ya Allah, tiada yang dapat menahan apa yang Engkau berikan, dan tiada yang dapat memberi apa yang Engkau tahan.',
+            },
+            sw: {
+                transliteration:
+                    "Rabbanā lakal-ḥamdu mil'as-samāwāti wal-arḍi wa mil'a mā shi'ta min shay'in ba'd, ahlath-thanā'i wal-majd, aḥaqqu mā qālal-'abd, wa kullunā laka 'abd. Allāhumma lā māni'a limā a'ṭayt, wa lā mu'ṭiya limā mana't, wa lā yanfa'u dhal-jaddi minkal-jadd",
+                translation:
+                    'Mola wetu, kwako ni sifa zote zinazojaza mbingu na ardhi na chochote zaidi unachokitaka. Wewe ndiye anastahili zaidi sifa na utukufu. Sisi sote ni watumishi Wako. Ee Mwenyezi Mungu, hakuna anayeweza kuzuia ulichotoa, wala anayeweza kutoa ulichozuia.',
+            },
+            ha: {
+                transliteration:
+                    "Rabbanā lakal-ḥamdu mil'as-samāwāti wal-arḍi wa mil'a mā shi'ta min shay'in ba'd, ahlath-thanā'i wal-majd, aḥaqqu mā qālal-'abd, wa kullunā laka 'abd. Allāhumma lā māni'a limā a'ṭayt, wa lā mu'ṭiya limā mana't, wa lā yanfa'u dhal-jaddi minkal-jadd",
+                translation:
+                    'Ubangijinmu, gare Ka yabo ya tabbata wanda ya cika sammai da ƙasa da duk abin da Ka so bayan haka. Kai ne mafi cancanta da yabo da girma. Dukkanmu muna bayin Ka. Ya Allah, babu mai hana abin da Ka ba, kuma babu mai ba da abin da Ka hana.',
+            },
+            de: {
+                transliteration:
+                    "Rabbanā lakal-ḥamdu mil'as-samāwāti wal-arḍi wa mil'a mā shi'ta min shay'in ba'd, ahlath-thanā'i wal-majd, aḥaqqu mā qālal-'abd, wa kullunā laka 'abd. Allāhumma lā māni'a limā a'ṭayt, wa lā mu'ṭiya limā mana't, wa lā yanfa'u dhal-jaddi minkal-jadd",
+                translation:
+                    'Unser Herr, Dir gehört aller Lobpreis, der Himmel und Erde füllt und alles, was Du willst. Du bist der Würdigste von Lob und Herrlichkeit. Wir alle sind Deine Diener. O Allah, niemand kann zurückhalten, was Du gibst, und niemand kann geben, was Du zurückhältst.',
+            },
+            hi: {
+                transliteration:
+                    'रब्बना लकल हम्दु मिलअस्समावाति वलअर्दि व मिलअ मा शिइत मिन शयइन बाद, अहलस्सनाइ वलमज्द, अहक़्क़ु मा क़ालल अब्द, व कुल्लुना लक अब्द। अल्लाहुम्म ला मानिअ लिमा अत़ैत, व ला मुत़िय लिमा मनअ्त, व ला यनफ़उ ज़ल जद्दि मिनकल जद्द',
+                translation:
+                    'हमारे रब! तेरे लिए सारी तारीफ़ है जो आसमानों और ज़मीन को भर दे और उसके बाद जो तू चाहे। तू ही सबसे ज़्यादा तारीफ़ और बुज़ुर्गी के लायक है। हम सब तेरे बंदे हैं। ऐ अल्लाह! जो तू दे उसे कोई रोकने वाला नहीं और जो तू रोक ले उसे कोई देने वाला नहीं।',
+            },
         },
         references: [
             {
@@ -251,6 +331,36 @@ export const qawmahDuas: TDuaVariation[] = [
                     'আল্লাহুম্মা লাকাল হামদু মিলআস সামাই ওয়া মিলআল আরদি ওয়া মিলআ মা শিইতা মিন শাইয়িন বাদ, আল্লাহুম্মা তাহহিরনী বিস সালজি ওয়াল বারাদি ওয়াল মাইল বারিদ, আল্লাহুম্মা তাহহিরনী মিনায যুনূবি ওয়াল খাতায়া কামা ইউনাক্কাস সাওবুল আবইয়াদু মিনাদ দানাস',
                 translation:
                     'হে আল্লাহ! তোমার জন্য সকল প্রশংসা... হে আল্লাহ! আমাকে তুষার, শিলা ও শীতল পানি দিয়ে পবিত্র করো... হে আল্লাহ! আমাকে পাপ থেকে এমনভাবে পরিষ্কার করো যেমন সাদা কাপড় ময়লা থেকে পরিষ্কার হয়।',
+            },
+            id: {
+                transliteration:
+                    "Allāhumma lakal-ḥamdu mil'as-samā'i wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd, Allāhumma ṭahhirnī bith-thalji wal-baradi wal-mā'il-bārid, Allāhumma ṭahhirnī minadh-dhunūbi wal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas",
+                translation:
+                    'Ya Allah, bagi-Mu segala puji yang memenuhi langit dan bumi serta apa yang Engkau kehendaki. Ya Allah, sucikanlah aku dengan salju, embun beku dan air dingin. Ya Allah, bersihkanlah aku dari dosa sebagaimana pakaian putih dibersihkan dari kotoran.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma lakal-ḥamdu mil'as-samā'i wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd, Allāhumma ṭahhirnī bith-thalji wal-baradi wal-mā'il-bārid, Allāhumma ṭahhirnī minadh-dhunūbi wal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas",
+                translation:
+                    'Ee Mwenyezi Mungu, kwako ni sifa zote zinazojaza mbingu na ardhi. Ee Mwenyezi Mungu, nitakase kwa theluji, mvua ya mawe na maji baridi. Ee Mwenyezi Mungu, nitakase dhambi na makosa kama nguo nyeupe inavyotakaswa na uchafu.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma lakal-ḥamdu mil'as-samā'i wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd, Allāhumma ṭahhirnī bith-thalji wal-baradi wal-mā'il-bārid, Allāhumma ṭahhirnī minadh-dhunūbi wal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas",
+                translation:
+                    'Ya Allah, gare Ka yabo ya tabbata wanda ya cika sama da ƙasa. Ya Allah, Ka tsarkake ni da kankara da ƙanƙara da ruwan sanyi. Ya Allah, Ka tsarkake ni daga zunubai da kurakurai kamar yadda ake tsarkake farin tufafi daga kazanta.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma lakal-ḥamdu mil'as-samā'i wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd, Allāhumma ṭahhirnī bith-thalji wal-baradi wal-mā'il-bārid, Allāhumma ṭahhirnī minadh-dhunūbi wal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas",
+                translation:
+                    'O Allah, Dir gehört aller Lobpreis, der Himmel und Erde füllt. O Allah, reinige mich mit Schnee, Hagel und kaltem Wasser. O Allah, reinige mich von Sünden wie ein weißes Gewand von Schmutz gereinigt wird.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्म लकल हम्दु मिलअस्समाइ व मिलअल अर्दि व मिलअ मा शिइत मिन शयइन बाद, अल्लाहुम्म त़ह्हिरनी बिस्सलजि वलबरदि वलमाइल बारिद, अल्लाहुम्म त़ह्हिरनी मिनज़्ज़ुनूबि वलख़ताया कमा युनक़्क़स सौबुल अब्यदु मिनद्दनस',
+                translation:
+                    'ऐ अल्लाह! तेरे लिए सारी तारीफ़ है जो आसमान और ज़मीन को भर दे। ऐ अल्लाह! मुझे बर्फ, ओलों और ठंडे पानी से पाक कर। ऐ अल्लाह! मुझे गुनाहों से उस तरह साफ़ कर जैसे सफेद कपड़ा मैल से साफ़ होता है।',
             },
         },
         references: [

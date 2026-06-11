@@ -39,6 +39,26 @@ export const openingDuas: TDuaVariation[] = [
                 transliteration: 'আল্লাহু আকবার',
                 translation: 'আল্লাহ সর্বমহান।',
             },
+            id: {
+                transliteration: 'Allāhu Akbar',
+                translation: 'Allah Maha Besar.',
+            },
+            sw: {
+                transliteration: 'Allāhu Akbar',
+                translation: 'Mwenyezi Mungu ni Mkubwa zaidi.',
+            },
+            ha: {
+                transliteration: 'Allāhu Akbar',
+                translation: 'Allah shi ne Mafi girma.',
+            },
+            de: {
+                transliteration: 'Allāhu Akbar',
+                translation: 'Allah ist der Größte.',
+            },
+            hi: {
+                transliteration: 'अल्लाहु अकबर',
+                translation: 'अल्लाह सबसे महान है।',
+            },
         },
         references: [
             {
@@ -113,6 +133,36 @@ export const openingDuas: TDuaVariation[] = [
                 translation:
                     'আল্লাহ সত্যিই সর্বমহান; আল্লাহর জন্য প্রচুর প্রশংসা; এবং সকাল ও সন্ধ্যায় আল্লাহর পবিত্রতা বর্ণনা করি।',
             },
+            id: {
+                transliteration:
+                    'Allāhu akbaru kabīrā, wal-ḥamdu lillāhi kathīrā, wa subḥānallāhi bukratan wa aṣīlā',
+                translation:
+                    'Allah Maha Besar dengan sebesar-besarnya; segala puji bagi Allah dengan sebanyak-banyaknya; dan Maha Suci Allah di waktu pagi dan petang.',
+            },
+            sw: {
+                transliteration:
+                    'Allāhu akbaru kabīrā, wal-ḥamdu lillāhi kathīrā, wa subḥānallāhi bukratan wa aṣīlā',
+                translation:
+                    'Mwenyezi Mungu ni Mkubwa zaidi; sifa nyingi ni za Mwenyezi Mungu; na Utukufu wa Mwenyezi Mungu asubuhi na jioni.',
+            },
+            ha: {
+                transliteration:
+                    'Allāhu akbaru kabīrā, wal-ḥamdu lillāhi kathīrā, wa subḥānallāhi bukratan wa aṣīlā',
+                translation:
+                    'Allah shi ne Mafi girma sosai; yabo mai yawa ya tabbata ga Allah; kuma tsarki ya tabbata ga Allah da safe da maraice.',
+            },
+            de: {
+                transliteration:
+                    'Allāhu akbaru kabīrā, wal-ḥamdu lillāhi kathīrā, wa subḥānallāhi bukratan wa aṣīlā',
+                translation:
+                    'Allah ist wahrhaftig der Größte; viel Lob sei Allah; und Preis sei Allah am Morgen und am Abend.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहु अकबरु कबीरा, वलहम्दु लिल्लाहि कसीरा, व सुब्हानल्लाहि बुकरतन व असीला',
+                translation:
+                    'अल्लाह वास्तव में सबसे महान है; अल्लाह के लिए अत्यधिक प्रशंसा हो; और सुबह तथा शाम अल्लाह की महिमा हो।',
+            },
         },
         references: [
             {
@@ -179,6 +229,36 @@ export const openingDuas: TDuaVariation[] = [
                     'আল্লাহুম্মা বাইদ বাইনী ওয়া বাইনা খাতায়ায়া কামা বাআদতা বাইনাল মাশরিকি ওয়ালমাগরিব, আল্লাহুম্মা নাক্কিনী মিনাল খাতায়া কামা ইউনাক্কাস সাওবুল আবইয়াদু মিনাদ দানাস, আল্লাহুম্মাগসিল খাতায়ায়া বিলমাই ওয়াস সালজি ওয়াল বারাদ',
                 translation:
                     'হে আল্লাহ! আমার এবং আমার পাপের মধ্যে এতটা দূরত্ব রাখো যতটা দূরত্ব তুমি পূর্ব ও পশ্চিমের মধ্যে রেখেছ। হে আল্লাহ! আমাকে পাপ থেকে এমনভাবে পরিষ্কার করো যেমন সাদা কাপড় ময়লা থেকে পরিষ্কার হয়। হে আল্লাহ! আমার পাপগুলো পানি, তুষার ও শিলা দিয়ে ধুয়ে দাও।',
+            },
+            id: {
+                transliteration:
+                    "Allāhumma bā'id baynī wa bayna khaṭāyāya kamā bā'adta baynal-mashriqi wal-maghrib, Allāhumma naqqinī minal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas, Allāhummaghsil khaṭāyāya bil-māʾi wath-thalji wal-barad",
+                translation:
+                    'Ya Allah, jauhkanlah antara aku dan dosa-dosaku sebagaimana Engkau menjauhkan antara Timur dan Barat. Ya Allah, sucikanlah aku dari dosa-dosa sebagaimana pakaian putih dibersihkan dari kotoran. Ya Allah, cucilah dosa-dosaku dengan air, salju dan embun beku.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma bā'id baynī wa bayna khaṭāyāya kamā bā'adta baynal-mashriqi wal-maghrib, Allāhumma naqqinī minal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas, Allāhummaghsil khaṭāyāya bil-māʾi wath-thalji wal-barad",
+                translation:
+                    'Ee Mwenyezi Mungu, weka umbali mkubwa kati yangu na makosa yangu kama vile Ulivyoweka umbali kati ya Mashariki na Magharibi. Ee Mwenyezi Mungu, nitakase na makosa kama vile nguo nyeupe inavyotakaswa na uchafu. Ee Mwenyezi Mungu, osha makosa yangu kwa maji, theluji na mvua ya mawe.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma bā'id baynī wa bayna khaṭāyāya kamā bā'adta baynal-mashriqi wal-maghrib, Allāhumma naqqinī minal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas, Allāhummaghsil khaṭāyāya bil-māʾi wath-thalji wal-barad",
+                translation:
+                    'Ya Allah, Ka ware tsakanina da zunubaina kamar yadda Ka ware tsakanin Gabas da Yamma. Ya Allah, Ka tsarkake ni daga zunubai kamar yadda ake tsarkake farin tufafi daga kazanta. Ya Allah, Ka wanke zunubaina da ruwa, kankara da ƙanƙara.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma bā'id baynī wa bayna khaṭāyāya kamā bā'adta baynal-mashriqi wal-maghrib, Allāhumma naqqinī minal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas, Allāhummaghsil khaṭāyāya bil-māʾi wath-thalji wal-barad",
+                translation:
+                    'O Allah, setze eine große Entfernung zwischen mich und meine Sünden, so groß wie die Entfernung, die Du zwischen Ost und West gesetzt hast. O Allah, reinige mich von Sünden wie ein weißes Gewand von Schmutz gereinigt wird. O Allah, wasche meine Sünden mit Wasser, Schnee und Hagel fort.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्मा बाइद बैनी व बैना ख़ताया-य कमा बाअद्त बैनल मश्रिक़ि वलमग़रिब, अल्लाहुम्मा नक़्क़िनी मिनल ख़ताया कमा युनक़्क़स सौबुल अब्यदु मिनद्दनस, अल्लाहुम्मग्सिल ख़ताया-य बिलमाइ वस्सलजि वलबरद',
+                translation:
+                    'ऐ अल्लाह! मेरे और मेरे पापों के बीच उतनी दूरी कर दे जितनी तूने पूरब और पश्चिम के बीच की है। ऐ अल्लाह! मुझे पापों से उस तरह पाक कर जैसे सफेद कपड़ा मैल से साफ होता है। ऐ अल्लाह! मेरे पापों को पानी, बर्फ और ओलों से धो दे।',
             },
         },
         references: [
@@ -254,6 +334,36 @@ export const openingDuas: TDuaVariation[] = [
                 translation:
                     'হে আল্লাহ! তুমি পবিত্র এবং তোমার প্রশংসা। তোমার নাম বরকতময়, তোমার মহিমা সুউচ্চ। তুমি ছাড়া কোনো ইলাহ নেই।',
             },
+            id: {
+                transliteration:
+                    "Subḥānakallāhumma wa biḥamdik, wa tabārakasmuk, wa ta'ālā jadduk, wa lā ilāha ghayruk",
+                translation:
+                    'Maha Suci Engkau ya Allah, dengan segala pujian-Mu. Maha Berkat nama-Mu, Maha Tinggi kebesaran-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            },
+            sw: {
+                transliteration:
+                    "Subḥānakallāhumma wa biḥamdik, wa tabārakasmuk, wa ta'ālā jadduk, wa lā ilāha ghayruk",
+                translation:
+                    'Utukufu ni Wako Wewe Ee Mwenyezi Mungu, na sifa Yako. Jina Lako limebarikiwa, na Utukufu Wako umetukuka. Hapana mungu anayestahili kuabudiwa isipokuwa Wewe.',
+            },
+            ha: {
+                transliteration:
+                    "Subḥānakallāhumma wa biḥamdik, wa tabārakasmuk, wa ta'ālā jadduk, wa lā ilāha ghayruk",
+                translation:
+                    'Tsarki ta tabbata a gare Ka ya Allah, tare da yabonka. Sunanka mai albarka ne, kuma daukakanka ya ɗaukaka. Babu abin bautawa da ya dace sai Kai.',
+            },
+            de: {
+                transliteration:
+                    "Subḥānakallāhumma wa biḥamdik, wa tabārakasmuk, wa ta'ālā jadduk, wa lā ilāha ghayruk",
+                translation:
+                    'Gepriesen seist Du, o Allah, und Lob sei Dir. Gesegnet ist Dein Name, und erhaben ist Deine Majestät. Es gibt keinen Gott, der die Anbetung verdient, außer Dir.',
+            },
+            hi: {
+                transliteration:
+                    'सुब्हानकल्लाहुम्म व बिहम्दिक, व तबारकस्मुक, व तआला जद्दुक, व ला इलाह ग़ैरुक',
+                translation:
+                    'ऐ अल्लाह! तू पवित्र है और तेरी प्रशंसा हो। तेरा नाम बरकतवाला है, तेरी शान बुलंद है। तेरे सिवा कोई इबादत के लायक नहीं।',
+            },
         },
         references: [
             {
@@ -327,6 +437,36 @@ export const openingDuas: TDuaVariation[] = [
                     'আল্লাহুম্মা লাকাল হামদু আনতা নূরুস সামাওয়াতি ওয়াল আরদি ওয়া মান ফীহিন্ন, ওয়া লাকাল হামদু আনতা কাইয়িমুস সামাওয়াতি ওয়াল আরদি ওয়া মান ফীহিন্ন, ওয়া লাকাল হামদু আনতাল হাক্ক... লা ইলাহা ইল্লা আনত',
                 translation:
                     'হে আল্লাহ! সকল প্রশংসা তোমার। তুমি আকাশমণ্ডলী, পৃথিবী এবং তাদের মধ্যে যা কিছু আছে সবকিছুর আলো... তুমি ছাড়া কোনো ইলাহ নেই।',
+            },
+            id: {
+                transliteration:
+                    "Allāhumma lakal-ḥamdu anta nūrus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu anta qayyimus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu antal-ḥaqq, wa wa'duka ḥaqq, wa qawluka ḥaqq, wa liqā'uka ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ḥaqq, was-sā'atu ḥaqq. Allāhumma laka aslamtu, wa bika āmantu, wa 'alayka tawakkaltu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu. Faghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+                translation:
+                    'Ya Allah, segala puji bagi-Mu. Engkaulah cahaya langit dan bumi serta siapa yang ada di dalamnya. Engkaulah Pemelihara langit dan bumi. Engkaulah Al-Haqq; janji-Mu benar, firman-Mu benar, surga itu benar, neraka itu benar, para nabi itu benar, Muhammad ﷺ itu benar, dan hari kiamat itu benar. Ya Allah, kepada-Mu aku berserah diri, kepada-Mu aku beriman, kepada-Mu aku bertawakal. Ampunilah aku atas apa yang telah aku lakukan dan tinggalkan, yang aku sembunyikan dan yang aku tampakkan. Tiada tuhan yang berhak disembah selain Engkau.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma lakal-ḥamdu anta nūrus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu anta qayyimus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu antal-ḥaqq, wa wa'duka ḥaqq, wa qawluka ḥaqq, wa liqā'uka ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ḥaqq, was-sā'atu ḥaqq. Allāhumma laka aslamtu, wa bika āmantu, wa 'alayka tawakkaltu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu. Faghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+                translation:
+                    'Ee Mwenyezi Mungu, sifa zote ni Zako. Wewe ni Nuru ya mbingu na ardhi na waliomo ndani yao. Wewe ni Msimamizi wa mbingu na ardhi. Wewe ni Al-Haqq; ahadi Yako ni kweli, maneno Yako ni kweli, pepo ni kweli, moto ni kweli, manabii ni kweli, Muhammad ﷺ ni kweli, na Saa ya Mwisho ni kweli. Ee Mwenyezi Mungu, kwako nimesalimu, kwako nimeamini, kwako nimetegemea. Nisamehe niliyofanya na kuacha, nililofichwa na kudhihirisha. Hapana mungu anayestahili kuabudiwa isipokuwa Wewe.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma lakal-ḥamdu anta nūrus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu anta qayyimus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu antal-ḥaqq, wa wa'duka ḥaqq, wa qawluka ḥaqq, wa liqā'uka ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ḥaqq, was-sā'atu ḥaqq. Allāhumma laka aslamtu, wa bika āmantu, wa 'alayka tawakkaltu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu. Faghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+                translation:
+                    'Ya Allah, dukkan yabo na gare Ka. Kai ne haske na sammai da ƙasa da duk wanda ke cikinsu. Kai ne Mai tsaron sammai da ƙasa. Kai ne Al-Haqq; alkawarka gaskiya ne, maganarka gaskiya ne, aljanna gaskiya ne, wuta gaskiya ce, annabawa gaskiya ne, Muhammad ﷺ gaskiya ne, kuma Lokacin Ƙarshe gaskiya ne. Ya Allah, maka na mika wuya, a cikinKa na yi imani, a kanKa na dogara. Ka gafarta mini abin da na yi da na bar, na ɓoye da na bayyana. Babu abin bautawa da ya dace sai Kai.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma lakal-ḥamdu anta nūrus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu anta qayyimus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu antal-ḥaqq, wa wa'duka ḥaqq, wa qawluka ḥaqq, wa liqā'uka ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ḥaqq, was-sā'atu ḥaqq. Allāhumma laka aslamtu, wa bika āmantu, wa 'alayka tawakkaltu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu. Faghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",
+                translation:
+                    'O Allah, aller Lobpreis gehört Dir. Du bist das Licht der Himmel und der Erde und all dessen, was in ihnen ist. Du bist der Erhalter der Himmel und der Erde. Du bist Al-Haqq; Dein Versprechen ist wahr, Dein Wort ist wahr, das Paradies ist wahr, das Höllenfeuer ist wahr, die Propheten sind wahr, Muhammad ﷺ ist wahr, und die Stunde ist wahr. O Allah, Dir habe ich mich ergeben, an Dich glaube ich, auf Dich vertraue ich. Vergib mir, was ich getan und unterlassen, verborgen und offenbart habe. Es gibt keinen Gott, der die Anbetung verdient, außer Dir.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्मा लकल हम्दु अन्त नूरुस्समावाति वलअर्दि वमन फीहिन्न, वलकल हम्दु अन्त क़य्युमुस्समावाति वलअर्दि वमन फीहिन्न, वलकल हम्दु अन्तल हक़्क़... ला इलाहा इल्ला अन्त',
+                translation:
+                    'ऐ अल्लाह! सारी प्रशंसा तेरी है। तू आकाशों और ज़मीन और जो कुछ उनमें है उन सबका नूर है। तू आकाशों और ज़मीन का क़ायम रखने वाला है। तू अल-हक़ है; तेरा वादा सच है, तेरा कलाम सच है, जन्नत सच है, जहन्नम सच है, नबी सच हैं, मुहम्मद ﷺ सच हैं, क़यामत सच है। ऐ अल्लाह! तेरे सामने मैंने इस्लाम कबूल किया, तुझ पर ईमान लाया, तुझ पर भरोसा किया। मेरे अगले-पिछले, छुपे-ज़ाहिर गुनाह माफ कर दे। तेरे सिवा कोई इबादत के योग्य नहीं।',
             },
         },
         references: [

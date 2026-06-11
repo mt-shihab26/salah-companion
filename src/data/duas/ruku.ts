@@ -39,6 +39,26 @@ export const rukuDuas: TDuaVariation[] = [
                 transliteration: 'সুবহানা রাব্বিয়াল আযীম',
                 translation: 'আমার রব সর্বমহান, তাঁর পবিত্রতা বর্ণনা করি।',
             },
+            id: {
+                transliteration: "Subḥāna Rabbiy al-'Aẓīm",
+                translation: 'Maha Suci Tuhanku Yang Maha Agung.',
+            },
+            sw: {
+                transliteration: "Subḥāna Rabbiy al-'Aẓīm",
+                translation: 'Utukufu wa Mola wangu aliye Mtukufu Zaidi.',
+            },
+            ha: {
+                transliteration: "Subḥāna Rabbiy al-'Aẓīm",
+                translation: 'Tsarki ta tabbata ga Ubangijina Mai Girma.',
+            },
+            de: {
+                transliteration: "Subḥāna Rabbiy al-'Aẓīm",
+                translation: 'Gepriesen sei mein Herr, der Erhabenste.',
+            },
+            hi: {
+                transliteration: 'सुब्हान रब्बियल अज़ीम',
+                translation: 'मेरे रब की पाकी बयान करता हूं, जो सबसे महान हैं।',
+            },
         },
         references: [
             {
@@ -102,6 +122,26 @@ export const rukuDuas: TDuaVariation[] = [
                 transliteration: 'সুব্বুহুন কুদ্দুস, রাব্বুল মালাইকাতি ওয়াররূহ',
                 translation: 'সর্বমহিমান্বিত, সর্বপবিত্র, ফেরেশতাগণ ও রুহ (জিবরাঈল)-এর রব।',
             },
+            id: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Maha Suci, Maha Kudus, Tuhan para malaikat dan Roh (Jibril).',
+            },
+            sw: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Mwenye Utukufu, Mwenye Utakatifu, Mola wa malaika na Roho (Jibril).',
+            },
+            ha: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Tsarkakakke sosai, Mai tsarki sosai, Ubangijin mala\'iku da Ruhu (Jibrilu).',
+            },
+            de: {
+                transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
+                translation: 'Höchst Glorreich, Höchst Heilig, Herr der Engel und des Geistes (Jibreel).',
+            },
+            hi: {
+                transliteration: 'सुब्बूहुन क़ुद्दूस, रब्बुल मलाइकति वर्रूह',
+                translation: 'सर्वमहिमावान, सर्वपवित्र, फ़रिश्तों और रूह (जिब्रील) के रब।',
+            },
         },
         references: [
             {
@@ -157,6 +197,26 @@ export const rukuDuas: TDuaVariation[] = [
             bn: {
                 transliteration: 'সুবহানাকা ওয়া বিহামদিকা লা ইলাহা ইল্লা আনত',
                 translation: 'তুমি পবিত্র এবং তোমার প্রশংসা করি। তুমি ছাড়া কোনো ইলাহ নেই।',
+            },
+            id: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            },
+            sw: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Utukufu ni Wako na sifa ni Zako. Hapana mungu anayestahili kuabudiwa isipokuwa Wewe.',
+            },
+            ha: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Tsarki ta tabbata a gare Ka da yabonka. Babu abin bautawa da ya dace sai Kai.',
+            },
+            de: {
+                transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
+                translation: 'Gepriesen seist Du und aller Lobpreis gehört Dir. Es gibt keinen Gott außer Dir.',
+            },
+            hi: {
+                transliteration: 'सुब्हानक व बिहम्दिक ला इलाह इल्ला अन्त',
+                translation: 'तू पवित्र है और तेरी प्रशंसा हो। तेरे सिवा कोई इबादत के लायक नहीं।',
             },
         },
         references: [
@@ -217,6 +277,26 @@ export const rukuDuas: TDuaVariation[] = [
                 transliteration: 'সুবহানাকাল্লাহুম্মা রাব্বানা ওয়াবিহামদিকা, আল্লাহুম্মাগফির লী',
                 translation:
                     'হে আল্লাহ, হে আমাদের রব! তুমি পবিত্র এবং তোমার প্রশংসা। হে আল্লাহ! আমাকে ক্ষমা করো।',
+            },
+            id: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Maha Suci Engkau ya Allah Tuhan kami, dengan memuji-Mu. Ya Allah, ampunilah aku.',
+            },
+            sw: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Utukufu ni Wako Ee Mwenyezi Mungu Mola wetu, na sifa Zako. Ee Mwenyezi Mungu, nisamehe.',
+            },
+            ha: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Tsarki ta tabbata a gare Ka ya Allah Ubangijinmu, tare da yabonka. Ya Allah, Ka gafarta mini.',
+            },
+            de: {
+                transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
+                translation: 'Gepriesen seist Du, o Allah unser Herr, und aller Lobpreis gehört Dir. O Allah, vergib mir.',
+            },
+            hi: {
+                transliteration: 'सुब्हानकल्लाहुम्म रब्बना व बिहम्दिक, अल्लाहुम्मग्फ़िर ली',
+                translation: 'ऐ अल्लाह! हमारे रब, तू पवित्र है और तेरी प्रशंसा हो। ऐ अल्लाह! मुझे माफ़ कर।',
             },
         },
         references: [
@@ -285,6 +365,26 @@ export const rukuDuas: TDuaVariation[] = [
                 translation:
                     'তুমি পবিত্র এবং তোমার প্রশংসা করি। আমি তোমার কাছে ক্ষমা চাই এবং তোমার দিকে তাওবা করি।',
             },
+            id: {
+                transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
+                translation: 'Maha Suci Engkau dan dengan memuji-Mu. Aku memohon ampunan-Mu dan bertaubat kepada-Mu.',
+            },
+            sw: {
+                transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
+                translation: 'Utukufu ni Wako na sifa ni Zako. Nakuomba msamaha na natubu kwako.',
+            },
+            ha: {
+                transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
+                translation: 'Tsarki ta tabbata a gare Ka da yabonka. Ina neman gafaranka kuma ina tuba zuwa gare Ka.',
+            },
+            de: {
+                transliteration: 'Subḥānaka wa biḥamdika, astaghfiruka wa atūbu ilayk',
+                translation: 'Gepriesen seist Du und aller Lobpreis gehört Dir. Ich bitte Dich um Vergebung und wende mich reumütig zu Dir.',
+            },
+            hi: {
+                transliteration: 'सुब्हानक व बिहम्दिक, अस्तग़्फ़िरुक व अतूबु इलैक',
+                translation: 'तू पवित्र है और तेरी प्रशंसा हो। मैं तुझसे माफी मांगता हूं और तेरी तरफ तौबा करता हूं।',
+            },
         },
         references: [
             {
@@ -344,6 +444,26 @@ export const rukuDuas: TDuaVariation[] = [
                 transliteration: 'সুবহানা যিল জাবারূতি ওয়াল মালাকূতি ওয়াল কিবরিয়াই ওয়াল আযামাহ',
                 translation:
                     'তিনি পবিত্র যিনি সর্বশক্তি, সর্বকর্তৃত্ব, সর্বশ্রেষ্ঠতা ও সর্বমহিমার অধিকারী।',
+            },
+            id: {
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation: 'Maha Suci Tuhan yang memiliki segala kekuasaan, pemerintahan, keagungan dan kebesaran.',
+            },
+            sw: {
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation: 'Utukufu wa Mwenye nguvu zote, ufalme wote, ukuu wote na utukufu wote.',
+            },
+            ha: {
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation: 'Tsarki ta tabbata ga Mai ikon gaske da mulki da girma da azama.',
+            },
+            de: {
+                transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
+                translation: 'Gepriesen sei Der, dem alle Macht, alle Herrschaft, alle Erhabenheit und alle Größe gehört.',
+            },
+            hi: {
+                transliteration: 'सुब्हान ज़िल जबरूति वलमलकूति वलकिब्रियाइ वलअज़मह',
+                translation: 'उसकी पाकी बयान करता हूं जो सर्वशक्तिमान, सर्वसत्ताधारी, सर्वमहान और सर्वमहिमावान है।',
             },
         },
         references: [
@@ -419,6 +539,36 @@ export const rukuDuas: TDuaVariation[] = [
                     'আল্লাহুম্মা লাকা রাকাতু, ওয়া বিকা আমানতু, ওয়া লাকা আসলামতু, খাশাআ লাকা সামঈ ওয়া বাসারী ওয়া মুখখী ওয়া আযমী ওয়া আসাবী',
                 translation:
                     'হে আল্লাহ! তোমার জন্যই আমি রুকু করেছি, তোমার উপর ঈমান এনেছি, তোমার কাছে আত্মসমর্পণ করেছি। আমার শ্রবণ, দৃষ্টি, মস্তিষ্ক, হাড় ও স্নায়ু সবকিছু তোমার সামনে বিনম্র।',
+            },
+            id: {
+                transliteration:
+                    "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
+                translation:
+                    'Ya Allah, karena-Mulah aku ruku. Kepada-Mu aku beriman. Kepada-Mu aku berserah. Pendengaranku, penglihatanku, otakku, tulangku dan sarafku semuanya khusyuk kepada-Mu.',
+            },
+            sw: {
+                transliteration:
+                    "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
+                translation:
+                    'Ee Mwenyezi Mungu, kwa ajili Yako nimeinamisha. Kwako nimeamini. Kwako nimesalimu. Masikio yangu, macho yangu, ubongo wangu, mifupa yangu na mishipa yangu vyote vimeinyenyekea Mbele Yako.',
+            },
+            ha: {
+                transliteration:
+                    "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
+                translation:
+                    'Ya Allah, dominanKa ne na ke ruku. A cikinKa na yi imani. MaKa na mika wuya. Kunnuwana, idona, kwakwalwata, ƙasusuwana da jijiyoyina sun ƙasƙantu a gabanka.',
+            },
+            de: {
+                transliteration:
+                    "Allāhumma laka raka'tu, wa bika āmantu, wa laka aslamtu, khasha'a laka sam'ī wa baṣarī wa mukkhī wa 'aẓmī wa 'aṣabī",
+                translation:
+                    'O Allah, für Dich habe ich mich verneigt. An Dich glaube ich. Dir habe ich mich ergeben. Mein Gehör, mein Sehen, mein Verstand, meine Knochen und meine Nerven sind vor Dir demütig.',
+            },
+            hi: {
+                transliteration:
+                    'अल्लाहुम्म लक रकअ्तु, व बिक आमन्तु, व लक अस्लम्तु, ख़शअ लक समई व बसरी व मुख्खी व अज़्मी व असबी',
+                translation:
+                    'ऐ अल्लाह! तेरे लिए ही मैंने रुकू किया। तुझ पर ईमान लाया। तेरे लिए इस्लाम क़बूल किया। मेरी सुनने की शक्ति, देखने की शक्ति, दिमाग़, हड्डियां और नसें सब तेरे सामने झुकी हैं।',
             },
         },
         references: [

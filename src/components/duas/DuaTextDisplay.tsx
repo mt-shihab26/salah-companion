@@ -1,4 +1,4 @@
-import { ArabicText } from '#/components/arabic-text'
+import { ArabicText } from '#/components/elements/arabic-text'
 import { Separator } from '#/components/ui/separator'
 import { LANGUAGES } from '#/lib/languages'
 import { cn } from '#/lib/utils'

@@ -3,7 +3,7 @@ import type { TSalahPositionId } from '#/types/salah-positions'
 import { cn } from '#/lib/utils'
 import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 
-import { ArabicText } from '#/components/arabic-text'
+import { ArabicText } from '#/components/elements/arabic-text'
 import { Button } from '#/components/ui/button'
 
 import { SALAH_POSITIONS } from '#/lib/salah-positions'

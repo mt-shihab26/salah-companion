@@ -1,14 +1,14 @@
 import { getSalahPosition } from '#/lib/salah-positions'
 import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 
-import { PageWrap } from '#/components/page-wrap'
+import { PageWrap } from '#/components/elements/page-wrap'
+import { DuaGroupSection } from './dua-group-section'
 import { DuaPositionNav } from './dua-position-nav'
 import { DuaTranslationPicker } from './dua-translation-picker'
-import { DuaGroupSection } from './DuaGroupSection'
 
 export const DuasBrowser = () => {
-    const activePosition = useDuasBrowserStore((s) => s.salahPositionId)
-    const salahPosition = getSalahPosition(activePosition)
+    const salahPositionId = useDuasBrowserStore((s) => s.salahPositionId)
+    const salahPosition = getSalahPosition(salahPositionId)
 
     return (
         <PageWrap id="duas-browser" className="scroll-mt-6 space-y-6">

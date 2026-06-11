@@ -1,16 +1,18 @@
-import { ArabicText } from '#/components/arabic-text'
-import { Separator } from '#/components/ui/separator'
 import { getSalahDuasBySalahPosition } from '#/lib/salah-duas'
 import { getSalahPosition } from '#/lib/salah-positions'
 import { useDuasBrowserStore } from '#/stores/duas-browser-store'
-import { DuaCard } from '../../../duas/DuaCard'
 
-export function DuaGroupSection() {
-    const langs = useDuasBrowserStore((s) => s.languages)
+import { DuaCard } from '#/components/duas/DuaCard'
+import { ArabicText } from '#/components/elements/arabic-text'
+import { Separator } from '#/components/ui/separator'
+
+export const DuaGroupSection = () => {
+    const languages = useDuasBrowserStore((s) => s.languages)
     const activePosition = useDuasBrowserStore((s) => s.salahPositionId)
     const duas = getSalahDuasBySalahPosition(activePosition)
 
     const position = getSalahPosition(activePosition)
+
     if (!position || duas.length === 0) return null
 
     return (
@@ -34,7 +36,7 @@ export function DuaGroupSection() {
 
             <div className="space-y-4">
                 {duas.map((dua) => (
-                    <DuaCard key={dua.id} dua={dua} langs={langs} />
+                    <DuaCard key={dua.id} dua={dua} langs={languages} />
                 ))}
             </div>
 

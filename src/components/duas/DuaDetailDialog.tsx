@@ -1,4 +1,4 @@
-import { ArabicText } from '#/components/arabic-text'
+import { ArabicText } from '#/components/elements/arabic-text'
 import { Badge } from '#/components/ui/badge'
 import { Button } from '#/components/ui/button'
 import {

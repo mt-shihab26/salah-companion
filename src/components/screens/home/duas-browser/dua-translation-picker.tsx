@@ -9,16 +9,13 @@ import { Check, Languages } from 'lucide-react'
 import { LANGUAGES } from '#/lib/languages'
 
 export const DuaTranslationPicker = () => {
-    const langs = useDuasBrowserStore((s) => s.languages)
-    const toggleLang = useDuasBrowserStore((s) => s.toggleLanguage)
+    const languages = useDuasBrowserStore((s) => s.languages)
+    const toggleLanguage = useDuasBrowserStore((s) => s.toggleLanguage)
 
-    const PICKABLE = LANGUAGES.filter((l) => l.code !== 'ar')
-
-    const selectedLabels = PICKABLE.filter((l) => langs.includes(l.code))
+    const labels = LANGUAGES.filter((l) => languages.includes(l.code))
         .map((l) => l.label)
         .join(', ')
-
-    const selectedCount = PICKABLE.filter((l) => langs.includes(l.code)).length
+    const count = LANGUAGES.filter((l) => languages.includes(l.code)).length
 
     return (
         <Popover>
@@ -31,14 +28,14 @@ export const DuaTranslationPicker = () => {
                     <Languages className="text-primary size-4" />
                     <div className="flex gap-1">
                         <span className="hidden max-w-52 truncate sm:inline">
-                            {selectedLabels || 'Translations'}
+                            {labels || 'Translations'}
                         </span>
                         <span className="sm:hidden">Translations</span>
                         <Badge
                             variant="secondary"
                             className="ml-1 h-5 rounded-full px-2 text-[10px] font-semibold"
                         >
-                            {selectedCount}
+                            {count}
                         </Badge>
                     </div>
                 </Button>
@@ -51,13 +48,13 @@ export const DuaTranslationPicker = () => {
                     </p>
                 </div>
                 <ul className="max-h-72 space-y-1.5 overflow-y-auto p-1.5">
-                    {PICKABLE.map((l) => {
-                        const active = langs.includes(l.code)
+                    {LANGUAGES.map((l) => {
+                        const active = languages.includes(l.code)
                         return (
                             <li key={l.code}>
                                 <button
                                     type="button"
-                                    onClick={() => toggleLang(l.code)}
+                                    onClick={() => toggleLanguage(l.code)}
                                     className={cn(
                                         'flex w-full items-center justify-between gap-3 rounded-md px-2.5 py-2 text-left text-sm transition-colors',
                                         'hover:bg-accent hover:text-accent-foreground',

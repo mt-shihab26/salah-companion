@@ -1,19 +1,24 @@
 import type { TSalahDua } from '#/types/salah-duas'
 
-import { useAudioPlayer } from '#/hooks/use-audio-player'
 import { cn } from '#/lib/utils'
+import { useAudioStore } from '#/stores/audio-store'
 
 import { Play } from 'lucide-react'
 
 const BAR_DELAYS = ['0s', '0.2s', '0.1s', '0.3s']
 
 export const DuaAudioPlayer = ({ salahDua }: { salahDua: TSalahDua }) => {
-    const { isPlaying, isActive, toggle } = useAudioPlayer(salahDua.id, salahDua.audioUrl)
+    const { currentDuaId, isPlaying, play } = useAudioStore()
+
+    const isActive = currentDuaId === salahDua.id
+    const isThisPlaying = isActive && isPlaying
+
+    const toggle = () => play(salahDua.id, salahDua.audioUrl)
 
     return (
         <button
             onClick={toggle}
-            aria-label={isPlaying ? 'Pause audio' : 'Play audio'}
+            aria-label={isThisPlaying ? 'Pause audio' : 'Play audio'}
             className={cn(
                 'flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-full border transition-all hover:scale-105',
                 isActive
@@ -21,8 +26,7 @@ export const DuaAudioPlayer = ({ salahDua }: { salahDua: TSalahDua }) => {
                     : 'border-primary/40 bg-primary/10 text-primary hover:bg-primary/20',
             )}
         >
-            {isPlaying ? (
-                /* Animated EQ bars when playing */
+            {isThisPlaying ? (
                 <span className="flex items-end gap-px" aria-hidden>
                     {BAR_DELAYS.map((delay, i) => (
                         <span
@@ -33,10 +37,8 @@ export const DuaAudioPlayer = ({ salahDua }: { salahDua: TSalahDua }) => {
                     ))}
                 </span>
             ) : isActive ? (
-                /* Paused — show resume icon in active style */
                 <Play className="size-3.5 translate-x-px" />
             ) : (
-                /* Idle */
                 <Play className="size-3.5 translate-x-px" />
             )}
         </button>

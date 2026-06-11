@@ -19,6 +19,7 @@ import { Clock, ExternalLink } from 'lucide-react'
 import { DuaDetailDialog } from '../../../duas/DuaDetailDialog'
 import { DuaReferenceList } from '../../../duas/DuaReferenceList'
 import { DuaTextDisplay } from '../../../duas/DuaTextDisplay'
+import { GlobalAudioPlayer } from './audio-player'
 import { DuaAudioPlayer } from './dua-audio-player'
 import { DuaCopyButton } from './dua-copy-button'
 import { DuaFavoriteButton } from './dua-favorite-button'
@@ -106,6 +107,8 @@ export const DuaCard = ({
                 onOpenChange={setDialogOpen}
                 langs={languages}
             />
+
+            <GlobalAudioPlayer />
         </>
     )
 }

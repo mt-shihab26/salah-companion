@@ -1,8 +1,9 @@
-import { useAudioContext } from '#/contexts/AudioContext'
 import { cn } from '#/lib/utils'
+import { useAudioStore } from '#/stores/audio-store'
+
 import { Pause, Play, X } from 'lucide-react'
 
-function fmt(s: number) {
+const fmt = (s: number) => {
     if (!isFinite(s) || s < 0) return '0:00'
     const m = Math.floor(s / 60)
     const sec = Math.floor(s % 60)
@@ -11,9 +12,9 @@ function fmt(s: number) {
 
 const BAR_DELAYS = ['0s', '0.25s', '0.1s', '0.35s', '0.18s']
 
-export function GlobalAudioPlayer() {
-    const { currentDuaId, isPlaying, currentTime, duration, pause, stop, seek, play } =
-        useAudioContext()
+export const GlobalAudioPlayer = () => {
+    const { currentDuaId, currentUrl, isPlaying, currentTime, duration, pause, stop, seek, play } =
+        useAudioStore()
 
     if (!currentDuaId) return null
 
@@ -22,9 +23,8 @@ export function GlobalAudioPlayer() {
     function toggle() {
         if (isPlaying) {
             pause()
-        } else {
-            // resume — re-call play with same id; AudioContext handles toggle
-            play(currentDuaId!, '')
+        } else if (currentDuaId) {
+            play(currentDuaId, currentUrl)
         }
     }
 
@@ -36,7 +36,6 @@ export function GlobalAudioPlayer() {
             )}
         >
             <div className="mx-auto flex max-w-2xl items-center gap-4 px-4 py-3">
-                {/* Play / Pause */}
                 <button
                     onClick={toggle}
                     aria-label={isPlaying ? 'Pause' : 'Play'}
@@ -48,15 +47,13 @@ export function GlobalAudioPlayer() {
                         <Play className="size-4 translate-x-px" />
                     )}
                 </button>
-
-                {/* EQ bars */}
-                <div className="flex shrink-0 items-end gap-[3px]" aria-hidden>
+                <div className="flex shrink-0 items-end gap-0.75" aria-hidden>
                     {BAR_DELAYS.map((delay, i) => (
                         <span
                             key={i}
                             className={cn(
-                                'bg-primary w-[3px] rounded-sm',
-                                isPlaying ? 'audio-eq-bar' : 'h-[4px] opacity-30',
+                                'bg-primary w-0.75 rounded-sm',
+                                isPlaying ? 'audio-eq-bar' : 'h-1 opacity-30',
                             )}
                             style={
                                 isPlaying
@@ -66,10 +63,7 @@ export function GlobalAudioPlayer() {
                         />
                     ))}
                 </div>
-
-                {/* Progress section */}
                 <div className="flex flex-1 flex-col gap-1.5">
-                    {/* Track */}
                     <div className="relative flex items-center">
                         <div className="bg-primary/20 h-1 w-full overflow-hidden rounded-full">
                             <div
@@ -88,14 +82,11 @@ export function GlobalAudioPlayer() {
                             aria-label="Seek"
                         />
                     </div>
-                    {/* Time */}
                     <div className="text-muted-foreground flex justify-between font-mono text-[10px] tabular-nums">
                         <span>{fmt(currentTime)}</span>
                         <span>{fmt(duration)}</span>
                     </div>
                 </div>
-
-                {/* Close */}
                 <button
                     onClick={stop}
                     aria-label="Close player"

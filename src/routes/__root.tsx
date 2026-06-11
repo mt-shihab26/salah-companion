@@ -1,9 +1,7 @@
 import { createRootRoute } from '@tanstack/react-router'
 
-import { GlobalAudioPlayer } from '#/components/layout/GlobalAudioPlayer'
 import { SiteFooter } from '#/components/layout/SiteFooter'
 import { TooltipProvider } from '#/components/ui/tooltip'
-import { AudioProvider } from '#/contexts/AudioContext'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import { HeadContent, Outlet, Scripts } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
@@ -42,9 +40,7 @@ export const Route = createRootRoute({
                 <HeadContent />
             </head>
             <body>
-                <TooltipProvider>
-                    <AudioProvider>{children}</AudioProvider>
-                </TooltipProvider>
+                <TooltipProvider>{children}</TooltipProvider>
                 <TanStackDevtools
                     config={{
                         position: 'bottom-right',
@@ -66,7 +62,6 @@ export const Route = createRootRoute({
                 <Outlet />
             </main>
             <SiteFooter />
-            <GlobalAudioPlayer />
         </div>
     ),
 })

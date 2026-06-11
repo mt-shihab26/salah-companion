@@ -1,6 +1,6 @@
 import type { TSalahDua } from '#/types/salah-duas'
 
-import placeholderAudio from '#/assets/audio/subhanaka.m4a'
+import placeholderAudio from '#/assets/audios/subhanaka.m4a'
 
 export const tasleem3: TSalahDua = {
 	id: 'tasleem-3',

@@ -1,5 +1,6 @@
+import type { TDuaReference } from '#/types/salah-duas'
+
 import { Badge } from '#/components/ui/badge'
-import type { TDuaReference } from '#/data/duas/types'
 
 interface Props {
     references: TDuaReference[]

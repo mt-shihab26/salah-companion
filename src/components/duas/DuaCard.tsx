@@ -9,9 +9,10 @@ import {
     CardTitle,
 } from '#/components/ui/card'
 import { Separator } from '#/components/ui/separator'
-import type { TDuaLang, TDuaVariation } from '#/data/duas/types'
 import { useDuaFavorites } from '#/hooks/use-dua-favorites'
 import { cn } from '#/lib/utils'
+import type { TLanguage } from '#/types/languages'
+import type { TSalahDua } from '#/types/salah-duas'
 import { Check, Clock, Copy, ExternalLink, Heart } from 'lucide-react'
 import { useState } from 'react'
 import { DuaAudioPlayer } from './DuaAudioPlayer'
@@ -21,8 +22,8 @@ import { DuaReferenceList } from './DuaReferenceList'
 import { DuaTextDisplay } from './DuaTextDisplay'
 
 interface Props {
-    dua: TDuaVariation
-    langs: TDuaLang[]
+    dua: TSalahDua
+    langs: TLanguage[]
     showPosition?: boolean
 }
 

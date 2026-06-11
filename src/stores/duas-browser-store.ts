@@ -1,48 +1,48 @@
-import type { TDuaLang } from '#/data/duas/types'
+import type { TLanguage } from '#/types/languages'
 import type { TSalahPositionId } from '#/types/salah-positions'
 
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
 
-import { DUA_LANGS } from '#/data/duas/types'
-import { SALAH_POSITIONS } from '#/lib/salah-positions'
-
-const DEFAULT_LANGS: TDuaLang[] = ['en']
-const VALID_LANGS = new Set<TDuaLang>(DUA_LANGS.map((l) => l.code))
+const DEFAULT_LANGUAGES: TLanguage[] = ['en']
+const DEFAULT_SALAH_POSITION_ID: TSalahPositionId = 'opening'
 
 type TDuasBrowserStore = {
-    langs: TDuaLang[]
-    activePosition: TSalahPositionId
-    toggleLang: (lang: TDuaLang) => void
-    setActivePosition: (id: TSalahPositionId) => void
+    languages: TLanguage[]
+    toggleLanguage: (lang: TLanguage) => void
+
+    salahPositionId: TSalahPositionId
+    setSalahPositionId: (id: TSalahPositionId) => void
 }
 
 export const useDuasBrowserStore = create<TDuasBrowserStore>()(
     persist(
         immer((set) => ({
-            langs: DEFAULT_LANGS,
-            activePosition: SALAH_POSITIONS[0].id as TSalahPositionId,
+            languages: DEFAULT_LANGUAGES,
 
-            toggleLang: (lang) =>
+            toggleLanguage: (lang) => {
                 set((state) => {
-                    const next = state.langs.includes(lang)
-                        ? state.langs.filter((l) => l !== lang)
-                        : [...state.langs, lang]
-                    const valid = next.filter((l): l is TDuaLang => VALID_LANGS.has(l))
-                    state.langs = valid.length > 0 ? valid : DEFAULT_LANGS
-                }),
+                    const next = state.languages.includes(lang)
+                        ? state.languages.filter((l) => l !== lang)
+                        : [...state.languages, lang]
+                    state.languages = next.length > 0 ? next : DEFAULT_LANGUAGES
+                })
+            },
 
-            setActivePosition: (id) =>
+            salahPositionId: DEFAULT_SALAH_POSITION_ID,
+
+            setSalahPositionId: (id) => {
                 set((state) => {
-                    state.activePosition = id
-                }),
+                    state.salahPositionId = id
+                })
+            },
         })),
         {
             name: 'duas-browser',
             partialize: (state) => ({
-                langs: state.langs,
-                activePosition: state.activePosition,
+                langs: state.languages,
+                salahPositionId: state.salahPositionId,
             }),
         },
     ),

@@ -9,8 +9,8 @@ import { Button } from '#/components/ui/button'
 import { SALAH_POSITIONS } from '#/lib/salah-positions'
 
 export const DuaPositionNav = () => {
-    const activePosition = useDuasBrowserStore((s) => s.activePosition)
-    const setActivePosition = useDuasBrowserStore((s) => s.setActivePosition)
+    const activePosition = useDuasBrowserStore((s) => s.salahPositionId)
+    const setActivePosition = useDuasBrowserStore((s) => s.setSalahPositionId)
 
     return (
         <nav className="flex h-full flex-col gap-1 overflow-x-hidden overflow-y-auto p-1">

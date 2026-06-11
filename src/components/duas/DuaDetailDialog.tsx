@@ -10,27 +10,28 @@ import {
 } from '#/components/ui/dialog'
 import { Separator } from '#/components/ui/separator'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/components/ui/tabs'
-import type { TDuaLang, TDuaVariation } from '#/data/duas/types'
-import { DUA_LANGS } from '#/data/duas/types'
+import { LANGUAGES } from '#/lib/languages'
 import { cn } from '#/lib/utils'
+import type { TLanguage } from '#/types/languages'
+import type { TSalahDua } from '#/types/salah-duas'
 import { BookOpen, Check, Clock, Copy, Info, ScrollText } from 'lucide-react'
 import { useState } from 'react'
 import { DuaAudioPlayer } from './DuaAudioPlayer'
 import { DuaPositionBadge } from './DuaPositionBadge'
 
 interface Props {
-    dua: TDuaVariation
+    dua: TSalahDua
     open: boolean
     onOpenChange: (open: boolean) => void
-    langs: TDuaLang[]
+    langs: TLanguage[]
 }
 
 export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
     const [copied, setCopied] = useState(false)
-    const [activeLang, setActiveLang] = useState<TDuaLang>(langs[0] ?? 'en')
+    const [activeLang, setActiveLang] = useState<TLanguage>(langs[0] ?? 'en')
 
-    const allLangs = DUA_LANGS.filter((l) => l.code !== 'ar')
-    const activeLangMeta = DUA_LANGS.find((l) => l.code === activeLang)
+    const allLangs = LANGUAGES.filter((l) => l.code !== 'ar')
+    const activeLangMeta = LANGUAGES.find((l) => l.code === activeLang)
 
     async function copyToClipboard() {
         const langData = dua.languages[activeLang] ?? dua.languages['en']

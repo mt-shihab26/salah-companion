@@ -7,7 +7,7 @@ import { DuaTranslationPicker } from './dua-translation-picker'
 import { DuaGroupSection } from './DuaGroupSection'
 
 export const DuasBrowser = () => {
-    const activePosition = useDuasBrowserStore((s) => s.activePosition)
+    const activePosition = useDuasBrowserStore((s) => s.salahPositionId)
     const salahPosition = getSalahPosition(activePosition)
 
     return (

@@ -1,16 +1,17 @@
 import { ArabicText } from '#/components/arabic-text'
 import { Separator } from '#/components/ui/separator'
-import type { TDuaLang, TDuaVariation } from '#/data/duas/types'
-import { DUA_LANGS } from '#/data/duas/types'
+import { LANGUAGES } from '#/lib/languages'
 import { cn } from '#/lib/utils'
+import type { TLanguage } from '#/types/languages'
+import type { TSalahDua } from '#/types/salah-duas'
 
 interface Props {
-    dua: TDuaVariation
-    langs: TDuaLang[]
+    dua: TSalahDua
+    langs: TLanguage[]
 }
 
 export function DuaTextDisplay({ dua, langs }: Props) {
-    const orderedLangs = DUA_LANGS.filter((l) => langs.includes(l.code) && l.code !== 'ar')
+    const orderedLangs = LANGUAGES.filter((l) => langs.includes(l.code) && l.code !== 'ar')
 
     return (
         <div className="space-y-5">

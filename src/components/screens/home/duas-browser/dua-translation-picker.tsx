@@ -6,13 +6,13 @@ import { Button } from '#/components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '#/components/ui/popover'
 import { Check, Languages } from 'lucide-react'
 
-import { DUA_LANGS } from '#/data/duas/types'
+import { LANGUAGES } from '#/lib/languages'
 
 export const DuaTranslationPicker = () => {
-    const langs = useDuasBrowserStore((s) => s.langs)
-    const toggleLang = useDuasBrowserStore((s) => s.toggleLang)
+    const langs = useDuasBrowserStore((s) => s.languages)
+    const toggleLang = useDuasBrowserStore((s) => s.toggleLanguage)
 
-    const PICKABLE = DUA_LANGS.filter((l) => l.code !== 'ar')
+    const PICKABLE = LANGUAGES.filter((l) => l.code !== 'ar')
 
     const selectedLabels = PICKABLE.filter((l) => langs.includes(l.code))
         .map((l) => l.label)

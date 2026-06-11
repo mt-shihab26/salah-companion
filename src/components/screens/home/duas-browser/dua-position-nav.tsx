@@ -9,13 +9,13 @@ import { Button } from '#/components/ui/button'
 import { SALAH_POSITIONS } from '#/lib/salah-positions'
 
 export const DuaPositionNav = () => {
-    const activePosition = useDuasBrowserStore((s) => s.salahPositionId)
-    const setActivePosition = useDuasBrowserStore((s) => s.setSalahPositionId)
+    const salahPositionId = useDuasBrowserStore((s) => s.salahPositionId)
+    const setSalahPositionId = useDuasBrowserStore((s) => s.setSalahPositionId)
 
     return (
         <nav className="flex h-full flex-col gap-1 overflow-x-hidden overflow-y-auto p-1">
             {SALAH_POSITIONS.map((pos) => {
-                const active = pos.id === activePosition
+                const active = pos.id === salahPositionId
                 return (
                     <Button
                         key={pos.id}
@@ -25,7 +25,7 @@ export const DuaPositionNav = () => {
                             'h-auto justify-start gap-3 py-2.5 text-left',
                             active && 'font-semibold',
                         )}
-                        onClick={() => setActivePosition(pos.id as TSalahPositionId)}
+                        onClick={() => setSalahPositionId(pos.id as TSalahPositionId)}
                     >
                         <span className="bg-primary text-primary-foreground flex size-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold">
                             {pos.order}

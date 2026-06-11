@@ -1,4 +1,3 @@
-import { Button } from '#/components/ui/button'
 import {
     Card,
     CardAction,
@@ -8,39 +7,45 @@ import {
     CardHeader,
     CardTitle,
 } from '#/components/ui/card'
-import { Separator } from '#/components/ui/separator'
-import { useDuaFavorites } from '#/hooks/use-dua-favorites'
-import { cn } from '#/lib/utils'
+
 import type { TLanguage } from '#/types/languages'
 import type { TSalahDua } from '#/types/salah-duas'
-import { Check, Clock, Copy, ExternalLink, Heart } from 'lucide-react'
+
+import { useDuaFavorites } from '#/hooks/use-dua-favorites'
+import { cn } from '#/lib/utils'
 import { useState } from 'react'
-import { DuaAudioPlayer } from './DuaAudioPlayer'
-import { DuaDetailDialog } from './DuaDetailDialog'
-import { DuaPositionBadge } from './DuaPositionBadge'
-import { DuaReferenceList } from './DuaReferenceList'
-import { DuaTextDisplay } from './DuaTextDisplay'
 
-interface Props {
-    dua: TSalahDua
-    langs: TLanguage[]
+import { Button } from '#/components/ui/button'
+import { Separator } from '#/components/ui/separator'
+import { Check, Clock, Copy, ExternalLink, Heart } from 'lucide-react'
+import { DuaAudioPlayer } from '../../../duas/DuaAudioPlayer'
+import { DuaDetailDialog } from '../../../duas/DuaDetailDialog'
+import { DuaPositionBadge } from '../../../duas/DuaPositionBadge'
+import { DuaReferenceList } from '../../../duas/DuaReferenceList'
+import { DuaTextDisplay } from '../../../duas/DuaTextDisplay'
+
+export const DuaCard = ({
+    salahDua,
+    languages,
+    showPosition = false,
+}: {
+    salahDua: TSalahDua
+    languages: TLanguage[]
     showPosition?: boolean
-}
-
-export function DuaCard({ dua, langs, showPosition = false }: Props) {
+}) => {
     const [dialogOpen, setDialogOpen] = useState(false)
     const [copied, setCopied] = useState(false)
     const { isFavorite, toggle } = useDuaFavorites()
-    const fav = isFavorite(dua.id)
+    const fav = isFavorite(salahDua.id)
 
     async function copy() {
-        const lang = langs[0] ?? 'en'
+        const lang = languages[0] ?? 'en'
         const text = [
-            dua.arabic,
+            salahDua.arabic,
             '',
-            dua.languages[lang].transliteration,
+            salahDua.languages[lang].transliteration,
             '',
-            dua.languages[lang].translation,
+            salahDua.languages[lang].translation,
         ].join('\n')
         try {
             await navigator.clipboard.writeText(text)
@@ -56,19 +61,21 @@ export function DuaCard({ dua, langs, showPosition = false }: Props) {
             <Card className="border-border/60 overflow-hidden transition-shadow hover:shadow-md">
                 <CardHeader>
                     <div className="space-y-1.5">
-                        {showPosition && <DuaPositionBadge positionId={dua.positionId} />}
+                        {showPosition && <DuaPositionBadge positionId={salahDua.positionId} />}
                         <CardTitle className="font-serif text-lg">
-                            {dua.label ?? `Dua ${dua.variationIndex}`}
+                            {salahDua.label ?? `Dua ${salahDua.variationIndex}`}
                         </CardTitle>
-                        {dua.notes && (
-                            <CardDescription className="line-clamp-2">{dua.notes}</CardDescription>
+                        {salahDua.notes && (
+                            <CardDescription className="line-clamp-2">
+                                {salahDua.notes}
+                            </CardDescription>
                         )}
                     </div>
                     <CardAction className="flex items-center gap-1.5">
                         <Button
                             variant="ghost"
                             size="icon"
-                            onClick={() => toggle(dua.id)}
+                            onClick={() => toggle(salahDua.id)}
                             aria-label={fav ? 'Remove from favourites' : 'Add to favourites'}
                             className={cn(
                                 'size-8 transition-colors',
@@ -92,27 +99,29 @@ export function DuaCard({ dua, langs, showPosition = false }: Props) {
                                 <Copy className="size-4" />
                             )}
                         </Button>
-                        {dua.audioUrl && <DuaAudioPlayer duaId={dua.id} audioUrl={dua.audioUrl} />}
+                        {salahDua.audioUrl && (
+                            <DuaAudioPlayer duaId={salahDua.id} audioUrl={salahDua.audioUrl} />
+                        )}
                     </CardAction>
                 </CardHeader>
 
                 <CardContent className="space-y-4">
-                    <DuaTextDisplay dua={dua} langs={langs} />
-                    {dua.whenToRecite && (
+                    <DuaTextDisplay dua={salahDua} langs={languages} />
+                    {salahDua.whenToRecite && (
                         <div className="border-primary/20 bg-primary/5 flex gap-2 rounded-md border p-2.5">
                             <Clock className="text-primary mt-0.5 size-3.5 shrink-0" />
                             <p className="text-muted-foreground text-xs leading-relaxed">
-                                {dua.whenToRecite}
+                                {salahDua.whenToRecite}
                             </p>
                         </div>
                     )}
                 </CardContent>
 
-                {dua.references.length > 0 && (
+                {salahDua.references.length > 0 && (
                     <>
                         <Separator />
                         <CardFooter className="flex items-center justify-between pt-4">
-                            <DuaReferenceList references={dua.references} />
+                            <DuaReferenceList references={salahDua.references} />
                             <Button
                                 variant="ghost"
                                 size="sm"
@@ -126,7 +135,7 @@ export function DuaCard({ dua, langs, showPosition = false }: Props) {
                     </>
                 )}
 
-                {dua.references.length === 0 && (
+                {salahDua.references.length === 0 && (
                     <CardFooter className="justify-end pt-0">
                         <Button
                             variant="ghost"
@@ -142,10 +151,10 @@ export function DuaCard({ dua, langs, showPosition = false }: Props) {
             </Card>
 
             <DuaDetailDialog
-                dua={dua}
+                dua={salahDua}
                 open={dialogOpen}
                 onOpenChange={setDialogOpen}
-                langs={langs}
+                langs={languages}
             />
         </>
     )

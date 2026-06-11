@@ -2,18 +2,18 @@ import { getSalahDuasBySalahPosition } from '#/lib/salah-duas'
 import { getSalahPosition } from '#/lib/salah-positions'
 import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 
-import { DuaCard } from '#/components/duas/DuaCard'
 import { ArabicText } from '#/components/elements/arabic-text'
 import { Separator } from '#/components/ui/separator'
+import { DuaCard } from './dua-card'
 
 export const DuaGroupSection = () => {
     const languages = useDuasBrowserStore((s) => s.languages)
-    const activePosition = useDuasBrowserStore((s) => s.salahPositionId)
-    const duas = getSalahDuasBySalahPosition(activePosition)
+    const salahPositionId = useDuasBrowserStore((s) => s.salahPositionId)
+    const salahDuas = getSalahDuasBySalahPosition(salahPositionId)
 
-    const position = getSalahPosition(activePosition)
+    const position = getSalahPosition(salahPositionId)
 
-    if (!position || duas.length === 0) return null
+    if (!position || salahDuas.length === 0) return null
 
     return (
         <section>
@@ -30,13 +30,13 @@ export const DuaGroupSection = () => {
                     <p className="text-muted-foreground text-sm">{position.description}</p>
                 </div>
                 <span className="border-border bg-muted/40 text-muted-foreground rounded-full border px-3 py-1 text-xs font-medium">
-                    {duas.length} {duas.length === 1 ? 'dua' : 'duas'}
+                    {salahDuas.length} {salahDuas.length === 1 ? 'dua' : 'duas'}
                 </span>
             </div>
 
             <div className="space-y-4">
-                {duas.map((dua) => (
-                    <DuaCard key={dua.id} dua={dua} langs={languages} />
+                {salahDuas.map((salahDua) => (
+                    <DuaCard key={salahDua.id} salahDua={salahDua} languages={languages} />
                 ))}
             </div>
 

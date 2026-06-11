@@ -1,11 +1,12 @@
+import type { TLanguage } from '#/types/languages'
+import type { TSalahDua } from '#/types/salah-duas'
+
 import { useState } from 'react'
 
 import { Button } from '#/components/ui/button'
-import type { TLanguage } from '#/types/languages'
-import type { TSalahDua } from '#/types/salah-duas'
 import { Check, Copy } from 'lucide-react'
 
-export const DuaCopyButton = ({
+export const CopyButton = ({
     salahDua,
     languages,
 }: {

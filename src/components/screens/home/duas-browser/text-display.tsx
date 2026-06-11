@@ -8,7 +8,7 @@ import { Separator } from '#/components/ui/separator'
 
 import { LANGUAGES } from '#/lib/languages'
 
-export const DuaTextDisplay = ({
+export const TextDisplay = ({
     salahDua,
     anguages,
 }: {
@@ -35,7 +35,12 @@ export const DuaTextDisplay = ({
                                         isRtl && 'border-r-2 border-l-0 pr-4 pl-0',
                                     )}
                                 >
-                                    <div className={cn("mb-1 flex items-center gap-2", isRtl && 'flex-row-reverse')}>
+                                    <div
+                                        className={cn(
+                                            'mb-1 flex items-center gap-2',
+                                            isRtl && 'flex-row-reverse',
+                                        )}
+                                    >
                                         <span className="text-primary text-[10px] font-semibold tracking-wider uppercase">
                                             {l.code}
                                         </span>
@@ -43,7 +48,12 @@ export const DuaTextDisplay = ({
                                             {l.label}
                                         </span>
                                     </div>
-                                    <p className={cn("text-muted-foreground mb-2 font-mono text-xs leading-relaxed", isRtl && 'text-right')}>
+                                    <p
+                                        className={cn(
+                                            'text-muted-foreground mb-2 font-mono text-xs leading-relaxed',
+                                            isRtl && 'text-right',
+                                        )}
+                                    >
                                         {salahDua.languages[l.code].transliteration}
                                     </p>
                                     <p

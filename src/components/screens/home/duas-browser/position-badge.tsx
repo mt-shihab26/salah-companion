@@ -5,7 +5,7 @@ import { cn } from '#/lib/utils'
 
 import { Badge } from '#/components/ui/badge'
 
-export const DuaPositionBadge = ({
+export const PositionBadge = ({
     positionId,
     className,
 }: {

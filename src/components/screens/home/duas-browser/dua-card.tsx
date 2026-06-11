@@ -2,7 +2,6 @@ import {
     Card,
     CardAction,
     CardContent,
-    CardDescription,
     CardFooter,
     CardHeader,
     CardTitle,
@@ -15,15 +14,17 @@ import { useState } from 'react'
 
 import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
-import { Clock, ExternalLink } from 'lucide-react'
-import { DuaDetailDialog } from '../../../duas/DuaDetailDialog'
-import { DuaReferenceList } from '../../../duas/DuaReferenceList'
+import { ExternalLink } from 'lucide-react'
+import { AudioButton } from './audio-button'
 import { AudioPlayer } from './audio-player'
-import { DuaAudioPlayer } from './dua-audio-player'
-import { DuaCopyButton } from './dua-copy-button'
-import { DuaFavoriteButton } from './dua-favorite-button'
-import { DuaPositionBadge } from './dua-position-badge'
-import { DuaTextDisplay } from './dua-text-display'
+import { CopyButton } from './copy-button'
+import { DuaDetailDialog } from './DuaDetailDialog'
+import { DuaReferenceList } from './DuaReferenceList'
+import { FavoriteButton } from './favorite-button'
+import { Notes } from './notes'
+import { PositionBadge } from './position-badge'
+import { TextDisplay } from './text-display'
+import { WhenToRecite } from './when-to-recite'
 
 export const DuaCard = ({
     salahDua,
@@ -41,34 +42,28 @@ export const DuaCard = ({
             <Card className="border-border/60 overflow-hidden transition-shadow hover:shadow-md">
                 <CardHeader>
                     <div className="space-y-1.5">
-                        {showPosition && <DuaPositionBadge positionId={salahDua.positionId} />}
+                        {showPosition && <PositionBadge positionId={salahDua.positionId} />}
                         <CardTitle className="font-serif text-lg">{salahDua.label}</CardTitle>
-                        {salahDua.notes && <CardDescription>{salahDua.notes}</CardDescription>}
-                        {salahDua.whenToRecite && (
-                            <div className="border-primary/20 bg-primary/5 flex gap-2 rounded-md border p-2.5">
-                                <Clock className="text-primary mt-0.5 size-3.5 shrink-0" />
-                                <p className="text-muted-foreground text-xs leading-relaxed">
-                                    {salahDua.whenToRecite}
-                                </p>
-                            </div>
-                        )}
                     </div>
                     <CardAction className="flex items-center gap-1.5">
-                        <DuaFavoriteButton salahDua={salahDua} />
-                        <DuaCopyButton salahDua={salahDua} languages={languages} />
-                        <DuaAudioPlayer salahDua={salahDua} />
+                        <FavoriteButton salahDua={salahDua} />
+                        <CopyButton salahDua={salahDua} languages={languages} />
+                        <AudioButton salahDua={salahDua} />
                     </CardAction>
                 </CardHeader>
-
                 <CardContent className="space-y-4">
-                    <DuaTextDisplay salahDua={salahDua} anguages={languages} />
+                    <TextDisplay salahDua={salahDua} anguages={languages} />
+                    {salahDua.notes && <Notes text={salahDua.notes} />}
+                    {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
                 </CardContent>
 
-                {salahDua.references.length > 0 && (
+                {salahDua.references.length > 0 ? (
                     <>
                         <Separator />
                         <CardFooter className="flex items-center justify-between pt-4">
-                            <DuaReferenceList references={salahDua.references} />
+                            {salahDua.references.length > 0 && (
+                                <DuaReferenceList references={salahDua.references} />
+                            )}
                             <Button
                                 variant="ghost"
                                 size="sm"
@@ -80,9 +75,7 @@ export const DuaCard = ({
                             </Button>
                         </CardFooter>
                     </>
-                )}
-
-                {salahDua.references.length === 0 && (
+                ) : (
                     <CardFooter className="justify-end pt-0">
                         <Button
                             variant="ghost"

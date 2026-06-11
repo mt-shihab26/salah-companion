@@ -1,11 +1,12 @@
+import type { TSalahDua } from '#/types/salah-duas'
+
 import { cn } from '#/lib/utils'
 import { useDuaFavoritesStore } from '#/stores/dua-favorites-store'
 
 import { Button } from '#/components/ui/button'
-import type { TSalahDua } from '#/types/salah-duas'
 import { Heart } from 'lucide-react'
 
-export const DuaFavoriteButton = ({ salahDua }: { salahDua: TSalahDua }) => {
+export const FavoriteButton = ({ salahDua }: { salahDua: TSalahDua }) => {
     const { isFavorite, toggle } = useDuaFavoritesStore()
 
     const fav = isFavorite(salahDua.id)

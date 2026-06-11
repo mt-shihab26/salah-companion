@@ -14,10 +14,11 @@ import { LANGUAGES } from '#/lib/languages'
 import { cn } from '#/lib/utils'
 import type { TLanguage } from '#/types/languages'
 import type { TSalahDua } from '#/types/salah-duas'
-import { BookOpen, Check, Clock, Copy, Info, ScrollText } from 'lucide-react'
+import { BookOpen, Check, Copy, Info, ScrollText } from 'lucide-react'
 import { useState } from 'react'
-import { DuaAudioPlayer } from '../screens/home/duas-browser/dua-audio-player'
-import { DuaPositionBadge } from '../screens/home/duas-browser/dua-position-badge'
+import { AudioButton } from './audio-button'
+import { PositionBadge } from './position-badge'
+import { WhenToRecite } from './when-to-recite'
 
 interface Props {
     dua: TSalahDua
@@ -58,7 +59,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                 <DialogHeader className="border-b px-6 py-4">
                     <div className="flex flex-wrap items-start justify-between gap-3">
                         <div className="space-y-1.5">
-                            <DuaPositionBadge positionId={dua.positionId} />
+                            <PositionBadge positionId={dua.positionId} />
                             <DialogTitle className="font-serif text-xl">
                                 {dua.label ?? `Dua ${dua.variationIndex}`}
                             </DialogTitle>
@@ -69,7 +70,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                 </DialogDescription>
                             )}
                         </div>
-                        {dua.audioUrl && <DuaAudioPlayer salahDua={dua} />}
+                        {dua.audioUrl && <AudioButton salahDua={dua} />}
                     </div>
                 </DialogHeader>
 
@@ -106,14 +107,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                         {/* ── Text tab ─────────────────────────────────── */}
                         <TabsContent value="text" className="m-0 space-y-6 px-6 py-5">
                             {/* When to recite */}
-                            {dua.whenToRecite && (
-                                <div className="border-primary/20 bg-primary/5 flex gap-3 rounded-lg border p-3">
-                                    <Clock className="text-primary mt-0.5 size-4 shrink-0" />
-                                    <p className="text-muted-foreground text-xs leading-relaxed">
-                                        {dua.whenToRecite}
-                                    </p>
-                                </div>
-                            )}
+                            {dua.whenToRecite && <WhenToRecite text={dua.whenToRecite} />}
 
                             {/* Arabic */}
                             <div className="bg-muted/40 rounded-lg p-5 text-center">

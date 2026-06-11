@@ -7,7 +7,7 @@ import { Play } from 'lucide-react'
 
 const BAR_DELAYS = ['0s', '0.2s', '0.1s', '0.3s']
 
-export const DuaAudioPlayer = ({ salahDua }: { salahDua: TSalahDua }) => {
+export const AudioButton = ({ salahDua }: { salahDua: TSalahDua }) => {
     const { currentDuaId, isPlaying, play } = useAudioStore()
 
     const isActive = currentDuaId === salahDua.id

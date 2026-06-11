@@ -14,25 +14,18 @@ export const sajdah6: TSalahDua = {
             translation:
                 'Glory be to the One Who possesses all power, all sovereignty, all greatness and all magnificence.',
         },
-        ar: {
-            transliteration:
-                'سُبْحَانَ ذِي الْجَبَرُوتِ وَالْمَلَكُوتِ وَالْكِبْرِيَاءِ وَالْعَظَمَةِ',
-            translation: 'سبحان ذي الجبروت والملكوت والكبرياء والعظمة.',
-        },
         fr: {
             transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
             translation:
                 'Gloire à Celui qui possède toute puissance, toute souveraineté, toute grandeur et toute magnificence.',
         },
         ur: {
-            transliteration:
-                'سُبحَانَ ذِی الجَبَرُوتِ وَالمَلَکُوتِ وَالکِبرِیَاءِ وَالعَظَمَہ',
+            transliteration: 'سُبحَانَ ذِی الجَبَرُوتِ وَالمَلَکُوتِ وَالکِبرِیَاءِ وَالعَظَمَہ',
             translation: 'پاک ہے وہ جو قدرت، بادشاہت، بڑائی اور عظمت والا ہے۔',
         },
         tr: {
             transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
-            translation:
-                "Tüm güce, egemenliğe, büyüklüğe ve azamete sahip Olan'ı tesbih ederim.",
+            translation: "Tüm güce, egemenliğe, büyüklüğe ve azamete sahip Olan'ı tesbih ederim.",
         },
         ms: {
             transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
@@ -51,8 +44,7 @@ export const sajdah6: TSalahDua = {
         },
         sw: {
             transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",
-            translation:
-                'Utukufu wa Mwenye nguvu zote, ufalme wote, ukuu wote na utukufu wote.',
+            translation: 'Utukufu wa Mwenye nguvu zote, ufalme wote, ukuu wote na utukufu wote.',
         },
         ha: {
             transliteration: "Subḥāna dhil-jabarūti wal-malakūti wal-kibriyā'i wal-'aẓamah",

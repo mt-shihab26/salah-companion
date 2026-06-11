@@ -15,12 +15,6 @@ export const qawmah4: TSalahDua = {
             translation:
                 'O Allah, to You is all praise that fills the heavens, fills the earth, and fills whatever else You will. O Allah, purify me with snow, hail and cold water. O Allah, cleanse me of sins and mistakes as a white garment is cleansed of filth.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُمَّ لَكَ الْحَمْدُ مِلْءَ السَّمَاءِ وَمِلْءَ الْأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ، اللَّهُمَّ طَهِّرْنِي بِالثَّلْجِ وَالْبَرَدِ وَالْمَاءِ الْبَارِدِ، اللَّهُمَّ طَهِّرْنِي مِنَ الذُّنُوبِ وَالْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ',
-            translation:
-                'اللهم لك الحمد ملء السماء وملء الأرض... اللهم طهرني بالثلج والبرد والماء البارد...',
-        },
         fr: {
             transliteration:
                 "Allāhumma lakal-ḥamdu mil'as-samā'i wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd, Allāhumma ṭahhirnī bith-thalji wal-baradi wal-mā'il-bārid, Allāhumma ṭahhirnī minadh-dhunūbi wal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas",

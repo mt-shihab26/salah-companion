@@ -1,4 +1,4 @@
-import { PageWrap } from '#/components/page-wrap'
+import { PageWrap } from '#/components/elements/page-wrap'
 import { Card, CardContent } from '#/components/ui/card'
 import { BookMarked, BookOpen, Languages, Volume2 } from 'lucide-react'
 

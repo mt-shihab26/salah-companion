@@ -15,12 +15,6 @@ export const sajdah8: TSalahDua = {
             translation:
                 'O Allah, I seek refuge in Your pleasure from Your wrath, and in Your forgiveness from Your punishment. I seek refuge in You from You. I cannot enumerate Your praise — You are as You have praised Yourself.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ، أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ',
-            translation:
-                'اللهم إني أعوذ برضاك من سخطك، وبمعافاتك من عقوبتك، وأعوذ بك منك، لا أحصي ثناءً عليك، أنت كما أثنيت على نفسك.',
-        },
         fr: {
             transliteration:
                 "Allāhumma innī a'ūdhu biriḍāka min sakhaṭik, wa bimu'āfātika min 'uqūbatik, wa a'ūdhu bika mink, lā uḥṣī thanā'an 'alayk, anta kamā athnayta 'alā nafsik",

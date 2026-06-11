@@ -15,11 +15,6 @@ export const istiftah3: TSalahDua = {
             translation:
                 'Glory be to You, O Allah, and praise. Blessed is Your name, and exalted is Your Majesty. There is no god worthy of worship except You.',
         },
-        ar: {
-            transliteration:
-                'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
-            translation: 'سبحانك اللهم وبحمدك، وتبارك اسمك، وتعالى جدك، ولا إله غيرك.',
-        },
         fr: {
             transliteration:
                 "Subḥānakallāhumma wa biḥamdik, wa tabārakasmuk, wa ta'ālā jadduk, wa lā ilāha ghayruk",

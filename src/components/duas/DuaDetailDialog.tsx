@@ -30,7 +30,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
     const [copied, setCopied] = useState(false)
     const [activeLang, setActiveLang] = useState<TLanguage>(langs[0] ?? 'en')
 
-    const allLangs = LANGUAGES.filter((l) => l.code !== 'ar')
+    const allLangs = LANGUAGES
     const activeLangMeta = LANGUAGES.find((l) => l.code === activeLang)
 
     async function copyToClipboard() {

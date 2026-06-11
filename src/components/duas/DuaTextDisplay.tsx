@@ -11,7 +11,7 @@ interface Props {
 }
 
 export function DuaTextDisplay({ dua, langs }: Props) {
-    const orderedLangs = LANGUAGES.filter((l) => langs.includes(l.code) && l.code !== 'ar')
+    const orderedLangs = LANGUAGES.filter((l) => langs.includes(l.code))
 
     return (
         <div className="space-y-5">

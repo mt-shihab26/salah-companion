@@ -11,12 +11,7 @@ export const sajdah3: TSalahDua = {
     languages: {
         en: {
             transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-            translation:
-                'Most Glorified, Most Holy, Lord of the angels and the Spirit (Jibreel).',
-        },
-        ar: {
-            transliteration: 'سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ',
-            translation: 'سبوح قدوس رب الملائكة والروح.',
+            translation: 'Most Glorified, Most Holy, Lord of the angels and the Spirit (Jibreel).',
         },
         fr: {
             transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",

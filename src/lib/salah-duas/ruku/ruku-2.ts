@@ -1,5 +1,5 @@
-import type { TSalahDua } from '#/types/salah-duas'
 import placeholderAudio from '#/assets/audios/subhanaka.m4a'
+import type { TSalahDua } from '#/types/salah-duas'
 
 export const ruku2: TSalahDua = {
     id: 'ruku-2',
@@ -11,10 +11,6 @@ export const ruku2: TSalahDua = {
         en: {
             transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
             translation: 'Most Glorified, Most Holy, Lord of the angels and the Spirit (Jibreel).',
-        },
-        ar: {
-            transliteration: 'سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ',
-            translation: 'سبوح قدوس رب الملائكة والروح.',
         },
         fr: {
             transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
@@ -46,11 +42,13 @@ export const ruku2: TSalahDua = {
         },
         ha: {
             transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-            translation: "Tsarkakakke sosai, Mai tsarki sosai, Ubangijin mala'iku da Ruhu (Jibrilu).",
+            translation:
+                "Tsarkakakke sosai, Mai tsarki sosai, Ubangijin mala'iku da Ruhu (Jibrilu).",
         },
         de: {
             transliteration: "Subbūḥun Quddūs, Rabbul-malā'ikati war-rūḥ",
-            translation: 'Höchst Glorreich, Höchst Heilig, Herr der Engel und des Geistes (Jibreel).',
+            translation:
+                'Höchst Glorreich, Höchst Heilig, Herr der Engel und des Geistes (Jibreel).',
         },
         hi: {
             transliteration: 'सुब्बूहुन क़ुद्दूस, रब्बुल मलाइकति वर्रूह',
@@ -68,6 +66,7 @@ export const ruku2: TSalahDua = {
         },
     ],
     notes: "A'ishah (رضي الله عنها) reported that the Prophet ﷺ frequently said this in his ruku and sujood. The word 'Subbuh' is an intensive form meaning one who is glorified to the utmost degree. 'Quddus' means utterly pure and free from all defects.",
-    whenToRecite: "Recited quietly during Ruku in every rak'ah, as an alternative to or alongside ruku-1. Can be combined with the primary tasbih. Particularly used in the night prayer (Tahajjud) where more duas are recited.",
+    whenToRecite:
+        "Recited quietly during Ruku in every rak'ah, as an alternative to or alongside ruku-1. Can be combined with the primary tasbih. Particularly used in the night prayer (Tahajjud) where more duas are recited.",
     audioUrl: placeholderAudio,
 }

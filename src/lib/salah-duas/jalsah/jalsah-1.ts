@@ -13,10 +13,6 @@ export const jalsah1: TSalahDua = {
             transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
             translation: 'My Lord, forgive me. My Lord, forgive me.',
         },
-        ar: {
-            transliteration: 'رَبِّ اغْفِرْ لِي، رَبِّ اغْفِرْ لِي',
-            translation: 'رب اغفر لي، رب اغفر لي.',
-        },
         fr: {
             transliteration: 'Rabbigh-fir lī, Rabbigh-fir lī',
             translation: 'Mon Seigneur, pardonne-moi. Mon Seigneur, pardonne-moi.',

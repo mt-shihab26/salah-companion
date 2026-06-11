@@ -15,12 +15,6 @@ export const qawmah2: TSalahDua = {
             translation:
                 'Allah hears the one who praises Him. O Allah, our Lord, to You is all praise that fills the heavens, fills the earth, and fills whatever else You will.',
         },
-        ar: {
-            transliteration:
-                'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الْأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ',
-            translation:
-                'سمع الله لمن حمده، اللهم ربنا لك الحمد ملء السماوات وملء الأرض وملء ما شئت من شيء بعد.',
-        },
         fr: {
             transliteration:
                 "Sami'allāhu liman ḥamidah, Allāhumma Rabbanā lakal-ḥamdu mil'as-samāwāti wa mil'al-arḍi wa mil'a mā shi'ta min shay'in ba'd",

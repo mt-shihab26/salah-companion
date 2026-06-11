@@ -15,11 +15,6 @@ export const taawwudh1: TSalahDua = {
             translation:
                 'I seek refuge in Allah from the accursed devil — from his incitement to madness (hamz), his puffing up with pride (nafkh), and his blowing of evil poetry (nafth).',
         },
-        ar: {
-            transliteration:
-                'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ',
-            translation: 'أعوذ بالله من الشيطان الرجيم، من همزه ونفخه ونفثه.',
-        },
         fr: {
             transliteration:
                 "A'ūdhu billāhi minash-shayṭānir-rajīm, min hamzihi wa nafkhihi wa nafthih",
@@ -75,8 +70,7 @@ export const taawwudh1: TSalahDua = {
                 'Ich suche Zuflucht bei Allah vor dem verfluchten Teufel — vor seiner Einflüsterung zum Wahnsinn, seiner Aufgeblasenheit mit Stolz und seinem Einblasen böser Verse.',
         },
         hi: {
-            transliteration:
-                'अऊज़ु बिल्लाहि मिनश्शैतानिर्रजीम, मिन हम्ज़िही व नफ़्खिही व नफ़्सिह',
+            transliteration: 'अऊज़ु बिल्लाहि मिनश्शैतानिर्रजीम, मिन हम्ज़िही व नफ़्खिही व नफ़्सिह',
             translation:
                 'मैं मरदूद शैतान से अल्लाह की पनाह मांगता हूं — उसके वसवसों, उसके घमंड और उसकी बुरी शायरी से।',
         },

@@ -1,4 +1,4 @@
-import { PageWrap } from '#/components/page-wrap'
+import { PageWrap } from '#/components/elements/page-wrap'
 import { Button } from '#/components/ui/button'
 import { ArrowRight, BookOpen, Sparkles } from 'lucide-react'
 

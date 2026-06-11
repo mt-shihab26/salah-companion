@@ -15,11 +15,6 @@ export const istiftahTahajjud: TSalahDua = {
             translation:
                 'O Allah, all praise is for You. You are the Light of the heavens and the earth and whoever is in them. All praise is for You; You are the Sustainer of the heavens and the earth and whoever is in them. All praise is for You; You are the Truth, Your promise is true, Your word is true, Your meeting is true, Paradise is true, Hellfire is true, the Prophets are true, Muhammad ﷺ is true, and the Hour is true. O Allah, to You I have submitted, in You I believe, upon You I rely, to You I turn in repentance, for Your sake I dispute, and to You I resort for judgment. Forgive me for what I have done and left undone, for what I have hidden and what I have shown. You are the One Who brings forward and the One Who puts back. There is no god worthy of worship except You.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ نُورُ السَّمَوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمَوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ أَنْتَ الْحَقُّ... لَا إِلَهَ إِلَّا أَنْتَ',
-            translation: 'اللهم لك الحمد أنت نور السماوات والأرض ومن فيهن... لا إله إلا أنت.',
-        },
         fr: {
             transliteration:
                 "Allāhumma lakal-ḥamdu anta nūrus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu anta qayyimus-samāwāti wal-arḍi wa man fīhinn, wa lakal-ḥamdu antal-ḥaqq, wa wa'duka ḥaqq, wa qawluka ḥaqq, wa liqā'uka ḥaqq, wal-jannatu ḥaqq, wan-nāru ḥaqq, wan-nabiyyūna ḥaqq, wa Muḥammadun ḥaqq, was-sā'atu ḥaqq. Allāhumma laka aslamtu, wa bika āmantu, wa 'alayka tawakkaltu, wa ilayka anabtu, wa bika khāṣamtu, wa ilayka ḥākamtu. Faghfir lī mā qaddamtu wa mā akhkhartu, wa mā asrartu wa mā a'lantu, antal-muqaddimu wa antal-mu'akhkhir, lā ilāha illā ant",

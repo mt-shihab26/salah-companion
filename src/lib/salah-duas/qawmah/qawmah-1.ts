@@ -11,12 +11,7 @@ export const qawmah1: TSalahDua = {
     languages: {
         en: {
             transliteration: "Sami'allāhu liman ḥamidah, Rabbanā wa lakal-ḥamd",
-            translation:
-                'Allah hears the one who praises Him. Our Lord, and to You is all praise.',
-        },
-        ar: {
-            transliteration: 'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ، رَبَّنَا وَلَكَ الْحَمْدُ',
-            translation: 'سمع الله لمن حمده، ربنا ولك الحمد.',
+            translation: 'Allah hears the one who praises Him. Our Lord, and to You is all praise.',
         },
         fr: {
             transliteration: "Sami'allāhu liman ḥamidah, Rabbanā wa lakal-ḥamd",

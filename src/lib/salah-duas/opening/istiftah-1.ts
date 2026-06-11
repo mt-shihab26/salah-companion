@@ -15,11 +15,6 @@ export const istiftah1: TSalahDua = {
             translation:
                 'Allah is truly the Greatest; much praise be to Allah; and glory be to Allah in the morning and the evening.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُ أَكْبَرُ كَبِيرًا، وَالْحَمْدُ لِلَّهِ كَثِيرًا، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا',
-            translation: 'الله أكبر كبيراً، والحمد لله كثيراً، وسبحان الله بكرةً وأصيلاً.',
-        },
         fr: {
             transliteration:
                 'Allāhu akbaru kabīrā, wal-ḥamdu lillāhi kathīrā, wa subḥānallāhi bukratan wa aṣīlā',

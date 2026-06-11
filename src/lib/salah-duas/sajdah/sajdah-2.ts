@@ -14,10 +14,6 @@ export const sajdah2: TSalahDua = {
             translation:
                 'O Allah, forgive me for what I have done in secret and what I have done openly.',
         },
-        ar: {
-            transliteration: 'اللَّهُمَّ اغْفِرْ لِي مَا أَسْرَرْتُ وَمَا أَعْلَنْتُ',
-            translation: 'اللهم اغفر لي ما أسررت وما أعلنت.',
-        },
         fr: {
             transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
             translation:
@@ -25,8 +21,7 @@ export const sajdah2: TSalahDua = {
         },
         ur: {
             transliteration: 'اَللّٰہُمَّ اغفِر لِی مَا اَسرَرتُ وَمَا اَعلَنت',
-            translation:
-                'اے اللہ! مجھے معاف فرما جو میں نے چھپ کر کیا اور جو میں نے علانیہ کیا۔',
+            translation: 'اے اللہ! مجھے معاف فرما جو میں نے چھپ کر کیا اور جو میں نے علانیہ کیا۔',
         },
         tr: {
             transliteration: "Allāhummaghfir lī mā asrartu wa mā a'lant",
@@ -63,8 +58,7 @@ export const sajdah2: TSalahDua = {
         },
         hi: {
             transliteration: 'अल्लाहुम्मग्फ़िर ली मा असरर्तु व मा अलन्त',
-            translation:
-                'ऐ अल्लाह! मुझे उन सब बातों के लिए माफ़ कर जो मैंने छुपकर और खुलकर किया।',
+            translation: 'ऐ अल्लाह! मुझे उन सब बातों के लिए माफ़ कर जो मैंने छुपकर और खुलकर किया।',
         },
     },
     references: [

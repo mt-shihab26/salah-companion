@@ -15,12 +15,6 @@ export const qawmah3: TSalahDua = {
             translation:
                 "Our Lord, to You is all praise that fills the heavens, fills the earth, and fills whatever else You will. You are the Most Worthy of praise and glory — the most deserving of what a servant can say. We are all Your servants. O Allah, none can withhold what You give, none can give what You withhold, and no person's wealth or status can benefit them against You.",
         },
-        ar: {
-            transliteration:
-                'رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَالْأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ، أَهْلَ الثَّنَاءِ وَالْمَجْدِ، أَحَقُّ مَا قَالَ الْعَبْدُ، وَكُلُّنَا لَكَ عَبْدٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ',
-            translation:
-                'ربنا لك الحمد ملء السماوات والأرض وملء ما شئت من شيء بعد، أهل الثناء والمجد، أحق ما قال العبد، وكلنا لك عبد...',
-        },
         fr: {
             transliteration:
                 "Rabbanā lakal-ḥamdu mil'as-samāwāti wal-arḍi wa mil'a mā shi'ta min shay'in ba'd, ahlath-thanā'i wal-majd, aḥaqqu mā qālal-'abd, wa kullunā laka 'abd. Allāhumma lā māni'a limā a'ṭayt, wa lā mu'ṭiya limā mana't, wa lā yanfa'u dhal-jaddi minkal-jadd",

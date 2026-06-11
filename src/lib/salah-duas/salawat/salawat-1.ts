@@ -15,12 +15,6 @@ export const salawat1: TSalahDua = {
             translation:
                 'O Allah, send Your mercy upon Muhammad and upon the family of Muhammad, just as You sent Your mercy upon Ibrahim and upon the family of Ibrahim. Verily, You are full of praise, full of glory. O Allah, send Your blessings upon Muhammad and upon the family of Muhammad, just as You sent Your blessings upon Ibrahim and upon the family of Ibrahim. Verily, You are full of praise, full of glory.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ',
-            translation:
-                'اللهم صل على محمد وعلى آل محمد، كما صليت على إبراهيم وعلى آل إبراهيم، إنك حميد مجيد...',
-        },
         fr: {
             transliteration:
                 "Allāhumma ṣalli 'alā Muḥammadin wa 'alā āli Muḥammad, kamā ṣallayta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd. Allāhumma bārik 'alā Muḥammadin wa 'alā āli Muḥammad, kamā bārakta 'alā Ibrāhīma wa 'alā āli Ibrāhīm, innaka Ḥamīdun Majīd",

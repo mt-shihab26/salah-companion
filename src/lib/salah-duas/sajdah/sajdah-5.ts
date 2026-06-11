@@ -11,13 +11,7 @@ export const sajdah5: TSalahDua = {
     languages: {
         en: {
             transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
-            translation:
-                'Glory be to You, O Allah our Lord, and all praise. O Allah, forgive me.',
-        },
-        ar: {
-            transliteration:
-                'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ، اللَّهُمَّ اغْفِرْ لِي',
-            translation: 'سبحانك اللهم ربنا وبحمدك، اللهم اغفر لي.',
+            translation: 'Glory be to You, O Allah our Lord, and all praise. O Allah, forgive me.',
         },
         fr: {
             transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',
@@ -26,8 +20,7 @@ export const sajdah5: TSalahDua = {
         },
         ur: {
             transliteration: 'سُبحَانَکَ اللّٰہُمَّ رَبَّنَا وَبِحَمدِک، اَللّٰہُمَّ اغفِر لِی',
-            translation:
-                'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے بخش دے۔',
+            translation: 'اے اللہ! اے ہمارے رب! تو پاک ہے اور تیری حمد ہے، اے اللہ! مجھے بخش دے۔',
         },
         tr: {
             transliteration: 'Subḥānakallāhumma Rabbanā wa biḥamdika, Allāhummagh-fir lī',

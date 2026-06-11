@@ -15,12 +15,6 @@ export const sajdah10: TSalahDua = {
             translation:
                 'O Allah, place light in my heart, light in my hearing, light in my sight, light on my right, light on my left, light in front of me, light behind me, light above me, light below me, and grant me light.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًا، وَفِي سَمْعِي نُورًا، وَفِي بَصَرِي نُورًا، وَعَنْ يَمِينِي نُورًا، وَعَنْ يَسَارِي نُورًا، وَأَمَامِي نُورًا، وَخَلْفِي نُورًا، وَفَوْقِي نُورًا، وَتَحْتِي نُورًا، وَاجْعَلْ لِي نُورًا',
-            translation:
-                'اللهم اجعل في قلبي نوراً، وفي سمعي نوراً، وفي بصري نوراً... واجعل لي نوراً.',
-        },
         fr: {
             transliteration:
                 "Allāhummaj'al fī qalbī nūrā, wa fī sam'ī nūrā, wa fī baṣarī nūrā, wa 'an yamīnī nūrā, wa 'an yasārī nūrā, wa amāmī nūrā, wa khalfī nūrā, wa fawqī nūrā, wa taḥtī nūrā, waj'al lī nūrā",

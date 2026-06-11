@@ -15,12 +15,6 @@ export const istiftah2: TSalahDua = {
             translation:
                 'O Allah, put a great distance between me and my sins, as great as the distance You have made between the East and the West. O Allah, cleanse me of sin as a white garment is cleansed of filth. O Allah, wash away my sins with water, snow and hail.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنَ الْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، اللَّهُمَّ اغْسِلْ خَطَايَايَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ',
-            translation:
-                'اللهم باعد بيني وبين خطاياي كما باعدت بين المشرق والمغرب، اللهم نقِّني من الخطايا كما ينقى الثوب الأبيض من الدنس، اللهم اغسل خطاياي بالماء والثلج والبرد.',
-        },
         fr: {
             transliteration:
                 "Allāhumma bā'id baynī wa bayna khaṭāyāya kamā bā'adta baynal-mashriqi wal-maghrib, Allāhumma naqqinī minal-khaṭāyā kamā yunaqqath-thawbul-abyaḍu minad-danas, Allāhummaghsil khaṭāyāya bil-māʾi wath-thalji wal-barad",

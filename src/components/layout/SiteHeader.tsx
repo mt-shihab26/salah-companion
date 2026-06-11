@@ -1,4 +1,4 @@
-import { PageWrap } from '#/components/page-wrap'
+import { PageWrap } from '#/components/elements/page-wrap'
 import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
 import { useTheme } from '#/hooks/use-theme'

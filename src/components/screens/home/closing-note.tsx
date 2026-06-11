@@ -1,4 +1,4 @@
-import { PageWrap } from '#/components/page-wrap'
+import { PageWrap } from '#/components/elements/page-wrap'
 
 export const ClosingNote = () => {
     return (

@@ -14,10 +14,6 @@ export const sajdah4: TSalahDua = {
             translation:
                 'Glory be to You, and all praise. There is no god worthy of worship except You.',
         },
-        ar: {
-            transliteration: 'سُبْحَانَكَ وَبِحَمْدِكَ لَا إِلَهَ إِلَّا أَنْتَ',
-            translation: 'سبحانك وبحمدك لا إله إلا أنت.',
-        },
         fr: {
             transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
             translation:

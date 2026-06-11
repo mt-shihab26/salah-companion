@@ -15,11 +15,6 @@ export const sajdah9: TSalahDua = {
             translation:
                 'O Allah, to You I prostrate, in You I believe, to You I submit. My face prostrates before the One Who created it and shaped it, and Who opened its hearing and sight. Blessed is Allah, the Best of creators.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُمَّ لَكَ سَجَدْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ',
-            translation: 'اللهم لك سجدت، وبك آمنت، ولك أسلمت... تبارك الله أحسن الخالقين.',
-        },
         fr: {
             transliteration:
                 "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhiya lilladhī khalaqahu wa ṣawwarahu wa shaqqa sam'ahu wa baṣarah, tabārakallāhu aḥsanul-khāliqīn",

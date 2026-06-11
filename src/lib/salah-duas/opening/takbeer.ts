@@ -13,10 +13,6 @@ export const takbeer: TSalahDua = {
             transliteration: 'Allāhu Akbar',
             translation: 'Allah is the Greatest.',
         },
-        ar: {
-            transliteration: 'ٱللَّهُ أَكْبَرُ',
-            translation: 'الله أكبر.',
-        },
         fr: {
             transliteration: 'Allāhu Akbar',
             translation: 'Allah est le Plus Grand.',

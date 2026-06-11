@@ -15,11 +15,6 @@ export const sajdah7: TSalahDua = {
             translation:
                 'O Allah, forgive me all of my sins — the small and the great, the first and the last, the open and the secret.',
         },
-        ar: {
-            transliteration:
-                'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ',
-            translation: 'اللهم اغفر لي ذنبي كله، دقه وجله، وأوله وآخره، وعلانيته وسره.',
-        },
         fr: {
             transliteration:
                 "Allāhummaghfir lī dhanbī kullahu, diqqahu wa jillahu, wa awwalahu wa ākhirah, wa 'alāniyatahu wa sirrah",

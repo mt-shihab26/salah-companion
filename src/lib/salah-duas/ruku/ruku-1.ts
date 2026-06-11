@@ -13,10 +13,6 @@ export const ruku1: TSalahDua = {
             transliteration: "Subḥāna Rabbiy al-'Aẓīm",
             translation: 'Glory be to my Lord, the Most Great.',
         },
-        ar: {
-            transliteration: 'سُبْحَانَ رَبِّيَ الْعَظِيمِ',
-            translation: 'سبحان ربي العظيم.',
-        },
         fr: {
             transliteration: "Subḥāna Rabbiy al-'Aẓīm",
             translation: 'Gloire à mon Seigneur, le Plus Grand.',

@@ -1,5 +1,5 @@
-import type { TSalahDua } from '#/types/salah-duas'
 import placeholderAudio from '#/assets/audios/subhanaka.m4a'
+import type { TSalahDua } from '#/types/salah-duas'
 
 export const ruku3: TSalahDua = {
     id: 'ruku-3',
@@ -10,15 +10,13 @@ export const ruku3: TSalahDua = {
     languages: {
         en: {
             transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-            translation: 'Glory be to You and all praise. There is no god worthy of worship except You.',
-        },
-        ar: {
-            transliteration: 'سُبْحَانَكَ وَبِحَمْدِكَ لَا إِلَهَ إِلَّا أَنْتَ',
-            translation: 'سبحانك وبحمدك لا إله إلا أنت.',
+            translation:
+                'Glory be to You and all praise. There is no god worthy of worship except You.',
         },
         fr: {
             transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-            translation: "Gloire à Toi et toute louange T'appartient. Il n'y a pas de dieu digne d'adoration excepté Toi.",
+            translation:
+                "Gloire à Toi et toute louange T'appartient. Il n'y a pas de dieu digne d'adoration excepté Toi.",
         },
         ur: {
             transliteration: 'سُبحَانَکَ وَبِحَمدِکَ لَا اِلٰہَ اِلَّا اَنت',
@@ -30,7 +28,8 @@ export const ruku3: TSalahDua = {
         },
         ms: {
             transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-            translation: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            translation:
+                'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
         },
         bn: {
             transliteration: 'সুবহানাকা ওয়া বিহামদিকা লা ইলাহা ইল্লা আনত',
@@ -38,19 +37,23 @@ export const ruku3: TSalahDua = {
         },
         id: {
             transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-            translation: 'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
+            translation:
+                'Maha Suci Engkau dan dengan memuji-Mu. Tiada tuhan yang berhak disembah melainkan Engkau.',
         },
         sw: {
             transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-            translation: 'Utukufu ni Wako na sifa ni Zako. Hapana mungu anayestahili kuabudiwa isipokuwa Wewe.',
+            translation:
+                'Utukufu ni Wako na sifa ni Zako. Hapana mungu anayestahili kuabudiwa isipokuwa Wewe.',
         },
         ha: {
             transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-            translation: 'Tsarki ta tabbata a gare Ka da yabonka. Babu abin bautawa da ya dace sai Kai.',
+            translation:
+                'Tsarki ta tabbata a gare Ka da yabonka. Babu abin bautawa da ya dace sai Kai.',
         },
         de: {
             transliteration: 'Subḥānaka wa biḥamdika lā ilāha illā ant',
-            translation: 'Gepriesen seist Du und aller Lobpreis gehört Dir. Es gibt keinen Gott außer Dir.',
+            translation:
+                'Gepriesen seist Du und aller Lobpreis gehört Dir. Es gibt keinen Gott außer Dir.',
         },
         hi: {
             transliteration: 'सुब्हानक व बिहम्दिक ला इलाह इल्ला अन्त',
@@ -68,6 +71,7 @@ export const ruku3: TSalahDua = {
         },
     ],
     notes: "A'ishah (رضي الله عنها) reported that the Prophet ﷺ recited this frequently in his ruku and sujood, implementing the Quranic command to glorify (Al-Nasr 110:3).",
-    whenToRecite: "Recited quietly during Ruku in every rak'ah. Can be used as the sole tasbih or added after ruku-1. Also recited during Sujood (sajdah-4 uses identical wording).",
+    whenToRecite:
+        "Recited quietly during Ruku in every rak'ah. Can be used as the sole tasbih or added after ruku-1. Also recited during Sujood (sajdah-4 uses identical wording).",
     audioUrl: placeholderAudio,
 }

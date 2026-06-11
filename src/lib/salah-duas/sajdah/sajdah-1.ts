@@ -13,10 +13,6 @@ export const sajdah1: TSalahDua = {
             transliteration: "Subḥāna Rabbiy al-A'lā",
             translation: 'Glory be to my Lord, the Most High.',
         },
-        ar: {
-            transliteration: 'سُبْحَانَ رَبِّيَ الْأَعْلَى',
-            translation: 'سبحان ربي الأعلى.',
-        },
         fr: {
             transliteration: "Subḥāna Rabbiy al-A'lā",
             translation: 'Gloire à mon Seigneur, le Très Haut.',

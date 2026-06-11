@@ -11,7 +11,7 @@ import {
 import type { TLanguage } from '#/types/languages'
 import type { TSalahDua } from '#/types/salah-duas'
 
-import { useDuaFavorites } from '#/hooks/use-dua-favorites'
+import { useDuaFavoritesStore } from '#/stores/dua-favorites-store'
 import { cn } from '#/lib/utils'
 import { useState } from 'react'
 
@@ -35,7 +35,7 @@ export const DuaCard = ({
 }) => {
     const [dialogOpen, setDialogOpen] = useState(false)
     const [copied, setCopied] = useState(false)
-    const { isFavorite, toggle } = useDuaFavorites()
+    const { isFavorite, toggle } = useDuaFavoritesStore()
     const fav = isFavorite(salahDua.id)
 
     async function copy() {

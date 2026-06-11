@@ -64,7 +64,7 @@ export const AudioPlayer = () => {
                     ))}
                 </div>
                 <div className="flex flex-1 flex-col gap-1.5">
-                    <div className="relative flex items-center justify-center">
+                    <div className="relative flex items-center h-4">
                         <div className="bg-primary/20 h-1 w-full overflow-hidden rounded-full">
                             <div
                                 className="bg-primary h-full rounded-full transition-all duration-100"
@@ -78,7 +78,7 @@ export const AudioPlayer = () => {
                             step={0.1}
                             value={currentTime}
                             onChange={(e) => seek(Number(e.target.value))}
-                            className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+                            className="absolute inset-0 w-full cursor-pointer opacity-0"
                             aria-label="Seek"
                         />
                     </div>

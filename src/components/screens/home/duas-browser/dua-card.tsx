@@ -15,13 +15,14 @@ import { useState } from 'react'
 
 import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
-import { Check, Clock, Copy, ExternalLink } from 'lucide-react'
+import { Clock, ExternalLink } from 'lucide-react'
 import { DuaAudioPlayer } from '../../../duas/DuaAudioPlayer'
 import { DuaDetailDialog } from '../../../duas/DuaDetailDialog'
 import { DuaPositionBadge } from '../../../duas/DuaPositionBadge'
 import { DuaReferenceList } from '../../../duas/DuaReferenceList'
 import { DuaTextDisplay } from '../../../duas/DuaTextDisplay'
 import { DuaFavoriteButton } from './dua-favorite-button'
+import { DuaCopyButton } from './dua-copy-button'
 
 export const DuaCard = ({
     salahDua,
@@ -33,25 +34,17 @@ export const DuaCard = ({
     showPosition?: boolean
 }) => {
     const [dialogOpen, setDialogOpen] = useState(false)
-    const [copied, setCopied] = useState(false)
 
-    async function copy() {
+    const copyText = (() => {
         const lang = languages[0] ?? 'en'
-        const text = [
+        return [
             salahDua.arabic,
             '',
             salahDua.languages[lang].transliteration,
             '',
             salahDua.languages[lang].translation,
         ].join('\n')
-        try {
-            await navigator.clipboard.writeText(text)
-            setCopied(true)
-            setTimeout(() => setCopied(false), 2000)
-        } catch {
-            // ignore
-        }
-    }
+    })()
 
     return (
         <>
@@ -70,19 +63,7 @@ export const DuaCard = ({
                     </div>
                     <CardAction className="flex items-center gap-1.5">
                         <DuaFavoriteButton duaId={salahDua.id} />
-                        <Button
-                            variant="ghost"
-                            size="icon"
-                            onClick={copy}
-                            aria-label="Copy dua text"
-                            className="text-muted-foreground size-8"
-                        >
-                            {copied ? (
-                                <Check className="size-4 text-emerald-500" />
-                            ) : (
-                                <Copy className="size-4" />
-                            )}
-                        </Button>
+                        <DuaCopyButton text={copyText} />
                         {salahDua.audioUrl && (
                             <DuaAudioPlayer duaId={salahDua.id} audioUrl={salahDua.audioUrl} />
                         )}

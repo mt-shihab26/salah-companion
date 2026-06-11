@@ -12,7 +12,7 @@ const fmt = (s: number) => {
 
 const BAR_DELAYS = ['0s', '0.25s', '0.1s', '0.35s', '0.18s']
 
-export const GlobalAudioPlayer = () => {
+export const AudioPlayer = () => {
     const { currentDuaId, currentUrl, isPlaying, currentTime, duration, pause, stop, seek, play } =
         useAudioStore()
 

@@ -21,8 +21,8 @@ import { DuaDetailDialog } from '../../../duas/DuaDetailDialog'
 import { DuaPositionBadge } from '../../../duas/DuaPositionBadge'
 import { DuaReferenceList } from '../../../duas/DuaReferenceList'
 import { DuaTextDisplay } from '../../../duas/DuaTextDisplay'
-import { DuaFavoriteButton } from './dua-favorite-button'
 import { DuaCopyButton } from './dua-copy-button'
+import { DuaFavoriteButton } from './dua-favorite-button'
 
 export const DuaCard = ({
     salahDua,
@@ -34,17 +34,6 @@ export const DuaCard = ({
     showPosition?: boolean
 }) => {
     const [dialogOpen, setDialogOpen] = useState(false)
-
-    const copyText = (() => {
-        const lang = languages[0] ?? 'en'
-        return [
-            salahDua.arabic,
-            '',
-            salahDua.languages[lang].transliteration,
-            '',
-            salahDua.languages[lang].translation,
-        ].join('\n')
-    })()
 
     return (
         <>
@@ -62,8 +51,8 @@ export const DuaCard = ({
                         )}
                     </div>
                     <CardAction className="flex items-center gap-1.5">
-                        <DuaFavoriteButton duaId={salahDua.id} />
-                        <DuaCopyButton text={copyText} />
+                        <DuaFavoriteButton salahDua={salahDua} />
+                        <DuaCopyButton salahDua={salahDua} languages={languages} />
                         {salahDua.audioUrl && (
                             <DuaAudioPlayer duaId={salahDua.id} audioUrl={salahDua.audioUrl} />
                         )}

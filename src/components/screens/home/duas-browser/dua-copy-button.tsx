@@ -1,12 +1,29 @@
 import { useState } from 'react'
 
 import { Button } from '#/components/ui/button'
+import type { TLanguage } from '#/types/languages'
+import type { TSalahDua } from '#/types/salah-duas'
 import { Check, Copy } from 'lucide-react'
 
-export const DuaCopyButton = ({ text }: { text: string }) => {
+export const DuaCopyButton = ({
+    salahDua,
+    languages,
+}: {
+    salahDua: TSalahDua
+    languages: TLanguage[]
+}) => {
     const [copied, setCopied] = useState(false)
 
     async function handleCopy() {
+        const lang = languages[0] ?? 'en'
+        const text = [
+            salahDua.arabic,
+            '',
+            salahDua.languages[lang].transliteration,
+            '',
+            salahDua.languages[lang].translation,
+        ].join('\n')
+
         try {
             await navigator.clipboard.writeText(text)
             setCopied(true)

@@ -10,7 +10,7 @@ const FEATURES = [
     },
     {
         icon: Languages,
-        title: '6 Translations',
+        title: 'Translations',
         description: 'Read multiple translations side-by-side — just like quran.com.',
     },
     {

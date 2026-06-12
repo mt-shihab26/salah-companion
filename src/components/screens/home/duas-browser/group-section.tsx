@@ -6,7 +6,7 @@ import { ArabicText } from '#/components/elements/arabic-text'
 import { Route } from '#/routes/index'
 import { DuaCard } from './dua-card'
 
-export const DuaGroupSection = () => {
+export const GroupSection = () => {
     const search = Route.useSearch()
 
     const languages = useDuasBrowserStore((s) => s.languages)

@@ -1,10 +1,10 @@
 import { getSalahPosition } from '#/lib/salah-positions'
-import { Route } from '#/routes/index'
 
 import { PageWrap } from '#/components/elements/page-wrap'
-import { DuaGroupSection } from './dua-group-section'
-import { DuaPositionNav } from './dua-position-nav'
-import { DuaTranslationPicker } from './dua-translation-picker'
+import { Route } from '#/routes/index'
+import { GroupSection } from './group-section'
+import { PositionSidebar } from './position-sidebar'
+import { TranslationPicker } from './translation-picker'
 import { ZenView } from './zen-view'
 
 export const DuasBrowser = () => {
@@ -37,17 +37,17 @@ export const DuasBrowser = () => {
                             {salahPosition?.name}
                         </div>
                     </div>
-                    <DuaTranslationPicker />
+                    <TranslationPicker />
                 </div>
             </div>
             <div className="flex gap-8">
                 <aside className="hidden w-66 shrink-0 lg:block">
                     <div className="border-border/60 bg-card/40 sticky top-20 h-[calc(100vh-6rem)] overflow-hidden rounded-2xl border p-2">
-                        <DuaPositionNav />
+                        <PositionSidebar />
                     </div>
                 </aside>
                 <div className="min-w-0 flex-1">
-                    <DuaGroupSection />
+                    <GroupSection />
                 </div>
             </div>
         </PageWrap>

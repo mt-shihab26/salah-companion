@@ -64,7 +64,7 @@ export const AudioPlayer = () => {
                     ))}
                 </div>
                 <div className="flex flex-1 flex-col gap-1.5">
-                    <div className="relative flex items-center h-4">
+                    <div className="relative flex h-4 items-center">
                         <div className="bg-primary/20 h-1 w-full overflow-hidden rounded-full">
                             <div
                                 className="bg-primary h-full rounded-full transition-all duration-100"

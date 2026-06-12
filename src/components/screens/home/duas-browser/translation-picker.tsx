@@ -8,7 +8,7 @@ import { Check, Languages } from 'lucide-react'
 
 import { LANGUAGES } from '#/lib/languages'
 
-export const DuaTranslationPicker = () => {
+export const TranslationPicker = () => {
     const languages = useDuasBrowserStore((s) => s.languages)
     const toggleLanguage = useDuasBrowserStore((s) => s.toggleLanguage)
 
@@ -19,12 +19,8 @@ export const DuaTranslationPicker = () => {
 
     return (
         <Popover>
-            <PopoverTrigger asChild className="w-full max-w-72 justify-end">
-                <Button
-                    variant="outline"
-                    size="sm"
-                    className="h-9 w-full justify-between gap-2 rounded-full pr-2.5 pl-3"
-                >
+            <PopoverTrigger asChild className="max-w-72 justify-end">
+                <Button variant="outline" size="sm" className="h-9 gap-2 rounded-full pr-2.5 pl-3">
                     <Languages className="text-primary size-4" />
                     <div className="flex gap-1">
                         <span className="hidden max-w-52 truncate sm:inline">
@@ -47,7 +43,10 @@ export const DuaTranslationPicker = () => {
                         Pick one or more to display alongside the Arabic.
                     </p>
                 </div>
-                <ul className="max-h-72 space-y-1.5 overflow-y-auto p-1.5">
+                <ul
+                    className="max-h-72 space-y-1.5 overflow-y-auto p-1.5"
+                    onWheel={(e) => e.stopPropagation()}
+                >
                     {LANGUAGES.map((l) => {
                         const active = languages.includes(l.code)
                         return (

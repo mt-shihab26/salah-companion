@@ -20,7 +20,8 @@ export const ZenView = () => {
 
     if (!zenDua) return null
 
-    const close = () => navigate({ search: (prev) => ({ ...prev, dua: undefined }), resetScroll: false })
+    const close = () =>
+        navigate({ search: (prev) => ({ ...prev, dua: undefined }), resetScroll: false })
 
     return (
         <Sheet open onOpenChange={(open) => !open && close()}>

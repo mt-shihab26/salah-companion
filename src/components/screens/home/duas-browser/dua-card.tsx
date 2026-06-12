@@ -14,12 +14,12 @@ import { ArabicText } from '#/components/elements/arabic-text'
 import { Separator } from '#/components/ui/separator'
 import { AudioButton } from './audio-button'
 import { CopyButton } from './copy-button'
-import { DuaTranslationPicker } from './dua-translation-picker'
 import { FavoriteButton } from './favorite-button'
 import { LanguagesDisplay } from './languages-display'
 import { Notes } from './notes'
 import { PositionBadge } from './position-badge'
 import { ReferenceList } from './reference-list'
+import { TranslationPicker } from './translation-picker'
 import { WhenToRecite } from './when-to-recite'
 import { ZenButton } from './zen-button'
 
@@ -40,7 +40,7 @@ export const DuaCard = ({
                     <CardTitle className="font-serif text-lg">{salahDua.label}</CardTitle>
                 </div>
                 <div className="space-y-4">
-                    {zenView && <DuaTranslationPicker />}
+                    {zenView && <TranslationPicker />}
                     <CardAction className="flex items-center gap-1.5">
                         <FavoriteButton salahDua={salahDua} />
                         <CopyButton salahDua={salahDua} languages={languages} />

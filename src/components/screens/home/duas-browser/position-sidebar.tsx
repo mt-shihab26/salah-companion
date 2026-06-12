@@ -6,7 +6,7 @@ import { Route } from '#/routes/index'
 
 import { SALAH_POSITIONS } from '#/lib/salah-positions'
 
-export const DuaPositionNav = () => {
+export const PositionSidebar = () => {
     const search = Route.useSearch()
     const navigate = Route.useNavigate()
 

@@ -12,7 +12,9 @@ export const ZenButton = ({ salahDua }: { salahDua: TSalahDua }) => {
         <Button
             variant="ghost"
             size="icon"
-            onClick={() => navigate({ search: (v) => ({ ...v, dua: salahDua.id }) })}
+            onClick={() =>
+                navigate({ search: (v) => ({ ...v, dua: salahDua.id }), resetScroll: false })
+            }
             className="text-muted-foreground ml-auto size-6 shrink-0"
         >
             <Maximize2 className="size-3.5" />

@@ -34,7 +34,7 @@ export const ZenView = () => {
                     </Button>
                 </SheetClose>
                 <ScrollArea className="h-full">
-                    <div className="mx-auto w-full max-w-2xl px-6 py-16">
+                    <div className="mx-auto w-full max-w-4xl px-6 py-16">
                         <DuaCard salahDua={zenDua} languages={languages} zenView />
                     </div>
                     <div className="flex items-center justify-center gap-1.5 pb-6">

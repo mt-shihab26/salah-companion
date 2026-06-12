@@ -23,7 +23,12 @@ export const PositionSidebar = () => {
                             'h-auto justify-start gap-3 py-2.5 text-left',
                             active && 'font-semibold',
                         )}
-                        onClick={() => navigate({ search: (v) => ({ ...v, position: p.id }) })}
+                        onClick={() =>
+                            navigate({
+                                search: (v) => ({ ...v, position: p.id }),
+                                resetScroll: false,
+                            })
+                        }
                     >
                         <span className="bg-primary text-primary-foreground flex size-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold">
                             {p.order}

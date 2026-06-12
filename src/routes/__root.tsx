@@ -38,10 +38,10 @@ export const Route = createRootRoute({
             { name: 'twitter:image', content: SITE_IMAGE },
         ],
         links: [
-            {
-                rel: 'stylesheet',
-                href: styles,
-            },
+            { rel: 'stylesheet', href: styles },
+            { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+            { rel: 'icon', href: '/logo192.png', type: 'image/png', sizes: '192x192' },
+            { rel: 'apple-touch-icon', href: '/logo192.png' },
         ],
     }),
     shellComponent: ({ children }) => (

@@ -12,6 +12,9 @@ export const Route = createRootRoute({
     head: () => ({
         meta: [
             {
+                title: 'Salah Companion — Every Dua of the Salah, in One Place',
+            },
+            {
                 charSet: 'utf-8',
             },
             {
@@ -19,7 +22,44 @@ export const Route = createRootRoute({
                 content: 'width=device-width, initial-scale=1',
             },
             {
-                title: 'Salah Companion',
+                name: 'description',
+                content:
+                    'Arabic text with tashkeel, transliteration, and multiple translations side-by-side — backed by authentic Quranic and hadith references.',
+            },
+            {
+                name: 'keywords',
+                content:
+                    'salah, dua, prayer, islam, quran, arabic, tashkeel, transliteration, supplication, hadith',
+            },
+            {
+                name: 'author',
+                content: 'Salah Companion',
+            },
+            {
+                property: 'og:type',
+                content: 'website',
+            },
+            {
+                property: 'og:title',
+                content: 'Salah Companion — Every Dua of the Salah, in One Place',
+            },
+            {
+                property: 'og:description',
+                content:
+                    'Arabic text with tashkeel, transliteration, and multiple translations side-by-side — backed by authentic Quranic and hadith references.',
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image',
+            },
+            {
+                name: 'twitter:title',
+                content: 'Salah Companion — Every Dua of the Salah, in One Place',
+            },
+            {
+                name: 'twitter:description',
+                content:
+                    'Arabic text with tashkeel, transliteration, and multiple translations side-by-side — backed by authentic Quranic and hadith references.',
             },
         ],
         links: [

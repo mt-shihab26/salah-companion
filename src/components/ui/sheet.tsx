@@ -58,6 +58,7 @@ function SheetContent({
             <SheetOverlay noAnimation={noAnimation} />
             <SheetPrimitive.Content
                 data-slot="sheet-content"
+                aria-describedby={undefined}
                 className={cn(
                     'bg-background fixed z-50 flex flex-col gap-4 shadow-lg',
                     !noAnimation &&

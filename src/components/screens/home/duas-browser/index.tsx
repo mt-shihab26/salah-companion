@@ -5,12 +5,17 @@ import { PageWrap } from '#/components/elements/page-wrap'
 import { DuaGroupSection } from './dua-group-section'
 import { DuaPositionNav } from './dua-position-nav'
 import { DuaTranslationPicker } from './dua-translation-picker'
+import { ZenView } from './zen-view'
 
 export const DuasBrowser = () => {
     const salahPositionId = useDuasBrowserStore((s) => s.salahPositionId)
     const salahPosition = getSalahPosition(salahPositionId)
+    const zenDua = useDuasBrowserStore((s) => s.zenDua)
+    const languages = useDuasBrowserStore((s) => s.languages)
 
     return (
+        <>
+        {zenDua && <ZenView salahDua={zenDua} languages={languages} />}
         <PageWrap id="duas-browser" className="scroll-mt-6 space-y-6">
             <div className="space-y-2">
                 <span className="text-primary text-xs font-semibold tracking-wider uppercase">
@@ -48,5 +53,6 @@ export const DuasBrowser = () => {
                 </div>
             </div>
         </PageWrap>
+        </>
     )
 }

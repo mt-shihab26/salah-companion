@@ -15,6 +15,9 @@ type TDuasBrowserStore = {
 
     salahPositionId: TSalahPositionId
     setSalahPositionId: (id: TSalahPositionId) => void
+
+    zenDua: TSalahDua | null
+    setZenDua: (dua: TSalahDua | null) => void
 }
 
 export const useDuasBrowserStore = create<TDuasBrowserStore>()(
@@ -36,6 +39,13 @@ export const useDuasBrowserStore = create<TDuasBrowserStore>()(
             setSalahPositionId: (id) => {
                 set((state) => {
                     state.salahPositionId = id
+                })
+            },
+
+            zenDua: null,
+            setZenDua: (dua) => {
+                set((state) => {
+                    state.zenDua = dua
                 })
             },
         })),

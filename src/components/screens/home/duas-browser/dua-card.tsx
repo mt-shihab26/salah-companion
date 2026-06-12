@@ -12,6 +12,7 @@ import type { TSalahDua } from '#/types/salah-duas'
 
 import { useState } from 'react'
 
+import { ArabicText } from '#/components/elements/arabic-text'
 import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
 import { ExternalLink } from 'lucide-react'
@@ -19,11 +20,11 @@ import { AudioButton } from './audio-button'
 import { AudioPlayer } from './audio-player'
 import { CopyButton } from './copy-button'
 import { DuaDetailDialog } from './DuaDetailDialog'
-import { DuaReferenceList } from './DuaReferenceList'
 import { FavoriteButton } from './favorite-button'
+import { LanguagesDisplay } from './languages-display'
 import { Notes } from './notes'
 import { PositionBadge } from './position-badge'
-import { TextDisplay } from './text-display'
+import { ReferenceList } from './reference-list'
 import { WhenToRecite } from './when-to-recite'
 
 export const DuaCard = ({
@@ -52,16 +53,17 @@ export const DuaCard = ({
                     </CardAction>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                    <TextDisplay salahDua={salahDua} anguages={languages} />
+                    <Separator />
+                    <ArabicText className="text-foreground">{salahDua.arabic}</ArabicText>
+                    <Separator />
+                    <LanguagesDisplay salahDua={salahDua} languages={languages} />
                     <Separator />
                     {salahDua.notes && <Notes text={salahDua.notes} />}
                     {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
                 </CardContent>
                 {salahDua.references.length > 0 && <Separator />}
                 <CardFooter className="flex items-center justify-between pt-4">
-                    {salahDua.references.length > 0 && (
-                        <DuaReferenceList references={salahDua.references} />
-                    )}
+                    <ReferenceList references={salahDua.references} />
                     <Button
                         variant="ghost"
                         size="sm"

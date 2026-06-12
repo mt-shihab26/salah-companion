@@ -853,3 +853,313 @@
 - [x] Favourites / bookmarks — heart button, persisted to `localStorage`
 - [x] Copy to clipboard — copies Arabic + transliteration + active translation
 - [x] `prettier-plugin-organize-imports` + `prettier-plugin-tailwindcss` wired into `.prettierrc`
+
+---
+
+# Salah Knowledge Expansion — Backlog
+
+**Goal:** grow the site from a duas-only portal into a complete salah reference. Every checkbox below is a candidate for new data + a new screen (or a new tab inside the existing browser).
+
+**Legend:** ⬜ Pending · 🔄 In Progress · ✅ Done — everything below starts as ⬜.
+
+---
+
+## 1. Prerequisites of Salah (Shurūṭ aṣ-Ṣalāh)
+
+- [ ] Islam, sanity, age of accountability (tamyīz / bulūgh)
+- [ ] Purity from major and minor ḥadath
+- [ ] Purity of body, clothes, and place of prayer
+- [ ] Covering the ʿawrah (men and women)
+- [ ] Entry of the prayer time
+- [ ] Facing the qiblah
+- [ ] Intention (niyyah) — placement and rulings
+
+---
+
+## 2. Purification (Ṭahārah)
+
+### 2.1 Wuḍūʾ (ablution)
+
+- [ ] Farāʾiḍ (obligatory acts)
+- [ ] Sunan and mustaḥabbāt
+- [ ] Nawāqiḍ (nullifiers)
+- [ ] Step-by-step walkthrough with illustrations
+- [ ] Duʿāʾ before and after wuḍūʾ
+- [ ] Virtues from Quran & hadith
+
+### 2.2 Ghusl (full ritual bath)
+
+- [ ] When obligatory (janābah, ḥayḍ, nifās, embracing Islam, death)
+- [ ] Farāʾiḍ and sunan
+- [ ] Full procedure (Prophetic method)
+
+### 2.3 Tayammum (dry ablution)
+
+- [ ] When permitted
+- [ ] How to perform
+- [ ] What invalidates it
+
+### 2.4 Other purification topics
+
+- [ ] Istinjāʾ / istibrāʾ — etiquette of relieving oneself
+- [ ] Masḥ ʿalā al-khuffayn — wiping over socks/leather (durations for resident vs traveller)
+- [ ] Najāsāt — categories of impurities and how to remove each
+
+---
+
+## 3. Adhān & Iqāmah
+
+- [ ] Full wording of the adhān (with Fajr's *aṣ-ṣalātu khayrun min an-nawm*)
+- [ ] Full wording of the iqāmah
+- [ ] Responses to the muʾadhdhin (mujīb al-muʾadhdhin)
+- [ ] Duʿāʾ after adhān (al-wasīlah)
+- [ ] Rulings, virtues, and brief history of the adhān
+
+---
+
+## 4. Times of Salah (Awqāt aṣ-Ṣalāh)
+
+- [ ] Start and end times of Fajr, Ẓuhr, ʿAṣr, Maghrib, ʿIshāʾ
+- [ ] Forbidden times for nafl (sunrise, zenith, sunset)
+- [ ] Best (afḍal) times for each prayer
+- [ ] How times are derived from sun position
+- [ ] High-latitude rulings
+
+---
+
+## 5. Qiblah
+
+- [ ] How to determine direction
+- [ ] Ruling when uncertain or unable to verify
+- [ ] History of the qiblah change from Bayt al-Maqdis to the Kaʿbah
+- [ ] In-flight and at-sea prayer rulings
+
+---
+
+## 6. The Five Daily Prayers — structure
+
+- [ ] Rakʿah counts for each: farḍ + sunnah muʾakkadah + ghayr muʾakkadah + nafl
+- [ ] Fajr (2 farḍ) layout
+- [ ] Ẓuhr (4 farḍ) layout
+- [ ] ʿAṣr (4 farḍ) layout
+- [ ] Maghrib (3 farḍ) layout
+- [ ] ʿIshāʾ (4 farḍ) layout
+- [ ] Silent (sirrī) vs aloud (jahrī) recitation per prayer
+
+---
+
+## 7. Arkān (Pillars) of Salah
+
+- [ ] Qiyām (standing) for those able
+- [ ] Takbīrat al-iḥrām
+- [ ] Recitation of al-Fātiḥah
+- [ ] Rukūʿ
+- [ ] Iʿtidāl (rising from rukūʿ)
+- [ ] Sujūd
+- [ ] Julūs bayna as-sajdatayn
+- [ ] Final tashahhud
+- [ ] Sitting for the final tashahhud
+- [ ] Ṣalāh ʿalā an-Nabī ﷺ
+- [ ] Taslīm
+- [ ] Tartīb (proper order)
+- [ ] Ṭumaʾnīnah (calmness / stillness)
+
+---
+
+## 8. Wājibāt, Sunan, Mustaḥabbāt
+
+- [ ] Wājib acts (e.g. saying takbīr at every transition)
+- [ ] Sunan qawliyyah (verbal sunnah acts)
+- [ ] Sunan fiʿliyyah (physical sunnah acts)
+- [ ] Makrūhāt (disliked acts)
+- [ ] Mustaḥabbāt (recommended acts)
+
+---
+
+## 9. Mubṭilāt (Nullifiers of Salah)
+
+- [ ] Speech
+- [ ] Excessive movement
+- [ ] Eating or drinking
+- [ ] Laughter
+- [ ] Breaking of wuḍūʾ
+- [ ] Turning the chest away from qiblah
+- [ ] Other major nullifiers per madhhab
+
+---
+
+## 10. Step-by-step "How to Pray"
+
+- [ ] Full walkthrough rakʿah-by-rakʿah for each of the 5 prayers
+- [ ] Gender-specific posture differences (per madhhab)
+- [ ] Animated / illustrated position guide tied into the existing 9-position model
+- [ ] Printable cheatsheets
+
+---
+
+## 11. Special & Occasional Prayers
+
+- [ ] Jumuʿah — ghusl, khuṭbah, conditions, dhikr of the day
+- [ ] Eid al-Fiṭr & Eid al-Aḍḥā — takbīrāt zawāʾid, khuṭbah
+- [ ] Janāzah — 4 takbīrs, duʿāʾ for the deceased (adult male / female / child)
+- [ ] Khusūf / Kusūf — eclipse prayer
+- [ ] Istisqāʾ — prayer for rain
+- [ ] Khawf — fear / battlefield prayer
+- [ ] Musāfir — qaṣr (shortening) and jamʿ (combining) rules
+- [ ] Marīḍ — prayer for the sick (sitting / lying / by gesture)
+
+---
+
+## 12. Voluntary Prayers (Nawāfil)
+
+- [ ] Sunan rawātib (regular sunnah of the 5 prayers)
+- [ ] Taḥiyyat al-Masjid
+- [ ] Tahajjud / Qiyām al-Layl
+- [ ] Witr (with qunūt)
+- [ ] Ḍuḥā
+- [ ] Awwābīn
+- [ ] Tarāwīḥ
+- [ ] Istikhārah
+- [ ] Tasbīḥ
+- [ ] Ḥājah
+- [ ] Tawbah
+- [ ] Sajdat ash-Shukr
+- [ ] Sajdat at-Tilāwah
+
+---
+
+## 13. Sajdat as-Sahw
+
+- [ ] When required (zāda, naqaṣa, shakka)
+- [ ] How to perform
+- [ ] Before or after taslīm — scholarly views
+
+---
+
+## 14. Qaḍāʾ — making up missed prayers
+
+- [ ] Rulings on qaḍāʾ
+- [ ] Order and intention
+- [ ] Scholarly positions on intentional vs unintentional missing
+
+---
+
+## 15. Imāmah & Jamāʿah
+
+- [ ] Conditions to lead the prayer
+- [ ] How to follow the imām
+- [ ] Masbūq (the latecomer)
+- [ ] Women leading other women
+- [ ] Virtues of congregational prayer
+- [ ] Ṣaff (row) etiquette — straightening, gaps, latecomer placement
+- [ ] Sutrah (barrier in front of the worshipper)
+
+---
+
+## 16. Adhkār after Salah
+
+- [ ] Astaghfirullāh ×3
+- [ ] *Allāhumma anta as-salām wa minka as-salām…*
+- [ ] Āyat al-Kursī
+- [ ] Last three sūrahs (al-Ikhlāṣ, al-Falaq, an-Nās)
+- [ ] Tasbīḥ Fāṭimah (33 / 33 / 34)
+- [ ] Morning and evening adhkār attached to Fajr & ʿAṣr
+
+---
+
+## 17. Khushūʿ (presence of heart)
+
+- [ ] Quranic āyāt and hadith on khushūʿ
+- [ ] Practical tips for concentration
+- [ ] Common distractions and how to handle them
+- [ ] Spiritual dimension and reward
+
+---
+
+## 18. Women & Salah
+
+- [ ] Ḥayḍ / nifās exemption (and that prayer is not made up)
+- [ ] Posture differences across madhhabs
+- [ ] Praying at home vs masjid
+- [ ] ʿAwrah / niqāb rulings in salah
+- [ ] Women leading other women
+
+---
+
+## 19. Children & Salah
+
+- [ ] Hadith on age 7 and age 10
+- [ ] Teaching method and milestones
+- [ ] Child-friendly walkthrough
+
+---
+
+## 20. Common Sūrahs recited in Salah
+
+Each entry needs Arabic, transliteration, multi-language translations (reuse existing language stack), audio, and tajwīd notes.
+
+- [ ] Al-Fātiḥah (1)
+- [ ] Al-Ikhlāṣ (112)
+- [ ] Al-Falaq (113)
+- [ ] An-Nās (114)
+- [ ] Al-Kāfirūn (109)
+- [ ] Al-Kawthar (108)
+- [ ] Al-ʿAṣr (103)
+- [ ] An-Naṣr (110)
+- [ ] Al-Māʿūn (107)
+- [ ] Quraysh (106)
+- [ ] Al-Fīl (105)
+- [ ] Al-Humazah (104)
+- [ ] At-Takāthur (102)
+- [ ] Additional short Mufaṣṣal selections
+
+---
+
+## 21. Virtues & Warnings (Faḍāʾil)
+
+- [ ] Quranic āyāt on the virtue of ṣalāh
+- [ ] Ṣaḥīḥ hadith collection on the virtue of ṣalāh
+- [ ] Severity of abandoning ṣalāh
+- [ ] *ʿAmūd ad-dīn* hadith ("salah is the pillar of the religion")
+- [ ] "First thing judged on Yawm al-Qiyāmah" hadith
+
+---
+
+## 22. Madhhab differences
+
+Side-by-side Ḥanafī · Mālikī · Shāfiʿī · Ḥanbalī views on:
+
+- [ ] Hand placement during qiyām
+- [ ] Āmīn — aloud or silent
+- [ ] Rafʿ al-yadayn (raising hands at takbīr)
+- [ ] Tashahhud finger movement
+- [ ] Witr structure
+- [ ] Qunūt — when and in which prayer
+- [ ] Other notable differences in practice
+
+---
+
+## 23. Common mistakes
+
+- [ ] Frequent posture errors
+- [ ] Frequent recitation errors
+- [ ] Skipping ṭumaʾnīnah
+- [ ] Wuḍūʾ-related mistakes that affect salah
+- [ ] How to correct each
+
+---
+
+## 24. Glossary
+
+- [ ] A linkable Arabic / English glossary of every term used on the site (rakʿah, sajdah, qiyām, julūs, taslīm, niyyah, takbīr, tashahhud, qunūt, …)
+
+---
+
+## 25. Tools (optional, content-adjacent)
+
+- [ ] Prayer-time calculator
+- [ ] Qiblah compass
+- [ ] Rakʿah counter
+- [ ] Adhān player
+- [ ] Tasbīḥ counter
+- [ ] "Today's adhkār" widget

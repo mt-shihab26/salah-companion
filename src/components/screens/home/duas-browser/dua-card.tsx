@@ -10,16 +10,11 @@ import {
 import type { TLanguage } from '#/types/languages'
 import type { TSalahDua } from '#/types/salah-duas'
 
-import { useState } from 'react'
-
 import { ArabicText } from '#/components/elements/arabic-text'
-import { Button } from '#/components/ui/button'
 import { Separator } from '#/components/ui/separator'
-import { ExternalLink } from 'lucide-react'
 import { AudioButton } from './audio-button'
-import { AudioPlayer } from './audio-player'
 import { CopyButton } from './copy-button'
-import { DuaDetailDialog } from './DuaDetailDialog'
+import { DetailDialog } from './detail-dialog'
 import { FavoriteButton } from './favorite-button'
 import { LanguagesDisplay } from './languages-display'
 import { Notes } from './notes'
@@ -36,52 +31,33 @@ export const DuaCard = ({
     languages: TLanguage[]
     showPosition?: boolean
 }) => {
-    const [dialogOpen, setDialogOpen] = useState(false)
-
     return (
-        <>
-            <Card className="border-border/60 overflow-hidden transition-shadow hover:shadow-md">
-                <CardHeader>
-                    <div className="space-y-1.5">
-                        {showPosition && <PositionBadge positionId={salahDua.positionId} />}
-                        <CardTitle className="font-serif text-lg">{salahDua.label}</CardTitle>
-                    </div>
-                    <CardAction className="flex items-center gap-1.5">
-                        <FavoriteButton salahDua={salahDua} />
-                        <CopyButton salahDua={salahDua} languages={languages} />
-                        <AudioButton salahDua={salahDua} />
-                    </CardAction>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                    <Separator />
-                    <ArabicText className="text-foreground">{salahDua.arabic}</ArabicText>
-                    <Separator />
-                    <LanguagesDisplay salahDua={salahDua} languages={languages} />
-                    <Separator />
-                    {salahDua.notes && <Notes text={salahDua.notes} />}
-                    {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
-                </CardContent>
-                {salahDua.references.length > 0 && <Separator />}
-                <CardFooter className="flex items-center justify-between pt-4">
-                    <ReferenceList references={salahDua.references} />
-                    <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={() => setDialogOpen(true)}
-                        className="text-muted-foreground hover:text-foreground ml-auto shrink-0 gap-1.5 text-xs"
-                    >
-                        <ExternalLink className="size-3.5" />
-                        Details
-                    </Button>
-                </CardFooter>
-            </Card>
-            <DuaDetailDialog
-                dua={salahDua}
-                open={dialogOpen}
-                onOpenChange={setDialogOpen}
-                langs={languages}
-            />
-            <AudioPlayer />
-        </>
+        <Card className="border-border/60 overflow-hidden transition-shadow hover:shadow-md">
+            <CardHeader>
+                <div className="space-y-1.5">
+                    {showPosition && <PositionBadge positionId={salahDua.positionId} />}
+                    <CardTitle className="font-serif text-lg">{salahDua.label}</CardTitle>
+                </div>
+                <CardAction className="flex items-center gap-1.5">
+                    <FavoriteButton salahDua={salahDua} />
+                    <CopyButton salahDua={salahDua} languages={languages} />
+                    <AudioButton salahDua={salahDua} />
+                </CardAction>
+            </CardHeader>
+            <CardContent className="space-y-4">
+                <Separator />
+                <ArabicText className="text-foreground">{salahDua.arabic}</ArabicText>
+                <Separator />
+                <LanguagesDisplay salahDua={salahDua} languages={languages} />
+                <Separator />
+                {salahDua.notes && <Notes text={salahDua.notes} />}
+                {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
+            </CardContent>
+            {salahDua.references.length > 0 && <Separator />}
+            <CardFooter className="flex items-center justify-between pt-4">
+                <ReferenceList references={salahDua.references} />
+                <DetailDialog salahDua={salahDua} languages={languages} />
+            </CardFooter>
+        </Card>
     )
 }

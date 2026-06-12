@@ -1,43 +1,47 @@
-import { ArabicText } from '#/components/elements/arabic-text'
-import { Badge } from '#/components/ui/badge'
-import { Button } from '#/components/ui/button'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
+    DialogTrigger,
 } from '#/components/ui/dialog'
-import { Separator } from '#/components/ui/separator'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/components/ui/tabs'
-import { LANGUAGES } from '#/lib/languages'
-import { cn } from '#/lib/utils'
+
 import type { TLanguage } from '#/types/languages'
 import type { TSalahDua } from '#/types/salah-duas'
-import { BookOpen, Check, Copy, Info, ScrollText } from 'lucide-react'
+
+import { cn } from '#/lib/utils'
 import { useState } from 'react'
+
+import { ArabicText } from '#/components/elements/arabic-text'
+import { Badge } from '#/components/ui/badge'
+import { Button } from '#/components/ui/button'
+import { Separator } from '#/components/ui/separator'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/components/ui/tabs'
+import { BookOpen, Check, Copy, ExternalLink, Info, ScrollText } from 'lucide-react'
 import { AudioButton } from './audio-button'
 import { PositionBadge } from './position-badge'
 import { WhenToRecite } from './when-to-recite'
 
-interface Props {
-    dua: TSalahDua
-    open: boolean
-    onOpenChange: (open: boolean) => void
-    langs: TLanguage[]
-}
+import { LANGUAGES } from '#/lib/languages'
 
-export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
+export const DetailDialog = ({
+    salahDua,
+    languages,
+}: {
+    salahDua: TSalahDua
+    languages: TLanguage[]
+}) => {
     const [copied, setCopied] = useState(false)
-    const [activeLang, setActiveLang] = useState<TLanguage>(langs[0] ?? 'en')
+    const [activeLang, setActiveLang] = useState<TLanguage>(languages[0] ?? 'en')
 
     const allLangs = LANGUAGES
     const activeLangMeta = LANGUAGES.find((l) => l.code === activeLang)
 
     async function copyToClipboard() {
-        const langData = dua.languages[activeLang] ?? dua.languages['en']
+        const langData = salahDua.languages[activeLang] ?? salahDua.languages['en']
         const text = [
-            dua.arabic,
+            salahDua.arabic,
             '',
             langData.transliteration,
             '',
@@ -53,24 +57,34 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
     }
 
     return (
-        <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="flex max-h-[90dvh] w-full max-w-2xl flex-col gap-0 overflow-hidden p-0">
+        <Dialog>
+            <DialogTrigger asChild>
+                <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-muted-foreground hover:text-foreground ml-auto shrink-0 gap-1.5 text-xs"
+                >
+                    <ExternalLink className="size-3.5" />
+                    Details
+                </Button>
+            </DialogTrigger>
+            <DialogContent className="flex max-h-[90dvh] w-full flex-col gap-0 overflow-hidden p-0 sm:max-w-2xl">
                 {/* Header */}
                 <DialogHeader className="border-b px-6 py-4">
                     <div className="flex flex-wrap items-start justify-between gap-3">
                         <div className="space-y-1.5">
-                            <PositionBadge positionId={dua.positionId} />
+                            <PositionBadge positionId={salahDua.positionId} />
                             <DialogTitle className="font-serif text-xl">
-                                {dua.label ?? `Dua ${dua.variationIndex}`}
+                                {salahDua.label ?? `Dua ${salahDua.variationIndex}`}
                             </DialogTitle>
-                            {dua.notes && (
+                            {salahDua.notes && (
                                 <DialogDescription className="line-clamp-2 text-xs">
-                                    {dua.notes.slice(0, 120)}
-                                    {dua.notes.length > 120 ? '…' : ''}
+                                    {salahDua.notes.slice(0, 120)}
+                                    {salahDua.notes.length > 120 ? '…' : ''}
                                 </DialogDescription>
                             )}
                         </div>
-                        {dua.audioUrl && <AudioButton salahDua={dua} />}
+                        {salahDua.audioUrl && <AudioButton salahDua={salahDua} />}
                     </div>
                 </DialogHeader>
 
@@ -86,16 +100,16 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                 <TabsTrigger value="references" className="flex-1 gap-1.5 text-xs">
                                     <ScrollText className="size-3.5" />
                                     Sources
-                                    {dua.references.length > 0 && (
+                                    {salahDua.references.length > 0 && (
                                         <Badge
                                             variant="secondary"
                                             className="h-4 min-w-4 rounded-full px-1 text-[10px]"
                                         >
-                                            {dua.references.length}
+                                            {salahDua.references.length}
                                         </Badge>
                                     )}
                                 </TabsTrigger>
-                                {dua.notes && (
+                                {salahDua.notes && (
                                     <TabsTrigger value="notes" className="flex-1 gap-1.5 text-xs">
                                         <Info className="size-3.5" />
                                         Notes
@@ -107,12 +121,12 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                         {/* ── Text tab ─────────────────────────────────── */}
                         <TabsContent value="text" className="m-0 space-y-6 px-6 py-5">
                             {/* When to recite */}
-                            {dua.whenToRecite && <WhenToRecite text={dua.whenToRecite} />}
+                            {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
 
                             {/* Arabic */}
                             <div className="bg-muted/40 rounded-lg p-5 text-center">
                                 <ArabicText size="lg" className="text-foreground leading-loose">
-                                    {dua.arabic}
+                                    {salahDua.arabic}
                                 </ArabicText>
                             </div>
 
@@ -140,7 +154,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                 {activeLangMeta && (
                                     <div className="space-y-2">
                                         <p className="text-muted-foreground font-mono text-xs leading-relaxed">
-                                            {dua.languages[activeLang].transliteration}
+                                            {salahDua.languages[activeLang].transliteration}
                                         </p>
                                         <p
                                             dir={activeLangMeta.dir}
@@ -158,7 +172,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                                     : undefined
                                             }
                                         >
-                                            {dua.languages[activeLang].translation}
+                                            {salahDua.languages[activeLang].translation}
                                         </p>
                                     </div>
                                 )}
@@ -190,7 +204,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                                 </span>
                                             </div>
                                             <p className="text-muted-foreground mb-1.5 font-mono text-xs leading-relaxed">
-                                                {dua.languages[l.code].transliteration}
+                                                {salahDua.languages[l.code].transliteration}
                                             </p>
                                             <p
                                                 dir={l.dir}
@@ -207,7 +221,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                                                         : undefined
                                                 }
                                             >
-                                                {dua.languages[l.code].translation}
+                                                {salahDua.languages[l.code].translation}
                                             </p>
                                         </li>
                                     ))}
@@ -217,13 +231,13 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
 
                         {/* ── Sources tab ──────────────────────────────── */}
                         <TabsContent value="references" className="m-0 space-y-5 px-6 py-5">
-                            {dua.references.length === 0 ? (
+                            {salahDua.references.length === 0 ? (
                                 <p className="text-muted-foreground text-sm">
                                     No references recorded.
                                 </p>
                             ) : (
                                 <ul className="space-y-4">
-                                    {dua.references.map((ref, i) => (
+                                    {salahDua.references.map((ref, i) => (
                                         <li
                                             key={i}
                                             className="border-border/60 rounded-lg border p-4"
@@ -307,10 +321,10 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                         </TabsContent>
 
                         {/* ── Notes tab ────────────────────────────────── */}
-                        {dua.notes && (
+                        {salahDua.notes && (
                             <TabsContent value="notes" className="m-0 px-6 py-5">
                                 <p className="text-foreground text-sm leading-relaxed whitespace-pre-line">
-                                    {dua.notes}
+                                    {salahDua.notes}
                                 </p>
                             </TabsContent>
                         )}
@@ -320,7 +334,7 @@ export function DuaDetailDialog({ dua, open, onOpenChange, langs }: Props) {
                 {/* Footer actions */}
                 <div className="flex items-center justify-between border-t px-6 py-3">
                     <p className="text-muted-foreground text-[11px]">
-                        Position {dua.variationIndex} of this station
+                        Position {salahDua.variationIndex} of this station
                     </p>
                     <Button variant="outline" size="sm" onClick={copyToClipboard} className="gap-2">
                         {copied ? (

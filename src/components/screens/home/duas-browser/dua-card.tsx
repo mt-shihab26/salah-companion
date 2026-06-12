@@ -45,13 +45,12 @@ export const DuaCard = ({
                 </CardAction>
             </CardHeader>
             <CardContent className="space-y-4">
+                {salahDua.notes && <Notes text={salahDua.notes} />}
+                {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
                 <Separator />
                 <ArabicText className="text-foreground">{salahDua.arabic}</ArabicText>
                 <Separator />
                 <LanguagesDisplay salahDua={salahDua} languages={languages} />
-                <Separator />
-                {salahDua.notes && <Notes text={salahDua.notes} />}
-                {salahDua.whenToRecite && <WhenToRecite text={salahDua.whenToRecite} />}
             </CardContent>
             {salahDua.references.length > 0 && <Separator />}
             <CardFooter className="flex items-center justify-between pt-4">

@@ -7,9 +7,8 @@ import { Button } from '#/components/ui/button'
 import { Heart } from 'lucide-react'
 
 export const FavoriteButton = ({ salahDua }: { salahDua: TSalahDua }) => {
-    const { isFavorite, toggle } = useDuaFavoritesStore()
-
-    const fav = isFavorite(salahDua.id)
+    const fav = useDuaFavoritesStore((s) => s.favorites.includes(salahDua.id))
+    const toggle = useDuaFavoritesStore((s) => s.toggle)
 
     return (
         <Button

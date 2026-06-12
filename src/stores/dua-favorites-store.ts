@@ -5,12 +5,11 @@ import { immer } from 'zustand/middleware/immer'
 type TDuaFavoritesStore = {
     favorites: string[]
     toggle: (id: string) => void
-    isFavorite: (id: string) => boolean
 }
 
 export const useDuaFavoritesStore = create<TDuaFavoritesStore>()(
     persist(
-        immer<TDuaFavoritesStore>((set, get) => ({
+        immer<TDuaFavoritesStore>((set) => ({
             favorites: [],
             toggle: (id: string) => {
                 set((state) => {
@@ -21,9 +20,6 @@ export const useDuaFavoritesStore = create<TDuaFavoritesStore>()(
                         state.favorites.push(id)
                     }
                 })
-            },
-            isFavorite: (id: string): boolean => {
-                return get().favorites.includes(id)
             },
         })),
         {

@@ -14,6 +14,7 @@ import { ArabicText } from '#/components/elements/arabic-text'
 import { Separator } from '#/components/ui/separator'
 import { AudioButton } from './audio-button'
 import { CopyButton } from './copy-button'
+import { DuaTranslationPicker } from './dua-translation-picker'
 import { FavoriteButton } from './favorite-button'
 import { LanguagesDisplay } from './languages-display'
 import { Notes } from './notes'
@@ -34,15 +35,18 @@ export const DuaCard = ({
     return (
         <Card className="border-border/60 overflow-hidden transition-shadow hover:shadow-md">
             <CardHeader>
-                <div className="space-y-1.5">
+                <div className="space-y-4">
                     {zenView && <PositionBadge positionId={salahDua.positionId} />}
                     <CardTitle className="font-serif text-lg">{salahDua.label}</CardTitle>
                 </div>
-                <CardAction className="flex items-center gap-1.5">
-                    <FavoriteButton salahDua={salahDua} />
-                    <CopyButton salahDua={salahDua} languages={languages} />
-                    <AudioButton salahDua={salahDua} />
-                </CardAction>
+                <div className="space-y-4">
+                    {zenView && <DuaTranslationPicker />}
+                    <CardAction className="flex items-center gap-1.5">
+                        <FavoriteButton salahDua={salahDua} />
+                        <CopyButton salahDua={salahDua} languages={languages} />
+                        <AudioButton salahDua={salahDua} />
+                    </CardAction>
+                </div>
             </CardHeader>
             <CardContent className="space-y-4">
                 {salahDua.notes && <Notes text={salahDua.notes} />}

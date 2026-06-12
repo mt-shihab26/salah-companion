@@ -1,7 +1,6 @@
 import type { TSalahPositionId } from '#/types/salah-positions'
 
 import { createFileRoute } from '@tanstack/react-router'
-import { z } from 'zod'
 
 import { SALAH_POSITIONS } from '#/lib/salah-positions'
 
@@ -13,16 +12,14 @@ import { Separator } from '#/components/ui/separator'
 
 const positionIds: string[] = SALAH_POSITIONS.map((p) => p.id)
 
-const searchSchema = z.object({
-    position: z
-        .string()
-        .optional()
-        .transform((v) => (v && positionIds.includes(v) ? v : 'opening') as TSalahPositionId),
-    dua: z.string().optional(),
-})
-
 export const Route = createFileRoute('/')({
-    validateSearch: (search) => searchSchema.parse(search),
+    validateSearch: (search): { position?: TSalahPositionId; dua?: string } => ({
+        position:
+            typeof search.position === 'string' && positionIds.includes(search.position)
+                ? (search.position as TSalahPositionId)
+                : undefined,
+        dua: typeof search.dua === 'string' ? search.dua : undefined,
+    }),
     component: () => (
         <div className="space-y-24 pb-24">
             <Hero />

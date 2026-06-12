@@ -84,6 +84,6 @@ export const SALAH_POSITIONS: TSalahPosition[] = [
     },
 ]
 
-export const getSalahPosition = (id: TSalahPositionId) => {
-    return SALAH_POSITIONS.find((p) => p.id === id)
+export const getSalahPosition = (id: TSalahPositionId | undefined) => {
+    return SALAH_POSITIONS.find((p) => p.id === (id ?? 'opening'))
 }

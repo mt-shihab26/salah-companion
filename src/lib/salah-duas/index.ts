@@ -94,6 +94,6 @@ export const getSalahDuaById = (id: string): TSalahDua | undefined => {
     return allDuas.find((d) => d.id === id)
 }
 
-export const getSalahDuasBySalahPosition = (positionId: TSalahPositionId): TSalahDua[] => {
-    return allDuas.filter((d) => d.positionId === positionId)
+export const getSalahDuasBySalahPosition = (positionId: TSalahPositionId | undefined): TSalahDua[] => {
+    return allDuas.filter((d) => d.positionId === (positionId ?? 'opening'))
 }

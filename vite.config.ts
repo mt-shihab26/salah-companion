@@ -16,7 +16,12 @@ export default defineConfig({
         devtools(),
         nitro(),
         tailwindcss(),
-        tanstackStart(),
+        tanstackStart({
+            prerender: {
+                enabled: true,
+                crawlLinks: true,
+            },
+        }),
         react(),
         babel({
             presets: [reactCompilerPreset()],

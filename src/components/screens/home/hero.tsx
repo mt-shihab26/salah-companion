@@ -1,8 +1,9 @@
-import { Link } from '@tanstack/react-router'
+import logo from '#/assets/icons/logo.svg'
 
 import { PageWrap } from '#/components/elements/page-wrap'
 import { Button } from '#/components/ui/button'
-import { ArrowRight, BookOpen, Sparkles } from 'lucide-react'
+import { Link } from '@tanstack/react-router'
+import { ArrowRight, Sparkles } from 'lucide-react'
 
 export const Hero = () => {
     return (
@@ -15,9 +16,11 @@ export const Hero = () => {
             <PageWrap className="relative pt-6">
                 <div className="flex items-center justify-between">
                     <Link to="/" className="flex items-center gap-2">
-                        <div className="from-primary to-primary/70 flex size-9 items-center justify-center rounded-xl bg-linear-to-br shadow-sm">
-                            <BookOpen className="text-primary-foreground size-4" />
-                        </div>
+                        <img
+                            src={logo}
+                            alt="Salah Companion"
+                            className="size-9 rounded-xl shadow-sm"
+                        />
                         <span className="text-foreground font-serif text-lg font-semibold tracking-tight">
                             Salah Companion
                         </span>

@@ -1,22 +1,29 @@
+import { getSalahDuaById } from '#/lib/salah-duas'
 import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 
 import { Button } from '#/components/ui/button'
 import { Kbd } from '#/components/ui/kbd'
 import { ScrollArea } from '#/components/ui/scroll-area'
 import { Sheet, SheetClose, SheetContent, SheetTitle } from '#/components/ui/sheet'
+import { Route } from '#/routes/index'
 import { DuaCard } from './dua-card'
 
 import { X } from 'lucide-react'
 
 export const ZenView = () => {
-    const zenDua = useDuasBrowserStore((s) => s.zenDua)
-    const setZenDua = useDuasBrowserStore((s) => s.setZenDua)
+    const search = Route.useSearch()
+    const navigate = Route.useNavigate()
+
     const languages = useDuasBrowserStore((s) => s.languages)
+
+    const zenDua = search.dua ? getSalahDuaById(search.dua) : undefined
 
     if (!zenDua) return null
 
+    const close = () => navigate({ search: (prev) => ({ ...prev, dua: undefined }) })
+
     return (
-        <Sheet open onOpenChange={(open) => !open && setZenDua(null)}>
+        <Sheet open onOpenChange={(open) => !open && close()}>
             <SheetContent
                 side="bottom"
                 showCloseButton={false}

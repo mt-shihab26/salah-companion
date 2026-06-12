@@ -3,17 +3,18 @@ import { getSalahPosition } from '#/lib/salah-positions'
 import { useDuasBrowserStore } from '#/stores/duas-browser-store'
 
 import { ArabicText } from '#/components/elements/arabic-text'
-import { Separator } from '#/components/ui/separator'
+import { Route } from '#/routes/index'
 import { DuaCard } from './dua-card'
 
 export const DuaGroupSection = () => {
+    const search = Route.useSearch()
+
     const languages = useDuasBrowserStore((s) => s.languages)
-    const salahPositionId = useDuasBrowserStore((s) => s.salahPositionId)
-    const salahDuas = getSalahDuasBySalahPosition(salahPositionId)
 
-    const position = getSalahPosition(salahPositionId)
+    const salahPosition = getSalahPosition(search.position)
+    const salahDuas = getSalahDuasBySalahPosition(search.position)
 
-    if (!position || salahDuas.length === 0) return null
+    if (!salahPosition || salahDuas.length === 0) return null
 
     return (
         <section>
@@ -21,26 +22,23 @@ export const DuaGroupSection = () => {
                 <div className="space-y-1">
                     <div className="flex items-baseline gap-3">
                         <h2 className="text-foreground font-serif text-2xl font-semibold">
-                            {position.name}
+                            {salahPosition.name}
                         </h2>
                         <ArabicText as="span" size="md" className="text-muted-foreground">
-                            {position.nameArabic}
+                            {salahPosition.nameArabic}
                         </ArabicText>
                     </div>
-                    <p className="text-muted-foreground text-sm">{position.description}</p>
+                    <p className="text-muted-foreground text-sm">{salahPosition.description}</p>
                 </div>
                 <span className="border-border bg-muted/40 text-muted-foreground rounded-full border px-3 py-1 text-xs font-medium">
                     {salahDuas.length} {salahDuas.length === 1 ? 'dua' : 'duas'}
                 </span>
             </div>
-
             <div className="space-y-4">
                 {salahDuas.map((salahDua) => (
                     <DuaCard key={salahDua.id} salahDua={salahDua} languages={languages} />
                 ))}
             </div>
-
-            <Separator className="mt-10" />
         </section>
     )
 }

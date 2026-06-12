@@ -1,5 +1,5 @@
 import { getSalahPosition } from '#/lib/salah-positions'
-import { useDuasBrowserStore } from '#/stores/duas-browser-store'
+import { Route } from '#/routes/index'
 
 import { PageWrap } from '#/components/elements/page-wrap'
 import { DuaGroupSection } from './dua-group-section'
@@ -8,8 +8,9 @@ import { DuaTranslationPicker } from './dua-translation-picker'
 import { ZenView } from './zen-view'
 
 export const DuasBrowser = () => {
-    const salahPositionId = useDuasBrowserStore((s) => s.salahPositionId)
-    const salahPosition = getSalahPosition(salahPositionId)
+    const search = Route.useSearch()
+
+    const salahPosition = getSalahPosition(search.position)
 
     return (
         <PageWrap id="duas-browser" className="scroll-mt-6 space-y-6">

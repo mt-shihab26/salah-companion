@@ -1,23 +1,14 @@
 import type { TLanguage } from '#/types/languages'
-import type { TSalahPositionId } from '#/types/salah-positions'
-import type { TSalahDua } from '#/types/salah-duas'
 
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { immer } from 'zustand/middleware/immer'
 
 const DEFAULT_LANGUAGES: TLanguage[] = ['en']
-const DEFAULT_SALAH_POSITION_ID: TSalahPositionId = 'opening'
 
 type TDuasBrowserStore = {
     languages: TLanguage[]
     toggleLanguage: (lang: TLanguage) => void
-
-    salahPositionId: TSalahPositionId
-    setSalahPositionId: (id: TSalahPositionId) => void
-
-    zenDua: TSalahDua | null
-    setZenDua: (dua: TSalahDua | null) => void
 }
 
 export const useDuasBrowserStore = create<TDuasBrowserStore>()(
@@ -33,27 +24,11 @@ export const useDuasBrowserStore = create<TDuasBrowserStore>()(
                     state.languages = next.length > 0 ? next : DEFAULT_LANGUAGES
                 })
             },
-
-            salahPositionId: DEFAULT_SALAH_POSITION_ID,
-
-            setSalahPositionId: (id) => {
-                set((state) => {
-                    state.salahPositionId = id
-                })
-            },
-
-            zenDua: null,
-            setZenDua: (dua) => {
-                set((state) => {
-                    state.zenDua = dua
-                })
-            },
         })),
         {
             name: 'duas-browser',
             partialize: (state) => ({
                 languages: state.languages,
-                salahPositionId: state.salahPositionId,
             }),
         },
     ),

@@ -20,7 +20,7 @@ import { Notes } from './notes'
 import { PositionBadge } from './position-badge'
 import { ReferenceList } from './reference-list'
 import { WhenToRecite } from './when-to-recite'
-import { ZenView } from './zen-view'
+import { ZenButton } from './zen-button'
 
 export const DuaCard = ({
     salahDua,
@@ -29,7 +29,6 @@ export const DuaCard = ({
 }: {
     salahDua: TSalahDua
     languages: TLanguage[]
-    showPosition?: boolean
     zenView?: boolean
 }) => {
     return (
@@ -57,7 +56,7 @@ export const DuaCard = ({
             {salahDua.references.length > 0 && <Separator />}
             <CardFooter className="flex items-center justify-between pt-4">
                 <ReferenceList references={salahDua.references} />
-                {!zenView && <ZenView languages={languages} />}
+                {!zenView && <ZenButton salahDua={salahDua} />}
             </CardFooter>
         </Card>
     )

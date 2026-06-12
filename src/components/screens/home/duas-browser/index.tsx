@@ -5,6 +5,7 @@ import { PageWrap } from '#/components/elements/page-wrap'
 import { DuaGroupSection } from './dua-group-section'
 import { DuaPositionNav } from './dua-position-nav'
 import { DuaTranslationPicker } from './dua-translation-picker'
+import { ZenView } from './zen-view'
 
 export const DuasBrowser = () => {
     const salahPositionId = useDuasBrowserStore((s) => s.salahPositionId)
@@ -12,6 +13,7 @@ export const DuasBrowser = () => {
 
     return (
         <PageWrap id="duas-browser" className="scroll-mt-6 space-y-6">
+            <ZenView />
             <div className="space-y-2">
                 <span className="text-primary text-xs font-semibold tracking-wider uppercase">
                     Browse

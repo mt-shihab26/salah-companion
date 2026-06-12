@@ -1,4 +1,4 @@
-import { createRootRoute } from '@tanstack/react-router'
+import { createRootRoute, Link } from '@tanstack/react-router'
 
 import { SiteFooter } from '#/components/screens/layout/site-footer'
 import { TooltipProvider } from '#/components/ui/tooltip'
@@ -91,6 +91,15 @@ export const Route = createRootRoute({
                 <Outlet />
             </main>
             <SiteFooter />
+        </div>
+    ),
+    notFoundComponent: () => (
+        <div className="flex min-h-[60vh] flex-col items-center justify-center gap-4 text-center">
+            <h1 className="text-4xl font-bold">404</h1>
+            <p className="text-muted-foreground">Page not found</p>
+            <Link to="/" className="text-primary underline underline-offset-4">
+                Return home
+            </Link>
         </div>
     ),
 })

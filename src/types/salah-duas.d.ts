@@ -14,13 +14,13 @@ export type TQuranRef = {
 export type THadithRef = {
     type: 'hadith'
     source: string
-    number?: string
-    grade?: string
-    narrator?: string
-    url?: string
+    number: string
+    grade: string
+    narrator: string
+    url: string
 }
 
-export type TDuaReference = TQuranRef | THadithRef
+export type TReference = TQuranRef | THadithRef
 
 export type TSalahDua = {
     id: string
@@ -35,7 +35,7 @@ export type TSalahDua = {
             translation: string
         }
     >
-    references: TDuaReference[]
+    references: TReference[]
     audioUrl: string
     notes: string
     whenToRecite: string

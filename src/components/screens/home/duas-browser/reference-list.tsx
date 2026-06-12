@@ -1,9 +1,9 @@
-import type { TDuaReference } from '#/types/salah-duas'
+import type { TReference } from '#/types/salah-duas'
 
 import { HadithBadge } from './hadith-badge'
 import { QuranBadge } from './quran-badge'
 
-export const ReferenceList = ({ references }: { references: TDuaReference[] }) => {
+export const ReferenceList = ({ references }: { references: TReference[] }) => {
     if (references.length === 0) return null
 
     return (

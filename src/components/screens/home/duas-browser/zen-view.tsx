@@ -27,6 +27,7 @@ export const ZenView = () => {
             <SheetContent
                 side="bottom"
                 showCloseButton={false}
+                noAnimation
                 className="inset-0 h-dvh w-full max-w-none rounded-none border-0 p-0"
             >
                 <SheetTitle className="sr-only">{zenDua.label}</SheetTitle>

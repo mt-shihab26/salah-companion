@@ -6,9 +6,9 @@ import { Kbd } from '#/components/ui/kbd'
 import { ScrollArea } from '#/components/ui/scroll-area'
 import { Sheet, SheetClose, SheetContent, SheetTitle } from '#/components/ui/sheet'
 import { Route } from '#/routes/index'
+import { Link } from '@tanstack/react-router'
+import { BookOpen, X } from 'lucide-react'
 import { DuaCard } from './dua-card'
-
-import { X } from 'lucide-react'
 
 export const ZenView = () => {
     const search = Route.useSearch()
@@ -31,6 +31,18 @@ export const ZenView = () => {
                 className="inset-0 h-dvh w-full max-w-none rounded-none border-0 p-0"
             >
                 <SheetTitle className="sr-only">{zenDua.label}</SheetTitle>
+                <Link
+                    to="/"
+                    search={(prev) => ({ ...prev, dua: undefined })}
+                    className="absolute top-4 left-4 z-10 flex items-center gap-2"
+                >
+                    <div className="from-primary to-primary/70 flex size-7 items-center justify-center rounded-lg bg-linear-to-br shadow-sm">
+                        <BookOpen className="text-primary-foreground size-3.5" />
+                    </div>
+                    <span className="text-foreground/60 font-serif text-sm font-semibold tracking-tight">
+                        Salah Companion
+                    </span>
+                </Link>
                 <SheetClose asChild>
                     <Button
                         variant="ghost"

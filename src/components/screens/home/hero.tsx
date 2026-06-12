@@ -1,3 +1,5 @@
+import { Link } from '@tanstack/react-router'
+
 import { PageWrap } from '#/components/elements/page-wrap'
 import { Button } from '#/components/ui/button'
 import { ArrowRight, BookOpen, Sparkles } from 'lucide-react'
@@ -12,14 +14,14 @@ export const Hero = () => {
             </div>
             <PageWrap className="relative pt-6">
                 <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
+                    <Link to="/" className="flex items-center gap-2">
                         <div className="from-primary to-primary/70 flex size-9 items-center justify-center rounded-xl bg-linear-to-br shadow-sm">
                             <BookOpen className="text-primary-foreground size-4" />
                         </div>
                         <span className="text-foreground font-serif text-lg font-semibold tracking-tight">
                             Salah Companion
                         </span>
-                    </div>
+                    </Link>
                     <Button
                         size="sm"
                         variant="ghost"

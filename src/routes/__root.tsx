@@ -6,61 +6,36 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 import { HeadContent, Outlet, Scripts } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 
+import { SITE_URL } from '#/lib/env'
+import { SITE_DESCRIPTION, SITE_IMAGE, SITE_KEYWORDS, SITE_TITLE } from '#/lib/meta'
+
 import styles from '#/styles.css?url'
 
 export const Route = createRootRoute({
     head: () => ({
         meta: [
-            {
-                title: 'Salah Companion — Every Dua of the Salah, in One Place',
-            },
-            {
-                charSet: 'utf-8',
-            },
-            {
-                name: 'viewport',
-                content: 'width=device-width, initial-scale=1',
-            },
-            {
-                name: 'description',
-                content:
-                    'Arabic text with tashkeel, transliteration, and multiple translations side-by-side — backed by authentic Quranic and hadith references.',
-            },
-            {
-                name: 'keywords',
-                content:
-                    'salah, dua, prayer, islam, quran, arabic, tashkeel, transliteration, supplication, hadith',
-            },
-            {
-                name: 'author',
-                content: 'Salah Companion',
-            },
-            {
-                property: 'og:type',
-                content: 'website',
-            },
-            {
-                property: 'og:title',
-                content: 'Salah Companion — Every Dua of the Salah, in One Place',
-            },
-            {
-                property: 'og:description',
-                content:
-                    'Arabic text with tashkeel, transliteration, and multiple translations side-by-side — backed by authentic Quranic and hadith references.',
-            },
-            {
-                name: 'twitter:card',
-                content: 'summary_large_image',
-            },
-            {
-                name: 'twitter:title',
-                content: 'Salah Companion — Every Dua of the Salah, in One Place',
-            },
-            {
-                name: 'twitter:description',
-                content:
-                    'Arabic text with tashkeel, transliteration, and multiple translations side-by-side — backed by authentic Quranic and hadith references.',
-            },
+            { charSet: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            { title: SITE_TITLE },
+            { name: 'description', content: SITE_DESCRIPTION },
+            { name: 'keywords', content: SITE_KEYWORDS },
+            { name: 'author', content: 'Salah Companion' },
+            // Open Graph (Facebook, LinkedIn, Discord, Slack, Mastodon, Bluesky)
+            { property: 'og:type', content: 'website' },
+            { property: 'og:url', content: SITE_URL },
+            { property: 'og:title', content: SITE_TITLE },
+            { property: 'og:description', content: SITE_DESCRIPTION },
+            { property: 'og:image', content: SITE_IMAGE },
+            { property: 'og:image:width', content: '512' },
+            { property: 'og:image:height', content: '512' },
+            { property: 'og:site_name', content: 'Salah Companion' },
+            { property: 'og:locale', content: 'en_US' },
+            // X / Twitter
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:url', content: SITE_URL },
+            { name: 'twitter:title', content: SITE_TITLE },
+            { name: 'twitter:description', content: SITE_DESCRIPTION },
+            { name: 'twitter:image', content: SITE_IMAGE },
         ],
         links: [
             {

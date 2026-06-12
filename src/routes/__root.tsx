@@ -1,6 +1,6 @@
 import { createRootRoute } from '@tanstack/react-router'
 
-import { SiteFooter } from '#/components/layout/SiteFooter'
+import { SiteFooter } from '#/components/screens/layout/site-footer'
 import { TooltipProvider } from '#/components/ui/tooltip'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import { HeadContent, Outlet, Scripts } from '@tanstack/react-router'

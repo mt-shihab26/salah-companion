@@ -7,11 +7,7 @@ import { Hero } from '#/components/screens/home/hero'
 import { Separator } from '#/components/ui/separator'
 
 export const Route = createFileRoute('/')({
-    component: Home,
-})
-
-function Home() {
-    return (
+    component: () => (
         <div className="space-y-24 pb-24">
             <Hero />
             <Features />
@@ -20,5 +16,5 @@ function Home() {
             <Separator className="opacity-50" />
             <ClosingNote />
         </div>
-    )
-}
+    ),
+})

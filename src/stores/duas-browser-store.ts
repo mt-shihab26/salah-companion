@@ -1,5 +1,6 @@
 import type { TLanguage } from '#/types/languages'
 import type { TSalahPositionId } from '#/types/salah-positions'
+import type { TSalahDua } from '#/types/salah-duas'
 
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'

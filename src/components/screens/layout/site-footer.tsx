@@ -1,9 +1,10 @@
+import { useTheme } from '#/hooks/use-theme'
+
 import { PageWrap } from '#/components/elements/page-wrap'
 import { Button } from '#/components/ui/button'
-import { useTheme } from '#/hooks/use-theme'
 import { Moon, Sun } from 'lucide-react'
 
-export function SiteFooter() {
+export const SiteFooter = () => {
     const { theme, toggle } = useTheme()
 
     return (

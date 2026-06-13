@@ -37,7 +37,6 @@ import { jalsah1 } from './jalsah/jalsah-1'
 
 import { tashahhud1 } from './tashahhud/tashahhud-1'
 
-import { DEFAULT_SALAH_POSITION_ID } from '../salah-positions'
 import { tasleem1 } from './before-tasleem/tasleem-1'
 import { tasleem2 } from './before-tasleem/tasleem-2'
 import { tasleem3 } from './before-tasleem/tasleem-3'
@@ -48,6 +47,8 @@ import { tasleem7 } from './before-tasleem/tasleem-7'
 import { tasleem8 } from './before-tasleem/tasleem-8'
 import { tasleem9 } from './before-tasleem/tasleem-9'
 import { salawat1 } from './salawat/salawat-1'
+
+import { DEFAULT_SALAH_POSITION_ID } from '#/lib/salah-positions'
 
 export const allDuas: TSalahDua[] = [
     takbeer,

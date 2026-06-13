@@ -4,7 +4,7 @@ import { ArabicText } from '#/components/elements/arabic-text'
 import { Button } from '#/components/ui/button'
 import { Route } from '#/routes/index'
 
-import { SALAH_POSITIONS } from '#/lib/salah-positions'
+import { DEFAULT_SALAH_POSITION_ID, SALAH_POSITIONS } from '#/lib/salah-positions'
 
 export const PositionSidebar = () => {
     const search = Route.useSearch()
@@ -13,7 +13,7 @@ export const PositionSidebar = () => {
     return (
         <nav className="flex h-full flex-col gap-1 overflow-x-hidden overflow-y-auto p-1">
             {SALAH_POSITIONS.map((p) => {
-                const active = p.id === search.position
+                const active = p.id === (search.position || DEFAULT_SALAH_POSITION_ID)
                 return (
                     <Button
                         key={p.id}

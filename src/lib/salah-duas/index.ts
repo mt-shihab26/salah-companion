@@ -37,6 +37,7 @@ import { jalsah1 } from './jalsah/jalsah-1'
 
 import { tashahhud1 } from './tashahhud/tashahhud-1'
 
+import { DEFAULT_SALAH_POSITION_ID } from '../salah-positions'
 import { tasleem1 } from './before-tasleem/tasleem-1'
 import { tasleem2 } from './before-tasleem/tasleem-2'
 import { tasleem3 } from './before-tasleem/tasleem-3'
@@ -97,5 +98,5 @@ export const getSalahDuaById = (id: string): TSalahDua | undefined => {
 export const getSalahDuasBySalahPosition = (
     positionId: TSalahPositionId | undefined,
 ): TSalahDua[] => {
-    return allDuas.filter((d) => d.positionId === (positionId ?? 'opening'))
+    return allDuas.filter((d) => d.positionId === (positionId ?? DEFAULT_SALAH_POSITION_ID))
 }
